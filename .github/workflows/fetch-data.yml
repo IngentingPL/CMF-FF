@@ -1,0 +1,57 @@
+# Automatyczne odświeżanie danych ligi fantasy z ESPN API.
+# Uruchamia się codziennie o 6:00 UTC i ręcznie przez zakładkę Actions.
+name: Odśwież dane ligi
+
+on:
+  schedule:
+    # Codziennie o 6:00 UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:   # Ręczne uruchomienie z poziomu GitHub Actions UI
+
+# Uprawnienia do zapisu — potrzebne do git push
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Pobranie kodu repozytorium
+      - name: Checkout repozytorium
+        uses: actions/checkout@v4
+
+      # 2. Konfiguracja Pythona
+      - name: Setup Python 3.11+
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. Instalacja zależności
+      - name: Instalacja zależności
+        run: pip install -r requirements.txt
+
+      # 4. Pobranie danych z ESPN API
+      #    SWID i ESPN_S2 pochodzą z sekretów repozytorium
+      - name: Pobranie danych ligi
+        env:
+          SWID: ${{ secrets.SWID }}
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+        run: python fetch_league.py
+
+      # 5. Commit i push tylko jeśli są zmiany w data/
+      - name: Commit i push zmian
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/
+
+          # Sprawdź, czy cokolwiek się zmieniło — jeśli nie, pomiń commit
+          if git diff --staged --quiet; then
+            echo "Brak zmian w danych — pomijam commit."
+          else
+            git commit -m "Auto-update danych ligi $(date +'%Y-%m-%d')"
+            git push
+            echo "Zmiany wypchnięte."
+          fi

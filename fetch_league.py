@@ -1,0 +1,384 @@
+"""
+fetch_league.py – pobiera pełną historię tabeli wyników ligi ESPN Fantasy Football
+(League ID: 58995) i zapisuje do pliku JSON.
+
+Przed uruchomieniem ustaw zmienne środowiskowe (dla lat prywatnych 2012–2018):
+    SWID="..." ESPN_S2="..." python fetch_league.py
+
+UWAGA: SWID i ESPN_S2 to prywatne dane sesji ESPN – NIGDY nie zapisuj ich
+w kodzie ani nie commituj do repozytorium.
+"""
+# os – do odczytu zmiennych środowiskowych (SWID, ESPN_S2)
+# json – do zapisu wyników w formacie JSON
+# pathlib.Path – do tworzenia folderów i ścieżek plików
+import json
+import os
+from pathlib import Path
+
+# Importujemy klasę League z biblioteki espn-api
+from espn_api.football import League
+
+# ---------------------------------------------------------------------------
+# KONFIGURACJA: zakresy lat – prywatne (wymagają autoryzacji) i publiczne
+# ---------------------------------------------------------------------------
+LEAGUE_ID = 58995                              # niezmienne ID naszej ligi
+# Lata, w których liga była prywatna – dostęp tylko z SWID + ESPN_S2
+PRIVATE_YEARS = list(range(2012, 2019))        # 2012, 2013, ..., 2018
+# Lata, w których liga jest już publiczna – nie potrzeba logowania
+PUBLIC_YEARS = list(range(2019, 2026))         # 2019, 2020, ..., 2025
+
+
+def fetch_year_standings(league_id, year, swid=None, espn_s2=None):
+    """Łączy się z ligą ESPN dla danego roku i zwraca listę statystyk drużyn.
+
+    Każda drużyna to słownik (dict) z kluczami:
+        team_name, wins, losses, ties, points_for, points_against
+
+    Jeśli podano swid i espn_s2, używa ich do autoryzacji (potrzebne
+    dla prywatnych sezonów 2012–2018). W przeciwnym razie łączy się
+    anonimowo (dla publicznych sezonów 2019+).
+    """
+    # Tworzymy słownik z argumentami – tylko te, które faktycznie przekazano
+    kwargs = {"league_id": league_id, "year": year}
+    if swid and espn_s2:
+        kwargs["swid"] = swid
+        kwargs["espn_s2"] = espn_s2
+
+    # Łączymy się z ESPN – League() wykonuje zapytanie HTTP
+    league = League(**kwargs)
+
+    # Budujemy listę wyników: dla każdej drużyny zapisujemy jej statystyki
+    teams_data = []
+    for team in league.teams:
+        teams_data.append({
+            "team_name": team.team_name,
+            "wins": team.wins,
+            "losses": team.losses,
+            "ties": team.ties,
+            "points_for": team.points_for,
+            "points_against": team.points_against,
+        })
+
+    return teams_data
+
+
+def fetch_year_matchups(league_id, year, swid=None, espn_s2=None):
+    """Pobiera wyniki wszystkich meczów tygodniowych dla danego roku.
+
+    Sprawdza tygodnie 1–18 po kolei. Jeśli dla danego tygodnia nie ma
+    żadnych meczów (sezon się jeszcze nie zaczął lub już się skończył),
+    przerywa pętlę i przechodzi do kolejnego roku.
+
+    Zwraca słownik: klucz = numer tygodnia (str), wartość = lista meczów.
+    Każdy mecz to słownik z kluczami:
+        home_team, home_score, away_team, away_score
+    """
+    # Tworzymy obiekt ligi (tak samo jak przy standings, ale będziemy
+    # na nim wywoływać .scoreboard() zamiast iterować po .teams)
+    kwargs = {"league_id": league_id, "year": year}
+    if swid and espn_s2:
+        kwargs["swid"] = swid
+        kwargs["espn_s2"] = espn_s2
+
+    league = League(**kwargs)
+
+    # Słownik na wyniki wszystkich tygodni w tym roku
+    weeks_data = {}
+
+    # NFL regular season ma maksymalnie 18 tygodni – sprawdzamy każdy
+    for week in range(1, 19):
+        try:
+            # scoreboard(week=N) zwraca listę obiektów Matchup dla danego tygodnia
+            matchups = league.scoreboard(week=week)
+
+            # Jeśli lista jest pusta – sezon się skończył, wychodzimy z pętli tygodni
+            if not matchups:
+                break
+
+            # Przetwarzamy każdy mecz – zapisujemy nazwy drużyn i ich wyniki
+            week_matchups = []
+            for match in matchups:
+                week_matchups.append({
+                    "home_team": match.home_team.team_name,
+                    "home_score": match.home_score,
+                    "away_team": match.away_team.team_name,
+                    "away_score": match.away_score,
+                })
+
+            # Zapisujemy wyniki tygodnia pod kluczem tekstowym (np. "1", "2", ...)
+            weeks_data[str(week)] = week_matchups
+
+        except Exception:
+            # Błąd przy danym tygodniu – przerywamy tylko pętlę tygodni
+            # (nie cały skrypt), bo sezon mógł mieć mniej tygodni
+            break
+
+    return weeks_data
+
+
+def fetch_year_rosters(league_id, year, swid=None, espn_s2=None):
+    """Pobiera składy drużyn (rostery) dla danego roku.
+
+    Dla każdej drużyny w lidze pobiera listę zawodników z team.roster
+    (atrybut wypełniany automatycznie przy tworzeniu obiektu League).
+    Każdy zawodnik to słownik z kluczami: name, position, proTeam.
+
+    Zwraca listę słowników: [{"team_name": "...", "players": [...]}, ...].
+    Jeśli roster danej drużyny jest pusty, lista players będzie pusta.
+    """
+    # Budujemy argumenty dla konstruktora League – auth tylko jeśli podano
+    kwargs = {"league_id": league_id, "year": year}
+    if swid and espn_s2:
+        kwargs["swid"] = swid
+        kwargs["espn_s2"] = espn_s2
+
+    league = League(**kwargs)
+
+    # Dla każdej drużyny zbieramy jej roster
+    teams_rosters = []
+    for team in league.teams:
+        # team.roster to lista obiektów Player z biblioteki espn-api
+        players = []
+        for player in team.roster:
+            players.append({
+                "name": player.name,
+                "position": player.position,
+                "proTeam": player.proTeam,
+            })
+        teams_rosters.append({
+            "team_name": team.team_name,
+            "players": players,
+        })
+
+    return teams_rosters
+
+
+def fetch_year_draft(league_id, year, swid=None, espn_s2=None):
+    """Pobiera wyniki draftu: kto kogo wybrał w której rundzie.
+
+    league.draft to lista obiektów BasePick — wypełniana automatycznie
+    przy konstrukcji League (jeśli draft się odbył). Jeśli liga nie ma
+    jeszcze draftu (np. sezon przed draftem), lista będzie pusta.
+
+    Zwraca listę słowników: [{"round_num": N, "round_pick": N,
+    "player_name": "...", "team_name": "..."}, ...].
+    """
+    # Budujemy argumenty dla League – auth tylko jeśli podano
+    kwargs = {"league_id": league_id, "year": year}
+    if swid and espn_s2:
+        kwargs["swid"] = swid
+        kwargs["espn_s2"] = espn_s2
+
+    league = League(**kwargs)
+
+    # league.draft: lista BasePick (round_num, round_pick, playerName, team)
+    picks = []
+    for pick in league.draft:
+        picks.append({
+            "round_num": pick.round_num,
+            "round_pick": pick.round_pick,
+            "player_name": pick.playerName,
+            "team_name": pick.team.team_name,
+        })
+
+    return picks
+
+
+# ---------------------------------------------------------------------------
+# GŁÓWNA LOGIKA SKRYPTU
+# ---------------------------------------------------------------------------
+if __name__ == "__main__":
+    # 1. Wczytujemy dane logowania ze zmiennych środowiskowych (jeśli są)
+    swid = os.environ.get("SWID")
+    espn_s2 = os.environ.get("ESPN_S2")
+
+    # Słownik, który będzie przechowywał wyniki: klucz = rok (str), wartość = lista drużyn
+    all_standings = {}
+    # Licznik sukcesów – żeby na końcu poinformować użytkownika
+    success_count = 0
+    total_years = len(PRIVATE_YEARS) + len(PUBLIC_YEARS)
+
+    # 2. Pobieramy dane dla lat prywatnych (2012–2018) – z autoryzacją
+    if not swid or not espn_s2:
+        print("[!] SWID i/lub ESPN_S2 nie ustawione – pomijam lata prywatne.")
+        print("    Uruchom: SWID=\"...\" ESPN_S2=\"...\" python fetch_league.py\n")
+    else:
+        print("--- LATA PRYWATNE (2012–2018) – z autoryzacją ---")
+        for year in PRIVATE_YEARS:
+            try:
+                teams = fetch_year_standings(LEAGUE_ID, year, swid=swid, espn_s2=espn_s2)
+                all_standings[str(year)] = teams
+                print(f"  [{year}] OK ({len(teams)} drużyn)")
+                success_count += 1
+            except Exception as e:
+                # Wypisujemy pełny błąd – chcemy wiedzieć, co poszło nie tak
+                print(f"  [{year}] BŁĄD: {e}")
+
+    # 3. Pobieramy dane dla lat publicznych (2019–2025) – bez autoryzacji
+    print("\n--- LATA PUBLICZNE (2019–2025) – bez autoryzacji ---")
+    for year in PUBLIC_YEARS:
+        try:
+            teams = fetch_year_standings(LEAGUE_ID, year)
+            all_standings[str(year)] = teams
+            print(f"  [{year}] OK ({len(teams)} drużyn)")
+            success_count += 1
+        except Exception as e:
+            print(f"  [{year}] BŁĄD: {e}")
+
+    # 4. Pobieramy wyniki meczów tygodniowych – najpierw lata prywatne
+    #    Słownik na wyniki meczów: rok -> tydzień -> lista meczów
+    print("\n--- MECZE TYGODNIOWE (prywatne 2012–2018) ---")
+    all_matchups = {}
+    matchup_years_done = 0     # Licznik lat z powodzeniem
+
+    if swid and espn_s2:
+        for year in PRIVATE_YEARS:
+            try:
+                weeks = fetch_year_matchups(LEAGUE_ID, year, swid=swid, espn_s2=espn_s2)
+                all_matchups[str(year)] = weeks
+                # Liczymy drużyny z obiektu standings (już pobranego wcześniej)
+                team_count = len(all_standings.get(str(year), []))
+                week_count = len(weeks)
+                print(f"  [{year}] OK ({week_count} tygodni, {team_count} drużyn)")
+                matchup_years_done += 1
+            except Exception as e:
+                print(f"  [{year}] BŁĄD: {e}")
+    else:
+        print("[!] Pomijam – brak SWID/ESPN_S2.")
+
+    # 5. Mecze tygodniowe dla lat publicznych (2019–2025)
+    print("\n--- MECZE TYGODNIOWE (publiczne 2019–2025) ---")
+    for year in PUBLIC_YEARS:
+        try:
+            weeks = fetch_year_matchups(LEAGUE_ID, year)
+            all_matchups[str(year)] = weeks
+            team_count = len(all_standings.get(str(year), []))
+            week_count = len(weeks)
+            print(f"  [{year}] OK ({week_count} tygodni, {team_count} drużyn)")
+            matchup_years_done += 1
+        except Exception as e:
+            print(f"  [{year}] BŁĄD: {e}")
+
+    # 6. Pobieramy składy drużyn (rostery) – najpierw lata prywatne z auth
+    print("\n--- ROSTERY (prywatne 2012–2018) ---")
+    all_rosters = {}
+    roster_years_done = 0
+    roster_total_years = len(PRIVATE_YEARS) + len(PUBLIC_YEARS) + 1  # +1 dla 2026
+
+    # Dla lat prywatnych: każdy rok w osobnym try/except – błąd nie przerywa reszty
+    if swid and espn_s2:
+        for year in PRIVATE_YEARS:
+            try:
+                teams_rosters = fetch_year_rosters(LEAGUE_ID, year, swid=swid, espn_s2=espn_s2)
+                # Liczymy drużyny i łączną liczbę zawodników we wszystkich rosterach
+                team_count = len(teams_rosters)
+                player_count = sum(len(t["players"]) for t in teams_rosters)
+                all_rosters[str(year)] = teams_rosters
+                if player_count == 0:
+                    print(f"  [{year}] BRAK: brak zawodników w rosterach ({team_count} drużyn)")
+                else:
+                    print(f"  [{year}] OK ({team_count} drużyn, {player_count} zawodników razem)")
+                    roster_years_done += 1
+            except Exception as e:
+                print(f"  [{year}] BRAK: {e}")
+    else:
+        print("[!] Pomijam – brak SWID/ESPN_S2.")
+
+    # Rostery dla lat publicznych (2019–2025) – bez autoryzacji
+    print("\n--- ROSTERY (publiczne 2019–2025) ---")
+    for year in PUBLIC_YEARS:
+        try:
+            teams_rosters = fetch_year_rosters(LEAGUE_ID, year)
+            team_count = len(teams_rosters)
+            player_count = sum(len(t["players"]) for t in teams_rosters)
+            all_rosters[str(year)] = teams_rosters
+            if player_count == 0:
+                print(f"  [{year}] BRAK: brak zawodników w rosterach ({team_count} drużyn)")
+            else:
+                print(f"  [{year}] OK ({team_count} drużyn, {player_count} zawodników razem)")
+                roster_years_done += 1
+        except Exception as e:
+            print(f"  [{year}] BRAK: {e}")
+
+    # Rok 2026 osobno – sezon może się jeszcze nie zacząć, roster bywa pusty
+    print("\n--- ROSTERY (2026) ---")
+    try:
+        teams_rosters = fetch_year_rosters(LEAGUE_ID, 2026)
+        team_count = len(teams_rosters)
+        player_count = sum(len(t["players"]) for t in teams_rosters)
+        all_rosters["2026"] = teams_rosters
+        if player_count == 0:
+            print(f"  [2026] BRAK: brak zawodników w rosterach ({team_count} drużyn)")
+        else:
+            print(f"  [2026] OK ({team_count} drużyn, {player_count} zawodników razem)")
+            roster_years_done += 1
+    except Exception as e:
+        print(f"  [2026] BRAK: {e}")
+
+    # 7. Pobieramy dane z draftu – prywatne 2012–2018 z auth
+    #    Draft 2026 pomijamy – jeszcze się nie odbył
+    print("\n--- DRAFT (prywatne 2012–2018) ---")
+    all_drafts = {}
+    draft_years_done = 0
+    draft_total_years = len(PRIVATE_YEARS) + len(PUBLIC_YEARS)  # bez 2026
+
+    if swid and espn_s2:
+        for year in PRIVATE_YEARS:
+            try:
+                picks = fetch_year_draft(LEAGUE_ID, year, swid=swid, espn_s2=espn_s2)
+                all_drafts[str(year)] = picks
+                if not picks:
+                    print(f"  [{year}] BRAK: brak danych draftu")
+                else:
+                    print(f"  [{year}] OK ({len(picks)} wyborów)")
+                    draft_years_done += 1
+            except Exception as e:
+                print(f"  [{year}] BRAK: {e}")
+    else:
+        print("[!] Pomijam – brak SWID/ESPN_S2.")
+
+    # Draft dla lat publicznych (2019–2025) – bez autoryzacji
+    print("\n--- DRAFT (publiczne 2019–2025) ---")
+    for year in PUBLIC_YEARS:
+        try:
+            picks = fetch_year_draft(LEAGUE_ID, year)
+            all_drafts[str(year)] = picks
+            if not picks:
+                print(f"  [{year}] BRAK: brak danych draftu")
+            else:
+                print(f"  [{year}] OK ({len(picks)} wyborów)")
+                draft_years_done += 1
+        except Exception as e:
+            print(f"  [{year}] BRAK: {e}")
+
+    # 8. Zapisujemy wyniki do plików JSON w folderze data/
+    #    Path("data") tworzy obiekt ścieżki – mkdir tworzy folder, jeśli nie istnieje
+    output_dir = Path("data")
+    output_dir.mkdir(exist_ok=True)
+
+    # Zapis tabeli wyników (standings)
+    standings_path = output_dir / "standings.json"
+    with open(standings_path, "w", encoding="utf-8") as f:
+        json.dump(all_standings, f, indent=2, ensure_ascii=False)
+
+    # Zapis meczów tygodniowych (matchups)
+    matchups_path = output_dir / "matchups.json"
+    with open(matchups_path, "w", encoding="utf-8") as f:
+        json.dump(all_matchups, f, indent=2, ensure_ascii=False)
+
+    # Zapis składów drużyn (rosters)
+    rosters_path = output_dir / "rosters.json"
+    with open(rosters_path, "w", encoding="utf-8") as f:
+        json.dump(all_rosters, f, indent=2, ensure_ascii=False)
+
+    # Zapis wyników draftu
+    draft_path = output_dir / "draft.json"
+    with open(draft_path, "w", encoding="utf-8") as f:
+        json.dump(all_drafts, f, indent=2, ensure_ascii=False)
+
+    # 9. Podsumowanie w konsoli
+    print(f"\nZapisano standings: {standings_path}")
+    print(f"Zapisano matchups:  {matchups_path}")
+    print(f"Zapisano rosters:   {rosters_path}")
+    print(f"Zapisano draft:     {draft_path}")
+    print(f"Tabele: {success_count}/{total_years} sezonów  |  Mecze: {matchup_years_done}/{total_years} sezonów  |  Rostery: {roster_years_done}/{roster_total_years} sezonów  |  Draft: {draft_years_done}/{draft_total_years} sezonów")

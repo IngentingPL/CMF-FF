@@ -1,0 +1,1086 @@
+{
+  "2012": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 8,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 873.0,
+      "points_against": 836.0
+    },
+    {
+      "team_name": "Elblag Scrolls",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 808.0,
+      "points_against": 862.0
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 800.0,
+      "points_against": 788.0
+    },
+    {
+      "team_name": "Szymanow Harvesters",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 811.0,
+      "points_against": 872.0
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 862.0,
+      "points_against": 734.0
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 771.0,
+      "points_against": 798.0
+    },
+    {
+      "team_name": "Pless Bricks",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 752.0,
+      "points_against": 787.0
+    }
+  ],
+  "2013": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1007.0,
+      "points_against": 1027.0
+    },
+    {
+      "team_name": "Elblag Scrolls",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 984.5,
+      "points_against": 981.0
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 0,
+      "losses": 13,
+      "ties": 1,
+      "points_for": 734.5,
+      "points_against": 1005.0
+    },
+    {
+      "team_name": "Szymanow Harvesters",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 989.5,
+      "points_against": 935.0
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 2,
+      "losses": 11,
+      "ties": 1,
+      "points_for": 835.5,
+      "points_against": 1051.0
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 10,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1101.0,
+      "points_against": 869.0
+    },
+    {
+      "team_name": "Pless Bricks",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 797.0,
+      "points_against": 1071.0
+    },
+    {
+      "team_name": "Kolberg Festung",
+      "wins": 8,
+      "losses": 4,
+      "ties": 2,
+      "points_for": 1047.5,
+      "points_against": 999.0
+    },
+    {
+      "team_name": "Danzig Cowboys",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1017.5,
+      "points_against": 941.5
+    },
+    {
+      "team_name": "OstrÃ³da Inquisitors",
+      "wins": 11,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1137.5,
+      "points_against": 912.5
+    },
+    {
+      "team_name": "Edinburgh Yer Maws",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 931.5,
+      "points_against": 933.0
+    },
+    {
+      "team_name": "East Side Demons",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1033.0,
+      "points_against": 891.0
+    }
+  ],
+  "2014": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 5,
+      "losses": 8,
+      "ties": 1,
+      "points_for": 969.0,
+      "points_against": 1226.0
+    },
+    {
+      "team_name": "Elblag Scrolls",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 995.0,
+      "points_against": 1074.0
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1013.0,
+      "points_against": 1141.0
+    },
+    {
+      "team_name": "Szymanow Harvesters",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1151.0,
+      "points_against": 963.0
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1017.0,
+      "points_against": 1176.0
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 12,
+      "losses": 2,
+      "ties": 0,
+      "points_for": 1293.0,
+      "points_against": 993.0
+    },
+    {
+      "team_name": "ZambrÃ³w Bears",
+      "wins": 4,
+      "losses": 9,
+      "ties": 1,
+      "points_for": 925.0,
+      "points_against": 1040.0
+    },
+    {
+      "team_name": "Kolberg Festung",
+      "wins": 5,
+      "losses": 8,
+      "ties": 1,
+      "points_for": 1091.0,
+      "points_against": 1131.0
+    },
+    {
+      "team_name": "Barcelona Toros",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1124.0,
+      "points_against": 1128.0
+    },
+    {
+      "team_name": "OstrÃ³da Inquisitors",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1135.0,
+      "points_against": 993.0
+    },
+    {
+      "team_name": "Madison Bumgarners",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1100.0,
+      "points_against": 1185.0
+    },
+    {
+      "team_name": "East Side Demons",
+      "wins": 9,
+      "losses": 4,
+      "ties": 1,
+      "points_for": 1267.0,
+      "points_against": 1030.0
+    }
+  ],
+  "2015": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1007.0,
+      "points_against": 1049.0
+    },
+    {
+      "team_name": "Elblag Scrolls",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1023.0,
+      "points_against": 1139.0
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 915.0,
+      "points_against": 1034.0
+    },
+    {
+      "team_name": "Szymanow Harvesters",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1225.0,
+      "points_against": 1001.0
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 10,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1197.0,
+      "points_against": 985.0
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1102.0,
+      "points_against": 1109.0
+    },
+    {
+      "team_name": "ZambrÃ³w Bears",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1040.0,
+      "points_against": 1254.0
+    },
+    {
+      "team_name": "Kolberg Festung",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1219.0,
+      "points_against": 1074.0
+    },
+    {
+      "team_name": "Barcelona Toros",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1036.0,
+      "points_against": 1157.0
+    },
+    {
+      "team_name": "Bartoszyce Inquisitors",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1164.0,
+      "points_against": 1055.0
+    },
+    {
+      "team_name": "San Marino Titans",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1012.0,
+      "points_against": 1072.0
+    },
+    {
+      "team_name": "East Side Demons",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1071.0,
+      "points_against": 1082.0
+    }
+  ],
+  "2016": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1125.0,
+      "points_against": 1090.5
+    },
+    {
+      "team_name": "Madison Bumgarners",
+      "wins": 10,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1149.0,
+      "points_against": 951.0
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1014.0,
+      "points_against": 1068.5
+    },
+    {
+      "team_name": "Szymanow Harvesters",
+      "wins": 2,
+      "losses": 12,
+      "ties": 0,
+      "points_for": 987.0,
+      "points_against": 1156.5
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 5,
+      "losses": 8,
+      "ties": 1,
+      "points_for": 997.0,
+      "points_against": 1065.0
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 10,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1163.5,
+      "points_against": 1058.5
+    },
+    {
+      "team_name": "Zambrow Bears",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1076.5,
+      "points_against": 1105.5
+    },
+    {
+      "team_name": "Posen Festung",
+      "wins": 5,
+      "losses": 8,
+      "ties": 1,
+      "points_for": 1010.0,
+      "points_against": 1023.0
+    },
+    {
+      "team_name": "Barcelona Toros",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1156.5,
+      "points_against": 1158.5
+    },
+    {
+      "team_name": "Bartoszyce Inquisitors",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 989.5,
+      "points_against": 1101.0
+    },
+    {
+      "team_name": "San Marino Titans",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1078.0,
+      "points_against": 1037.0
+    },
+    {
+      "team_name": "East Side Demons",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1077.5,
+      "points_against": 1015.0
+    },
+    {
+      "team_name": "Wloclawek Wolf Pack",
+      "wins": 10,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1307.5,
+      "points_against": 1070.0
+    },
+    {
+      "team_name": "Tel-Aviv Falcons",
+      "wins": 3,
+      "losses": 11,
+      "ties": 0,
+      "points_for": 888.0,
+      "points_against": 1119.0
+    }
+  ],
+  "2017": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "points_for": 849.0,
+      "points_against": 1056.0
+    },
+    {
+      "team_name": "Madison Bumgarners",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1043.0,
+      "points_against": 1020.5
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 3,
+      "losses": 8,
+      "ties": 2,
+      "points_for": 840.5,
+      "points_against": 859.5
+    },
+    {
+      "team_name": "Szymanow Harvesters",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 937.0,
+      "points_against": 845.5
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 925.0,
+      "points_against": 1002.0
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1073.5,
+      "points_against": 844.5
+    },
+    {
+      "team_name": "Zambrow Bears",
+      "wins": 2,
+      "losses": 10,
+      "ties": 1,
+      "points_for": 874.5,
+      "points_against": 991.5
+    },
+    {
+      "team_name": "Mosina Republicans",
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "points_for": 1179.0,
+      "points_against": 956.5
+    },
+    {
+      "team_name": "Barcelona Toros",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1023.0,
+      "points_against": 989.0
+    },
+    {
+      "team_name": "Pamplona Inquisitors",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 959.0,
+      "points_against": 992.5
+    },
+    {
+      "team_name": "San Marino Titans",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1023.0,
+      "points_against": 1051.0
+    },
+    {
+      "team_name": "East Side Demons",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 952.5,
+      "points_against": 943.5
+    },
+    {
+      "team_name": "Wloclawek Wolf Pack",
+      "wins": 5,
+      "losses": 7,
+      "ties": 1,
+      "points_for": 877.0,
+      "points_against": 1018.5
+    },
+    {
+      "team_name": "Suwalki Rednecks",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 948.5,
+      "points_against": 934.0
+    }
+  ],
+  "2018": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 6,
+      "losses": 5,
+      "ties": 1,
+      "points_for": 968.5,
+      "points_against": 987.0
+    },
+    {
+      "team_name": "Madison Bumgarners",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1134.0,
+      "points_against": 1015.0
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 6,
+      "losses": 5,
+      "ties": 1,
+      "points_for": 1013.0,
+      "points_against": 1022.0
+    },
+    {
+      "team_name": "Szymanow Harvesters",
+      "wins": 4,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 963.0,
+      "points_against": 1188.5
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 2,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 899.5,
+      "points_against": 1063.0
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1159.5,
+      "points_against": 975.5
+    },
+    {
+      "team_name": "Mosina Republicans",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1049.5,
+      "points_against": 1082.5
+    },
+    {
+      "team_name": "Barcelona Toros",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1014.0,
+      "points_against": 1046.5
+    },
+    {
+      "team_name": "Pamplona Inquisitors",
+      "wins": 8,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 965.0,
+      "points_against": 858.5
+    },
+    {
+      "team_name": "San Marino Titans",
+      "wins": 4,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 937.0,
+      "points_against": 999.0
+    },
+    {
+      "team_name": "Wloclawek Wolf Pack",
+      "wins": 8,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1065.0,
+      "points_against": 989.0
+    },
+    {
+      "team_name": "Suwalki Rednecks",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1027.5,
+      "points_against": 1035.5
+    },
+    {
+      "team_name": "East Side Demons",
+      "wins": 8,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1010.5,
+      "points_against": 944.0
+    }
+  ],
+  "2019": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1054.0,
+      "points_against": 1033.0
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 977.0,
+      "points_against": 1053.0
+    },
+    {
+      "team_name": "Szymanow Harvesters",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1050.0,
+      "points_against": 1121.5
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1198.5,
+      "points_against": 1258.0
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1309.5,
+      "points_against": 1110.0
+    },
+    {
+      "team_name": "Mosina Republicans",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1108.0,
+      "points_against": 1143.5
+    },
+    {
+      "team_name": "Pamplona Inquisitors",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1100.0,
+      "points_against": 1131.0
+    },
+    {
+      "team_name": "San Marino Titans",
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1165.5,
+      "points_against": 1141.5
+    },
+    {
+      "team_name": "Wloclawek Wolf Pack",
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1025.0,
+      "points_against": 1124.0
+    },
+    {
+      "team_name": "Suwalki Rednecks",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1256.0,
+      "points_against": 1128.0
+    }
+  ],
+  "2020": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1121.5,
+      "points_against": 1250.5
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1117.0,
+      "points_against": 1235.5
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1325.0,
+      "points_against": 1277.5
+    },
+    {
+      "team_name": "Kaliszfornia Capybaras",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1256.0,
+      "points_against": 1305.5
+    },
+    {
+      "team_name": "Mosina Republicans",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1451.5,
+      "points_against": 1334.5
+    },
+    {
+      "team_name": "San Marino Titans",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1124.5,
+      "points_against": 1347.5
+    },
+    {
+      "team_name": "Suwalki Rednecks",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1392.5,
+      "points_against": 1279.0
+    },
+    {
+      "team_name": "Chicago Scrubs",
+      "wins": 12,
+      "losses": 2,
+      "ties": 0,
+      "points_for": 1365.5,
+      "points_against": 1123.5
+    }
+  ],
+  "2021": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 6,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1384.5,
+      "points_against": 1453.5
+    },
+    {
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 10,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1471.5,
+      "points_against": 1306.0
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 5,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1381.0,
+      "points_against": 1552.5
+    },
+    {
+      "team_name": "Poznan Festung",
+      "wins": 7,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1518.0,
+      "points_against": 1370.5
+    },
+    {
+      "team_name": "Suwalki Rednecks",
+      "wins": 7,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1372.5,
+      "points_against": 1504.0
+    },
+    {
+      "team_name": "Chicago Scrubs",
+      "wins": 10,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1427.0,
+      "points_against": 1368.0
+    }
+  ],
+  "2022": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 4,
+      "losses": 14,
+      "ties": 0,
+      "points_for": 1566.3200000000002,
+      "points_against": 1873.54
+    },
+    {
+      "team_name": "Poznan Festung",
+      "wins": 12,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1888.42,
+      "points_against": 1710.84
+    },
+    {
+      "team_name": "Suwalki Rednecks",
+      "wins": 11,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1755.26,
+      "points_against": 1791.62
+    },
+    {
+      "team_name": "Chicago Scrubs",
+      "wins": 9,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1867.6599999999994,
+      "points_against": 1701.66
+    }
+  ],
+  "2023": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 11,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1462.16,
+      "points_against": 1282.38
+    },
+    {
+      "team_name": "Poznan Festung",
+      "wins": 10,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1461.3999999999999,
+      "points_against": 1326.96
+    },
+    {
+      "team_name": "Suwalki Rednecks",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1294.8600000000001,
+      "points_against": 1178.16
+    },
+    {
+      "team_name": "Chicago Scrubs",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1125.1799999999998,
+      "points_against": 1284.08
+    },
+    {
+      "team_name": "MMz Old Goats",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1239.6,
+      "points_against": 1264.46
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1194.9399999999998,
+      "points_against": 1260.5
+    },
+    {
+      "team_name": "Vienna Schnitzels",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1191.24,
+      "points_against": 1330.88
+    },
+    {
+      "team_name": "Szczecin Pirates",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1269.6599999999999,
+      "points_against": 1311.62
+    }
+  ],
+  "2024": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 4,
+      "losses": 11,
+      "ties": 0,
+      "points_for": 1239.42,
+      "points_against": 1501.78
+    },
+    {
+      "team_name": "Poznan Festung",
+      "wins": 3,
+      "losses": 12,
+      "ties": 0,
+      "points_for": 1243.2400000000002,
+      "points_against": 1503.74
+    },
+    {
+      "team_name": "Chicago Scrubs",
+      "wins": 9,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1449.02,
+      "points_against": 1349.18
+    },
+    {
+      "team_name": "MMz Old Goats",
+      "wins": 8,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1439.5600000000002,
+      "points_against": 1534.9
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 9,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1578.2200000000003,
+      "points_against": 1451.04
+    },
+    {
+      "team_name": "Vienna Schnitzels",
+      "wins": 12,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1647.0,
+      "points_against": 1255.82
+    }
+  ],
+  "2025": [
+    {
+      "team_name": "Lublin Gnagare",
+      "wins": 10,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1465.0,
+      "points_against": 1348.38
+    },
+    {
+      "team_name": "Poznan Festung",
+      "wins": 12,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1532.04,
+      "points_against": 1377.74
+    },
+    {
+      "team_name": "Chicago Scrubs",
+      "wins": 5,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1328.1999999999998,
+      "points_against": 1426.44
+    },
+    {
+      "team_name": "MMz Old Goats",
+      "wins": 7,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1360.12,
+      "points_against": 1457.36
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "wins": 4,
+      "losses": 11,
+      "ties": 0,
+      "points_for": 1431.4800000000002,
+      "points_against": 1490.16
+    },
+    {
+      "team_name": "Vienna Schnitzels",
+      "wins": 7,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1486.32,
+      "points_against": 1503.08
+    }
+  ]
+}

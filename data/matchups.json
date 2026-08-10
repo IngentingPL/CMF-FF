@@ -1,0 +1,5246 @@
+{
+  "2012": {},
+  "2013": {
+    "1": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 99.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 86.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 73.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 80.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 90.5,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 70.5
+      },
+      {
+        "home_team": "Edinburgh Yer Maws",
+        "home_score": 91.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 60.0
+      },
+      {
+        "home_team": "Danzig Cowboys",
+        "home_score": 114.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 95.5
+      },
+      {
+        "home_team": "Pless Bricks",
+        "home_score": 55.0,
+        "away_team": "East Side Demons",
+        "away_score": 98.0
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 69.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 62.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 64.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 50.0
+      },
+      {
+        "home_team": "Danzig Cowboys",
+        "home_score": 82.0,
+        "away_team": "Pless Bricks",
+        "away_score": 51.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 64.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "Edinburgh Yer Maws",
+        "home_score": 91.5,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 90.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 46.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 80.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 74.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 57.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 57.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 88.0,
+        "away_team": "Edinburgh Yer Maws",
+        "away_score": 48.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 73.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "Pless Bricks",
+        "home_score": 62.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 105.0,
+        "away_team": "Danzig Cowboys",
+        "away_score": 58.0
+      }
+    ],
+    "4": [
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 71.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 107.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 84.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 75.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 82.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 76.5
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 54.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Pless Bricks",
+        "home_score": 63.0,
+        "away_team": "Edinburgh Yer Maws",
+        "away_score": 99.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 95.0,
+        "away_team": "Danzig Cowboys",
+        "away_score": 85.0
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 87.0,
+        "away_team": "Edinburgh Yer Maws",
+        "away_score": 64.5
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 72.0,
+        "away_team": "Danzig Cowboys",
+        "away_score": 57.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 65.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 61.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 54.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 58.0,
+        "away_team": "East Side Demons",
+        "away_score": 48.0
+      },
+      {
+        "home_team": "Pless Bricks",
+        "home_score": 78.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 93.0
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 85.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 87.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 88.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 29.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 84.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 55.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 40.0,
+        "away_team": "Pless Bricks",
+        "away_score": 60.0
+      },
+      {
+        "home_team": "Edinburgh Yer Maws",
+        "home_score": 58.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 31.0
+      },
+      {
+        "home_team": "Danzig Cowboys",
+        "home_score": 69.0,
+        "away_team": "East Side Demons",
+        "away_score": 44.0
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 60.5,
+        "away_team": "Kolberg Festung",
+        "away_score": 68.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 52.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 107.0
+      },
+      {
+        "home_team": "Danzig Cowboys",
+        "home_score": 71.0,
+        "away_team": "Edinburgh Yer Maws",
+        "away_score": 48.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 40.0,
+        "away_team": "Pless Bricks",
+        "away_score": 53.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 63.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 51.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 102.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 77.0
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Pless Bricks",
+        "home_score": 46.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 93.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 65.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 91.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 48.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 67.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 44.0,
+        "away_team": "Edinburgh Yer Maws",
+        "away_score": 49.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 59.0,
+        "away_team": "Danzig Cowboys",
+        "away_score": 68.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 77.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 48.0
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 53.0,
+        "away_team": "Danzig Cowboys",
+        "away_score": 50.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 68.0,
+        "away_team": "Edinburgh Yer Maws",
+        "away_score": 83.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 71.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 78.0,
+        "away_team": "East Side Demons",
+        "away_score": 69.0
+      },
+      {
+        "home_team": "Pless Bricks",
+        "home_score": 83.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 69.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 86.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 55.0
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 26.0,
+        "away_team": "East Side Demons",
+        "away_score": 109.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 55.0,
+        "away_team": "Edinburgh Yer Maws",
+        "away_score": 48.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 76.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 26.0
+      },
+      {
+        "home_team": "Pless Bricks",
+        "home_score": 61.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 72.0,
+        "away_team": "Danzig Cowboys",
+        "away_score": 65.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 45.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 73.0
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Edinburgh Yer Maws",
+        "home_score": 60.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 79.0
+      },
+      {
+        "home_team": "Danzig Cowboys",
+        "home_score": 92.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 60.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 82.0,
+        "away_team": "Pless Bricks",
+        "away_score": 51.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 38.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 65.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 39.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 85.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 75.0,
+        "away_team": "East Side Demons",
+        "away_score": 51.0
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Edinburgh Yer Maws",
+        "home_score": 47.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 89.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 55.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 79.0,
+        "away_team": "East Side Demons",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 70.0,
+        "away_team": "Pless Bricks",
+        "away_score": 32.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 78.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 48.0
+      },
+      {
+        "home_team": "Danzig Cowboys",
+        "home_score": 71.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 51.0
+      }
+    ],
+    "13": [
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 61.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 43.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 68.0,
+        "away_team": "East Side Demons",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 109.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 94.0
+      },
+      {
+        "home_team": "Pless Bricks",
+        "home_score": 68.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 54.0
+      },
+      {
+        "home_team": "Edinburgh Yer Maws",
+        "home_score": 79.0,
+        "away_team": "Danzig Cowboys",
+        "away_score": 56.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 76.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 127.0
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 93.0,
+        "away_team": "Pless Bricks",
+        "away_score": 42.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 63.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 117.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 61.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 78.0
+      },
+      {
+        "home_team": "Danzig Cowboys",
+        "home_score": 86.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 96.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 44.0
+      },
+      {
+        "home_team": "Edinburgh Yer Maws",
+        "home_score": 72.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 76.0
+      }
+    ]
+  },
+  "2014": {
+    "1": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 74.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 70.0,
+        "away_team": "East Side Demons",
+        "away_score": 75.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 77.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 58.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 75.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 103.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 72.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 49.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 59.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 106.0
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 53.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 53.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 68.0,
+        "away_team": "East Side Demons",
+        "away_score": 58.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 92.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 67.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 120.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 50.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 86.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 61.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 65.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 61.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 86.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 86.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 41.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 110.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 58.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 61.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 56.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 54.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 84.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 55.0
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 68.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 75.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 117.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 104.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 53.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 94.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 82.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 75.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 63.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 65.0
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 52.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 106.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 84.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 84.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 57.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 69.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 66.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 86.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 57.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 69.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 83.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 60.0
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 98.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 76.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 86.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 89.0,
+        "away_team": "East Side Demons",
+        "away_score": 118.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 102.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 80.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 54.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 90.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 66.0
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 72.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 89.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 42.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 45.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 72.0,
+        "away_team": "East Side Demons",
+        "away_score": 108.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 78.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 70.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 93.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 67.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 74.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 82.0
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 64.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 101.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 108.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 93.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 104.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 88.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 103.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 66.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 79.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 121.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 78.0
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 78.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 71.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 89.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 91.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 111.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 95.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 49.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 116.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 80.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 66.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 62.0
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 73.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 96.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 82.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 52.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 46.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 65.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 115.0,
+        "away_team": "East Side Demons",
+        "away_score": 53.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 90.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 106.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 88.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 102.0
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 33.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 122.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 79.0,
+        "away_team": "East Side Demons",
+        "away_score": 60.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 58.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 76.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 48.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 77.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 83.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 75.0
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 114.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 90.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 41.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 103.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 62.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 79.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 104.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 67.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 83.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 46.0
+      }
+    ],
+    "13": [
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 94.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 55.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 84.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 75.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 75.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 54.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 92.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 112.0
+      },
+      {
+        "home_team": "OstrÃ³da Inquisitors",
+        "home_score": 88.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 89.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 96.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 95.0
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 50.0,
+        "away_team": "East Side Demons",
+        "away_score": 129.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 71.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 73.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 108.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 96.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 52.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 88.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 103.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 70.0,
+        "away_team": "OstrÃ³da Inquisitors",
+        "away_score": 100.0
+      }
+    ]
+  },
+  "2015": {
+    "1": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 49.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 81.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 84.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 65.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 78.0,
+        "away_team": "San Marino Titans",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 54.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 83.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 84.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 91.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 109.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 89.0
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 69.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 58.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 77.0,
+        "away_team": "San Marino Titans",
+        "away_score": 90.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 88.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 75.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 108.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 55.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 78.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 70.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 75.0,
+        "away_team": "East Side Demons",
+        "away_score": 106.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 98.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 86.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 74.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 120.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 94.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 83.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 173.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 31.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 79.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 96.0
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 59.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 56.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 78.0,
+        "away_team": "East Side Demons",
+        "away_score": 54.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 95.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 62.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 52.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 81.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 120.0
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 61.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 80.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 84.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 103.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 59.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 67.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 49.0,
+        "away_team": "East Side Demons",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 56.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 98.0
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 85.0,
+        "away_team": "East Side Demons",
+        "away_score": 97.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 116.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 70.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 72.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 107.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 72.0,
+        "away_team": "San Marino Titans",
+        "away_score": 80.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 61.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 108.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 71.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 81.0
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 92.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 95.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 77.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 112.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 56.0,
+        "away_team": "San Marino Titans",
+        "away_score": 59.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 91.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 72.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 59.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 109.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 72.0
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 46.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 76.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 100.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 71.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 107.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 67.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 108.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 83.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 62.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 53.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 85.0
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 79.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 91.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 138.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 85.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 65.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 80.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 62.0,
+        "away_team": "East Side Demons",
+        "away_score": 91.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 77.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 91.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 62.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 93.0
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 61.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 52.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 94.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 72.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 112.0,
+        "away_team": "San Marino Titans",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 108.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 62.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 81.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 66.0
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 47.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 93.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 61.0,
+        "away_team": "San Marino Titans",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 70.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 55.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 62.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 84.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 80.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 40.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 58.0
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 49.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 68.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 72.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 115.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 80.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 73.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 78.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 55.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 87.0,
+        "away_team": "East Side Demons",
+        "away_score": 78.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 120.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 62.0
+      }
+    ],
+    "13": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 71.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 78.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 85.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "Kolberg Festung",
+        "home_score": 68.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 107.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 99.0,
+        "away_team": "ZambrÃ³w Bears",
+        "away_score": 104.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 95.0,
+        "away_team": "Elblag Scrolls",
+        "away_score": 51.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 89.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 107.0
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 67.0,
+        "away_team": "San Marino Titans",
+        "away_score": 73.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 50.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 57.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 96.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 65.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 67.0,
+        "away_team": "Kolberg Festung",
+        "away_score": 97.0
+      },
+      {
+        "home_team": "Elblag Scrolls",
+        "home_score": 67.0,
+        "away_team": "East Side Demons",
+        "away_score": 62.0
+      },
+      {
+        "home_team": "ZambrÃ³w Bears",
+        "home_score": 43.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 70.0
+      }
+    ]
+  },
+  "2016": {
+    "1": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 74.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 98.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 83.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 119.0,
+        "away_team": "San Marino Titans",
+        "away_score": 41.5
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 114.0,
+        "away_team": "Tel-Aviv Falcons",
+        "away_score": 40.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 86.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 85.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 97.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 78.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 68.0,
+        "away_team": "Posen Festung",
+        "away_score": 83.5
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 99.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 79.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 90.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 78.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "Posen Festung",
+        "home_score": 63.0,
+        "away_team": "San Marino Titans",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 117.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 62.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 67.5
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 61.0,
+        "away_team": "Tel-Aviv Falcons",
+        "away_score": 47.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 109.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 53.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 86.5,
+        "away_team": "Posen Festung",
+        "away_score": 58.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 97.5,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 87.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 71.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 89.0,
+        "away_team": "San Marino Titans",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 74.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 84.0
+      },
+      {
+        "home_team": "Tel-Aviv Falcons",
+        "home_score": 69.5,
+        "away_team": "Barcelona Toros",
+        "away_score": 105.5
+      }
+    ],
+    "4": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 75.0,
+        "away_team": "Tel-Aviv Falcons",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 96.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 49.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 59.0,
+        "away_team": "East Side Demons",
+        "away_score": 56.5
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 110.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 86.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 83.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 52.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 79.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 83.0
+      },
+      {
+        "home_team": "Posen Festung",
+        "home_score": 120.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 82.0
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 90.0,
+        "away_team": "Posen Festung",
+        "away_score": 90.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 104.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 98.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 69.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 51.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 107.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 58.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 72.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 98.5
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 79.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Tel-Aviv Falcons",
+        "home_score": 53.0,
+        "away_team": "East Side Demons",
+        "away_score": 83.0
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 63.0,
+        "away_team": "Tel-Aviv Falcons",
+        "away_score": 52.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 113.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 37.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Posen Festung",
+        "home_score": 81.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 76.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 74.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 48.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 69.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 83.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 79.0
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 100.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 97.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 104.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 74.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 57.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Tel-Aviv Falcons",
+        "home_score": 70.5,
+        "away_team": "Madison Bumgarners",
+        "away_score": 75.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 76.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 87.5,
+        "away_team": "Posen Festung",
+        "away_score": 49.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 65.0,
+        "away_team": "San Marino Titans",
+        "away_score": 79.0
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 115.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 85.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 63.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 69.0
+      },
+      {
+        "home_team": "Posen Festung",
+        "home_score": 61.5,
+        "away_team": "East Side Demons",
+        "away_score": 63.0
+      },
+      {
+        "home_team": "Tel-Aviv Falcons",
+        "home_score": 111.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 61.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 93.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 87.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 74.5,
+        "away_team": "San Marino Titans",
+        "away_score": 67.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 59.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 81.0
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 105.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 73.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 90.0,
+        "away_team": "Posen Festung",
+        "away_score": 79.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 106.5,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 68.5
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 67.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 111.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 63.5,
+        "away_team": "San Marino Titans",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 69.0,
+        "away_team": "Tel-Aviv Falcons",
+        "away_score": 68.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 89.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 67.0
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 58.0,
+        "away_team": "East Side Demons",
+        "away_score": 98.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 68.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 80.0
+      },
+      {
+        "home_team": "Posen Festung",
+        "home_score": 62.0,
+        "away_team": "Tel-Aviv Falcons",
+        "away_score": 33.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 60.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 81.5
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 116.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 56.5
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 96.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 91.5
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 84.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 102.5
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 49.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 79.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 103.5,
+        "away_team": "Madison Bumgarners",
+        "away_score": 89.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 52.0,
+        "away_team": "East Side Demons",
+        "away_score": 56.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 71.0,
+        "away_team": "Posen Festung",
+        "away_score": 98.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 48.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 79.0
+      },
+      {
+        "home_team": "Tel-Aviv Falcons",
+        "home_score": 70.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 100.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 74.0,
+        "away_team": "San Marino Titans",
+        "away_score": 89.0
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 114.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 104.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 96.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 97.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 78.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 61.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 85.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 48.0
+      },
+      {
+        "home_team": "Posen Festung",
+        "home_score": 59.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 73.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 104.0,
+        "away_team": "East Side Demons",
+        "away_score": 43.0
+      },
+      {
+        "home_team": "Tel-Aviv Falcons",
+        "home_score": 94.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 107.5
+      }
+    ],
+    "13": [
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 115.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 104.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 49.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 85.0,
+        "away_team": "Bartoszyce Inquisitors",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 53.0,
+        "away_team": "Posen Festung",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 84.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 62.5
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 85.0,
+        "away_team": "Tel-Aviv Falcons",
+        "away_score": 86.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 57.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 78.5
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 48.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 67.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 90.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 58.0
+      },
+      {
+        "home_team": "Posen Festung",
+        "home_score": 37.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 74.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 76.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 60.5
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 84.0,
+        "away_team": "East Side Demons",
+        "away_score": 51.0
+      },
+      {
+        "home_team": "Tel-Aviv Falcons",
+        "home_score": 24.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 65.0
+      },
+      {
+        "home_team": "Bartoszyce Inquisitors",
+        "home_score": 55.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 65.0
+      }
+    ]
+  },
+  "2017": {
+    "1": [
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 60.0,
+        "away_team": "East Side Demons",
+        "away_score": 75.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 70.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 73.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 68.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 51.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 66.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 62.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 43.5,
+        "away_team": "Madison Bumgarners",
+        "away_score": 55.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 89.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 54.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 80.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 52.0
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 89.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 68.0
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 99.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 68.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 66.5,
+        "away_team": "East Side Demons",
+        "away_score": 83.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 65.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 71.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 44.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 58.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 64.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 87.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 68.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 68.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 122.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 91.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 50.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 58.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 96.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 85.0,
+        "away_team": "San Marino Titans",
+        "away_score": 85.5
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 74.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 105.5,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 46.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 102.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 65.0
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 66.5,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 96.5
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 74.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 71.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 103.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 76.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 86.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 70.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 46.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 62.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 82.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 55.0,
+        "away_team": "East Side Demons",
+        "away_score": 63.0
+      }
+    ],
+    "5": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 88.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 76.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 78.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 57.5
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 76.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 65.5
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 98.5,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 68.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 94.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 79.5,
+        "away_team": "Barcelona Toros",
+        "away_score": 47.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 57.0,
+        "away_team": "East Side Demons",
+        "away_score": 66.0
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 67.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 67.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 82.0,
+        "away_team": "San Marino Titans",
+        "away_score": 56.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 83.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 56.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 48.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 80.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 83.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 76.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 82.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 79.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 106.5
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 71.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 69.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 52.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 81.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 82.0,
+        "away_team": "East Side Demons",
+        "away_score": 37.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 76.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 94.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 94.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 65.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 99.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 120.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 56.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 86.0
+      }
+    ],
+    "8": [
+      {
+        "home_team": "East Side Demons",
+        "home_score": 66.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 55.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 69.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 89.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 76.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 71.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 80.0,
+        "away_team": "San Marino Titans",
+        "away_score": 95.5
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 51.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 74.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 40.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 45.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 84.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 121.0
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 84.5,
+        "away_team": "East Side Demons",
+        "away_score": 57.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 43.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 83.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 107.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 83.5,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 63.5
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 61.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 52.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 90.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 83.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 47.0
+      }
+    ],
+    "10": [
+      {
+        "home_team": "East Side Demons",
+        "home_score": 82.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 90.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 85.0,
+        "away_team": "San Marino Titans",
+        "away_score": 62.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 89.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 51.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 59.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 89.5
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 70.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 75.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 59.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 31.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 88.0
+      }
+    ],
+    "11": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 106.0,
+        "away_team": "East Side Demons",
+        "away_score": 74.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 90.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 61.5
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 60.0,
+        "away_team": "Madison Bumgarners",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "Barcelona Toros",
+        "home_score": 53.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 94.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 67.0,
+        "away_team": "Zambrow Bears",
+        "away_score": 53.5
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 81.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 88.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 85.0
+      }
+    ],
+    "12": [
+      {
+        "home_team": "East Side Demons",
+        "home_score": 122.5,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 55.5,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 59.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 74.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 101.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 80.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 88.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 58.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 85.5,
+        "away_team": "San Marino Titans",
+        "away_score": 75.0
+      }
+    ],
+    "13": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 77.0,
+        "away_team": "Barcelona Toros",
+        "away_score": 110.0
+      },
+      {
+        "home_team": "Madison Bumgarners",
+        "home_score": 59.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 119.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 85.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "East Side Demons",
+        "home_score": 72.5,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Zambrow Bears",
+        "home_score": 50.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 80.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 53.0,
+        "away_team": "San Marino Titans",
+        "away_score": 68.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 87.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 61.0
+      }
+    ]
+  },
+  "2018": {},
+  "2019": {
+    "1": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 78.5,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 94.5
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 59.5,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 96.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 86.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 130.5
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 76.5,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 115.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 96.5,
+        "away_team": "San Marino Titans",
+        "away_score": 129.0
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 61.5,
+        "away_team": "Mosina Republicans",
+        "away_score": 55.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 98.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 103.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 89.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 98.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 80.0,
+        "away_team": "San Marino Titans",
+        "away_score": 86.5
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 75.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 93.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 120.5,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 108.0
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 124.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 82.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 78.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 97.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 90.5,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 98.5
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 90.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 64.0
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 63.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 87.5
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 73.5,
+        "away_team": "San Marino Titans",
+        "away_score": 85.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 112.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 85.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 90.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 78.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 72.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 58.0
+      }
+    ],
+    "5": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 80.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 112.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 100.5,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 73.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 111.5,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 91.0
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 69.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 122.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 88.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 116.0
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 62.0,
+        "away_team": "San Marino Titans",
+        "away_score": 84.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 79.5,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 65.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 89.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 70.5
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 74.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 112.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 91.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 122.0
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 52.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 55.5
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 87.0,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 117.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 90.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 62.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 89.5,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 109.0
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 65.5,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 63.0
+      }
+    ],
+    "8": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 77.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 104.5
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 48.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 83.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 141.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 69.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 128.5
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 112.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 55.0
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 92.0,
+        "away_team": "San Marino Titans",
+        "away_score": 123.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 93.5,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 94.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 75.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 101.5
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 75.5,
+        "away_team": "Mosina Republicans",
+        "away_score": 106.0
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 65.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 69.5
+      }
+    ],
+    "10": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 86.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 77.5
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 58.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 83.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 109.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 67.0
+      },
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 81.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 94.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 102.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 124.5
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 84.5,
+        "away_team": "San Marino Titans",
+        "away_score": 92.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 76.0,
+        "away_team": "Pamplona Inquisitors",
+        "away_score": 82.5
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 80.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 73.5
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 76.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 89.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 78.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 84.5
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Szymanow Harvesters",
+        "home_score": 84.5,
+        "away_team": "Wloclawek Wolf Pack",
+        "away_score": 45.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 81.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 65.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 110.5
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 86.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 132.5
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 71.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 65.5
+      }
+    ],
+    "13": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 80.0,
+        "away_team": "Szymanow Harvesters",
+        "away_score": 67.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 71.5,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 84.0
+      },
+      {
+        "home_team": "Pamplona Inquisitors",
+        "home_score": 69.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 59.5
+      },
+      {
+        "home_team": "Wloclawek Wolf Pack",
+        "home_score": 103.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 70.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 78.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 72.5
+      }
+    ]
+  },
+  "2020": {
+    "1": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 84.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 91.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 87.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 116.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 100.5,
+        "away_team": "Mosina Republicans",
+        "away_score": 97.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 109.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 62.5
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 101.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 124.5
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 97.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 68.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 98.5,
+        "away_team": "San Marino Titans",
+        "away_score": 103.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 112.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 96.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 102.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 89.5
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 99.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 126.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 84.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 85.5
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 90.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 89.0
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 70.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 100.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 104.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 78.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 71.5,
+        "away_team": "San Marino Titans",
+        "away_score": 51.5
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 135.5,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 63.5
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 109.5,
+        "away_team": "Mosina Republicans",
+        "away_score": 76.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 67.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 95.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 106.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 63.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 96.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 108.5
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 66.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 94.0
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 100.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 81.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 58.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 100.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 76.0,
+        "away_team": "San Marino Titans",
+        "away_score": 48.5
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 90.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 55.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 88.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 75.5
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 102.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 95.5
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 100.5,
+        "away_team": "San Marino Titans",
+        "away_score": 132.5
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 94.5,
+        "away_team": "San Marino Titans",
+        "away_score": 69.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 76.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 76.5
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 120.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 71.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 89.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 113.5
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 93.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 134.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 80.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 97.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 87.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 154.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 68.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 65.5
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 54.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 71.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 111.0,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 86.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 98.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 77.0
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 68.0,
+        "away_team": "San Marino Titans",
+        "away_score": 60.5
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 111.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 97.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 102.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 110.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 69.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 96.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 95.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 92.5
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 96.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 129.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 43.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 117.5,
+        "away_team": "San Marino Titans",
+        "away_score": 42.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 68.5,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 101.0
+      }
+    ],
+    "13": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 86.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 80.0
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 118.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 70.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 89.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 105.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 103.5,
+        "away_team": "Mosina Republicans",
+        "away_score": 106.0
+      }
+    ],
+    "14": [
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 91.5,
+        "away_team": "Kaliszfornia Capybaras",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 88.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 91.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 110.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 106.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 101.0,
+        "away_team": "Mosina Republicans",
+        "away_score": 79.5
+      }
+    ],
+    "15": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 190.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 213.5
+      },
+      {
+        "home_team": "Mosina Republicans",
+        "home_score": 196.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 221.0
+      },
+      {
+        "home_team": "Kaliszfornia Capybaras",
+        "home_score": 159.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 241.5
+      },
+      {
+        "home_team": "San Marino Titans",
+        "home_score": 121.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 164.5
+      }
+    ]
+  },
+  "2021": {
+    "1": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 79.5,
+        "away_team": "Poznan Festung",
+        "away_score": 122.5
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 82.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 105.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 100.5
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 106.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 137.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 86.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 115.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 96.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 110.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 95.5,
+        "away_team": "Poznan Festung",
+        "away_score": 91.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 105.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 79.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 79.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 105.5
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 87.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 72.0
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 93.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 56.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 107.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 100.5
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 118.0,
+        "away_team": "Poznan Festung",
+        "away_score": 95.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 103.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 123.5
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 114.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 120.0
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 132.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 64.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 137.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 80.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 93.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 117.5
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 66.5,
+        "away_team": "Poznan Festung",
+        "away_score": 123.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 96.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 118.5
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 81.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 120.0
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 93.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 95.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 63.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 62.5
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 104.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 90.5
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 90.0,
+        "away_team": "Poznan Festung",
+        "away_score": 92.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 67.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 83.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 106.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 72.5
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 70.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 81.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 90.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 91.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 100.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 77.0
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 126.0,
+        "away_team": "Poznan Festung",
+        "away_score": 88.5
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 104.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 110.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 105.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 123.5
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 68.0,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 66.0
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 105.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 81.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 67.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 76.0
+      }
+    ],
+    "13": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 53.5,
+        "away_team": "Poznan Festung",
+        "away_score": 133.0
+      },
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 100.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 67.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 90.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 115.0
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 127.5,
+        "away_team": "Lublin Gnagare",
+        "away_score": 132.5
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 98.0,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 111.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 84.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 99.5
+      }
+    ],
+    "15": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 93.5,
+        "away_team": "Poznan Festung",
+        "away_score": 88.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 74.5,
+        "away_team": "Bytom Amateurs",
+        "away_score": 80.5
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 70.5,
+        "away_team": "Minsk Maz Old Goats",
+        "away_score": 77.0
+      }
+    ],
+    "16": [
+      {
+        "home_team": "Minsk Maz Old Goats",
+        "home_score": 202.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 183.5
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 132.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 191.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 189.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 157.0
+      }
+    ]
+  },
+  "2022": {
+    "1": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 134.4,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 105.22
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 93.88,
+        "away_team": "Lublin Gnagare",
+        "away_score": 104.56
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 99.68,
+        "away_team": "Lublin Gnagare",
+        "away_score": 78.66
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 99.88,
+        "away_team": "Chicago Scrubs",
+        "away_score": 99.6
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 90.6,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 96.1
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 109.62,
+        "away_team": "Chicago Scrubs",
+        "away_score": 77.08
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 78.06,
+        "away_team": "Chicago Scrubs",
+        "away_score": 130.26
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 102.06,
+        "away_team": "Poznan Festung",
+        "away_score": 121.62
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 107.46,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 135.36
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 121.6,
+        "away_team": "Poznan Festung",
+        "away_score": 129.86
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 69.64,
+        "away_team": "Poznan Festung",
+        "away_score": 122.56
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 92.52,
+        "away_team": "Lublin Gnagare",
+        "away_score": 92.2
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 83.72,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 67.06
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 129.84,
+        "away_team": "Lublin Gnagare",
+        "away_score": 81.9
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 92.34,
+        "away_team": "Lublin Gnagare",
+        "away_score": 104.42
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 128.02,
+        "away_team": "Chicago Scrubs",
+        "away_score": 111.5
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 92.3,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 116.64
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 87.62,
+        "away_team": "Chicago Scrubs",
+        "away_score": 153.44
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 83.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 78.84
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 93.5,
+        "away_team": "Poznan Festung",
+        "away_score": 109.3
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 118.76,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 124.6
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 82.86,
+        "away_team": "Poznan Festung",
+        "away_score": 113.84
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 123.62,
+        "away_team": "Poznan Festung",
+        "away_score": 94.22
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 86.84,
+        "away_team": "Lublin Gnagare",
+        "away_score": 103.66
+      }
+    ],
+    "13": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 102.52,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 136.3
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 84.82,
+        "away_team": "Lublin Gnagare",
+        "away_score": 68.2
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 102.28,
+        "away_team": "Lublin Gnagare",
+        "away_score": 85.28
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 67.48,
+        "away_team": "Chicago Scrubs",
+        "away_score": 125.68
+      }
+    ],
+    "15": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 144.86,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 92.8
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 72.22,
+        "away_team": "Chicago Scrubs",
+        "away_score": 118.84
+      }
+    ],
+    "16": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 62.5,
+        "away_team": "Poznan Festung",
+        "away_score": 113.38
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 116.76,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 87.46
+      }
+    ],
+    "17": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 79.12,
+        "away_team": "Lublin Gnagare",
+        "away_score": 40.9
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 53.2,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 86.0
+      }
+    ],
+    "18": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 52.8,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 58.6
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 98.76,
+        "away_team": "Chicago Scrubs",
+        "away_score": 72.08
+      }
+    ]
+  },
+  "2023": {
+    "1": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 54.48,
+        "away_team": "MMz Old Goats",
+        "away_score": 108.5
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 90.2,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 65.66
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 71.54,
+        "away_team": "Szczecin Pirates",
+        "away_score": 85.34
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 89.14,
+        "away_team": "Bytom Amateurs",
+        "away_score": 84.76
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 82.28,
+        "away_team": "MMz Old Goats",
+        "away_score": 53.12
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 94.98,
+        "away_team": "Lublin Gnagare",
+        "away_score": 110.12
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 116.16,
+        "away_team": "Szczecin Pirates",
+        "away_score": 71.64
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 75.1,
+        "away_team": "Poznan Festung",
+        "away_score": 127.46
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 123.78,
+        "away_team": "MMz Old Goats",
+        "away_score": 99.4
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 92.18,
+        "away_team": "Chicago Scrubs",
+        "away_score": 83.26
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 106.38,
+        "away_team": "Szczecin Pirates",
+        "away_score": 102.76
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 95.18,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 90.58
+      }
+    ],
+    "4": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 76.86,
+        "away_team": "Szczecin Pirates",
+        "away_score": 123.88
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 54.7,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 78.02
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 125.84,
+        "away_team": "Bytom Amateurs",
+        "away_score": 83.26
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 89.66,
+        "away_team": "Poznan Festung",
+        "away_score": 121.2
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Szczecin Pirates",
+        "home_score": 89.58,
+        "away_team": "Chicago Scrubs",
+        "away_score": 108.58
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 75.14,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 105.64
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 111.46,
+        "away_team": "Lublin Gnagare",
+        "away_score": 111.02
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 108.36,
+        "away_team": "MMz Old Goats",
+        "away_score": 98.72
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 96.42,
+        "away_team": "Szczecin Pirates",
+        "away_score": 62.12
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 110.1,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 69.94
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 70.54,
+        "away_team": "Bytom Amateurs",
+        "away_score": 67.74
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 92.8,
+        "away_team": "Poznan Festung",
+        "away_score": 89.06
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Szczecin Pirates",
+        "home_score": 86.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 95.56
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 90.16,
+        "away_team": "MMz Old Goats",
+        "away_score": 97.16
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 61.76,
+        "away_team": "Chicago Scrubs",
+        "away_score": 93.26
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 104.5,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 116.18
+      }
+    ],
+    "8": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 112.18,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 56.2
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 98.06,
+        "away_team": "Szczecin Pirates",
+        "away_score": 87.1
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 74.52,
+        "away_team": "Bytom Amateurs",
+        "away_score": 112.12
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 85.68,
+        "away_team": "Poznan Festung",
+        "away_score": 103.76
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Szczecin Pirates",
+        "home_score": 103.5,
+        "away_team": "MMz Old Goats",
+        "away_score": 102.04
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 88.32,
+        "away_team": "Lublin Gnagare",
+        "away_score": 100.8
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 48.04,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 96.28
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 60.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 67.42
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 91.42,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 108.56
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 85.68,
+        "away_team": "Szczecin Pirates",
+        "away_score": 95.74
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 74.6,
+        "away_team": "Poznan Festung",
+        "away_score": 103.68
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 83.58,
+        "away_team": "Bytom Amateurs",
+        "away_score": 107.82
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Szczecin Pirates",
+        "home_score": 94.54,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 65.46
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 74.86,
+        "away_team": "Lublin Gnagare",
+        "away_score": 122.5
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 73.14,
+        "away_team": "MMz Old Goats",
+        "away_score": 80.88
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 117.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 85.64
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 76.66,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 79.58
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 100.46,
+        "away_team": "Lublin Gnagare",
+        "away_score": 107.0
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 97.24,
+        "away_team": "Bytom Amateurs",
+        "away_score": 100.48
+      },
+      {
+        "home_team": "Szczecin Pirates",
+        "home_score": 110.86,
+        "away_team": "Poznan Festung",
+        "away_score": 121.86
+      }
+    ],
+    "13": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 85.82,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 93.4
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 110.6,
+        "away_team": "Chicago Scrubs",
+        "away_score": 76.34
+      },
+      {
+        "home_team": "Szczecin Pirates",
+        "home_score": 87.76,
+        "away_team": "Bytom Amateurs",
+        "away_score": 71.58
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 92.46,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 147.96
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 98.84,
+        "away_team": "Lublin Gnagare",
+        "away_score": 109.18
+      },
+      {
+        "home_team": "Szczecin Pirates",
+        "home_score": 68.84,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 95.44
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 79.32,
+        "away_team": "Chicago Scrubs",
+        "away_score": 76.86
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 61.44,
+        "away_team": "Poznan Festung",
+        "away_score": 88.22
+      }
+    ],
+    "15": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 202.66,
+        "away_team": "Szczecin Pirates",
+        "away_score": 150.36
+      },
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 189.34,
+        "away_team": "Suwalki Rednecks",
+        "away_score": 158.22
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 155.32,
+        "away_team": "Bytom Amateurs",
+        "away_score": 114.8
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 181.16,
+        "away_team": "Chicago Scrubs",
+        "away_score": 153.64
+      }
+    ],
+    "16": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 140.38,
+        "away_team": "Poznan Festung",
+        "away_score": 215.72
+      },
+      {
+        "home_team": "Suwalki Rednecks",
+        "home_score": 159.54,
+        "away_team": "Szczecin Pirates",
+        "away_score": 187.98
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 156.98,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 222.16
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 99.3,
+        "away_team": "Chicago Scrubs",
+        "away_score": 121.64
+      }
+    ]
+  },
+  "2024": {
+    "1": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 95.62,
+        "away_team": "Poznan Festung",
+        "away_score": 86.84
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 134.48,
+        "away_team": "Chicago Scrubs",
+        "away_score": 89.72
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 74.46,
+        "away_team": "MMz Old Goats",
+        "away_score": 73.18
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 90.64,
+        "away_team": "Chicago Scrubs",
+        "away_score": 74.48
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 119.54,
+        "away_team": "Lublin Gnagare",
+        "away_score": 95.72
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 77.72,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 119.16
+      }
+    ],
+    "3": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 67.48,
+        "away_team": "Poznan Festung",
+        "away_score": 65.38
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 97.38,
+        "away_team": "Bytom Amateurs",
+        "away_score": 85.18
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 50.34,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 119.82
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 89.1,
+        "away_team": "Bytom Amateurs",
+        "away_score": 93.28
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 92.6,
+        "away_team": "MMz Old Goats",
+        "away_score": 104.32
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 71.12,
+        "away_team": "Chicago Scrubs",
+        "away_score": 92.54
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 100.74,
+        "away_team": "Poznan Festung",
+        "away_score": 65.8
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 142.48,
+        "away_team": "Lublin Gnagare",
+        "away_score": 65.54
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 86.62,
+        "away_team": "Chicago Scrubs",
+        "away_score": 118.42
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 108.2,
+        "away_team": "Lublin Gnagare",
+        "away_score": 107.86
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 102.22,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 58.3
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 86.56,
+        "away_team": "Bytom Amateurs",
+        "away_score": 107.82
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 130.54,
+        "away_team": "Poznan Festung",
+        "away_score": 77.1
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 65.06,
+        "away_team": "MMz Old Goats",
+        "away_score": 80.84
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 109.22,
+        "away_team": "Bytom Amateurs",
+        "away_score": 103.84
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 94.82,
+        "away_team": "MMz Old Goats",
+        "away_score": 133.9
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 107.86,
+        "away_team": "Chicago Scrubs",
+        "away_score": 99.16
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 112.12,
+        "away_team": "Lublin Gnagare",
+        "away_score": 86.74
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 103.74,
+        "away_team": "Poznan Festung",
+        "away_score": 89.1
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 83.36,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 119.88
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 93.8,
+        "away_team": "Lublin Gnagare",
+        "away_score": 83.1
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 79.1,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 66.4
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 86.78,
+        "away_team": "Bytom Amateurs",
+        "away_score": 145.42
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 114.0,
+        "away_team": "MMz Old Goats",
+        "away_score": 64.48
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 88.74,
+        "away_team": "Poznan Festung",
+        "away_score": 50.6
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 104.88,
+        "away_team": "Chicago Scrubs",
+        "away_score": 86.08
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 163.46,
+        "away_team": "MMz Old Goats",
+        "away_score": 137.96
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 81.56,
+        "away_team": "Chicago Scrubs",
+        "away_score": 101.98
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 99.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 69.66
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 72.3,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 115.92
+      }
+    ],
+    "13": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 96.74,
+        "away_team": "Poznan Festung",
+        "away_score": 95.84
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 98.28,
+        "away_team": "Bytom Amateurs",
+        "away_score": 93.96
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 83.42,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 126.02
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 89.2,
+        "away_team": "Bytom Amateurs",
+        "away_score": 130.56
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 155.78,
+        "away_team": "MMz Old Goats",
+        "away_score": 90.9
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 95.22,
+        "away_team": "Chicago Scrubs",
+        "away_score": 48.42
+      }
+    ],
+    "15": [
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 111.68,
+        "away_team": "Poznan Festung",
+        "away_score": 79.96
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 76.14,
+        "away_team": "Lublin Gnagare",
+        "away_score": 94.5
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 114.68,
+        "away_team": "Chicago Scrubs",
+        "away_score": 102.0
+      }
+    ],
+    "16": [
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 209.04,
+        "away_team": "Bytom Amateurs",
+        "away_score": 223.36
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 243.4,
+        "away_team": "MMz Old Goats",
+        "away_score": 229.6
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 149.44,
+        "away_team": "Poznan Festung",
+        "away_score": 227.48
+      }
+    ]
+  },
+  "2025": {
+    "1": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 83.42,
+        "away_team": "Poznan Festung",
+        "away_score": 90.36
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 79.68,
+        "away_team": "Chicago Scrubs",
+        "away_score": 103.06
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 57.32,
+        "away_team": "MMz Old Goats",
+        "away_score": 91.98
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 99.72,
+        "away_team": "Chicago Scrubs",
+        "away_score": 88.4
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 92.94,
+        "away_team": "Lublin Gnagare",
+        "away_score": 131.2
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 100.54,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 78.84
+      }
+    ],
+    "3": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 67.34,
+        "away_team": "Poznan Festung",
+        "away_score": 116.42
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 94.42,
+        "away_team": "Bytom Amateurs",
+        "away_score": 87.4
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 80.72,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 80.64
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 104.36,
+        "away_team": "Bytom Amateurs",
+        "away_score": 97.72
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 116.1,
+        "away_team": "MMz Old Goats",
+        "away_score": 112.36
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 122.34,
+        "away_team": "Chicago Scrubs",
+        "away_score": 106.58
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 97.6,
+        "away_team": "Poznan Festung",
+        "away_score": 116.92
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 87.24,
+        "away_team": "Lublin Gnagare",
+        "away_score": 115.72
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 94.98,
+        "away_team": "Chicago Scrubs",
+        "away_score": 84.92
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 76.7,
+        "away_team": "Lublin Gnagare",
+        "away_score": 88.74
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 103.38,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 137.34
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 76.44,
+        "away_team": "Bytom Amateurs",
+        "away_score": 87.96
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 69.04,
+        "away_team": "Poznan Festung",
+        "away_score": 101.48
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 91.24,
+        "away_team": "MMz Old Goats",
+        "away_score": 112.96
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 118.14,
+        "away_team": "Bytom Amateurs",
+        "away_score": 111.1
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 114.12,
+        "away_team": "MMz Old Goats",
+        "away_score": 73.62
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 95.38,
+        "away_team": "Chicago Scrubs",
+        "away_score": 109.66
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 76.86,
+        "away_team": "Lublin Gnagare",
+        "away_score": 96.88
+      }
+    ],
+    "9": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 111.0,
+        "away_team": "Poznan Festung",
+        "away_score": 82.32
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 100.6,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 94.36
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 79.26,
+        "away_team": "Lublin Gnagare",
+        "away_score": 86.88
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 137.44,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 93.62
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 102.6,
+        "away_team": "Bytom Amateurs",
+        "away_score": 73.3
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 72.34,
+        "away_team": "MMz Old Goats",
+        "away_score": 95.52
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 92.4,
+        "away_team": "Poznan Festung",
+        "away_score": 107.08
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 84.3,
+        "away_team": "Chicago Scrubs",
+        "away_score": 55.02
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 74.44,
+        "away_team": "MMz Old Goats",
+        "away_score": 78.92
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 74.02,
+        "away_team": "Chicago Scrubs",
+        "away_score": 71.48
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 106.16,
+        "away_team": "Lublin Gnagare",
+        "away_score": 101.42
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 150.16,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 91.86
+      }
+    ],
+    "13": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 95.2,
+        "away_team": "Poznan Festung",
+        "away_score": 102.12
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 123.74,
+        "away_team": "Bytom Amateurs",
+        "away_score": 81.94
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 74.72,
+        "away_team": "Vienna Schnitzels",
+        "away_score": 94.78
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 116.54,
+        "away_team": "Bytom Amateurs",
+        "away_score": 113.76
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 107.8,
+        "away_team": "MMz Old Goats",
+        "away_score": 67.74
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 92.1,
+        "away_team": "Chicago Scrubs",
+        "away_score": 61.3
+      }
+    ],
+    "15": [
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 134.4,
+        "away_team": "Poznan Festung",
+        "away_score": 92.44
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 102.22,
+        "away_team": "Lublin Gnagare",
+        "away_score": 104.62
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 93.36,
+        "away_team": "Chicago Scrubs",
+        "away_score": 105.6
+      }
+    ],
+    "16": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 190.02,
+        "away_team": "Lublin Gnagare",
+        "away_score": 207.24
+      },
+      {
+        "home_team": "Vienna Schnitzels",
+        "home_score": 138.2,
+        "away_team": "MMz Old Goats",
+        "away_score": 174.34
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 207.02,
+        "away_team": "Bytom Amateurs",
+        "away_score": 151.24
+      }
+    ]
+  }
+}
