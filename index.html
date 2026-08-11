@@ -102,6 +102,31 @@
     color: var(--light-dim);
   }
 
+  /* ---------- TABS ---------- */
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--ink);
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+  }
+  .tab-btn {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 1rem 1.75rem;
+    background: transparent;
+    border: none;
+    color: var(--ink-soft);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.15s ease;
+  }
+  .tab-btn:hover { color: var(--ink); }
+  .tab-btn.active { color: var(--ink); border-bottom-color: var(--gold); }
+
   /* ---------- SEASON BAR ---------- */
   .season-bar {
     background: var(--dark-deep);
@@ -415,6 +440,13 @@
   </div>
 </header>
 
+<nav class="tab-nav">
+  <button class="tab-btn active" data-tab="sezon">Sezon</button>
+  <button class="tab-btn" data-tab="podsumowanie">Podsumowanie</button>
+</nav>
+
+<div id="panel-sezon" class="tab-panel">
+
 <div class="season-bar">
   <div class="wrap">
     <label for="season-select">Sezon</label>
@@ -474,48 +506,6 @@
   </div>
 </section>
 
-<section class="dark-band">
-  <div class="wrap reveal">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">2012 – 2025</span>
-        <h2>Liczba drużyn, sezon po sezonie</h2>
-      </div>
-    </div>
-    <div class="timeline-wrap">
-      <div class="timeline-col"><span class="count">7</span><div class="bar-el" style="height:50%"></div><span class="year">'12</span></div>
-      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'13</span></div>
-      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'14</span></div>
-      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'15</span></div>
-      <div class="timeline-col peak"><span class="count">14</span><div class="bar-el" style="height:100%"></div><span class="year">'16</span></div>
-      <div class="timeline-col peak"><span class="count">14</span><div class="bar-el" style="height:100%"></div><span class="year">'17</span></div>
-      <div class="timeline-col"><span class="count">13</span><div class="bar-el" style="height:92.9%"></div><span class="year">'18</span></div>
-      <div class="timeline-col"><span class="count">10</span><div class="bar-el" style="height:71.4%"></div><span class="year">'19</span></div>
-      <div class="timeline-col"><span class="count">8</span><div class="bar-el" style="height:57.1%"></div><span class="year">'20</span></div>
-      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'21</span></div>
-      <div class="timeline-col"><span class="count">4</span><div class="bar-el" style="height:28.6%"></div><span class="year">'22</span></div>
-      <div class="timeline-col"><span class="count">8</span><div class="bar-el" style="height:57.1%"></div><span class="year">'23</span></div>
-      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'24</span></div>
-      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'25</span></div>
-    </div>
-    <div class="timeline-note">Szczyt: 14 drużyn (2016–17) · Najmniej: 4 drużyny (2022)</div>
-  </div>
-</section>
-
-<section class="light">
-  <div class="wrap reveal">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">2012 – 2025 · Podsumowanie</span>
-        <h2>Franczyzy w historii ligi</h2>
-      </div>
-    </div>
-    <div class="franchise-list">
-      <!-- Wypełniane przez renderFranchises() -->
-    </div>
-  </div>
-</section>
-
 <section class="light">
   <div class="wrap reveal">
     <div class="section-head">
@@ -552,6 +542,53 @@
     </div>
   </div>
 </section>
+</div>  <!-- zamyka panel-sezon -->
+
+<div id="panel-podsumowanie" class="tab-panel" hidden>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">2012 – 2025 · Podsumowanie</span>
+        <h2>Franczyzy w historii ligi</h2>
+      </div>
+    </div>
+    <div class="franchise-list">
+      <!-- Wypełniane przez renderFranchises() -->
+    </div>
+  </div>
+</section>
+
+<section class="dark-band">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">2012 – 2025</span>
+        <h2>Liczba drużyn, sezon po sezonie</h2>
+      </div>
+    </div>
+    <div class="timeline-wrap">
+      <div class="timeline-col"><span class="count">7</span><div class="bar-el" style="height:50%"></div><span class="year">'12</span></div>
+      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'13</span></div>
+      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'14</span></div>
+      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'15</span></div>
+      <div class="timeline-col peak"><span class="count">14</span><div class="bar-el" style="height:100%"></div><span class="year">'16</span></div>
+      <div class="timeline-col peak"><span class="count">14</span><div class="bar-el" style="height:100%"></div><span class="year">'17</span></div>
+      <div class="timeline-col"><span class="count">13</span><div class="bar-el" style="height:92.9%"></div><span class="year">'18</span></div>
+      <div class="timeline-col"><span class="count">10</span><div class="bar-el" style="height:71.4%"></div><span class="year">'19</span></div>
+      <div class="timeline-col"><span class="count">8</span><div class="bar-el" style="height:57.1%"></div><span class="year">'20</span></div>
+      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'21</span></div>
+      <div class="timeline-col"><span class="count">4</span><div class="bar-el" style="height:28.6%"></div><span class="year">'22</span></div>
+      <div class="timeline-col"><span class="count">8</span><div class="bar-el" style="height:57.1%"></div><span class="year">'23</span></div>
+      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'24</span></div>
+      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'25</span></div>
+    </div>
+    <div class="timeline-note">Szczyt: 14 drużyn (2016–17) · Najmniej: 4 drużyny (2022)</div>
+  </div>
+</section>
+
+</div>  <!-- zamyka panel-podsumowanie -->
 
 <footer>
   <div class="wrap">
@@ -992,6 +1029,18 @@
       `</div>`;
   }
 })();
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const target = btn.dataset.tab;
+      const sezon = document.getElementById('panel-sezon');
+      const podsumowanie = document.getElementById('panel-podsumowanie');
+      sezon.hidden = (target !== 'sezon');
+      podsumowanie.hidden = (target !== 'podsumowanie');
+    });
+  });
 </script>
 
 </body>
