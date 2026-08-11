@@ -28,11 +28,38 @@ PRIVATE_YEARS = list(range(2012, 2019))        # 2012, 2013, ..., 2018
 PUBLIC_YEARS = list(range(2019, 2026))         # 2019, 2020, ..., 2025
 
 
+def _get_owner_name(team):
+    """Wyciąga imię i nazwisko właściciela z obiektu drużyny ESPN.
+
+    Preferuje firstName + lastName z owners[0]. Jeśli którekolwiek jest puste
+    lub nie istnieje, używa displayName jako fallbacku. Jeśli owners w ogóle
+    nie istnieje, zwraca None.
+    """
+    try:
+        owner = team.owners[0]
+        first = (owner.get("firstName") or "").strip()
+        last = (owner.get("lastName") or "").strip()
+        if first or last:
+            return f"{first} {last}".strip()
+        return (owner.get("displayName") or "").strip() or None
+    except (AttributeError, IndexError, TypeError):
+        return None
+
+
+def _get_owner_id(team):
+    """Zwraca stabilny identyfikator właściciela (ESPN UUID) lub None."""
+    try:
+        return team.owners[0]["id"]
+    except (AttributeError, IndexError, TypeError, KeyError):
+        return None
+
+
 def fetch_year_standings(league_id, year, swid=None, espn_s2=None):
     """Łączy się z ligą ESPN dla danego roku i zwraca listę statystyk drużyn.
 
     Każda drużyna to słownik (dict) z kluczami:
-        team_name, wins, losses, ties, points_for, points_against
+        team_name, team_id, owner_id, owner_name,
+        wins, losses, ties, points_for, points_against
 
     Jeśli podano swid i espn_s2, używa ich do autoryzacji (potrzebne
     dla prywatnych sezonów 2012–2018). W przeciwnym razie łączy się
@@ -52,6 +79,9 @@ def fetch_year_standings(league_id, year, swid=None, espn_s2=None):
     for team in league.teams:
         teams_data.append({
             "team_name": team.team_name,
+            "team_id": team.team_id,
+            "owner_id": _get_owner_id(team),
+            "owner_name": _get_owner_name(team),
             "wins": team.wins,
             "losses": team.losses,
             "ties": team.ties,
@@ -182,6 +212,93 @@ def fetch_year_draft(league_id, year, swid=None, espn_s2=None):
         })
 
     return picks
+
+
+def build_franchises(all_standings):
+    """Buduje historię franczyz z danych standings (już w pamięci).
+
+    Grupuje drużyny po stabilnym owner_id (ESPN UUID), więc zmiany team_id
+    ani team_name nie rozbijają franczyzy. Dla każdej franczyzy zbiera:
+      - listę sezonów (posortowaną rosnąco)
+      - wszystkie nazwy drużyny w kolejności chronologicznej,
+        bez Powtórzeń pod rząd (np. "Minsk Maz Old Goats" -> "MMz Old Goats")
+      - aktualną (ostatnią) nazwę
+      - sumaryczne statystyki (wins, losses, ties, PF, PA)
+
+    Drużyny bez owner_id są pomijane (nie da się ich przypisać do franczyzy).
+    """
+    # Grupujemy sezony po owner_id
+    by_owner = {}  # owner_id -> lista (year, team_name, w, l, t, pf, pa)
+    for year_str, teams in sorted(all_standings.items(), key=lambda x: int(x[0])):
+        year = int(year_str)
+        for team in teams:
+            oid = team.get("owner_id")
+            if not oid:
+                continue
+            if oid not in by_owner:
+                by_owner[oid] = []
+            by_owner[oid].append((
+                year,
+                team["team_name"],
+                team["wins"],
+                team["losses"],
+                team["ties"],
+                team["points_for"],
+                team["points_against"],
+            ))
+
+    # Budujemy obiekty franczyz
+    franchises = []
+    for oid, seasons in by_owner.items():
+        seasons_sorted = sorted(seasons, key=lambda s: s[0])
+
+        # Lata
+        years_list = [s[0] for s in seasons_sorted]
+
+        # Nazwy chronologicznie, bez duplikatów pod rząd
+        names_list = []
+        for s in seasons_sorted:
+            name = s[1]
+            if not names_list or names_list[-1] != name:
+                names_list.append(name)
+
+        current_name = names_list[-1] if names_list else ""
+        previous_names = names_list[:-1] if len(names_list) > 1 else []
+
+        # Sumy statystyk
+        total_wins = sum(s[2] for s in seasons_sorted)
+        total_losses = sum(s[3] for s in seasons_sorted)
+        total_ties = sum(s[4] for s in seasons_sorted)
+        total_pf = round(sum(s[5] for s in seasons_sorted), 2)
+        total_pa = round(sum(s[6] for s in seasons_sorted), 2)
+
+        # Owner name — bierzemy z pierwszego sezonu, który go ma
+        owner_name = ""
+        for year_str in sorted(all_standings.keys(), key=int):
+            for team in all_standings[year_str]:
+                if team.get("owner_id") == oid and team.get("owner_name"):
+                    owner_name = team["owner_name"]
+                    break
+            if owner_name:
+                break
+
+        franchises.append({
+            "owner_id": oid,
+            "owner_name": owner_name,
+            "current_name": current_name,
+            "previous_names": previous_names,
+            "all_names": names_list,  # pełna lista chronologiczna bez duplikatów pod rząd
+            "seasons": years_list,
+            "total_wins": total_wins,
+            "total_losses": total_losses,
+            "total_ties": total_ties,
+            "total_pf": total_pf,
+            "total_pa": total_pa,
+        })
+
+    # Sortujemy po total_wins malejąco (najbardziej utytułowane na górze)
+    franchises.sort(key=lambda f: (-f["total_wins"], f["owner_name"]))
+    return franchises
 
 
 # ---------------------------------------------------------------------------
@@ -376,9 +493,16 @@ if __name__ == "__main__":
     with open(draft_path, "w", encoding="utf-8") as f:
         json.dump(all_drafts, f, indent=2, ensure_ascii=False)
 
+    # Zapis historii franczyz (agregacja po stabilnym owner_id)
+    franchises = build_franchises(all_standings)
+    franchises_path = output_dir / "franchises.json"
+    with open(franchises_path, "w", encoding="utf-8") as f:
+        json.dump(franchises, f, indent=2, ensure_ascii=False)
+
     # 9. Podsumowanie w konsoli
-    print(f"\nZapisano standings: {standings_path}")
-    print(f"Zapisano matchups:  {matchups_path}")
-    print(f"Zapisano rosters:   {rosters_path}")
-    print(f"Zapisano draft:     {draft_path}")
+    print(f"\nZapisano standings:   {standings_path}")
+    print(f"Zapisano matchups:    {matchups_path}")
+    print(f"Zapisano rosters:     {rosters_path}")
+    print(f"Zapisano draft:       {draft_path}")
+    print(f"Zapisano franchises:  {franchises_path} ({len(franchises)} franczyz)")
     print(f"Tabele: {success_count}/{total_years} sezonów  |  Mecze: {matchup_years_done}/{total_years} sezonów  |  Rostery: {roster_years_done}/{roster_total_years} sezonów  |  Draft: {draft_years_done}/{draft_total_years} sezonów")

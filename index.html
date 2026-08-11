@@ -346,6 +346,54 @@
 
   :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
+  /* ---------- FRANCHISES ---------- */
+  .franchise-list { display: flex; flex-direction: column; }
+  .franchise-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.35rem 0;
+    border-bottom: 1px solid var(--line-on-light);
+  }
+  .franchise-main { min-width: 0; flex: 1; }
+  .franchise-name {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .franchise-owner {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-top: 0.15em;
+  }
+  .franchise-prev {
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-top: 0.3em;
+  }
+  .franchise-meta {
+    flex-shrink: 0;
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    font-variant-numeric: tabular-nums;
+  }
+  .franchise-meta .years { font-weight: 500; }
+  .franchise-meta .wlt   { color: var(--ink-soft); }
+  .franchise-meta .pfpa  { font-size: 0.78rem; color: var(--ink-soft); }
+  .franchise-meta .pfpa .pos { color: var(--good); }
+  .franchise-meta .pfpa .neg { color: var(--rust); }
+
+  @media (max-width: 640px) {
+    .franchise-row { flex-direction: column; gap: 0.5rem; }
+    .franchise-meta { text-align: left; display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+    .franchise-name { font-size: 1.2rem; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .reveal { opacity: 1; transform: none; transition: none; }
     html { scroll-behavior: auto; }
@@ -458,6 +506,20 @@
   <div class="wrap reveal">
     <div class="section-head">
       <div>
+        <span class="eyebrow">2012 – 2025 · Podsumowanie</span>
+        <h2>Franczyzy w historii ligi</h2>
+      </div>
+    </div>
+    <div class="franchise-list">
+      <!-- Wypełniane przez renderFranchises() -->
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div>
         <span class="eyebrow">2025 · Draft</span>
         <h2>Runda pierwsza</h2>
       </div>
@@ -511,11 +573,12 @@
   try {
 
     // ----- Wczytaj wszystkie dane równolegle -----
-    const [standings, matchups, draft, rosters] = await Promise.all([
+    const [standings, matchups, draft, rosters, franchises] = await Promise.all([
       fetch('data/standings.json').then(r => r.json()),
       fetch('data/matchups.json').then(r => r.json()),
       fetch('data/draft.json').then(r => r.json()),
-      fetch('data/rosters.json').then(r => r.json())
+      fetch('data/rosters.json').then(r => r.json()),
+      fetch('data/franchises.json').then(r => r.json())
     ]);
 
     const years = Object.keys(standings).sort((a, b) => parseInt(a) - parseInt(b));
@@ -731,6 +794,74 @@
     }
 
     // =====================================================================
+    // JEDNORAZOWE: franczyzy – agregacja historyczna, niezależna od sezonu
+    // =====================================================================
+
+    // Pomocnicza: formatuje listę lat na czytelne zakresy z przerwami
+    // np. [2012,2013,2014,2017,2018] → "2012–2014, 2017–2018"
+    function formatYearRanges(seasons) {
+      if (!seasons.length) return '';
+      const sorted = [...seasons].sort((a, b) => a - b);
+      const ranges = [];
+      let start = sorted[0];
+      let end = sorted[0];
+      for (let i = 1; i < sorted.length; i++) {
+        if (sorted[i] === end + 1) {
+          end = sorted[i];
+        } else {
+          ranges.push(start === end ? `${start}` : `${start}–${end}`);
+          start = sorted[i];
+          end = sorted[i];
+        }
+      }
+      ranges.push(start === end ? `${start}` : `${start}–${end}`);
+      return ranges.join(', ');
+    }
+
+    function renderFranchises() {
+      const list = document.querySelector('.franchise-list');
+      list.innerHTML = '';
+
+      franchises.forEach(fr => {
+        const diff = fr.total_pf - fr.total_pa;
+        const sign = diff >= 0 ? '+' : '';
+        const diffClass = diff >= 0 ? 'pos' : 'neg';
+
+        const row = document.createElement('div');
+        row.className = 'franchise-row';
+
+        // Lewa strona: nazwa, właściciel, poprzednie nazwy (jeśli są)
+        let mainHTML =
+          `<div class="franchise-name">${fr.current_name}</div>` +
+          `<div class="franchise-owner">${fr.owner_name}</div>`;
+
+        if (fr.previous_names && fr.previous_names.length > 0) {
+          mainHTML +=
+            `<div class="franchise-prev">Wcześniej: ${fr.previous_names.join(', ')}</div>`;
+        }
+
+        // Prawa strona: zakres lat, W-L-T, PF/PA/różnica
+        const yearRange = formatYearRanges(fr.seasons);
+        const metaHTML =
+          `<div class="years">${fr.seasons.length} sezon${fr.seasons.length !== 1 ? 'ów' : ''} · ${yearRange}</div>` +
+          `<div class="wlt">W-L-T: ${fr.total_wins}-${fr.total_losses}-${fr.total_ties}</div>` +
+          `<div class="pfpa">PF: ${fr.total_pf.toFixed(2)} · PA: ${fr.total_pa.toFixed(2)} · ` +
+            `Różnica: <span class="${diffClass}">${sign}${diff.toFixed(2)}</span></div>`;
+
+        row.innerHTML =
+          `<div class="franchise-main">${mainHTML}</div>` +
+          `<div class="franchise-meta">${metaHTML}</div>`;
+
+        list.appendChild(row);
+      });
+
+      // Podsumowanie w nagłówku
+      const uniqueOwners = new Set(franchises.map(f => f.owner_id));
+      list.closest('section').querySelector('.eyebrow').textContent =
+        `2012 – 2025 · ${uniqueOwners.size} franczyz`;
+    }
+
+    // =====================================================================
     // WYPEŁNIJ SELECT OPCJAMI + NASŁUCH ZMIAN
     // =====================================================================
 
@@ -843,6 +974,11 @@
     // Footer
     const footerSpan = document.querySelector('footer span');
     if (footerSpan) footerSpan.textContent = 'LIGA № 58995 · ESPN FANTASY FOOTBALL';
+
+    // =====================================================================
+    // JEDNORAZOWE: franczyzy – renderuj po załadowaniu wszystkich danych
+    // =====================================================================
+    renderFranchises();
 
   } catch (err) {
     // ----- Błąd wczytywania – czytelny komunikat -----

@@ -2,6 +2,9 @@
   "2012": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 8,
       "losses": 4,
       "ties": 0,
@@ -10,6 +13,9 @@
     },
     {
       "team_name": "Elblag Scrolls",
+      "team_id": 2,
+      "owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+      "owner_name": "Tom Buu",
       "wins": 3,
       "losses": 9,
       "ties": 0,
@@ -18,6 +24,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 6,
       "losses": 6,
       "ties": 0,
@@ -26,6 +35,9 @@
     },
     {
       "team_name": "Szymanow Harvesters",
+      "team_id": 4,
+      "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+      "owner_name": "Kamil Zietek",
       "wins": 5,
       "losses": 7,
       "ties": 0,
@@ -34,6 +46,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 9,
       "losses": 3,
       "ties": 0,
@@ -42,6 +57,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 5,
       "losses": 7,
       "ties": 0,
@@ -50,6 +68,9 @@
     },
     {
       "team_name": "Pless Bricks",
+      "team_id": 7,
+      "owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+      "owner_name": "Oliwier Swoboda",
       "wins": 6,
       "losses": 6,
       "ties": 0,
@@ -60,6 +81,9 @@
   "2013": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -68,6 +92,9 @@
     },
     {
       "team_name": "Elblag Scrolls",
+      "team_id": 2,
+      "owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+      "owner_name": "Tom Buu",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -76,6 +103,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 0,
       "losses": 13,
       "ties": 1,
@@ -84,6 +114,9 @@
     },
     {
       "team_name": "Szymanow Harvesters",
+      "team_id": 4,
+      "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+      "owner_name": "Kamil Zietek",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -92,6 +125,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 2,
       "losses": 11,
       "ties": 1,
@@ -100,6 +136,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 10,
       "losses": 4,
       "ties": 0,
@@ -108,6 +147,9 @@
     },
     {
       "team_name": "Pless Bricks",
+      "team_id": 7,
+      "owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+      "owner_name": "Oliwier Swoboda",
       "wins": 4,
       "losses": 10,
       "ties": 0,
@@ -116,6 +158,9 @@
     },
     {
       "team_name": "Kolberg Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 8,
       "losses": 4,
       "ties": 2,
@@ -124,6 +169,9 @@
     },
     {
       "team_name": "Danzig Cowboys",
+      "team_id": 9,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 8,
       "losses": 6,
       "ties": 0,
@@ -132,6 +180,9 @@
     },
     {
       "team_name": "OstrÃ³da Inquisitors",
+      "team_id": 10,
+      "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+      "owner_name": "Krzysztof Patejuk",
       "wins": 11,
       "losses": 3,
       "ties": 0,
@@ -140,6 +191,9 @@
     },
     {
       "team_name": "Edinburgh Yer Maws",
+      "team_id": 11,
+      "owner_id": "{3AA0BC31-A484-4C48-A0BC-31A4843C4868}",
+      "owner_name": "- -",
       "wins": 7,
       "losses": 7,
       "ties": 0,
@@ -148,6 +202,9 @@
     },
     {
       "team_name": "East Side Demons",
+      "team_id": 12,
+      "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+      "owner_name": "Kamil Wojnach",
       "wins": 8,
       "losses": 6,
       "ties": 0,
@@ -158,6 +215,9 @@
   "2014": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 5,
       "losses": 8,
       "ties": 1,
@@ -166,6 +226,9 @@
     },
     {
       "team_name": "Elblag Scrolls",
+      "team_id": 2,
+      "owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+      "owner_name": "Tom Buu",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -174,6 +237,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 5,
       "losses": 9,
       "ties": 0,
@@ -182,6 +248,9 @@
     },
     {
       "team_name": "Szymanow Harvesters",
+      "team_id": 4,
+      "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+      "owner_name": "Kamil Zietek",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -190,6 +259,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -198,6 +270,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 12,
       "losses": 2,
       "ties": 0,
@@ -206,6 +281,9 @@
     },
     {
       "team_name": "ZambrÃ³w Bears",
+      "team_id": 7,
+      "owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+      "owner_name": "Lukasz Grabowski",
       "wins": 4,
       "losses": 9,
       "ties": 1,
@@ -214,6 +292,9 @@
     },
     {
       "team_name": "Kolberg Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 5,
       "losses": 8,
       "ties": 1,
@@ -222,6 +303,9 @@
     },
     {
       "team_name": "Barcelona Toros",
+      "team_id": 9,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 5,
       "losses": 9,
       "ties": 0,
@@ -230,6 +314,9 @@
     },
     {
       "team_name": "OstrÃ³da Inquisitors",
+      "team_id": 10,
+      "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+      "owner_name": "Krzysztof Patejuk",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -238,6 +325,9 @@
     },
     {
       "team_name": "Madison Bumgarners",
+      "team_id": 11,
+      "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+      "owner_name": "Mad dux",
       "wins": 7,
       "losses": 7,
       "ties": 0,
@@ -246,6 +336,9 @@
     },
     {
       "team_name": "East Side Demons",
+      "team_id": 12,
+      "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+      "owner_name": "Kamil Wojnach",
       "wins": 9,
       "losses": 4,
       "ties": 1,
@@ -256,6 +349,9 @@
   "2015": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 5,
       "losses": 9,
       "ties": 0,
@@ -264,6 +360,9 @@
     },
     {
       "team_name": "Elblag Scrolls",
+      "team_id": 2,
+      "owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+      "owner_name": "Tom Buu",
       "wins": 7,
       "losses": 7,
       "ties": 0,
@@ -272,6 +371,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 4,
       "losses": 10,
       "ties": 0,
@@ -280,6 +382,9 @@
     },
     {
       "team_name": "Szymanow Harvesters",
+      "team_id": 4,
+      "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+      "owner_name": "Kamil Zietek",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -288,6 +393,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 10,
       "losses": 4,
       "ties": 0,
@@ -296,6 +404,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 7,
       "losses": 7,
       "ties": 0,
@@ -304,6 +415,9 @@
     },
     {
       "team_name": "ZambrÃ³w Bears",
+      "team_id": 7,
+      "owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+      "owner_name": "Lukasz Grabowski",
       "wins": 5,
       "losses": 9,
       "ties": 0,
@@ -312,6 +426,9 @@
     },
     {
       "team_name": "Kolberg Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 8,
       "losses": 6,
       "ties": 0,
@@ -320,6 +437,9 @@
     },
     {
       "team_name": "Barcelona Toros",
+      "team_id": 9,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -328,6 +448,9 @@
     },
     {
       "team_name": "Bartoszyce Inquisitors",
+      "team_id": 10,
+      "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+      "owner_name": "Krzysztof Patejuk",
       "wins": 8,
       "losses": 6,
       "ties": 0,
@@ -336,6 +459,9 @@
     },
     {
       "team_name": "San Marino Titans",
+      "team_id": 11,
+      "owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+      "owner_name": "Kacper Kowalczyk",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -344,6 +470,9 @@
     },
     {
       "team_name": "East Side Demons",
+      "team_id": 12,
+      "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+      "owner_name": "Kamil Wojnach",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -354,6 +483,9 @@
   "2016": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -362,6 +494,9 @@
     },
     {
       "team_name": "Madison Bumgarners",
+      "team_id": 2,
+      "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+      "owner_name": "Mad dux",
       "wins": 10,
       "losses": 4,
       "ties": 0,
@@ -370,6 +505,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 8,
       "losses": 6,
       "ties": 0,
@@ -378,6 +516,9 @@
     },
     {
       "team_name": "Szymanow Harvesters",
+      "team_id": 4,
+      "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+      "owner_name": "Kamil Zietek",
       "wins": 2,
       "losses": 12,
       "ties": 0,
@@ -386,6 +527,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 5,
       "losses": 8,
       "ties": 1,
@@ -394,6 +538,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 10,
       "losses": 4,
       "ties": 0,
@@ -402,6 +549,9 @@
     },
     {
       "team_name": "Zambrow Bears",
+      "team_id": 7,
+      "owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+      "owner_name": "Lukasz Grabowski",
       "wins": 7,
       "losses": 7,
       "ties": 0,
@@ -410,6 +560,9 @@
     },
     {
       "team_name": "Posen Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 5,
       "losses": 8,
       "ties": 1,
@@ -418,6 +571,9 @@
     },
     {
       "team_name": "Barcelona Toros",
+      "team_id": 9,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 7,
       "losses": 7,
       "ties": 0,
@@ -426,6 +582,9 @@
     },
     {
       "team_name": "Bartoszyce Inquisitors",
+      "team_id": 10,
+      "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+      "owner_name": "Krzysztof Patejuk",
       "wins": 4,
       "losses": 10,
       "ties": 0,
@@ -434,6 +593,9 @@
     },
     {
       "team_name": "San Marino Titans",
+      "team_id": 11,
+      "owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+      "owner_name": "Kacper Kowalczyk",
       "wins": 8,
       "losses": 6,
       "ties": 0,
@@ -442,6 +604,9 @@
     },
     {
       "team_name": "East Side Demons",
+      "team_id": 12,
+      "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+      "owner_name": "Kamil Wojnach",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -450,6 +615,9 @@
     },
     {
       "team_name": "Wloclawek Wolf Pack",
+      "team_id": 13,
+      "owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+      "owner_name": "Marcin Gorzkowski",
       "wins": 10,
       "losses": 4,
       "ties": 0,
@@ -458,6 +626,9 @@
     },
     {
       "team_name": "Tel-Aviv Falcons",
+      "team_id": 14,
+      "owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+      "owner_name": "B S",
       "wins": 3,
       "losses": 11,
       "ties": 0,
@@ -468,6 +639,9 @@
   "2017": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 2,
       "losses": 11,
       "ties": 0,
@@ -476,6 +650,9 @@
     },
     {
       "team_name": "Madison Bumgarners",
+      "team_id": 2,
+      "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+      "owner_name": "Mad dux",
       "wins": 8,
       "losses": 5,
       "ties": 0,
@@ -484,6 +661,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 3,
       "losses": 8,
       "ties": 2,
@@ -492,6 +672,9 @@
     },
     {
       "team_name": "Szymanow Harvesters",
+      "team_id": 4,
+      "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+      "owner_name": "Kamil Zietek",
       "wins": 8,
       "losses": 5,
       "ties": 0,
@@ -500,6 +683,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 6,
       "losses": 7,
       "ties": 0,
@@ -508,6 +694,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 10,
       "losses": 3,
       "ties": 0,
@@ -516,6 +705,9 @@
     },
     {
       "team_name": "Zambrow Bears",
+      "team_id": 7,
+      "owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+      "owner_name": "Lukasz Grabowski",
       "wins": 2,
       "losses": 10,
       "ties": 1,
@@ -524,6 +716,9 @@
     },
     {
       "team_name": "Mosina Republicans",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 11,
       "losses": 2,
       "ties": 0,
@@ -532,6 +727,9 @@
     },
     {
       "team_name": "Barcelona Toros",
+      "team_id": 9,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 7,
       "losses": 6,
       "ties": 0,
@@ -540,6 +738,9 @@
     },
     {
       "team_name": "Pamplona Inquisitors",
+      "team_id": 10,
+      "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+      "owner_name": "Krzysztof Patejuk",
       "wins": 6,
       "losses": 7,
       "ties": 0,
@@ -548,6 +749,9 @@
     },
     {
       "team_name": "San Marino Titans",
+      "team_id": 11,
+      "owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+      "owner_name": "Kacper Kowalczyk",
       "wins": 6,
       "losses": 7,
       "ties": 0,
@@ -556,6 +760,9 @@
     },
     {
       "team_name": "East Side Demons",
+      "team_id": 12,
+      "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+      "owner_name": "Kamil Wojnach",
       "wins": 8,
       "losses": 5,
       "ties": 0,
@@ -564,6 +771,9 @@
     },
     {
       "team_name": "Wloclawek Wolf Pack",
+      "team_id": 13,
+      "owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+      "owner_name": "Marcin Gorzkowski",
       "wins": 5,
       "losses": 7,
       "ties": 1,
@@ -572,6 +782,9 @@
     },
     {
       "team_name": "Suwalki Rednecks",
+      "team_id": 14,
+      "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+      "owner_name": "Artur Chalkowski",
       "wins": 7,
       "losses": 6,
       "ties": 0,
@@ -582,6 +795,9 @@
   "2018": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 6,
       "losses": 5,
       "ties": 1,
@@ -590,6 +806,9 @@
     },
     {
       "team_name": "Madison Bumgarners",
+      "team_id": 2,
+      "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+      "owner_name": "Mad dux",
       "wins": 7,
       "losses": 5,
       "ties": 0,
@@ -598,6 +817,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 6,
       "losses": 5,
       "ties": 1,
@@ -606,6 +828,9 @@
     },
     {
       "team_name": "Szymanow Harvesters",
+      "team_id": 4,
+      "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+      "owner_name": "Kamil Zietek",
       "wins": 4,
       "losses": 8,
       "ties": 0,
@@ -614,6 +839,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 2,
       "losses": 10,
       "ties": 0,
@@ -622,6 +850,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 9,
       "losses": 3,
       "ties": 0,
@@ -630,6 +861,9 @@
     },
     {
       "team_name": "Mosina Republicans",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 6,
       "losses": 6,
       "ties": 0,
@@ -638,6 +872,9 @@
     },
     {
       "team_name": "Barcelona Toros",
+      "team_id": 9,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 3,
       "losses": 9,
       "ties": 0,
@@ -646,6 +883,9 @@
     },
     {
       "team_name": "Pamplona Inquisitors",
+      "team_id": 10,
+      "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+      "owner_name": "Krzysztof Patejuk",
       "wins": 8,
       "losses": 4,
       "ties": 0,
@@ -654,6 +894,9 @@
     },
     {
       "team_name": "San Marino Titans",
+      "team_id": 11,
+      "owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+      "owner_name": "Kacper Kowalczyk",
       "wins": 4,
       "losses": 8,
       "ties": 0,
@@ -662,6 +905,9 @@
     },
     {
       "team_name": "Wloclawek Wolf Pack",
+      "team_id": 13,
+      "owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+      "owner_name": "Marcin Gorzkowski",
       "wins": 8,
       "losses": 4,
       "ties": 0,
@@ -670,6 +916,9 @@
     },
     {
       "team_name": "Suwalki Rednecks",
+      "team_id": 14,
+      "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+      "owner_name": "Artur Chalkowski",
       "wins": 6,
       "losses": 6,
       "ties": 0,
@@ -678,6 +927,9 @@
     },
     {
       "team_name": "East Side Demons",
+      "team_id": 15,
+      "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+      "owner_name": "Kamil Wojnach",
       "wins": 8,
       "losses": 4,
       "ties": 0,
@@ -688,6 +940,9 @@
   "2019": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 4,
       "losses": 9,
       "ties": 0,
@@ -696,6 +951,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 7,
       "losses": 6,
       "ties": 0,
@@ -704,6 +962,9 @@
     },
     {
       "team_name": "Szymanow Harvesters",
+      "team_id": 4,
+      "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+      "owner_name": "Kamil Zietek",
       "wins": 5,
       "losses": 8,
       "ties": 0,
@@ -712,6 +973,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 6,
       "losses": 7,
       "ties": 0,
@@ -720,6 +984,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 9,
       "losses": 4,
       "ties": 0,
@@ -728,6 +995,9 @@
     },
     {
       "team_name": "Mosina Republicans",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 6,
       "losses": 7,
       "ties": 0,
@@ -736,6 +1006,9 @@
     },
     {
       "team_name": "Pamplona Inquisitors",
+      "team_id": 10,
+      "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+      "owner_name": "Krzysztof Patejuk",
       "wins": 7,
       "losses": 6,
       "ties": 0,
@@ -744,6 +1017,9 @@
     },
     {
       "team_name": "San Marino Titans",
+      "team_id": 11,
+      "owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+      "owner_name": "Kacper Kowalczyk",
       "wins": 9,
       "losses": 4,
       "ties": 0,
@@ -752,6 +1028,9 @@
     },
     {
       "team_name": "Wloclawek Wolf Pack",
+      "team_id": 13,
+      "owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+      "owner_name": "Marcin Gorzkowski",
       "wins": 4,
       "losses": 9,
       "ties": 0,
@@ -760,6 +1039,9 @@
     },
     {
       "team_name": "Suwalki Rednecks",
+      "team_id": 14,
+      "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+      "owner_name": "Artur Chalkowski",
       "wins": 8,
       "losses": 5,
       "ties": 0,
@@ -770,6 +1052,9 @@
   "2020": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -778,6 +1063,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 4,
       "losses": 10,
       "ties": 0,
@@ -786,6 +1074,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 8,
       "losses": 6,
       "ties": 0,
@@ -794,6 +1085,9 @@
     },
     {
       "team_name": "Kaliszfornia Capybaras",
+      "team_id": 6,
+      "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+      "owner_name": "M C",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -802,6 +1096,9 @@
     },
     {
       "team_name": "Mosina Republicans",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -810,6 +1107,9 @@
     },
     {
       "team_name": "San Marino Titans",
+      "team_id": 11,
+      "owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+      "owner_name": "Ka Ko",
       "wins": 4,
       "losses": 10,
       "ties": 0,
@@ -818,6 +1118,9 @@
     },
     {
       "team_name": "Suwalki Rednecks",
+      "team_id": 14,
+      "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+      "owner_name": "Artur Chalkowski",
       "wins": 7,
       "losses": 7,
       "ties": 0,
@@ -826,6 +1129,9 @@
     },
     {
       "team_name": "Chicago Scrubs",
+      "team_id": 15,
+      "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+      "owner_name": "Arkadiusz Dudkowski",
       "wins": 12,
       "losses": 2,
       "ties": 0,
@@ -836,6 +1142,9 @@
   "2021": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 6,
       "losses": 9,
       "ties": 0,
@@ -844,6 +1153,9 @@
     },
     {
       "team_name": "Minsk Maz Old Goats",
+      "team_id": 3,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 10,
       "losses": 5,
       "ties": 0,
@@ -852,6 +1164,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 5,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 5,
       "losses": 10,
       "ties": 0,
@@ -860,6 +1175,9 @@
     },
     {
       "team_name": "Poznan Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 7,
       "losses": 8,
       "ties": 0,
@@ -868,6 +1186,9 @@
     },
     {
       "team_name": "Suwalki Rednecks",
+      "team_id": 14,
+      "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+      "owner_name": "Artur Chalkowski",
       "wins": 7,
       "losses": 8,
       "ties": 0,
@@ -876,6 +1197,9 @@
     },
     {
       "team_name": "Chicago Scrubs",
+      "team_id": 15,
+      "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+      "owner_name": "Arkadiusz Dudkowski",
       "wins": 10,
       "losses": 5,
       "ties": 0,
@@ -886,6 +1210,9 @@
   "2022": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 4,
       "losses": 14,
       "ties": 0,
@@ -894,6 +1221,9 @@
     },
     {
       "team_name": "Poznan Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 12,
       "losses": 6,
       "ties": 0,
@@ -902,6 +1232,9 @@
     },
     {
       "team_name": "Suwalki Rednecks",
+      "team_id": 14,
+      "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+      "owner_name": "Artur Chalkowski",
       "wins": 11,
       "losses": 7,
       "ties": 0,
@@ -910,6 +1243,9 @@
     },
     {
       "team_name": "Chicago Scrubs",
+      "team_id": 15,
+      "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+      "owner_name": "Arkadiusz Dudkowski",
       "wins": 9,
       "losses": 9,
       "ties": 0,
@@ -920,6 +1256,9 @@
   "2023": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 11,
       "losses": 3,
       "ties": 0,
@@ -928,6 +1267,9 @@
     },
     {
       "team_name": "Poznan Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Sobisiak",
       "wins": 10,
       "losses": 4,
       "ties": 0,
@@ -936,6 +1278,9 @@
     },
     {
       "team_name": "Suwalki Rednecks",
+      "team_id": 14,
+      "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+      "owner_name": "Artur Chalkowski",
       "wins": 9,
       "losses": 5,
       "ties": 0,
@@ -944,6 +1289,9 @@
     },
     {
       "team_name": "Chicago Scrubs",
+      "team_id": 15,
+      "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+      "owner_name": "Arkadiusz Dudkowski",
       "wins": 4,
       "losses": 10,
       "ties": 0,
@@ -952,6 +1300,9 @@
     },
     {
       "team_name": "MMz Old Goats",
+      "team_id": 16,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -960,6 +1311,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 17,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -968,6 +1322,9 @@
     },
     {
       "team_name": "Vienna Schnitzels",
+      "team_id": 18,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 4,
       "losses": 10,
       "ties": 0,
@@ -976,6 +1333,9 @@
     },
     {
       "team_name": "Szczecin Pirates",
+      "team_id": 19,
+      "owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+      "owner_name": "Krzysiek Błachuta",
       "wins": 6,
       "losses": 8,
       "ties": 0,
@@ -986,6 +1346,9 @@
   "2024": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 4,
       "losses": 11,
       "ties": 0,
@@ -994,6 +1357,9 @@
     },
     {
       "team_name": "Poznan Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Szafran",
       "wins": 3,
       "losses": 12,
       "ties": 0,
@@ -1002,6 +1368,9 @@
     },
     {
       "team_name": "Chicago Scrubs",
+      "team_id": 15,
+      "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+      "owner_name": "Arkadiusz Dudkowski",
       "wins": 9,
       "losses": 6,
       "ties": 0,
@@ -1010,6 +1379,9 @@
     },
     {
       "team_name": "MMz Old Goats",
+      "team_id": 16,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 8,
       "losses": 7,
       "ties": 0,
@@ -1018,6 +1390,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 17,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 9,
       "losses": 6,
       "ties": 0,
@@ -1026,6 +1401,9 @@
     },
     {
       "team_name": "Vienna Schnitzels",
+      "team_id": 18,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 12,
       "losses": 3,
       "ties": 0,
@@ -1036,6 +1414,9 @@
   "2025": [
     {
       "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
       "wins": 10,
       "losses": 5,
       "ties": 0,
@@ -1044,6 +1425,9 @@
     },
     {
       "team_name": "Poznan Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Szafran",
       "wins": 12,
       "losses": 3,
       "ties": 0,
@@ -1052,6 +1436,9 @@
     },
     {
       "team_name": "Chicago Scrubs",
+      "team_id": 15,
+      "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+      "owner_name": "Arkadiusz Dudkowski",
       "wins": 5,
       "losses": 10,
       "ties": 0,
@@ -1060,6 +1447,9 @@
     },
     {
       "team_name": "MMz Old Goats",
+      "team_id": 16,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
       "wins": 7,
       "losses": 8,
       "ties": 0,
@@ -1068,6 +1458,9 @@
     },
     {
       "team_name": "Bytom Amateurs",
+      "team_id": 17,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
       "wins": 4,
       "losses": 11,
       "ties": 0,
@@ -1076,6 +1469,9 @@
     },
     {
       "team_name": "Vienna Schnitzels",
+      "team_id": 18,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
       "wins": 7,
       "losses": 8,
       "ties": 0,
