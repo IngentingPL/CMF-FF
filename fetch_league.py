@@ -15,8 +15,21 @@ import json
 import os
 from pathlib import Path
 
+# ftfy naprawia zepsute kodowanie znaków w danych z ESPN API
+# (np. "ZambrÃ³w" → "Zambrów" — double-encoded UTF-8 w starszych sezonach).
+# Stosujemy _clean_text() przy każdym odczycie tekstu z API, więc wszystkie
+# pliki JSON (standings, matchups, rosters, draft, franchises) są od razu czyste.
+import ftfy
+
 # Importujemy klasę League z biblioteki espn-api
 from espn_api.football import League
+
+
+def _clean_text(text):
+    """Naprawia zepsute kodowanie znaków (np. double-encoded UTF-8) w tekście z ESPN API."""
+    if not isinstance(text, str):
+        return text
+    return ftfy.fix_text(text)
 
 # ---------------------------------------------------------------------------
 # KONFIGURACJA: zakresy lat – prywatne (wymagają autoryzacji) i publiczne
@@ -78,7 +91,7 @@ def fetch_year_standings(league_id, year, swid=None, espn_s2=None):
     teams_data = []
     for team in league.teams:
         teams_data.append({
-            "team_name": team.team_name,
+            "team_name": _clean_text(team.team_name),
             "team_id": team.team_id,
             "owner_id": _get_owner_id(team),
             "owner_name": _get_owner_name(team),
@@ -129,9 +142,9 @@ def fetch_year_matchups(league_id, year, swid=None, espn_s2=None):
             week_matchups = []
             for match in matchups:
                 week_matchups.append({
-                    "home_team": match.home_team.team_name,
+                    "home_team": _clean_text(match.home_team.team_name),
                     "home_score": match.home_score,
-                    "away_team": match.away_team.team_name,
+                    "away_team": _clean_text(match.away_team.team_name),
                     "away_score": match.away_score,
                 })
 
@@ -171,12 +184,12 @@ def fetch_year_rosters(league_id, year, swid=None, espn_s2=None):
         players = []
         for player in team.roster:
             players.append({
-                "name": player.name,
+                "name": _clean_text(player.name),
                 "position": player.position,
                 "proTeam": player.proTeam,
             })
         teams_rosters.append({
-            "team_name": team.team_name,
+            "team_name": _clean_text(team.team_name),
             "players": players,
         })
 
@@ -207,8 +220,8 @@ def fetch_year_draft(league_id, year, swid=None, espn_s2=None):
         picks.append({
             "round_num": pick.round_num,
             "round_pick": pick.round_pick,
-            "player_name": pick.playerName,
-            "team_name": pick.team.team_name,
+            "player_name": _clean_text(pick.playerName),
+            "team_name": _clean_text(pick.team.team_name),
         })
 
     return picks
