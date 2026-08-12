@@ -442,6 +442,43 @@
     .franchise-name { font-size: 1.2rem; }
   }
 
+  /* ---------- SUMMARY GRID ---------- */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+  }
+  .summary-stat {
+    border: 1px solid var(--line-on-light);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .summary-stat b {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .summary-stat span {
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 0.5rem;
+  }
+  .summary-stat .sub {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-soft);
+    margin-top: 0.4rem;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .reveal { opacity: 1; transform: none; transition: none; }
     html { scroll-behavior: auto; }
@@ -568,6 +605,24 @@
 </div>  <!-- zamyka panel-sezon -->
 
 <div id="panel-podsumowanie" class="tab-panel" hidden>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">2012 – 2025 · Podsumowanie</span>
+        <h2>Liga w liczbach</h2>
+      </div>
+    </div>
+    <div class="summary-grid">
+      <div class="summary-stat" id="stat-seasons"><b>14</b><span>Sezonów</span></div>
+      <div class="summary-stat" id="stat-founded"><b>2012</b><span>Rok założenia</span></div>
+      <div class="summary-stat" id="stat-matches"><b>810</b><span>Meczów łącznie</span></div>
+      <div class="summary-stat" id="stat-draft"><b>2119</b><span>Wyborów draftowych</span></div>
+      <div class="summary-stat" id="stat-highscore"><b>213.50</b><span>Najwyższy wynik</span><span class="sub">przykład, do policzenia</span></div>
+    </div>
+  </div>
+</section>
 
 <section class="light">
   <div class="wrap reveal">
@@ -879,6 +934,55 @@
       return ranges.join(', ');
     }
 
+    // =====================================================================
+    // JEDNORAZOWE: statystyki podsumowania – liczone z realnych danych
+    // =====================================================================
+    function renderSummaryStats() {
+      const yearKeys = Object.keys(standings);
+
+      // 1. Sezonów
+      document.querySelector('#stat-seasons b').textContent = yearKeys.length;
+
+      // 2. Rok założenia = najmniejszy rok w standings
+      const sortedYears = yearKeys.map(Number).sort((a, b) => a - b);
+      document.querySelector('#stat-founded b').textContent = sortedYears[0];
+
+      // 3 & 5. Mecze łącznie + najwyższy wynik — jedna pętla po latach/tygodniach/meczach
+      let totalMatches = 0;
+      let highScore = 0;
+      let highTeam = '';
+      let highYear = '';
+
+      for (const [year, weeks] of Object.entries(matchups)) {
+        for (const week of Object.values(weeks)) {
+          for (const match of week) {
+            totalMatches++;
+            if (match.home_score > highScore) {
+              highScore = match.home_score;
+              highTeam = match.home_team;
+              highYear = year;
+            }
+            if (match.away_score > highScore) {
+              highScore = match.away_score;
+              highTeam = match.away_team;
+              highYear = year;
+            }
+          }
+        }
+      }
+
+      document.querySelector('#stat-matches b').textContent = totalMatches;
+      document.querySelector('#stat-highscore b').textContent = highScore.toFixed(2);
+      document.querySelector('#stat-highscore .sub').textContent = `${highTeam}, ${highYear}`;
+
+      // 4. Wyborów draftowych = suma długości list pod każdym rokiem
+      let totalDraftPicks = 0;
+      for (const picks of Object.values(draft)) {
+        totalDraftPicks += picks.length;
+      }
+      document.querySelector('#stat-draft b').textContent = totalDraftPicks;
+    }
+
     function renderFranchises() {
       const list = document.querySelector('.franchise-list');
       list.innerHTML = '';
@@ -1041,6 +1145,7 @@
     // =====================================================================
     // JEDNORAZOWE: franczyzy – renderuj po załadowaniu wszystkich danych
     // =====================================================================
+    renderSummaryStats();
     renderFranchises();
 
   } catch (err) {
