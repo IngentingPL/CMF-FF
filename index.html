@@ -492,20 +492,22 @@
     <span class="eyebrow">Fantasy Football · Księga Ligi</span>
     <h1>Liga № 58995</h1>
     <div class="stat-row">
-      <div class="stat"><b>14</b><span>Sezonów</span></div>
       <div class="stat"><b>2012</b><span>Rok założenia</span></div>
-      <div class="stat"><b>6</b><span>Drużyn (2025)</span></div>
-      <div class="stat"><b>810+</b><span>Rozegranych meczów</span></div>
+      <div class="stat"><b>14</b><span>Sezonów</span></div>
+      <div class="stat"><b>10</b><span>Drużyn w historii</span></div>
+      <div class="stat"><b>810</b><span>Rozegranych meczów</span></div>
+      <div class="stat"><b>2119</b><span>Wyborów draftowych</span></div>
     </div>
   </div>
 </header>
 
 <nav class="tab-nav">
-  <button class="tab-btn active" data-tab="sezon">Sezon</button>
-  <button class="tab-btn" data-tab="podsumowanie">Podsumowanie</button>
+  <!-- Zmiana 1: domyślną zakładką jest Podsumowanie -->
+  <button class="tab-btn" data-tab="sezon">Sezon</button>
+  <button class="tab-btn active" data-tab="podsumowanie">Podsumowanie</button>
 </nav>
 
-<div id="panel-sezon" class="tab-panel">
+<div id="panel-sezon" class="tab-panel" hidden>
 
 <div class="season-bar">
   <div class="wrap">
@@ -604,7 +606,7 @@
 </section>
 </div>  <!-- zamyka panel-sezon -->
 
-<div id="panel-podsumowanie" class="tab-panel" hidden>
+<div id="panel-podsumowanie" class="tab-panel">
 
 <section class="light">
   <div class="wrap reveal">
@@ -1115,20 +1117,19 @@
     // JEDNORAZOWE: statystyki hero – pełna historia, zawsze
     // =====================================================================
 
+    // Zmiana 2: 5 kart w hero, kolejność: rok założenia, sezonów, franczyz, meczów, wyborów draftowych
     const statValues = document.querySelectorAll('.hero .stat b');
-    const statLabels = document.querySelectorAll('.hero .stat span');
 
-    // Sezonów
-    statValues[0].textContent = years.length;
+    // 1. Rok założenia — najmniejszy rok w standings
+    statValues[0].textContent = years[0];
 
-    // Rok założenia
-    statValues[1].textContent = years[0];
+    // 2. Sezonów — liczba lat w standings
+    statValues[1].textContent = years.length;
 
-    // Drużyn – z domyślnego sezonu
-    statValues[2].textContent = standings[defaultSeason].length;
-    statLabels[2].textContent = `Drużyn (${defaultSeason})`;
+    // 3. Drużyn w historii — liczba franczyz (unikalnych właścicieli/franczyz, nie team_name)
+    statValues[2].textContent = franchises.length;
 
-    // Rozegranych meczów – suma ze wszystkich lat
+    // 4. Rozegranych meczów — suma ze wszystkich lat
     let totalMatches = 0;
     for (const y of Object.keys(matchups)) {
       const weeks = matchups[y];
@@ -1137,6 +1138,13 @@
       }
     }
     statValues[3].textContent = totalMatches;
+
+    // 5. Wyborów draftowych — suma ze wszystkich lat
+    let totalDraftPicks = 0;
+    for (const picks of Object.values(draft)) {
+      totalDraftPicks += picks.length;
+    }
+    statValues[4].textContent = totalDraftPicks;
 
     // Footer
     const footerSpan = document.querySelector('footer span');
