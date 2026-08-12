@@ -1,42 +1,5 @@
 [
   {
-    "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
-    "owner_name": "Roman Sobisiak",
-    "current_name": "Poznan Festung",
-    "previous_names": [
-      "Kolberg Festung",
-      "Posen Festung",
-      "Mosina Republicans"
-    ],
-    "all_names": [
-      "Kolberg Festung",
-      "Posen Festung",
-      "Mosina Republicans",
-      "Poznan Festung"
-    ],
-    "seasons": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "total_wins": 102,
-    "total_losses": 79,
-    "total_ties": 4,
-    "total_pf": 16798.6,
-    "total_pa": 16033.78,
-    "championships": 3
-  },
-  {
     "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
     "owner_name": "Piotr Tkaczyk",
     "current_name": "Lublin Gnagare",
@@ -98,32 +61,6 @@
     "championships": 3
   },
   {
-    "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
-    "owner_name": "M C",
-    "current_name": "Kaliszfornia Capybaras",
-    "previous_names": [],
-    "all_names": [
-      "Kaliszfornia Capybaras"
-    ],
-    "seasons": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "total_wins": 78,
-    "total_losses": 42,
-    "total_ties": 0,
-    "total_pf": 10229.0,
-    "total_pa": 9063.0,
-    "championships": 0
-  },
-  {
     "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
     "owner_name": "Grzesiek Chodkiewicz",
     "current_name": "MMz Old Goats",
@@ -157,6 +94,69 @@
     "championships": 3
   },
   {
+    "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+    "owner_name": "Roman Sobisiak",
+    "current_name": "Poznan Festung",
+    "previous_names": [
+      "Kolberg Festung",
+      "Posen Festung",
+      "Mosina Republicans"
+    ],
+    "all_names": [
+      "Kolberg Festung",
+      "Posen Festung",
+      "Mosina Republicans",
+      "Poznan Festung"
+    ],
+    "seasons": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "total_wins": 102,
+    "total_losses": 79,
+    "total_ties": 4,
+    "total_pf": 16798.6,
+    "total_pa": 16033.78,
+    "championships": 3
+  },
+  {
+    "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+    "owner_name": "M C",
+    "current_name": "Kaliszfornia Capybaras",
+    "previous_names": [],
+    "all_names": [
+      "Kaliszfornia Capybaras"
+    ],
+    "seasons": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "total_wins": 78,
+    "total_losses": 42,
+    "total_ties": 0,
+    "total_pf": 10229.0,
+    "total_pa": 9063.0,
+    "championships": 0
+  },
+  {
     "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
     "owner_name": "Michal Adamski",
     "current_name": "Vienna Schnitzels",
@@ -188,28 +188,29 @@
     "championships": 0
   },
   {
-    "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
-    "owner_name": "Artur Chalkowski",
-    "current_name": "Suwalki Rednecks",
+    "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+    "owner_name": "Kamil Zietek",
+    "current_name": "Szymanow Harvesters",
     "previous_names": [],
     "all_names": [
-      "Suwalki Rednecks"
+      "Szymanow Harvesters"
     ],
     "seasons": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
       2017,
       2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023
+      2019
     ],
-    "total_wins": 55,
-    "total_losses": 44,
+    "total_wins": 51,
+    "total_losses": 55,
     "total_ties": 0,
-    "total_pf": 9047.12,
-    "total_pa": 8850.28,
-    "championships": 1
+    "total_pf": 8113.5,
+    "total_pa": 8083.0,
+    "championships": 0
   },
   {
     "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
@@ -241,52 +242,28 @@
     "championships": 1
   },
   {
-    "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
-    "owner_name": "Kamil Zietek",
-    "current_name": "Szymanow Harvesters",
+    "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+    "owner_name": "Artur Chalkowski",
+    "current_name": "Suwalki Rednecks",
     "previous_names": [],
     "all_names": [
-      "Szymanow Harvesters"
+      "Suwalki Rednecks"
     ],
     "seasons": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
       2017,
       2018,
-      2019
-    ],
-    "total_wins": 51,
-    "total_losses": 55,
-    "total_ties": 0,
-    "total_pf": 8113.5,
-    "total_pa": 8083.0,
-    "championships": 0
-  },
-  {
-    "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
-    "owner_name": "Arkadiusz Dudkowski",
-    "current_name": "Chicago Scrubs",
-    "previous_names": [],
-    "all_names": [
-      "Chicago Scrubs"
-    ],
-    "seasons": [
+      2019,
       2020,
       2021,
       2022,
-      2023,
-      2024,
-      2025
+      2023
     ],
-    "total_wins": 49,
-    "total_losses": 42,
+    "total_wins": 55,
+    "total_losses": 44,
     "total_ties": 0,
-    "total_pf": 8562.56,
-    "total_pa": 8252.86,
-    "championships": 0
+    "total_pf": 9047.12,
+    "total_pa": 8850.28,
+    "championships": 1
   },
   {
     "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
@@ -335,45 +312,26 @@
     "championships": 0
   },
   {
-    "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
-    "owner_name": "Mad dux",
-    "current_name": "Madison Bumgarners",
+    "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+    "owner_name": "Arkadiusz Dudkowski",
+    "current_name": "Chicago Scrubs",
     "previous_names": [],
     "all_names": [
-      "Madison Bumgarners"
+      "Chicago Scrubs"
     ],
     "seasons": [
-      2014,
-      2016,
-      2017,
-      2018
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
     ],
-    "total_wins": 32,
-    "total_losses": 21,
+    "total_wins": 49,
+    "total_losses": 42,
     "total_ties": 0,
-    "total_pf": 4426.0,
-    "total_pa": 4171.5,
-    "championships": 1
-  },
-  {
-    "owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
-    "owner_name": "Marcin Gorzkowski",
-    "current_name": "Wloclawek Wolf Pack",
-    "previous_names": [],
-    "all_names": [
-      "Wloclawek Wolf Pack"
-    ],
-    "seasons": [
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "total_wins": 27,
-    "total_losses": 24,
-    "total_ties": 1,
-    "total_pf": 4274.5,
-    "total_pa": 4201.5,
+    "total_pf": 8562.56,
+    "total_pa": 8252.86,
     "championships": 0
   },
   {
@@ -398,6 +356,27 @@
     "championships": 0
   },
   {
+    "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+    "owner_name": "Mad dux",
+    "current_name": "Madison Bumgarners",
+    "previous_names": [],
+    "all_names": [
+      "Madison Bumgarners"
+    ],
+    "seasons": [
+      2014,
+      2016,
+      2017,
+      2018
+    ],
+    "total_wins": 32,
+    "total_losses": 21,
+    "total_ties": 0,
+    "total_pf": 4426.0,
+    "total_pa": 4171.5,
+    "championships": 1
+  },
+  {
     "owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
     "owner_name": "Lukasz Grabowski",
     "current_name": "Zambrow Bears",
@@ -419,6 +398,27 @@
     "total_ties": 2,
     "total_pf": 3916.0,
     "total_pa": 4391.0,
+    "championships": 0
+  },
+  {
+    "owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+    "owner_name": "Marcin Gorzkowski",
+    "current_name": "Wloclawek Wolf Pack",
+    "previous_names": [],
+    "all_names": [
+      "Wloclawek Wolf Pack"
+    ],
+    "seasons": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "total_wins": 27,
+    "total_losses": 24,
+    "total_ties": 1,
+    "total_pf": 4274.5,
+    "total_pa": 4201.5,
     "championships": 0
   },
   {
@@ -459,24 +459,6 @@
     "championships": 0
   },
   {
-    "owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
-    "owner_name": "Krzysiek Błachuta",
-    "current_name": "Szczecin Pirates",
-    "previous_names": [],
-    "all_names": [
-      "Szczecin Pirates"
-    ],
-    "seasons": [
-      2023
-    ],
-    "total_wins": 6,
-    "total_losses": 8,
-    "total_ties": 0,
-    "total_pf": 1269.66,
-    "total_pa": 1311.62,
-    "championships": 0
-  },
-  {
     "owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
     "owner_name": "B S",
     "current_name": "Tel-Aviv Falcons",
@@ -492,6 +474,24 @@
     "total_ties": 0,
     "total_pf": 888.0,
     "total_pa": 1119.0,
+    "championships": 0
+  },
+  {
+    "owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+    "owner_name": "Krzysiek Błachuta",
+    "current_name": "Szczecin Pirates",
+    "previous_names": [],
+    "all_names": [
+      "Szczecin Pirates"
+    ],
+    "seasons": [
+      2023
+    ],
+    "total_wins": 6,
+    "total_losses": 8,
+    "total_ties": 0,
+    "total_pf": 1269.66,
+    "total_pa": 1311.62,
     "championships": 0
   }
 ]

@@ -324,8 +324,18 @@ def build_franchises(all_standings):
             "championships": championships,
         })
 
-    # Sortujemy po total_wins malejąco (najbardziej utytułowane na górze)
-    franchises.sort(key=lambda f: (-f["total_wins"], f["owner_name"]))
+    # 3-poziomowe sortowanie:
+    #   1. Liczba sezonów malejąco (najdłużej grający pierwsi)
+    #   2. Rok dołączenia rosnąco (wcześniej dołączeni wyżej)
+    #   3. Win ratio malejąco (lepszy bilans wyżej)
+    def sort_key(f):
+        seasons_count = len(f['seasons'])
+        join_year = min(f['seasons'])
+        total_games = f['total_wins'] + f['total_losses'] + f['total_ties']
+        win_ratio = (f['total_wins'] + 0.5 * f['total_ties']) / total_games if total_games > 0 else 0
+        return (-seasons_count, join_year, -win_ratio)
+
+    franchises.sort(key=sort_key)
     return franchises
 
 
