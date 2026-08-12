@@ -219,6 +219,20 @@
   table.standings .diff.neg { color: var(--rust); }
   th.num { text-align: right; }
 
+  /* Champion badge przy nazwie druzyny w tabeli sezonu */
+  .champion-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--dark);
+    background: var(--gold);
+    padding: 0.15rem 0.5rem;
+    margin-left: 0.6rem;
+    letter-spacing: 0.05em;
+    vertical-align: middle;
+  }
+
   /* ---------- MATCHUPS ---------- */
   .matchups { display: grid; gap: 1rem; }
   .matchup-card {
@@ -412,6 +426,15 @@
   .franchise-meta .pfpa  { font-size: 0.78rem; color: var(--ink-soft); }
   .franchise-meta .pfpa .pos { color: var(--good); }
   .franchise-meta .pfpa .neg { color: var(--rust); }
+
+  /* Licznik mistrzostw w podsumowaniu franczyzy */
+  .franchise-meta .champs {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--gold);
+    margin-top: 0.3rem;
+  }
 
   @media (max-width: 640px) {
     .franchise-row { flex-direction: column; gap: 0.5rem; }
@@ -671,7 +694,8 @@
 
         tr.innerHTML =
           `<td class="rank">${i + 1}</td>` +
-          `<td>${t.team_name}</td>` +
+          // final_standing === 1 → mistrz po playoffach, niezależnie od pozycji w tabeli
+          `<td>${t.team_name}${t.final_standing === 1 ? ' <span class="champion-badge">MISTRZ</span>' : ''}</td>` +
           `<td class="num">${t.wins}-${t.losses}-${t.ties}</td>` +
           `<td class="num">${t.points_for.toFixed(2)}</td>` +
           `<td class="num">${t.points_against.toFixed(2)}</td>` +
@@ -882,6 +906,8 @@
         const metaHTML =
           `<div class="years">${fr.seasons.length} sezon${fr.seasons.length !== 1 ? 'ów' : ''} · ${yearRange}</div>` +
           `<div class="wlt">W-L-T: ${fr.total_wins}-${fr.total_losses}-${fr.total_ties}</div>` +
+          // Mistrzostwa: tylko jeśli > 0, między W-L-T a PF/PA
+          (fr.championships > 0 ? `<div class="champs">🏆 × ${fr.championships} mistrzostw</div>` : '') +
           `<div class="pfpa">PF: ${fr.total_pf.toFixed(2)} · PA: ${fr.total_pa.toFixed(2)} · ` +
             `Różnica: <span class="${diffClass}">${sign}${diff.toFixed(2)}</span></div>`;
 

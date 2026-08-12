@@ -90,6 +90,13 @@ def fetch_year_standings(league_id, year, swid=None, espn_s2=None):
     # Budujemy listę wyników: dla każdej drużyny zapisujemy jej statystyki
     teams_data = []
     for team in league.teams:
+        # final_standing = miejsce w klasyfikacji KOŃCOWEJ (po playoffach), 1 = mistrz.
+        # Nie wszystkie sezony/API zwracają to pole — na wszelki wypadek try/except.
+        try:
+            final_standing = team.final_standing
+        except AttributeError:
+            final_standing = None
+
         teams_data.append({
             "team_name": _clean_text(team.team_name),
             "team_id": team.team_id,
@@ -100,6 +107,7 @@ def fetch_year_standings(league_id, year, swid=None, espn_s2=None):
             "ties": team.ties,
             "points_for": team.points_for,
             "points_against": team.points_against,
+            "final_standing": final_standing,
         })
 
     return teams_data
@@ -241,7 +249,8 @@ def build_franchises(all_standings):
     Drużyny bez owner_id są pomijane (nie da się ich przypisać do franczyzy).
     """
     # Grupujemy sezony po owner_id
-    by_owner = {}  # owner_id -> lista (year, team_name, w, l, t, pf, pa)
+    # final_standing może być None – None != 1, więc nie przeszkadza w liczeniu.
+    by_owner = {}  # owner_id -> lista (year, team_name, w, l, t, pf, pa, final_standing)
     for year_str, teams in sorted(all_standings.items(), key=lambda x: int(x[0])):
         year = int(year_str)
         for team in teams:
@@ -258,6 +267,7 @@ def build_franchises(all_standings):
                 team["ties"],
                 team["points_for"],
                 team["points_against"],
+                team.get("final_standing"),
             ))
 
     # Budujemy obiekty franczyz
@@ -285,6 +295,10 @@ def build_franchises(all_standings):
         total_pf = round(sum(s[5] for s in seasons_sorted), 2)
         total_pa = round(sum(s[6] for s in seasons_sorted), 2)
 
+        # Mistrzostwa: liczba sezonów, w których final_standing == 1
+        # final_standing może być None (dla starych lat/braku danych); None != 1 → OK.
+        championships = sum(1 for s in seasons_sorted if s[7] == 1)
+
         # Owner name — bierzemy z pierwszego sezonu, który go ma
         owner_name = ""
         for year_str in sorted(all_standings.keys(), key=int):
@@ -307,6 +321,7 @@ def build_franchises(all_standings):
             "total_ties": total_ties,
             "total_pf": total_pf,
             "total_pa": total_pa,
+            "championships": championships,
         })
 
     # Sortujemy po total_wins malejąco (najbardziej utytułowane na górze)

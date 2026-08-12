@@ -33,7 +33,8 @@
     "total_losses": 79,
     "total_ties": 4,
     "total_pf": 16798.6,
-    "total_pa": 16033.78
+    "total_pa": 16033.78,
+    "championships": 3
   },
   {
     "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
@@ -63,7 +64,8 @@
     "total_losses": 106,
     "total_ties": 2,
     "total_pf": 16091.4,
-    "total_pa": 17014.58
+    "total_pa": 17014.58,
+    "championships": 1
   },
   {
     "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
@@ -92,7 +94,8 @@
     "total_losses": 99,
     "total_ties": 2,
     "total_pf": 14842.14,
-    "total_pa": 15365.7
+    "total_pa": 15365.7,
+    "championships": 3
   },
   {
     "owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
@@ -117,7 +120,8 @@
     "total_losses": 42,
     "total_ties": 0,
     "total_pf": 10229.0,
-    "total_pa": 9063.0
+    "total_pa": 9063.0,
+    "championships": 0
   },
   {
     "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
@@ -149,7 +153,8 @@
     "total_losses": 101,
     "total_ties": 4,
     "total_pf": 13934.78,
-    "total_pa": 14769.22
+    "total_pa": 14769.22,
+    "championships": 3
   },
   {
     "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
@@ -179,7 +184,8 @@
     "total_losses": 66,
     "total_ties": 0,
     "total_pf": 10695.56,
-    "total_pa": 10510.28
+    "total_pa": 10510.28,
+    "championships": 0
   },
   {
     "owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
@@ -202,7 +208,8 @@
     "total_losses": 44,
     "total_ties": 0,
     "total_pf": 9047.12,
-    "total_pa": 8850.28
+    "total_pa": 8850.28,
+    "championships": 1
   },
   {
     "owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
@@ -230,7 +237,8 @@
     "total_losses": 41,
     "total_ties": 0,
     "total_pf": 7450.0,
-    "total_pa": 7043.5
+    "total_pa": 7043.5,
+    "championships": 1
   },
   {
     "owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
@@ -254,7 +262,8 @@
     "total_losses": 55,
     "total_ties": 0,
     "total_pf": 8113.5,
-    "total_pa": 8083.0
+    "total_pa": 8083.0,
+    "championships": 0
   },
   {
     "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
@@ -276,7 +285,8 @@
     "total_losses": 42,
     "total_ties": 0,
     "total_pf": 8562.56,
-    "total_pa": 8252.86
+    "total_pa": 8252.86,
+    "championships": 0
   },
   {
     "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
@@ -298,7 +308,8 @@
     "total_losses": 32,
     "total_ties": 1,
     "total_pf": 6411.5,
-    "total_pa": 5905.5
+    "total_pa": 5905.5,
+    "championships": 1
   },
   {
     "owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
@@ -320,7 +331,8 @@
     "total_losses": 40,
     "total_ties": 0,
     "total_pf": 6340.0,
-    "total_pa": 6648.0
+    "total_pa": 6648.0,
+    "championships": 0
   },
   {
     "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
@@ -340,7 +352,8 @@
     "total_losses": 21,
     "total_ties": 0,
     "total_pf": 4426.0,
-    "total_pa": 4171.5
+    "total_pa": 4171.5,
+    "championships": 1
   },
   {
     "owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
@@ -360,7 +373,8 @@
     "total_losses": 24,
     "total_ties": 1,
     "total_pf": 4274.5,
-    "total_pa": 4201.5
+    "total_pa": 4201.5,
+    "championships": 0
   },
   {
     "owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
@@ -380,7 +394,8 @@
     "total_losses": 32,
     "total_ties": 0,
     "total_pf": 3810.5,
-    "total_pa": 4056.0
+    "total_pa": 4056.0,
+    "championships": 0
   },
   {
     "owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
@@ -403,7 +418,8 @@
     "total_losses": 35,
     "total_ties": 2,
     "total_pf": 3916.0,
-    "total_pa": 4391.0
+    "total_pa": 4391.0,
+    "championships": 0
   },
   {
     "owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
@@ -421,7 +437,8 @@
     "total_losses": 16,
     "total_ties": 0,
     "total_pf": 1549.0,
-    "total_pa": 1858.0
+    "total_pa": 1858.0,
+    "championships": 0
   },
   {
     "owner_id": "{3AA0BC31-A484-4C48-A0BC-31A4843C4868}",
@@ -438,7 +455,8 @@
     "total_losses": 7,
     "total_ties": 0,
     "total_pf": 931.5,
-    "total_pa": 933.0
+    "total_pa": 933.0,
+    "championships": 0
   },
   {
     "owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
@@ -455,7 +473,8 @@
     "total_losses": 8,
     "total_ties": 0,
     "total_pf": 1269.66,
-    "total_pa": 1311.62
+    "total_pa": 1311.62,
+    "championships": 0
   },
   {
     "owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
@@ -472,6 +491,7 @@
     "total_losses": 11,
     "total_ties": 0,
     "total_pf": 888.0,
-    "total_pa": 1119.0
+    "total_pa": 1119.0,
+    "championships": 0
   }
 ]
