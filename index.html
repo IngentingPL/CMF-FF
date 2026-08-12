@@ -377,8 +377,9 @@
   footer .wrap { display:flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
 
   @media (max-width: 640px) {
-    table.standings th:nth-child(4), table.standings td:nth-child(4),
-    table.standings th:nth-child(5), table.standings td:nth-child(5) { display: none; }
+    /* Na wąskim ekranie chowamy PF i PA (kolumny 5 i 6 po dodaniu Win%), Win% (4) zostaje widoczne */
+    table.standings th:nth-child(5), table.standings td:nth-child(5),
+    table.standings th:nth-child(6), table.standings td:nth-child(6) { display: none; }
     .draft-pick { grid-template-columns: 2.5rem 1fr; }
     .draft-pick .team { grid-column: 2; }
   }
@@ -423,6 +424,8 @@
   }
   .franchise-meta .years { font-weight: 500; }
   .franchise-meta .wlt   { color: var(--ink-soft); }
+  /* Win% zaraz po W-L-T — ten sam ton co .wlt */
+  .franchise-meta .winpct { color: var(--ink-soft); }
   .franchise-meta .pfpa  { font-size: 0.78rem; color: var(--ink-soft); }
   .franchise-meta .pfpa .pos { color: var(--good); }
   .franchise-meta .pfpa .neg { color: var(--rust); }
@@ -526,7 +529,7 @@
     </div>
     <table class="standings">
       <thead>
-        <tr><th></th><th>Drużyna</th><th class="num">W-L-T</th><th class="num">PF</th><th class="num">PA</th><th class="num">Różnica</th></tr>
+        <tr><th></th><th>Drużyna</th><th class="num">W-L-T</th><th class="num">Win%</th><th class="num">PF</th><th class="num">PA</th><th class="num">Różnica</th></tr>
       </thead>
       <tbody>
         <tr class="lead"><td class="rank">1</td><td>Poznan Festung</td><td class="num">12-3-0</td><td class="num">1532.04</td><td class="num">1377.74</td><td class="num diff pos">+154.30</td></tr>
@@ -726,7 +729,7 @@
       // Sezon jeszcze nie istnieje w danych (np. 2026 przed rozpoczęciem)
       if (!(year in standings)) {
         tbody.innerHTML =
-          `<tr><td colspan="6" style="padding:3rem 1.5rem;text-align:center;color:var(--ink-soft);font-family:var(--font-mono);font-size:0.95rem;">` +
+          `<tr><td colspan="7" style="padding:3rem 1.5rem;text-align:center;color:var(--ink-soft);font-family:var(--font-mono);font-size:0.95rem;">` +
             `Sezon ${year} się jeszcze nie rozpoczął` +
           `</td></tr>`;
         eyebrow.textContent = `${year}`;
@@ -746,6 +749,12 @@
         const sign = diff >= 0 ? '+' : '';
         const diffClass = diff >= 0 ? 'pos' : 'neg';
 
+        // Win% = (wins + 0.5*ties) / (wins+losses+ties) * 100, jedno miejsce po przecinku
+        const totalGames = t.wins + t.losses + t.ties;
+        const winPct = totalGames > 0
+          ? ((t.wins + 0.5 * t.ties) / totalGames * 100).toFixed(1) + '%'
+          : '—'; // 0 rozegranych meczów → myślnik
+
         const tr = document.createElement('tr');
         if (i === 0) tr.classList.add('lead');
 
@@ -754,6 +763,7 @@
           // final_standing === 1 → mistrz po playoffach, niezależnie od pozycji w tabeli
           `<td>${t.team_name}${t.final_standing === 1 ? ' <span class="champion-badge">MISTRZ</span>' : ''}</td>` +
           `<td class="num">${t.wins}-${t.losses}-${t.ties}</td>` +
+          `<td class="num">${winPct}</td>` +
           `<td class="num">${t.points_for.toFixed(2)}</td>` +
           `<td class="num">${t.points_against.toFixed(2)}</td>` +
           `<td class="num diff ${diffClass}">${sign}${diff.toFixed(2)}</td>`;
@@ -1007,11 +1017,20 @@
             `<div class="franchise-prev">Wcześniej: ${fr.previous_names.join(', ')}</div>`;
         }
 
-        // Prawa strona: zakres lat, W-L-T, PF/PA/różnica
+        // Prawa strona: zakres lat, W-L-T, Win%, PF/PA/różnica
         const yearRange = formatYearRanges(fr.seasons);
+
+        // Win% = (wins + 0.5*ties) / (wins+losses+ties) * 100, jedno miejsce po przecinku
+        const frTotalGames = fr.total_wins + fr.total_losses + fr.total_ties;
+        const frWinPct = frTotalGames > 0
+          ? ((fr.total_wins + 0.5 * fr.total_ties) / frTotalGames * 100).toFixed(1) + '%'
+          : '—'; // 0 rozegranych meczów → myślnik
+
         const metaHTML =
           `<div class="years">${fr.seasons.length} sezon${fr.seasons.length !== 1 ? 'ów' : ''} · ${yearRange}</div>` +
           `<div class="wlt">W-L-T: ${fr.total_wins}-${fr.total_losses}-${fr.total_ties}</div>` +
+          // Win% zaraz po W-L-T, przed mistrzostwami i PF/PA
+          `<div class="winpct">Win%: ${frWinPct}</div>` +
           // Mistrzostwa: tylko jeśli > 0, między W-L-T a PF/PA
           (fr.championships > 0 ? `<div class="champs">🏆 × ${fr.championships} mistrzostw</div>` : '') +
           `<div class="pfpa">PF: ${fr.total_pf.toFixed(2)} · PA: ${fr.total_pa.toFixed(2)} · ` +
