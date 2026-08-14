@@ -335,6 +335,31 @@
     "championships": 0
   },
   {
+    "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+    "owner_name": "Mad dux",
+    "current_name": "Madison Bumgarners",
+    "previous_names": [
+      "Edinburgh Yer Maws"
+    ],
+    "all_names": [
+      "Edinburgh Yer Maws",
+      "Madison Bumgarners"
+    ],
+    "seasons": [
+      2013,
+      2014,
+      2016,
+      2017,
+      2018
+    ],
+    "total_wins": 39,
+    "total_losses": 28,
+    "total_ties": 0,
+    "total_pf": 5357.5,
+    "total_pa": 5104.5,
+    "championships": 1
+  },
+  {
     "owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
     "owner_name": "Tom Buu",
     "current_name": "Elblag Scrolls",
@@ -356,36 +381,12 @@
     "championships": 0
   },
   {
-    "owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
-    "owner_name": "Mad dux",
-    "current_name": "Madison Bumgarners",
-    "previous_names": [],
-    "all_names": [
-      "Madison Bumgarners"
-    ],
-    "seasons": [
-      2014,
-      2016,
-      2017,
-      2018
-    ],
-    "total_wins": 32,
-    "total_losses": 21,
-    "total_ties": 0,
-    "total_pf": 4426.0,
-    "total_pa": 4171.5,
-    "championships": 1
-  },
-  {
     "owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
     "owner_name": "Lukasz Grabowski",
-    "current_name": "Zambrow Bears",
-    "previous_names": [
-      "Zambrów Bears"
-    ],
+    "current_name": "Zambrów Bears",
+    "previous_names": [],
     "all_names": [
-      "Zambrów Bears",
-      "Zambrow Bears"
+      "Zambrów Bears"
     ],
     "seasons": [
       2014,
@@ -438,24 +439,6 @@
     "total_ties": 0,
     "total_pf": 1549.0,
     "total_pa": 1858.0,
-    "championships": 0
-  },
-  {
-    "owner_id": "{3AA0BC31-A484-4C48-A0BC-31A4843C4868}",
-    "owner_name": "- -",
-    "current_name": "Edinburgh Yer Maws",
-    "previous_names": [],
-    "all_names": [
-      "Edinburgh Yer Maws"
-    ],
-    "seasons": [
-      2013
-    ],
-    "total_wins": 7,
-    "total_losses": 7,
-    "total_ties": 0,
-    "total_pf": 931.5,
-    "total_pa": 933.0,
     "championships": 0
   },
   {

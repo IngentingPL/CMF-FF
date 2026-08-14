@@ -254,7 +254,25 @@ def build_franchises(all_standings):
 
     Drużyny bez owner_id są pomijane (nie da się ich przypisać do franczyzy).
     """
-    # Grupujemy sezony po owner_id
+    # ---------------------------------------------------------------------
+    # RĘCZNE WYJĄTKI – oparte na wiedzy o lidze, a nie wykryte automatycznie.
+    #
+    # (1) MANUAL_OWNER_MERGES: jedna osoba grała na dwóch różnych kontach
+    #     ESPN (różne owner_id), więc jej sezony mają iść do JEDNEJ franczyzy.
+    #     Edinburgh Yer Maws i Madison Bumgarners to ta sama osoba.
+    MANUAL_OWNER_MERGES = {
+        "{3AA0BC31-A484-4C48-A0BC-31A4843C4868}":  # Edinburgh Yer Maws
+        "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",   # Madison Bumgarners
+    }
+    # (2) TEAM_NAME_ALIASES: literówka/wariant nazwy w źródle ESPN (ten sam
+    #     owner_id), nie faktyczna zmiana nazwy. Po zamianie istniejąca logika
+    #     "bez duplikatów pod rząd" sama usunie powtórzenie.
+    TEAM_NAME_ALIASES = {
+        "Zambrow Bears": "Zambrów Bears",
+    }
+    # ---------------------------------------------------------------------
+
+    # Grupujemy sezony po owner_id (najpierw scalenie kont wg MANUAL_OWNER_MERGES)
     # final_standing może być None – None != 1, więc nie przeszkadza w liczeniu.
     by_owner = {}  # owner_id -> lista (year, team_name, w, l, t, pf, pa, final_standing)
     for year_str, teams in sorted(all_standings.items(), key=lambda x: int(x[0])):
@@ -263,6 +281,7 @@ def build_franchises(all_standings):
             oid = team.get("owner_id")
             if not oid:
                 continue
+            oid = MANUAL_OWNER_MERGES.get(oid, oid)
             if oid not in by_owner:
                 by_owner[oid] = []
             by_owner[oid].append((
@@ -285,9 +304,10 @@ def build_franchises(all_standings):
         years_list = [s[0] for s in seasons_sorted]
 
         # Nazwy chronologicznie, bez duplikatów pod rząd
+        # (najpierw alias literówek z TEAM_NAME_ALIASES)
         names_list = []
         for s in seasons_sorted:
-            name = s[1]
+            name = TEAM_NAME_ALIASES.get(s[1], s[1])
             if not names_list or names_list[-1] != name:
                 names_list.append(name)
 
