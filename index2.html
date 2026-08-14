@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liga № 58995 — Fantasy Football</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark: #16281F;
+    --dark-deep: #0E1912;
+    --light: #FFFFFF;
+    --light-dim: #E4E4E4;
+    --gold: #C9982F;
+    --gold-bright: #E0B24E;
+    --rust: #A8432F;
+    --ink: #14201A;
+    --ink-soft: #4E5D51;
+    --good: #5C7A3F;
+    --line-on-dark: rgba(255,255,255,0.16);
+    --line-on-light: rgba(20,32,26,0.14);
+    --font-display: 'Big Shoulders Display', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--light); color: var(--ink); font-family: var(--font-body); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2.5rem); }
+  .eyebrow { display: inline-flex; align-items: center; gap: 0.5em; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; }
+  .eyebrow::before { content: ""; width: 0.5em; height: 0.5em; background: var(--gold); display: inline-block; flex-shrink: 0; }
+
+  .hero { background: repeating-linear-gradient(90deg, var(--line-on-dark) 0 1px, transparent 1px 8.333%), linear-gradient(180deg, var(--dark) 0%, var(--dark-deep) 100%); color: var(--light); padding: clamp(3.5rem, 10vw, 6.5rem) 0 clamp(3rem, 8vw, 5rem); }
+  .hero .eyebrow { color: var(--gold-bright); }
+  .hero h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 9vw, 6.75rem); line-height: 0.92; letter-spacing: -0.01em; margin: 0.4em 0 0; }
+  .hero .stat-row { display: flex; flex-wrap: wrap; gap: clamp(1.5rem, 4vw, 3rem); margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line-on-dark); }
+  .hero .stat b { display: block; font-family: var(--font-display); font-size: 2.4rem; font-weight: 700; color: var(--gold-bright); line-height: 1; }
+  .hero .stat span { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light-dim); }
+
+  .tab-nav { display: flex; gap: 0; border-bottom: 2px solid var(--ink); max-width: 1120px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2.5rem); }
+  .tab-btn { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; padding: 1rem 1.75rem; background: transparent; border: none; color: var(--ink-soft); cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.15s ease; }
+  .tab-btn:hover { color: var(--ink); }
+  .tab-btn.active { color: var(--ink); border-bottom-color: var(--gold); }
+
+  section { padding: clamp(3rem, 7vw, 5rem) 0; }
+  .dark-band { background: var(--dark); color: var(--light); }
+  .section-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; border-bottom: 2px solid var(--ink); padding-bottom: 1rem; }
+  .section-head h2 { font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; margin: 0.2em 0 0; }
+  .light .eyebrow { color: var(--rust); }
+  .dark-band .section-head { border-bottom-color: var(--line-on-dark); }
+  .dark-band .eyebrow { color: var(--gold-bright); }
+  .dark-band h2 { color: var(--light); }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  .season-bar { background: var(--light-dim); border-bottom: 1px solid var(--line-on-light); padding: 0.9rem 0; }
+  .season-bar .wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .season-bar label { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-soft); }
+  .select-wrap { position: relative; display: inline-block; }
+  .select-wrap::after { content: "▾"; position: absolute; right: 0.9rem; top: 50%; transform: translateY(-50%); color: var(--gold); pointer-events: none; font-size: 0.75rem; }
+  #season-select { font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; color: var(--ink); background: var(--light); border: 2px solid var(--gold); padding: 0.5rem 2.2rem 0.5rem 1rem; appearance: none; -webkit-appearance: none; -moz-appearance: none; cursor: pointer; }
+  #season-select:hover, #season-select:focus { border-color: var(--gold-bright); }
+
+  .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-top: 0.5rem; }
+  .summary-stat { border-top: 3px solid var(--gold); padding-top: 0.75rem; }
+  .summary-stat.wide { grid-column: span 2; }
+  .summary-stat b { display: block; font-family: var(--font-display); font-size: 2.8rem; font-weight: 700; color: var(--ink); line-height: 1; }
+  .summary-stat span { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); display: block; margin-top: 0.4rem; }
+  @media (max-width: 560px) { .summary-stat.wide { grid-column: span 1; } }
+
+  table.standings { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  table.standings th { text-align: left; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); padding: 0 0.75rem 0.75rem; border-bottom: 1px solid var(--line-on-light); }
+  table.standings td { padding: 0.9rem 0.75rem; border-bottom: 1px solid var(--line-on-light); font-size: 0.98rem; }
+  table.standings tbody tr:hover { background: var(--light-dim); }
+  table.standings tr.lead td { background: rgba(201,152,47,0.10); }
+  table.standings .rank { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; width: 2.2rem; }
+  table.standings .num { font-family: var(--font-mono); text-align: right; }
+  table.standings .diff.pos { color: var(--good); }
+  table.standings .diff.neg { color: var(--rust); }
+  th.num { text-align: right; }
+  .champion-badge { display: inline-block; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--dark); background: var(--gold); padding: 0.15rem 0.5rem; margin-left: 0.6rem; letter-spacing: 0.05em; vertical-align: middle; }
+
+  .matchups { display: grid; gap: 1rem; }
+  .matchup-card { border: 1px solid var(--line-on-light); padding: 1.25rem 1.5rem; background: var(--light); }
+  .matchup-row { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.95rem; margin-bottom: 0.6rem; }
+  .matchup-row b { font-family: var(--font-body); font-weight: 600; }
+  .bar { display: flex; height: 8px; width: 100%; background: var(--light-dim); overflow: hidden; }
+  .bar span { display: block; height: 100%; }
+  .bar .a { background: var(--gold); }
+  .bar .b { background: var(--ink-soft); opacity: 0.35; }
+
+  /* ---------- PLAYOFF BRACKET ---------- */
+  .bracket { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .bracket-round h4 { font-family: var(--font-display); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; margin: 0 0 1rem; }
+  .bracket-game { border: 1px solid var(--line-on-light); margin-bottom: 0.75rem; }
+  .bg-team { display: flex; justify-content: space-between; gap: 0.5rem; padding: 0.5rem 0.75rem; font-family: var(--font-mono); font-size: 0.85rem; }
+  .bg-team:first-child { border-bottom: 1px solid var(--line-on-light); }
+  .bg-team.winner { font-weight: 700; background: rgba(201,152,47,0.08); }
+  .bracket-game.final .bg-team.champion { background: var(--gold); color: var(--dark); font-weight: 700; }
+  .bracket-bye { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); font-style: italic; padding: 0.5rem 0.75rem; border: 1px dashed var(--line-on-light); }
+  @media (max-width: 780px) { .bracket { grid-template-columns: 1fr; } }
+
+  .roster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.5rem; }
+  .roster-card { border: 1px solid var(--line-on-light); padding: 1.25rem; }
+  .roster-card h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; margin: 0 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--gold); }
+  .roster-list { list-style: none; margin: 0; padding: 0; }
+  .roster-list li { display: flex; align-items: center; gap: 0.6rem; padding: 0.4rem 0; font-size: 0.9rem; border-bottom: 1px solid var(--line-on-light); }
+  .roster-list li:last-child { border-bottom: none; }
+  .roster-list .pos { font-family: var(--font-mono); font-size: 0.66rem; font-weight: 600; color: var(--ink); background: var(--light-dim); border: 1px solid var(--gold); padding: 0.1rem 0.4rem; min-width: 2rem; text-align: center; flex-shrink: 0; }
+  .roster-list .name { flex: 1; font-weight: 500; }
+  .roster-list .pro { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); flex-shrink: 0; }
+
+  .franchise-list { display: flex; flex-direction: column; }
+  .franchise-row { display: grid; grid-template-columns: 1fr auto; gap: 0.5rem 1.5rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line-on-light); align-items: start; }
+  .franchise-name { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; }
+  .franchise-owner { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-soft); display: block; margin-top: 0.15rem; }
+  .franchise-prev { font-size: 0.78rem; color: var(--ink-soft); font-style: italic; margin-top: 0.5rem; }
+  .franchise-record { text-align: right; }
+  .franchise-record .years { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); display: block; }
+  .franchise-record .wlt { font-family: var(--font-mono); font-size: 1.15rem; font-weight: 600; margin-top: 0.35rem; }
+  .franchise-record .pfpa { font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-soft); margin-top: 0.2rem; }
+  .franchise-record .champs { font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--gold); margin-top: 0.3rem; }
+  @media (max-width: 560px) { .franchise-row { grid-template-columns: 1fr; } .franchise-record { text-align: left; margin-top: 0.5rem; } }
+
+  .timeline-wrap { display: flex; align-items: flex-end; gap: clamp(0.3rem, 1.2vw, 0.9rem); height: 220px; border-bottom: 2px solid var(--gold); margin-top: 3rem; }
+  .timeline-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+  .timeline-col .count { font-family: var(--font-mono); color: var(--gold-bright); font-size: 0.72rem; margin-bottom: 0.4rem; }
+  .timeline-col .bar-el { width: 60%; background: linear-gradient(180deg, var(--gold-bright), var(--gold)); }
+  .timeline-col.peak .bar-el { background: linear-gradient(180deg, #fff, var(--gold-bright)); }
+  .timeline-col .year { font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; color: var(--light-dim); margin-top: 0.6rem; }
+  .timeline-note { font-family: var(--font-mono); font-size: 0.8rem; color: var(--light-dim); margin-top: 1rem; }
+
+  .draft-list { display: flex; flex-direction: column; }
+  .draft-pick { display: grid; grid-template-columns: 3.5rem 1fr auto; align-items: center; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line-on-light); }
+  .draft-pick .pick-no { font-family: var(--font-mono); color: var(--rust); font-weight: 500; }
+  .draft-pick .player { font-size: 1.05rem; font-weight: 600; }
+  .draft-pick .team { font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink-soft); }
+
+  footer { background: var(--dark-deep); color: var(--light-dim); padding: 2rem 0; font-family: var(--font-mono); font-size: 0.76rem; }
+  footer .wrap { display:flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+
+  @media (max-width: 640px) {
+    table.standings th:nth-child(4), table.standings td:nth-child(4),
+    table.standings th:nth-child(5), table.standings td:nth-child(5) { display: none; }
+    .draft-pick { grid-template-columns: 2.5rem 1fr; }
+    .draft-pick .team { grid-column: 2; }
+  }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Fantasy Football · Księga Ligi</span>
+    <h1>Liga № 58995</h1>
+    <div class="stat-row">
+      <div class="stat"><b>2012</b><span>Rok założenia</span></div>
+      <div class="stat"><b>14</b><span>Sezonów</span></div>
+      <div class="stat"><b>20</b><span>Drużyn w historii</span></div>
+      <div class="stat"><b>810</b><span>Rozegranych meczów</span></div>
+      <div class="stat"><b>2119</b><span>Wyborów draftowych</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="tab-nav">
+  <button class="tab-btn active" data-tab="podsumowanie">Podsumowanie</button>
+  <button class="tab-btn" data-tab="sezon">Sezon</button>
+</nav>
+
+<div id="panel-podsumowanie" class="tab-panel">
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">2012 – 2025 · Cała historia</span>
+        <h2>Rekordy ligi</h2>
+      </div>
+    </div>
+    <div class="summary-grid">
+      <div class="summary-stat"><b>14</b><span>Sezonów</span></div>
+      <div class="summary-stat"><b>2012</b><span>Rok założenia</span></div>
+      <div class="summary-stat"><b>810</b><span>Meczów łącznie</span></div>
+      <div class="summary-stat"><b>2119</b><span>Wyborów draftowych</span></div>
+      <div class="summary-stat wide"><b>243.40</b><span>Najwyższy wynik — Chicago Scrubs, 2024</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">2012 – 2025 · Wszyscy właściciele</span>
+        <h2>Historia franczyz</h2>
+      </div>
+    </div>
+    <div class="franchise-list">
+      <div class="franchise-row">
+        <div>
+          <span class="franchise-name">Lublin Gnagare</span>
+          <span class="franchise-owner">Piotr Tkaczyk</span>
+        </div>
+        <div class="franchise-record">
+          <span class="years">14 sezonów · 2012–2025</span>
+          <span class="wlt">W-L-T: 89-106-2</span>
+          <span class="pfpa">Win%: 45.7%</span>
+          <span class="champs">🏆 × 1 mistrzostwo</span>
+        </div>
+      </div>
+      <div class="franchise-row">
+        <div>
+          <span class="franchise-name">MMz Old Goats</span>
+          <span class="franchise-owner">Grzesiek Chodkiewicz</span>
+          <div class="franchise-prev">Wcześniej: Minsk Maz Old Goats</div>
+        </div>
+        <div class="franchise-record">
+          <span class="years">13 sezonów · 2012–2021, 2023–2025</span>
+          <span class="wlt">W-L-T: 74-101-4</span>
+          <span class="pfpa">Win%: 42.5%</span>
+          <span class="champs">🏆 × 3 mistrzostwa</span>
+        </div>
+      </div>
+      <div class="franchise-row">
+        <div>
+          <span class="franchise-name">Poznan Festung</span>
+          <span class="franchise-owner">Roman Sobisiak</span>
+          <div class="franchise-prev">Wcześniej: Kolberg Festung, Posen Festung, Mosina Republicans</div>
+        </div>
+        <div class="franchise-record">
+          <span class="years">13 sezonów · 2013–2025</span>
+          <span class="wlt">W-L-T: 102-79-4</span>
+          <span class="pfpa">Win%: 56.2%</span>
+          <span class="champs">🏆 × 3 mistrzostwa</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark-band">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">2012 – 2025</span>
+        <h2>Liczba drużyn, sezon po sezonie</h2>
+      </div>
+    </div>
+    <div class="timeline-wrap">
+      <div class="timeline-col"><span class="count">7</span><div class="bar-el" style="height:50%"></div><span class="year">'12</span></div>
+      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'13</span></div>
+      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'14</span></div>
+      <div class="timeline-col"><span class="count">12</span><div class="bar-el" style="height:85.7%"></div><span class="year">'15</span></div>
+      <div class="timeline-col peak"><span class="count">14</span><div class="bar-el" style="height:100%"></div><span class="year">'16</span></div>
+      <div class="timeline-col peak"><span class="count">14</span><div class="bar-el" style="height:100%"></div><span class="year">'17</span></div>
+      <div class="timeline-col"><span class="count">13</span><div class="bar-el" style="height:92.9%"></div><span class="year">'18</span></div>
+      <div class="timeline-col"><span class="count">10</span><div class="bar-el" style="height:71.4%"></div><span class="year">'19</span></div>
+      <div class="timeline-col"><span class="count">8</span><div class="bar-el" style="height:57.1%"></div><span class="year">'20</span></div>
+      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'21</span></div>
+      <div class="timeline-col"><span class="count">4</span><div class="bar-el" style="height:28.6%"></div><span class="year">'22</span></div>
+      <div class="timeline-col"><span class="count">8</span><div class="bar-el" style="height:57.1%"></div><span class="year">'23</span></div>
+      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'24</span></div>
+      <div class="timeline-col"><span class="count">6</span><div class="bar-el" style="height:42.9%"></div><span class="year">'25</span></div>
+    </div>
+    <div class="timeline-note">Szczyt: 14 drużyn (2016–17) · Najmniej: 4 drużyny (2022)</div>
+  </div>
+</section>
+
+</div>
+
+<div id="panel-sezon" class="tab-panel" hidden>
+
+<div class="season-bar">
+  <div class="wrap">
+    <label for="season-select">Przeglądaj sezon</label>
+    <div class="select-wrap"><select id="season-select"></select></div>
+  </div>
+</div>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div><span class="eyebrow">2025 · Sezon zasadniczy</span><h2>Tabela końcowa</h2></div>
+    </div>
+    <table class="standings">
+      <thead><tr><th></th><th>Drużyna</th><th class="num">W-L-T</th><th class="num">PF</th><th class="num">PA</th><th class="num">Różnica</th></tr></thead>
+      <tbody>
+        <tr><td class="rank">1</td><td>Poznan Festung</td><td class="num">12-3-0</td><td class="num">1532.04</td><td class="num">1377.74</td><td class="num diff pos">+154.30</td></tr>
+        <tr class="lead"><td class="rank">2</td><td>Lublin Gnagare <span class="champion-badge">MISTRZ</span></td><td class="num">10-5-0</td><td class="num">1465.00</td><td class="num">1348.38</td><td class="num diff pos">+116.62</td></tr>
+        <tr><td class="rank">3</td><td>Vienna Schnitzels</td><td class="num">7-8-0</td><td class="num">1486.32</td><td class="num">1503.08</td><td class="num diff neg">-16.76</td></tr>
+        <tr><td class="rank">4</td><td>MMz Old Goats</td><td class="num">7-8-0</td><td class="num">1360.12</td><td class="num">1457.36</td><td class="num diff neg">-97.24</td></tr>
+        <tr><td class="rank">5</td><td>Chicago Scrubs</td><td class="num">5-10-0</td><td class="num">1328.20</td><td class="num">1426.44</td><td class="num diff neg">-98.24</td></tr>
+        <tr><td class="rank">6</td><td>Bytom Amateurs</td><td class="num">4-11-0</td><td class="num">1431.48</td><td class="num">1490.16</td><td class="num diff neg">-58.68</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div><span class="eyebrow">2025 · Tydzień 16</span><h2>Wyniki meczów</h2></div>
+    </div>
+    <div class="matchups">
+      <div class="matchup-card">
+        <div class="matchup-row"><b>Poznan Festung</b><span>90.36</span></div>
+        <div class="matchup-row"><b>Lublin Gnagare</b><span>83.42</span></div>
+        <div class="bar"><span class="a" style="width:52%"></span><span class="b" style="width:48%"></span></div>
+      </div>
+      <div class="matchup-card">
+        <div class="matchup-row"><b>Chicago Scrubs</b><span>103.06</span></div>
+        <div class="matchup-row"><b>Vienna Schnitzels</b><span>79.68</span></div>
+        <div class="bar"><span class="a" style="width:56%"></span><span class="b" style="width:44%"></span></div>
+      </div>
+      <div class="matchup-card">
+        <div class="matchup-row"><b>MMz Old Goats</b><span>91.98</span></div>
+        <div class="matchup-row"><b>Bytom Amateurs</b><span>57.32</span></div>
+        <div class="bar"><span class="a" style="width:62%"></span><span class="b" style="width:38%"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div><span class="eyebrow">2016 · Playoffy</span><h2>Drabinka mistrzostw</h2></div>
+    </div>
+    <div class="bracket">
+      <div class="bracket-round">
+        <h4>Runda 1</h4>
+        <div class="bracket-game">
+          <div class="bg-team"><span>Lublin Gnagare</span><span>78.0</span></div>
+          <div class="bg-team winner"><span>East Side Demons</span><span>94.0</span></div>
+        </div>
+        <div class="bracket-game">
+          <div class="bg-team"><span>Kaliszfornia Capybaras</span><span>73.0</span></div>
+          <div class="bg-team winner"><span>San Marino Titans</span><span>95.0</span></div>
+        </div>
+        <div class="bracket-game">
+          <div class="bg-team"><span>Madison Bumgarners</span><span>81.5</span></div>
+          <div class="bg-team winner"><span>Minsk Maz Old Goats</span><span>84.5</span></div>
+        </div>
+        <div class="bracket-bye">Wloclawek Wolf Pack — wolny los</div>
+      </div>
+      <div class="bracket-round">
+        <h4>Półfinał</h4>
+        <div class="bracket-game">
+          <div class="bg-team"><span>Minsk Maz Old Goats</span><span>63.0</span></div>
+          <div class="bg-team winner"><span>Wloclawek Wolf Pack</span><span>93.5</span></div>
+        </div>
+        <div class="bracket-game">
+          <div class="bg-team winner"><span>East Side Demons</span><span>95.0</span></div>
+          <div class="bg-team"><span>San Marino Titans</span><span>77.5</span></div>
+        </div>
+      </div>
+      <div class="bracket-round">
+        <h4>Finał</h4>
+        <div class="bracket-game final">
+          <div class="bg-team"><span>Wloclawek Wolf Pack</span><span>64.5</span></div>
+          <div class="bg-team winner champion"><span>🏆 East Side Demons</span><span>89.0</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div><span class="eyebrow">2025 · Składy</span><h2>Składy drużyn</h2></div>
+    </div>
+    <div class="roster-grid">
+      <div class="roster-card">
+        <h3>Lublin Gnagare</h3>
+        <ul class="roster-list">
+          <li><span class="pos">QB</span><span class="name">Jayden Daniels</span><span class="pro">WSH</span></li>
+          <li><span class="pos">RB</span><span class="name">De'Von Achane</span><span class="pro">MIA</span></li>
+          <li><span class="pos">WR</span><span class="name">Puka Nacua</span><span class="pro">LAR</span></li>
+          <li><span class="pos">TE</span><span class="name">Juwan Johnson</span><span class="pro">NO</span></li>
+          <li><span class="pos">K</span><span class="name">Andy Borregales</span><span class="pro">NE</span></li>
+          <li><span class="pos">LB</span><span class="name">Jack Campbell</span><span class="pro">DET</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div><span class="eyebrow">2025 · Draft</span><h2>Runda pierwsza</h2></div>
+    </div>
+    <div class="draft-list">
+      <div class="draft-pick"><span class="pick-no">1.01</span><span class="player">Saquon Barkley</span><span class="team">Poznan Festung</span></div>
+      <div class="draft-pick"><span class="pick-no">1.02</span><span class="player">Ja'Marr Chase</span><span class="team">Lublin Gnagare</span></div>
+      <div class="draft-pick"><span class="pick-no">1.03</span><span class="player">Alvin Kamara</span><span class="team">MMz Old Goats</span></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>PODGLĄD WYGLĄDU · DANE PRZYKŁADOWE Z data/*.json</span>
+    <span>LEAGUE ID 58995 · ESPN FANTASY FOOTBALL</span>
+  </div>
+</footer>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  els.forEach(el => io.observe(el));
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const target = btn.dataset.tab;
+      const sezon = document.getElementById('panel-sezon');
+      const podsumowanie = document.getElementById('panel-podsumowanie');
+      sezon.hidden = (target !== 'sezon');
+      podsumowanie.hidden = (target !== 'podsumowanie');
+      (target === 'sezon' ? sezon : podsumowanie).querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    });
+  });
+</script>
+
+</body>
+</html>

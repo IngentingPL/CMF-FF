@@ -253,6 +253,19 @@
   .bar .a { background: var(--gold); }
   .bar .b { background: var(--ink-soft); opacity: 0.35; }
 
+  /* ---------- PLAYOFF BRACKET ---------- */
+  .bracket { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .bracket-round h4 { font-family: var(--font-display); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; margin: 0 0 1rem; }
+  .bracket-game { border: 1px solid var(--line-on-light); margin-bottom: 0.75rem; }
+  .bg-team { display: flex; justify-content: space-between; gap: 0.5rem; padding: 0.5rem 0.75rem; font-family: var(--font-mono); font-size: 0.85rem; }
+  .bg-team:first-child { border-bottom: 1px solid var(--line-on-light); }
+  .bg-team.winner { font-weight: 700; background: rgba(201,152,47,0.08); }
+  .bracket-game.final .bg-team.champion { background: var(--gold); color: var(--dark); font-weight: 700; }
+  .bracket-bye { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); font-style: italic; padding: 0.5rem 0.75rem; border: 1px dashed var(--line-on-light); }
+  @media (max-width: 780px) { .bracket { grid-template-columns: 1fr; } }
+  .bracket-empty { font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink-soft); padding: 0.5rem 0.75rem; border: 1px dashed var(--line-on-light); display: inline-block; }
+  .bracket-note { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); padding: 0.4rem 0.75rem; border-top: 1px dashed var(--line-on-light); }
+
   /* ---------- TIMELINE (signature) ---------- */
   .timeline-wrap {
     display: flex;
@@ -574,6 +587,17 @@
 <section class="light">
   <div class="wrap reveal">
     <div class="section-head">
+      <div><span class="eyebrow">2025 · Playoffy</span><h2>Drabinka mistrzostw</h2></div>
+    </div>
+    <div class="bracket">
+      <!-- Wypełniane przez renderBracket() -->
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
       <div>
         <span class="eyebrow">2025 · Draft</span>
         <h2>Runda pierwsza</h2>
@@ -693,12 +717,13 @@
   try {
 
     // ----- Wczytaj wszystkie dane równolegle -----
-    const [standings, matchups, draft, rosters, franchises] = await Promise.all([
+    const [standings, matchups, draft, rosters, franchises, playoffs] = await Promise.all([
       fetch('data/standings.json').then(r => r.json()),
       fetch('data/matchups.json').then(r => r.json()),
       fetch('data/draft.json').then(r => r.json()),
       fetch('data/rosters.json').then(r => r.json()),
-      fetch('data/franchises.json').then(r => r.json())
+      fetch('data/franchises.json').then(r => r.json()),
+      fetch('data/playoffs.json').then(r => r.json())
     ]);
 
     const years = Object.keys(standings).sort((a, b) => parseInt(a) - parseInt(b));
@@ -947,11 +972,116 @@
     }
 
     // =====================================================================
+    // Drabinka playoffów – renderuje rundy na podstawie playoffs[year]
+    // =====================================================================
+    function roundLabel(index, totalRounds) {
+      if (index === totalRounds - 1) return "Finał";
+      if (index === totalRounds - 2) return "Półfinał";
+      return `Runda ${index + 1}`;
+    }
+
+    function renderBracket(year) {
+      const bracketEl = document.querySelector('#panel-sezon .bracket');
+      const data = playoffs[year];
+      const rounds = (data && data.rounds) ? data.rounds : [];
+
+      // W roku bez playoffów pokazujemy komunikat i kończymy
+      if (rounds.length === 0) {
+        bracketEl.innerHTML = '<p class="bracket-empty">Ten sezon nie miał fazy playoff.</p>';
+        bracketEl.closest('section').querySelector('.eyebrow').textContent = `${year} · Playoffy`;
+        return;
+      }
+
+      // Zostawiamy tylko rundy z meczami w drabince zwycięzców
+      const filteredRounds = rounds
+        .map(r => ({ matchup_period: r.matchup_period, games: r.games.filter(g => g.tier === "WINNERS_BRACKET") }))
+        .filter(r => r.games.length > 0)
+        .sort((a, b) => a.matchup_period - b.matchup_period);
+
+      const totalRounds = filteredRounds.length;
+
+      // Eyebrow sekcji pokazuje sezon
+      bracketEl.closest('section').querySelector('.eyebrow').textContent = `${year} · Playoffy`;
+
+      // Drużyny grające w rundzie 1 – do wykrycia wolnych losów
+      const roundOneTeams = new Set();
+      if (filteredRounds[0]) {
+        filteredRounds[0].games.forEach(g => {
+          roundOneTeams.add(g.team_a);
+          roundOneTeams.add(g.team_b);
+        });
+      }
+
+      bracketEl.innerHTML = '';
+
+      filteredRounds.forEach((round, index) => {
+        const roundEl = document.createElement('div');
+        roundEl.className = 'bracket-round';
+
+        const h4 = document.createElement('h4');
+        h4.textContent = roundLabel(index, totalRounds);
+        roundEl.appendChild(h4);
+
+        round.games.forEach(game => {
+          const gameEl = document.createElement('div');
+          gameEl.className = 'bracket-game';
+
+          // Finał – ostatni mecz ostatniej rundy
+          const isFinal = (index === totalRounds - 1) && (game === round.games[round.games.length - 1]);
+          if (isFinal) gameEl.className = 'bracket-game final';
+
+          // Wiersz zwycięzcy dostaje klasę "winner"
+          const aWin = game.team_a === game.winner;
+          const bWin = game.team_b === game.winner;
+
+          let aClass = aWin ? 'bg-team winner' : 'bg-team';
+          let bClass = bWin ? 'bg-team winner' : 'bg-team';
+          let aName = game.team_a;
+          let bName = game.team_b;
+
+          // W finale mistrz dostaje prefiks trofeum
+          if (isFinal && aWin) { aClass += ' champion'; aName = `🏆 ${aName}`; }
+          if (isFinal && bWin) { bClass += ' champion'; bName = `🏆 ${bName}`; }
+
+          gameEl.innerHTML =
+            `<div class="${aClass}"><span>${aName}</span><span>${game.team_a_score.toFixed(2)}</span></div>` +
+            `<div class="${bClass}"><span>${bName}</span><span>${game.team_b_score.toFixed(2)}</span></div>`;
+
+          // Mecz wielotygodniowy – notatka z zakresem tygodni
+          if (game.weeks && game.weeks.length > 1) {
+            const note = document.createElement('div');
+            note.className = 'bracket-note';
+            note.textContent = `tygodnie ${game.weeks.join('-')} razem`;
+            gameEl.appendChild(note);
+          }
+
+          roundEl.appendChild(gameEl);
+        });
+
+        // Wolny los: drużyna z rundy 2, której nie ma w rundzie 1 (tylko runda 1 → 2)
+        if (index === 0 && filteredRounds[1]) {
+          filteredRounds[1].games.forEach(g => {
+            [g.team_a, g.team_b].forEach(team => {
+              if (!roundOneTeams.has(team)) {
+                const bye = document.createElement('div');
+                bye.className = 'bracket-bye';
+                bye.textContent = `${team} — wolny los`;
+                roundEl.appendChild(bye);
+              }
+            });
+          });
+        }
+
+        bracketEl.appendChild(roundEl);
+      });
+    }
+
+    // =====================================================================
     // JEDNORAZOWE: statystyki podsumowania – liczone z realnych danych
     // =====================================================================
     function renderSummaryStats() {
-      const yearKeys = Object.keys(standings);
 
+      const yearKeys = Object.keys(standings);
       // 1. Sezonów
       document.querySelector('#stat-seasons b').textContent = yearKeys.length;
 
@@ -1074,6 +1204,7 @@
       renderMatchups(year);
       renderDraft(year);
       renderRosters(year);
+      renderBracket(year);
     });
 
     // =====================================================================
@@ -1084,6 +1215,7 @@
     renderMatchups(defaultSeason);
     renderDraft(defaultSeason);
     renderRosters(defaultSeason);
+    renderBracket(defaultSeason);
 
     // =====================================================================
     // JEDNORAZOWE: wykres drużyn (timeline) – pełna historia, zawsze

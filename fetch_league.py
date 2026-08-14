@@ -1,6 +1,7 @@
 """
 fetch_league.py – pobiera pełną historię tabeli wyników ligi ESPN Fantasy Football
-(League ID: 58995) i zapisuje do pliku JSON.
+(League ID: 58995) i zapisuje do plików JSON: standings, matchups, rosters,
+draft, franchises oraz playoffs (drabinka playoffów ze surowego API).
 
 Przed uruchomieniem ustaw zmienne środowiskowe (dla lat prywatnych 2012–2018):
     SWID="..." ESPN_S2="..." python fetch_league.py
@@ -23,6 +24,11 @@ import ftfy
 
 # Importujemy klasę League z biblioteki espn-api
 from espn_api.football import League
+
+# requests – tylko do surowego zapytania o playoffy (build_playoffs).
+# espn-api nie udostępnia pola playoffTierType, więc drabinkę czytamy
+# bezpośrednio z JSON API.
+import requests
 
 
 def _clean_text(text):
@@ -340,6 +346,167 @@ def build_franchises(all_standings):
 
 
 # ---------------------------------------------------------------------------
+# PLAYOFFY – surowe API ESPN (requests, bez espn-api)
+# ---------------------------------------------------------------------------
+# Host lm-api-reads.fantasy.espn.com – fantasy.espn.com blokuje surowe zapytania
+# (HTTP 202 + bot-challenge). To ten sam API v3, z którego korzysta espn-api
+# (constant.py: FANTASY_BASE_ENDPOINT).
+ESPN_API_BASE = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl"
+
+# playoffTierType spoza tego zbioru oznacza mecz playoffowy (dowolny tier:
+# WINNERS_BRACKET, WINNERS_CONSOLATION_LADDER, LOSERS_CONSOLATION_LADDER).
+NON_PLAYOFF_TIERS = {None, "", "NONE"}
+
+# Pola meczu, które MUSZĄ istnieć, żebyśmy uznali strukturę za znaną.
+# Jakiegokolwiek brakuje -> nie zgadujemy, pomijamy cały rok.
+# away/home są sprawdzane osobno w build_playoffs: mecz z JEDNĄ drużyną
+# to znany wzorzec ESPN – wolny los (bye) – pomijamy sam mecz, nie rok.
+REQUIRED_MATCH_FIELDS = ("id", "matchupPeriodId", "playoffTierType", "winner")
+REQUIRED_TEAM_FIELDS = ("teamId", "pointsByScoringPeriod")
+
+
+def _fetch_raw_schedule(year, swid=None, espn_s2=None):
+    """Pobiera surową listę meczów ('schedule') z ESPN API dla danego roku.
+
+    Lata <2018: endpoint leagueHistory – zwraca LISTĘ lig; bierzemy wpis
+    z pasującym seasonId (gdy brak – ostatni). Lata 2018+: endpoint
+    seasons/.../leagues – zwraca obiekt z kluczem 'schedule'.
+    """
+    cookies = {"SWID": swid, "espn_s2": espn_s2} if swid and espn_s2 else None
+    if year < 2018:
+        url = (f"{ESPN_API_BASE}/leagueHistory/{LEAGUE_ID}"
+               f"?seasonId={year}&view=mMatchup&view=mMatchupScore")
+        data = requests.get(url, cookies=cookies, timeout=60).json()
+        if isinstance(data, list):
+            data = next((e for e in data if e.get("seasonId") == year), data[-1])
+    else:
+        url = (f"{ESPN_API_BASE}/seasons/{year}/segments/0/leagues/{LEAGUE_ID}"
+               f"?view=mMatchup&view=mMatchupScore")
+        data = requests.get(url, cookies=cookies, timeout=60).json()
+    return data.get("schedule", [])
+
+
+def build_playoffs(all_standings, swid=None, espn_s2=None):
+    """Buduje drabinkę playoffów dla lat 2012–2025 ze surowego API ESPN.
+
+    Dla każdego roku:
+      - pobiera surowy 'schedule' (view=mMatchup&view=mMatchupScore),
+      - wybiera mecze, gdzie playoffTierType nie jest puste/'NONE',
+      - WALIDUJE strukturę: mecz musi mieć id/matchupPeriodId/
+        playoffTierType/winner, a drużyny – teamId i pointsByScoringPeriod.
+        Brak czegokolwiek = "nietypowa struktura, pomijam" (cały rok).
+        Wyjątek: mecz z jedną drużyną (away/home == None) to wolny los
+        (bye) – znany wzorzec ESPN, pomijamy tylko ten mecz.
+      - mapuje teamId -> nazwę drużyny z JUŻ pobranych standings
+        (bez dodatkowych zapytań do API),
+      - sumuje pointsByScoringPeriod (obsługuje mecze 1- i wielotygodniowe),
+      - grupuje mecze wg matchupPeriodId = runda.
+
+    Zwraca (playoffs, ok_years, unusual_years):
+      playoffs = {"2025": {"rounds": [{"matchup_period": 16, "games": [...]}]}, ...}
+    """
+    playoffs = {}
+    ok_years = []
+    unusual_years = []
+
+    for year in PRIVATE_YEARS + PUBLIC_YEARS:
+        year_str = str(year)
+        # Drużyny z danego roku: team_id -> team_name (ze standings)
+        team_names = {
+            t["team_id"]: t["team_name"]
+            for t in all_standings.get(year_str, [])
+        }
+
+        try:
+            schedule = _fetch_raw_schedule(year, swid=swid, espn_s2=espn_s2)
+
+            # Mecze playoffowe = tier spoza NON_PLAYOFF_TIERS
+            playoff_matches = [
+                m for m in schedule
+                if m.get("playoffTierType") not in NON_PLAYOFF_TIERS
+            ]
+
+            # Walidacja struktury każdego meczu playoffowego – bez zgadywania.
+            # Mecz z jedną drużyną (home lub away == None) to znany wzorzec
+            # ESPN: wolny los (bye) w drabince – pomijamy TYLKO ten mecz.
+            structure_ok = True
+            bye_count = 0
+            real_matches = []
+            for m in playoff_matches:
+                if any(m.get(f) is None for f in REQUIRED_MATCH_FIELDS):
+                    structure_ok = False
+                    break
+                home, away = m.get("home"), m.get("away")
+                if home is None and away is None:
+                    structure_ok = False
+                    break
+                if home is None or away is None:
+                    bye_count += 1
+                    continue
+                for team in (home, away):
+                    if any(team.get(f) is None for f in REQUIRED_TEAM_FIELDS):
+                        structure_ok = False
+                        break
+                    if team.get("teamId") not in team_names:
+                        # Nie znamy nazwy drużyny – nie zapisujemy półdanych
+                        structure_ok = False
+                        break
+                if not structure_ok:
+                    break
+                real_matches.append(m)
+
+            if not structure_ok:
+                raise ValueError("brak wymaganych pól w meczu playoffowym")
+
+            # Mapowanie meczów na drabinkę
+            rounds = {}
+            for m in sorted(real_matches, key=lambda x: x.get("id") or 0):
+                home = m["home"]
+                away = m["away"]
+                # Suma wszystkich kluczy pointsByScoringPeriod – działa dla
+                # meczów 1-tygodniowych (1 klucz) i wielotygodniowych (2+ klucze)
+                home_score = round(sum(home["pointsByScoringPeriod"].values()), 2)
+                away_score = round(sum(away["pointsByScoringPeriod"].values()), 2)
+                weeks = sorted(int(w) for w in home["pointsByScoringPeriod"])
+
+                # winner: nazwa drużyny zamiast HOME/AWAY
+                if m["winner"] == "HOME":
+                    winner = team_names[home["teamId"]]
+                elif m["winner"] == "AWAY":
+                    winner = team_names[away["teamId"]]
+                else:
+                    winner = None  # np. UNDECIDED – nie zgadujemy
+
+                game = {
+                    "team_a": team_names[home["teamId"]],
+                    "team_a_score": home_score,
+                    "team_b": team_names[away["teamId"]],
+                    "team_b_score": away_score,
+                    "winner": winner,
+                    "tier": m["playoffTierType"],
+                    "weeks": weeks,
+                }
+                rounds.setdefault(m["matchupPeriodId"], []).append(game)
+
+            playoffs[year_str] = {
+                "rounds": [
+                    {"matchup_period": period, "games": games}
+                    for period, games in sorted(rounds.items())
+                ]
+            }
+            ok_years.append(year)
+            n_rounds = len(rounds)
+            n_games = len(real_matches)
+            bye_note = f", {bye_count} BYE pominięte" if bye_count else ""
+            print(f"  [{year}] OK ({n_rounds} rund, {n_games} meczów{bye_note})")
+        except Exception as e:
+            unusual_years.append(year)
+            print(f"  [{year}] nietypowa struktura, pomijam ({e})")
+
+    return playoffs, ok_years, unusual_years
+
+
+# ---------------------------------------------------------------------------
 # GŁÓWNA LOGIKA SKRYPTU
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
@@ -506,7 +673,17 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"  [{year}] BRAK: {e}")
 
-    # 8. Zapisujemy wyniki do plików JSON w folderze data/
+    # 8. Budujemy drabinkę playoffów – surowe API ESPN (requests), bo
+    #    espn-api nie udostępnia playoffTierType. Wykorzystuje JUŻ pobrane
+    #    standings do mapowania teamId -> nazwy drużyn.
+    print("\n--- PLAYOFFY (2012–2025) ---")
+    all_playoffs, playoff_ok_years, playoff_unusual_years = build_playoffs(
+        all_standings, swid=swid, espn_s2=espn_s2
+    )
+    print(f"Playoffy: {len(playoff_ok_years)}/{total_years} sezonów OK, "
+          f"nietypowe: {playoff_unusual_years or 'brak'}")
+
+    # 9. Zapisujemy wyniki do plików JSON w folderze data/
     #    Path("data") tworzy obiekt ścieżki – mkdir tworzy folder, jeśli nie istnieje
     output_dir = Path("data")
     output_dir.mkdir(exist_ok=True)
@@ -537,10 +714,16 @@ if __name__ == "__main__":
     with open(franchises_path, "w", encoding="utf-8") as f:
         json.dump(franchises, f, indent=2, ensure_ascii=False)
 
-    # 9. Podsumowanie w konsoli
+    # Zapis drabinki playoffów (build_playoffs)
+    playoffs_path = output_dir / "playoffs.json"
+    with open(playoffs_path, "w", encoding="utf-8") as f:
+        json.dump(all_playoffs, f, indent=2, ensure_ascii=False)
+
+    # 10. Podsumowanie w konsoli
     print(f"\nZapisano standings:   {standings_path}")
     print(f"Zapisano matchups:    {matchups_path}")
     print(f"Zapisano rosters:     {rosters_path}")
     print(f"Zapisano draft:       {draft_path}")
     print(f"Zapisano franchises:  {franchises_path} ({len(franchises)} franczyz)")
-    print(f"Tabele: {success_count}/{total_years} sezonów  |  Mecze: {matchup_years_done}/{total_years} sezonów  |  Rostery: {roster_years_done}/{roster_total_years} sezonów  |  Draft: {draft_years_done}/{draft_total_years} sezonów")
+    print(f"Zapisano playoffs:    {playoffs_path} ({len(playoff_ok_years)} sezonów z drabinką)")
+    print(f"Tabele: {success_count}/{total_years} sezonów  |  Mecze: {matchup_years_done}/{total_years} sezonów  |  Rostery: {roster_years_done}/{roster_total_years} sezonów  |  Draft: {draft_years_done}/{draft_total_years} sezonów  |  Playoffy: {len(playoff_ok_years)}/{total_years} sezonów")

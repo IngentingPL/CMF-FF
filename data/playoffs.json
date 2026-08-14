@@ -1,0 +1,1796 @@
+{
+  "2012": {
+    "rounds": [
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 51.0,
+            "team_b": "Pless Bricks",
+            "team_b_score": 88.0,
+            "winner": "Pless Bricks",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 57.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 60.0,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 69.0,
+            "team_b": "Kaliszfornia Capybaras",
+            "team_b_score": 65.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Minsk Maz Old Goats",
+            "team_a_score": 72.0,
+            "team_b": "Pless Bricks",
+            "team_b_score": 54.0,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 85.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 63.0,
+            "winner": "Bytom Amateurs",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 51.0,
+            "team_b": "Elblag Scrolls",
+            "team_b_score": 119.0,
+            "winner": "Elblag Scrolls",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2013": {
+    "rounds": [
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 79.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 109.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Kolberg Festung",
+            "team_a_score": 83.0,
+            "team_b": "East Side Demons",
+            "team_b_score": 70.0,
+            "winner": "Kolberg Festung",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Danzig Cowboys",
+            "team_a_score": 89.0,
+            "team_b": "Edinburgh Yer Maws",
+            "team_b_score": 61.0,
+            "winner": "Danzig Cowboys",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Elblag Scrolls",
+            "team_a_score": 92.0,
+            "team_b": "Pless Bricks",
+            "team_b_score": 58.0,
+            "winner": "Elblag Scrolls",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 55.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 74.5,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Ostróda Inquisitors",
+            "team_a_score": 86.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 89.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 45.0,
+            "team_b": "Kolberg Festung",
+            "team_b_score": 67.0,
+            "winner": "Kolberg Festung",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 88.5,
+            "team_b": "East Side Demons",
+            "team_b_score": 80.0,
+            "winner": "Lublin Gnagare",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Danzig Cowboys",
+            "team_a_score": 84.0,
+            "team_b": "Elblag Scrolls",
+            "team_b_score": 63.0,
+            "winner": "Danzig Cowboys",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Edinburgh Yer Maws",
+            "team_a_score": 41.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 40.0,
+            "winner": "Edinburgh Yer Maws",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Pless Bricks",
+            "team_a_score": 46.5,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 53.0,
+            "winner": "Bytom Amateurs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 17,
+        "games": [
+          {
+            "team_a": "Kolberg Festung",
+            "team_a_score": 58.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 44.0,
+            "winner": "Kolberg Festung",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Ostróda Inquisitors",
+            "team_a_score": 73.0,
+            "team_b": "Kaliszfornia Capybaras",
+            "team_b_score": 95.5,
+            "winner": "Kaliszfornia Capybaras",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 76.0,
+            "team_b": "East Side Demons",
+            "team_b_score": 70.0,
+            "winner": "Lublin Gnagare",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Danzig Cowboys",
+            "team_a_score": 77.0,
+            "team_b": "Edinburgh Yer Maws",
+            "team_b_score": 44.0,
+            "winner": "Danzig Cowboys",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Elblag Scrolls",
+            "team_a_score": 67.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 58.0,
+            "winner": "Elblag Scrolls",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Pless Bricks",
+            "team_a_score": 41.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 32.0,
+            "winner": "Pless Bricks",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2014": {
+    "rounds": [
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 99.0,
+            "team_b": "Madison Bumgarners",
+            "team_b_score": 61.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Ostróda Inquisitors",
+            "team_a_score": 63.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 80.0,
+            "winner": "Bytom Amateurs",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Elblag Scrolls",
+            "team_a_score": 76.0,
+            "team_b": "Kolberg Festung",
+            "team_b_score": 45.0,
+            "winner": "Elblag Scrolls",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 73.0,
+            "team_b": "Barcelona Toros",
+            "team_b_score": 38.0,
+            "winner": "Lublin Gnagare",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Minsk Maz Old Goats",
+            "team_a_score": 81.0,
+            "team_b": "Zambrów Bears",
+            "team_b_score": 68.0,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 90.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 100.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 49.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 61.0,
+            "winner": "Bytom Amateurs",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Ostróda Inquisitors",
+            "team_a_score": 53.0,
+            "team_b": "Madison Bumgarners",
+            "team_b_score": 70.0,
+            "winner": "Madison Bumgarners",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Elblag Scrolls",
+            "team_a_score": 81.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 61.0,
+            "winner": "Elblag Scrolls",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Kolberg Festung",
+            "team_a_score": 80.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 47.0,
+            "winner": "Kolberg Festung",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Barcelona Toros",
+            "team_a_score": 79.0,
+            "team_b": "Zambrów Bears",
+            "team_b_score": 55.0,
+            "winner": "Barcelona Toros",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 17,
+        "games": [
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 79.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 91.0,
+            "winner": "Bytom Amateurs",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 79.0,
+            "team_b": "East Side Demons",
+            "team_b_score": 52.0,
+            "winner": "Kaliszfornia Capybaras",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Madison Bumgarners",
+            "team_a_score": 53.0,
+            "team_b": "Ostróda Inquisitors",
+            "team_b_score": 83.0,
+            "winner": "Ostróda Inquisitors",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Elblag Scrolls",
+            "team_a_score": 70.0,
+            "team_b": "Kolberg Festung",
+            "team_b_score": 57.0,
+            "winner": "Elblag Scrolls",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 51.0,
+            "team_b": "Barcelona Toros",
+            "team_b_score": 65.0,
+            "winner": "Barcelona Toros",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Minsk Maz Old Goats",
+            "team_a_score": 100.0,
+            "team_b": "Zambrów Bears",
+            "team_b_score": 44.0,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2015": {
+    "rounds": [
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 91.0,
+            "team_b": "Kolberg Festung",
+            "team_b_score": 103.0,
+            "winner": "Kolberg Festung",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Bartoszyce Inquisitors",
+            "team_a_score": 117.0,
+            "team_b": "Kaliszfornia Capybaras",
+            "team_b_score": 105.0,
+            "winner": "Bartoszyce Inquisitors",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Elblag Scrolls",
+            "team_a_score": 80.0,
+            "team_b": "East Side Demons",
+            "team_b_score": 77.0,
+            "winner": "Elblag Scrolls",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Barcelona Toros",
+            "team_a_score": 84.0,
+            "team_b": "Zambrów Bears",
+            "team_b_score": 61.0,
+            "winner": "Barcelona Toros",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 74.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 61.0,
+            "winner": "Lublin Gnagare",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 89.0,
+            "team_b": "Kolberg Festung",
+            "team_b_score": 88.0,
+            "winner": "Bytom Amateurs",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 71.0,
+            "team_b": "Bartoszyce Inquisitors",
+            "team_b_score": 66.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 67.0,
+            "team_b": "Kaliszfornia Capybaras",
+            "team_b_score": 91.0,
+            "winner": "Kaliszfornia Capybaras",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Elblag Scrolls",
+            "team_a_score": 90.0,
+            "team_b": "Barcelona Toros",
+            "team_b_score": 61.0,
+            "winner": "Elblag Scrolls",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 36.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 86.0,
+            "winner": "Lublin Gnagare",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Zambrów Bears",
+            "team_a_score": 92.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 59.0,
+            "winner": "Zambrów Bears",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 17,
+        "games": [
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 76.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 57.0,
+            "winner": "Bytom Amateurs",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Bartoszyce Inquisitors",
+            "team_a_score": 63.0,
+            "team_b": "Kolberg Festung",
+            "team_b_score": 69.0,
+            "winner": "Kolberg Festung",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 33.0,
+            "team_b": "Kaliszfornia Capybaras",
+            "team_b_score": 92.0,
+            "winner": "Kaliszfornia Capybaras",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Elblag Scrolls",
+            "team_a_score": 67.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 75.0,
+            "winner": "Lublin Gnagare",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Barcelona Toros",
+            "team_a_score": 61.0,
+            "team_b": "Zambrów Bears",
+            "team_b_score": 86.0,
+            "winner": "Zambrów Bears",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 89.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 59.0,
+            "winner": "East Side Demons",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2016": {
+    "rounds": [
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 78.0,
+            "team_b": "East Side Demons",
+            "team_b_score": 94.0,
+            "winner": "East Side Demons",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 73.0,
+            "team_b": "San Marino Titans",
+            "team_b_score": 95.0,
+            "winner": "San Marino Titans",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Madison Bumgarners",
+            "team_a_score": 81.5,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 84.5,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Barcelona Toros",
+            "team_a_score": 72.0,
+            "team_b": "Zambrow Bears",
+            "team_b_score": 78.5,
+            "winner": "Zambrow Bears",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Posen Festung",
+            "team_a_score": 85.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 76.0,
+            "winner": "Posen Festung",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Bartoszyce Inquisitors",
+            "team_a_score": 58.0,
+            "team_b": "Tel-Aviv Falcons",
+            "team_b_score": 66.5,
+            "winner": "Tel-Aviv Falcons",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Wloclawek Wolf Pack",
+            "team_a_score": 93.5,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 63.0,
+            "winner": "Wloclawek Wolf Pack",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 95.0,
+            "team_b": "San Marino Titans",
+            "team_b_score": 77.5,
+            "winner": "East Side Demons",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Madison Bumgarners",
+            "team_a_score": 102.0,
+            "team_b": "Kaliszfornia Capybaras",
+            "team_b_score": 93.0,
+            "winner": "Madison Bumgarners",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Zambrow Bears",
+            "team_a_score": 57.0,
+            "team_b": "Posen Festung",
+            "team_b_score": 56.5,
+            "winner": "Zambrow Bears",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Barcelona Toros",
+            "team_a_score": 150.0,
+            "team_b": "Tel-Aviv Falcons",
+            "team_b_score": 69.0,
+            "winner": "Barcelona Toros",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 70.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 79.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 17,
+        "games": [
+          {
+            "team_a": "Wloclawek Wolf Pack",
+            "team_a_score": 64.5,
+            "team_b": "East Side Demons",
+            "team_b_score": 89.0,
+            "winner": "East Side Demons",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 68.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 74.0,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Madison Bumgarners",
+            "team_a_score": 39.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 53.5,
+            "winner": "Lublin Gnagare",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Barcelona Toros",
+            "team_a_score": 78.5,
+            "team_b": "Zambrow Bears",
+            "team_b_score": 36.0,
+            "winner": "Barcelona Toros",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Posen Festung",
+            "team_a_score": 50.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 97.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          },
+          {
+            "team_a": "Bartoszyce Inquisitors",
+            "team_a_score": 57.0,
+            "team_b": "Tel-Aviv Falcons",
+            "team_b_score": 71.0,
+            "winner": "Tel-Aviv Falcons",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2017": {
+    "rounds": [
+      {
+        "matchup_period": 14,
+        "games": [
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 41.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 86.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 76.0,
+            "team_b": "Barcelona Toros",
+            "team_b_score": 63.0,
+            "winner": "Kaliszfornia Capybaras",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Madison Bumgarners",
+            "team_a_score": 95.0,
+            "team_b": "Suwalki Rednecks",
+            "team_b_score": 78.0,
+            "winner": "Madison Bumgarners",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 92.0,
+            "team_b": "Pamplona Inquisitors",
+            "team_b_score": 80.0,
+            "winner": "San Marino Titans",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 88.0,
+            "team_b": "Wloclawek Wolf Pack",
+            "team_b_score": 61.0,
+            "winner": "Bytom Amateurs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Minsk Maz Old Goats",
+            "team_a_score": 60.5,
+            "team_b": "Zambrow Bears",
+            "team_b_score": 88.0,
+            "winner": "Zambrow Bears",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Mosina Republicans",
+            "team_a_score": 100.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 34.0,
+            "winner": "Mosina Republicans",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Madison Bumgarners",
+            "team_a_score": 113.0,
+            "team_b": "Kaliszfornia Capybaras",
+            "team_b_score": 70.0,
+            "winner": "Madison Bumgarners",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 108.0,
+            "team_b": "Barcelona Toros",
+            "team_b_score": 73.5,
+            "winner": "East Side Demons",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 89.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 51.0,
+            "winner": "San Marino Titans",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Pamplona Inquisitors",
+            "team_a_score": 63.0,
+            "team_b": "Zambrow Bears",
+            "team_b_score": 87.0,
+            "winner": "Zambrow Bears",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Wloclawek Wolf Pack",
+            "team_a_score": 67.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 60.0,
+            "winner": "Wloclawek Wolf Pack",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Mosina Republicans",
+            "team_a_score": 66.5,
+            "team_b": "Madison Bumgarners",
+            "team_b_score": 97.0,
+            "winner": "Madison Bumgarners",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 50.5,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 53.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 104.0,
+            "team_b": "Suwalki Rednecks",
+            "team_b_score": 55.0,
+            "winner": "East Side Demons",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 75.0,
+            "team_b": "Zambrow Bears",
+            "team_b_score": 74.0,
+            "winner": "San Marino Titans",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 62.0,
+            "team_b": "Wloclawek Wolf Pack",
+            "team_b_score": 65.0,
+            "winner": "Wloclawek Wolf Pack",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Pamplona Inquisitors",
+            "team_a_score": 73.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 48.0,
+            "winner": "Pamplona Inquisitors",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2018": {
+    "rounds": [
+      {
+        "matchup_period": 14,
+        "games": [
+          {
+            "team_a": "Pamplona Inquisitors",
+            "team_a_score": 79.5,
+            "team_b": "Madison Bumgarners",
+            "team_b_score": 81.0,
+            "winner": "Pamplona Inquisitors",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Wloclawek Wolf Pack",
+            "team_a_score": 69.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 84.0,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 87.5,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 122.0,
+            "winner": "Lublin Gnagare",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Mosina Republicans",
+            "team_a_score": 66.0,
+            "team_b": "Suwalki Rednecks",
+            "team_b_score": 86.0,
+            "winner": "Suwalki Rednecks",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 55.0,
+            "team_b": "San Marino Titans",
+            "team_b_score": 38.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Barcelona Toros",
+            "team_a_score": 73.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 88.0,
+            "winner": "Bytom Amateurs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 66.0,
+            "team_b": "Pamplona Inquisitors",
+            "team_b_score": 74.0,
+            "winner": "Pamplona Inquisitors",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Minsk Maz Old Goats",
+            "team_a_score": 41.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 70.0,
+            "winner": "Lublin Gnagare",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "East Side Demons",
+            "team_a_score": 56.0,
+            "team_b": "Wloclawek Wolf Pack",
+            "team_b_score": 93.0,
+            "winner": "Wloclawek Wolf Pack",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Suwalki Rednecks",
+            "team_a_score": 69.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 60.0,
+            "winner": "Suwalki Rednecks",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Mosina Republicans",
+            "team_a_score": 63.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 35.0,
+            "winner": "Mosina Republicans",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 63.0,
+            "team_b": "Barcelona Toros",
+            "team_b_score": 56.0,
+            "winner": "San Marino Titans",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Pamplona Inquisitors",
+            "team_a_score": 75.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 75.0,
+            "winner": "Pamplona Inquisitors",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 116.0,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 61.5,
+            "winner": "Kaliszfornia Capybaras",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Wloclawek Wolf Pack",
+            "team_a_score": 90.0,
+            "team_b": "Madison Bumgarners",
+            "team_b_score": 88.0,
+            "winner": "Wloclawek Wolf Pack",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Mosina Republicans",
+            "team_a_score": 98.0,
+            "team_b": "Suwalki Rednecks",
+            "team_b_score": 126.0,
+            "winner": "Suwalki Rednecks",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 60.0,
+            "team_b": "San Marino Titans",
+            "team_b_score": 81.0,
+            "winner": "San Marino Titans",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Barcelona Toros",
+            "team_a_score": 94.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 92.0,
+            "winner": "Barcelona Toros",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2019": {
+    "rounds": [
+      {
+        "matchup_period": 14,
+        "games": [
+          {
+            "team_a": "Pamplona Inquisitors",
+            "team_a_score": 101.5,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 111.0,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 89.0,
+            "team_b": "Mosina Republicans",
+            "team_b_score": 67.0,
+            "winner": "Bytom Amateurs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              14
+            ]
+          },
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 96.5,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 92.0,
+            "winner": "Szymanow Harvesters",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 79.5,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 91.0,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 100.5,
+            "team_b": "Suwalki Rednecks",
+            "team_b_score": 127.0,
+            "winner": "Suwalki Rednecks",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 117.0,
+            "team_b": "Szymanow Harvesters",
+            "team_b_score": 118.0,
+            "winner": "Bytom Amateurs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          },
+          {
+            "team_a": "Mosina Republicans",
+            "team_a_score": 74.5,
+            "team_b": "Wloclawek Wolf Pack",
+            "team_b_score": 71.0,
+            "winner": "Mosina Republicans",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Suwalki Rednecks",
+            "team_a_score": 78.5,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 92.5,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 96.0,
+            "team_b": "San Marino Titans",
+            "team_b_score": 94.0,
+            "winner": "Kaliszfornia Capybaras",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 108.5,
+            "team_b": "Mosina Republicans",
+            "team_b_score": 74.5,
+            "winner": "Bytom Amateurs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          },
+          {
+            "team_a": "Szymanow Harvesters",
+            "team_a_score": 65.5,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 100.5,
+            "winner": "Lublin Gnagare",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2020": {
+    "rounds": [
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Chicago Scrubs",
+            "team_a_score": 190.0,
+            "team_b": "Suwalki Rednecks",
+            "team_b_score": 213.5,
+            "winner": "Suwalki Rednecks",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15,
+              16
+            ]
+          },
+          {
+            "team_a": "Mosina Republicans",
+            "team_a_score": 196.5,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 221.0,
+            "winner": "Bytom Amateurs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15,
+              16
+            ]
+          },
+          {
+            "team_a": "Kaliszfornia Capybaras",
+            "team_a_score": 159.0,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 241.5,
+            "winner": "Lublin Gnagare",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15,
+              16
+            ]
+          },
+          {
+            "team_a": "San Marino Titans",
+            "team_a_score": 121.5,
+            "team_b": "Minsk Maz Old Goats",
+            "team_b_score": 164.5,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15,
+              16
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2021": {
+    "rounds": [
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Minsk Maz Old Goats",
+            "team_a_score": 200.5,
+            "team_b": "Chicago Scrubs",
+            "team_b_score": 183.5,
+            "winner": "Minsk Maz Old Goats",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16,
+              17
+            ]
+          },
+          {
+            "team_a": "Poznan Festung",
+            "team_a_score": 130.5,
+            "team_b": "Suwalki Rednecks",
+            "team_b_score": 191.0,
+            "winner": "Suwalki Rednecks",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16,
+              17
+            ]
+          },
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 187.0,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 157.0,
+            "winner": "Lublin Gnagare",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16,
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2022": {
+    "rounds": []
+  },
+  "2023": {
+    "rounds": [
+      {
+        "matchup_period": 15,
+        "games": [
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 201.66,
+            "team_b": "Szczecin Pirates",
+            "team_b_score": 150.36,
+            "winner": "Lublin Gnagare",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15,
+              16
+            ]
+          },
+          {
+            "team_a": "Poznan Festung",
+            "team_a_score": 188.34,
+            "team_b": "Suwalki Rednecks",
+            "team_b_score": 158.22,
+            "winner": "Poznan Festung",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              15,
+              16
+            ]
+          },
+          {
+            "team_a": "MMz Old Goats",
+            "team_a_score": 154.32,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 114.8,
+            "winner": "MMz Old Goats",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15,
+              16
+            ]
+          },
+          {
+            "team_a": "Vienna Schnitzels",
+            "team_a_score": 180.16,
+            "team_b": "Chicago Scrubs",
+            "team_b_score": 153.64,
+            "winner": "Vienna Schnitzels",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 139.38,
+            "team_b": "Poznan Festung",
+            "team_b_score": 215.72,
+            "winner": "Poznan Festung",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              17,
+              18
+            ]
+          },
+          {
+            "team_a": "Suwalki Rednecks",
+            "team_a_score": 158.54,
+            "team_b": "Szczecin Pirates",
+            "team_b_score": 187.98,
+            "winner": "Szczecin Pirates",
+            "tier": "WINNERS_CONSOLATION_LADDER",
+            "weeks": [
+              17,
+              18
+            ]
+          },
+          {
+            "team_a": "MMz Old Goats",
+            "team_a_score": 155.98,
+            "team_b": "Vienna Schnitzels",
+            "team_b_score": 222.16,
+            "winner": "Vienna Schnitzels",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17,
+              18
+            ]
+          },
+          {
+            "team_a": "Bytom Amateurs",
+            "team_a_score": 98.3,
+            "team_b": "Chicago Scrubs",
+            "team_b_score": 121.64,
+            "winner": "Chicago Scrubs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              17,
+              18
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2024": {
+    "rounds": [
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Vienna Schnitzels",
+            "team_a_score": 209.04,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 223.36,
+            "winner": "Bytom Amateurs",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16,
+              17
+            ]
+          },
+          {
+            "team_a": "Chicago Scrubs",
+            "team_a_score": 243.4,
+            "team_b": "MMz Old Goats",
+            "team_b_score": 229.6,
+            "winner": "Chicago Scrubs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16,
+              17
+            ]
+          },
+          {
+            "team_a": "Lublin Gnagare",
+            "team_a_score": 149.44,
+            "team_b": "Poznan Festung",
+            "team_b_score": 227.48,
+            "winner": "Poznan Festung",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16,
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "2025": {
+    "rounds": [
+      {
+        "matchup_period": 16,
+        "games": [
+          {
+            "team_a": "Poznan Festung",
+            "team_a_score": 190.02,
+            "team_b": "Lublin Gnagare",
+            "team_b_score": 207.24,
+            "winner": "Lublin Gnagare",
+            "tier": "WINNERS_BRACKET",
+            "weeks": [
+              16,
+              17
+            ]
+          },
+          {
+            "team_a": "Vienna Schnitzels",
+            "team_a_score": 138.2,
+            "team_b": "MMz Old Goats",
+            "team_b_score": 174.34,
+            "winner": "MMz Old Goats",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16,
+              17
+            ]
+          },
+          {
+            "team_a": "Chicago Scrubs",
+            "team_a_score": 207.02,
+            "team_b": "Bytom Amateurs",
+            "team_b_score": 151.24,
+            "winner": "Chicago Scrubs",
+            "tier": "LOSERS_CONSOLATION_LADDER",
+            "weeks": [
+              16,
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
