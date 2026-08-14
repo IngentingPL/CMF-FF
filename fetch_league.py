@@ -325,6 +325,34 @@ def build_franchises(all_standings):
         # final_standing może być None (dla starych lat/braku danych); None != 1 → OK.
         championships = sum(1 for s in seasons_sorted if s[7] == 1)
 
+        # Najlepszy/najgorszy sezon franczyzy.
+        # Dla każdego sezonu liczymy win_rate (remis = 0.5 wygranej; 0, gdy
+        # brak meczów) oraz point_diff, a potem wybieramy max/min po kluczu-
+        # -krotce (win_rate, point_diff) – przy remisie win_rate decyduje
+        # point_diff. team_name to nazwa z TEGO roku (s[1]), nie current_name.
+        def _season_stats(s):
+            games = s[2] + s[3] + s[4]
+            win_rate = (s[2] + 0.5 * s[4]) / games if games > 0 else 0
+            return {
+                "year": s[0],
+                "team_name": TEAM_NAME_ALIASES.get(s[1], s[1]),
+                "wins": s[2],
+                "losses": s[3],
+                "ties": s[4],
+                "win_rate": round(win_rate * 100, 1),  # procenty, 1 miejsce po przecinku
+                "points_for": round(s[5], 2),
+                "points_against": round(s[6], 2),
+            }
+
+        # Klucz do max/min: najpierw win_rate, przy remisie – point_diff
+        def _season_key(s):
+            games = s[2] + s[3] + s[4]
+            win_rate = (s[2] + 0.5 * s[4]) / games if games > 0 else 0
+            return (win_rate, s[5] - s[6])
+
+        best_season = _season_stats(max(seasons_sorted, key=_season_key))
+        worst_season = _season_stats(min(seasons_sorted, key=_season_key))
+
         # Owner name — bierzemy z pierwszego sezonu, który go ma
         owner_name = ""
         for year_str in sorted(all_standings.keys(), key=int):
@@ -348,6 +376,8 @@ def build_franchises(all_standings):
             "total_pf": total_pf,
             "total_pa": total_pa,
             "championships": championships,
+            "best_season": best_season,
+            "worst_season": worst_season,
         })
 
     # 3-poziomowe sortowanie:

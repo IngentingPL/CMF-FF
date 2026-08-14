@@ -427,6 +427,17 @@
     font-style: italic;
     margin-top: 0.3em;
   }
+  /* Najlepszy/najgorszy sezon franczyzy – dwie linijki pod właścicielem */
+  .franchise-seasons {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .franchise-seasons .best { color: var(--good); }
+  .franchise-seasons .worst { color: var(--rust); }
   .franchise-meta {
     flex-shrink: 0;
     text-align: right;
@@ -1145,6 +1156,25 @@
         if (fr.previous_names && fr.previous_names.length > 0) {
           mainHTML +=
             `<div class="franchise-prev">Wcześniej: ${fr.previous_names.join(', ')}</div>`;
+        }
+
+        // Najlepszy/najgorszy sezon – tylko gdy franczyza ma >1 sezon
+        // (przy jednym sezonie best == worst, blok byłby redundantny).
+        // "jako {nazwa}" pokazujemy tylko, gdy nazwa z tamtego roku różni się
+        // od current_name; "-{ties}" dopisujemy tylko, gdy ties > 0.
+        if (fr.seasons.length > 1 && fr.best_season && fr.worst_season) {
+          const fmtSeason = (s) =>
+            `${s.year}` +
+            (s.team_name !== fr.current_name ? ` jako ${s.team_name}` : '') +
+            `, ${s.wins}-${s.losses}` +
+            (s.ties > 0 ? `-${s.ties}` : '') +
+            `, ${Number(s.win_rate).toFixed(1)}%`;
+
+          mainHTML +=
+            `<div class="franchise-seasons">` +
+              `<span class="best">Najlepszy: ${fmtSeason(fr.best_season)}</span>` +
+              `<span class="worst">Najgorszy: ${fmtSeason(fr.worst_season)}</span>` +
+            `</div>`;
         }
 
         // Prawa strona: zakres lat, W-L-T, Win%, PF/PA/różnica
