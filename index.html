@@ -400,73 +400,52 @@
   :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
   /* ---------- FRANCHISES ---------- */
-  .franchise-list { display: flex; flex-direction: column; }
-  .franchise-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1.5rem;
-    padding: 1.35rem 0;
-    border-bottom: 1px solid var(--line-on-light);
-  }
-  .franchise-main { min-width: 0; flex: 1; }
-  .franchise-name {
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 1.15;
-  }
-  .franchise-owner {
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-    margin-top: 0.15em;
-  }
-  .franchise-prev {
-    font-size: 0.78rem;
-    color: var(--ink-soft);
-    font-style: italic;
-    margin-top: 0.3em;
-  }
-  /* Najlepszy/najgorszy sezon franczyzy – dwie linijki pod właścicielem */
-  .franchise-seasons {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-  }
-  .franchise-seasons .best { color: var(--good); }
-  .franchise-seasons .worst { color: var(--rust); }
-  .franchise-meta {
-    flex-shrink: 0;
-    text-align: right;
-    font-family: var(--font-mono);
-    font-size: 0.88rem;
-    line-height: 1.6;
+  /* Sortowalna tabela franczyz – wzorowana na table.standings */
+  table.franchises {
+    width: 100%;
+    border-collapse: collapse;
     font-variant-numeric: tabular-nums;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
-  .franchise-meta .years { font-weight: 500; }
-  .franchise-meta .wlt   { color: var(--ink-soft); }
-  /* Win% zaraz po W-L-T — ten sam ton co .wlt */
-  .franchise-meta .winpct { color: var(--ink-soft); }
-  .franchise-meta .pfpa  { font-size: 0.78rem; color: var(--ink-soft); }
-  .franchise-meta .pfpa .pos { color: var(--good); }
-  .franchise-meta .pfpa .neg { color: var(--rust); }
-
-  /* Licznik mistrzostw w podsumowaniu franczyzy */
-  .franchise-meta .champs {
+  table.franchises th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 0 0.75rem 0.75rem;
+    border-bottom: 1px solid var(--line-on-light);
+    cursor: pointer;
+    user-select: none;
+  }
+  table.franchises th:hover { color: var(--ink); }
+  /* Aktywny nagłówek sortowania */
+  table.franchises th.sorted { color: var(--gold); }
+  table.franchises th .arrow { margin-left: 0.35em; }
+  table.franchises td {
+    padding: 0.9rem 0.75rem;
+    border-bottom: 1px solid var(--line-on-light);
+    font-size: 0.98rem;
+  }
+  table.franchises tbody tr:hover { background: var(--light-dim); }
+  table.franchises .num { font-family: var(--font-mono); text-align: right; }
+  /* Komórka nazwy: .fname + opcjonalnie .fprev (poprzednie nazwy) */
+  table.franchises .name-cell { white-space: normal; min-width: 15rem; }
+  table.franchises .fname {
+    display: block;
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 1rem;
-    color: var(--gold);
-    margin-top: 0.3rem;
+    font-size: 1.05rem;
   }
-
-  @media (max-width: 640px) {
-    .franchise-row { flex-direction: column; gap: 0.5rem; }
-    .franchise-meta { text-align: left; display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
-    .franchise-name { font-size: 1.2rem; }
+  table.franchises .fprev {
+    display: block;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-top: 0.2em;
   }
 
   /* ---------- SUMMARY GRID ---------- */
@@ -672,9 +651,45 @@
         <h2>Franczyzy w historii ligi</h2>
       </div>
     </div>
-    <div class="franchise-list">
-      <!-- Wypełniane przez renderFranchises() -->
-    </div>
+    <table class="franchises">
+      <thead>
+        <tr>
+          <th data-sort="name">Franczyza</th>
+          <th data-sort="owner">Właściciel</th>
+          <th class="num" data-sort="seasons">Sezonów</th>
+          <th class="num" data-sort="joined">Dołączył</th>
+          <th class="num" data-sort="wins">W-L-T</th>
+          <th class="num" data-sort="winpct">Win%</th>
+          <th class="num" data-sort="champs">Mistrzostwa</th>
+          <th class="num" data-sort="best">Najlepszy</th>
+          <th class="num" data-sort="worst">Najgorszy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 3 przykładowe wiersze jako wzór – renderFranchiseTable() podmienia całe tbody -->
+        <tr>
+          <td class="name-cell"><span class="fname">Lublin Gnagare</span></td>
+          <td>Piotr Tkaczyk</td>
+          <td class="num">14</td><td class="num">2012</td><td class="num">89-106-2</td>
+          <td class="num">45.7%</td><td class="num">1</td>
+          <td class="num">2023 (78.6%)</td><td class="num">2017 (15.4%)</td>
+        </tr>
+        <tr>
+          <td class="name-cell"><span class="fname">MMz Old Goats</span><span class="fprev">wcześniej: Minsk Maz Old Goats</span></td>
+          <td>Grzesiek Chodkiewicz</td>
+          <td class="num">13</td><td class="num">2012</td><td class="num">74-101-4</td>
+          <td class="num">42.5%</td><td class="num">3</td>
+          <td class="num">2021 (66.7%)</td><td class="num">2013 (3.6%)</td>
+        </tr>
+        <tr>
+          <td class="name-cell"><span class="fname">Szczecin Pirates</span></td>
+          <td>Krzysiek Błachuta</td>
+          <td class="num">1</td><td class="num">2023</td><td class="num">6-8-0</td>
+          <td class="num">42.9%</td><td class="num">0</td>
+          <td class="num">—</td><td class="num">—</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
@@ -1136,78 +1151,121 @@
       document.querySelector('#stat-draft b').textContent = totalDraftPicks;
     }
 
-    function renderFranchises() {
-      const list = document.querySelector('.franchise-list');
-      list.innerHTML = '';
+    // =====================================================================
+    // TABELA FRANCZYZ + SORTOWANIE PO KLIKNIĘCIU W NAGŁÓWEK
+    // =====================================================================
 
-      franchises.forEach(fr => {
-        const diff = fr.total_pf - fr.total_pa;
-        const sign = diff >= 0 ? '+' : '';
-        const diffClass = diff >= 0 ? 'pos' : 'neg';
+    // Wartość do porównania dla każdej kolumny (klucz = data-sort w nagłówkach)
+    const franchiseSortKey = {
+      // name/owner: porównanie tekstowe
+      name:    fr => fr.current_name,
+      owner:   fr => fr.owner_name,
+      // liczba sezonów i rok dołączenia
+      seasons: fr => fr.seasons.length,
+      joined:  fr => Math.min(...fr.seasons),
+      // sortujemy po wygranych, choć wyświetlamy W-L-T
+      wins:    fr => fr.total_wins,
+      // obliczony win rate (0.5 pkt za remis), jak w kartach
+      winpct:  fr => (fr.total_wins + 0.5 * fr.total_ties) /
+                     (fr.total_wins + fr.total_losses + fr.total_ties),
+      champs:  fr => fr.championships,
+      // null = brak best/worst (franczyza z 1 sezonem) → zawsze na końcu
+      best:    fr => (fr.seasons.length > 1 && fr.best_season != null)  ? Number(fr.best_season.win_rate)  : null,
+      worst:   fr => (fr.seasons.length > 1 && fr.worst_season != null) ? Number(fr.worst_season.win_rate) : null
+    };
 
-        const row = document.createElement('div');
-        row.className = 'franchise-row';
+    // Domyślnie aktywna kolumna "seasons", malejąco – dane z pliku już
+    // przychodzą w tej kolejności (po sezonach, dołączeniu i win% przy remisie)
+    let franchiseSort = { key: 'seasons', dir: 'desc' };
 
-        // Lewa strona: nazwa, właściciel, poprzednie nazwy (jeśli są)
-        let mainHTML =
-          `<div class="franchise-name">${fr.current_name}</div>` +
-          `<div class="franchise-owner">${fr.owner_name}</div>`;
+    function renderFranchiseTable() {
+      const table = document.querySelector('table.franchises');
+      const tbody = table.querySelector('tbody');
+      const { key, dir } = franchiseSort;
 
-        if (fr.previous_names && fr.previous_names.length > 0) {
-          mainHTML +=
-            `<div class="franchise-prev">Wcześniej: ${fr.previous_names.join(', ')}</div>`;
-        }
-
-        // Najlepszy/najgorszy sezon – tylko gdy franczyza ma >1 sezon
-        // (przy jednym sezonie best == worst, blok byłby redundantny).
-        // "jako {nazwa}" pokazujemy tylko, gdy nazwa z tamtego roku różni się
-        // od current_name; "-{ties}" dopisujemy tylko, gdy ties > 0.
-        if (fr.seasons.length > 1 && fr.best_season && fr.worst_season) {
-          const fmtSeason = (s) =>
-            `${s.year}` +
-            (s.team_name !== fr.current_name ? ` jako ${s.team_name}` : '') +
-            `, ${s.wins}-${s.losses}` +
-            (s.ties > 0 ? `-${s.ties}` : '') +
-            `, ${Number(s.win_rate).toFixed(1)}%`;
-
-          mainHTML +=
-            `<div class="franchise-seasons">` +
-              `<span class="best">Najlepszy: ${fmtSeason(fr.best_season)}</span>` +
-              `<span class="worst">Najgorszy: ${fmtSeason(fr.worst_season)}</span>` +
-            `</div>`;
-        }
-
-        // Prawa strona: zakres lat, W-L-T, Win%, PF/PA/różnica
-        const yearRange = formatYearRanges(fr.seasons);
-
-        // Win% = (wins + 0.5*ties) / (wins+losses+ties) * 100, jedno miejsce po przecinku
-        const frTotalGames = fr.total_wins + fr.total_losses + fr.total_ties;
-        const frWinPct = frTotalGames > 0
-          ? ((fr.total_wins + 0.5 * fr.total_ties) / frTotalGames * 100).toFixed(1) + '%'
-          : '—'; // 0 rozegranych meczów → myślnik
-
-        const metaHTML =
-          `<div class="years">${fr.seasons.length} sezon${fr.seasons.length !== 1 ? 'ów' : ''} · ${yearRange}</div>` +
-          `<div class="wlt">W-L-T: ${fr.total_wins}-${fr.total_losses}-${fr.total_ties}</div>` +
-          // Win% zaraz po W-L-T, przed mistrzostwami i PF/PA
-          `<div class="winpct">Win%: ${frWinPct}</div>` +
-          // Mistrzostwa: tylko jeśli > 0, między W-L-T a PF/PA
-          (fr.championships > 0 ? `<div class="champs">🏆 × ${fr.championships} mistrzostw</div>` : '') +
-          `<div class="pfpa">PF: ${fr.total_pf.toFixed(2)} · PA: ${fr.total_pa.toFixed(2)} · ` +
-            `Różnica: <span class="${diffClass}">${sign}${diff.toFixed(2)}</span></div>`;
-
-        row.innerHTML =
-          `<div class="franchise-main">${mainHTML}</div>` +
-          `<div class="franchise-meta">${metaHTML}</div>`;
-
-        list.appendChild(row);
+      // Posortowana kopia listy franczyz
+      const rows = [...franchises].sort((a, b) => {
+        const va = franchiseSortKey[key](a);
+        const vb = franchiseSortKey[key](b);
+        // null (brak best/worst) zawsze na końcu, niezależnie od kierunku
+        if (va == null && vb == null) return 0;
+        if (va == null) return 1;
+        if (vb == null) return -1;
+        const cmp = typeof va === 'string' ? va.localeCompare(vb, 'pl') : va - vb;
+        return dir === 'desc' ? -cmp : cmp;
       });
 
-      // Podsumowanie w nagłówku
+      tbody.innerHTML = '';
+
+      rows.forEach(fr => {
+        // Nazwa: .fname + opcjonalnie .fprev z poprzednimi nazwami
+        const nameHTML =
+          `<span class="fname">${fr.current_name}</span>` +
+          (fr.previous_names && fr.previous_names.length
+            ? `<span class="fprev">wcześniej: ${fr.previous_names.join(', ')}</span>`
+            : '');
+
+        // Win% = (wins + 0.5*ties) / wszystkie mecze, jedno miejsce po przecinku
+        const total = fr.total_wins + fr.total_losses + fr.total_ties;
+        const winPct = total > 0
+          ? ((fr.total_wins + 0.5 * fr.total_ties) / total * 100).toFixed(1) + '%'
+          : '—';
+
+        // Best/worst tylko dla franczyz z >1 sezonem; przy 1 sezonie "—"
+        const fmtSeason = s => `${s.year} (${Number(s.win_rate).toFixed(1)}%)`;
+        const best  = (fr.seasons.length > 1 && fr.best_season != null)  ? fmtSeason(fr.best_season)  : '—';
+        const worst = (fr.seasons.length > 1 && fr.worst_season != null) ? fmtSeason(fr.worst_season) : '—';
+
+        const tr = document.createElement('tr');
+        tr.innerHTML =
+          `<td class="name-cell">${nameHTML}</td>` +
+          `<td>${fr.owner_name}</td>` +
+          `<td class="num">${fr.seasons.length}</td>` +
+          `<td class="num">${Math.min(...fr.seasons)}</td>` +
+          `<td class="num">${fr.total_wins}-${fr.total_losses}-${fr.total_ties}</td>` +
+          `<td class="num">${winPct}</td>` +
+          `<td class="num">${fr.championships}</td>` +
+          `<td class="num">${best}</td>` +
+          `<td class="num">${worst}</td>`;
+        tbody.appendChild(tr);
+      });
+
+      // Stan nagłówków: klasa "sorted" + strzałka tylko na aktywnej kolumnie
+      table.querySelectorAll('thead th').forEach(th => {
+        const active = th.dataset.sort === key;
+        th.classList.toggle('sorted', active);
+        if (active) {
+          let el = th.querySelector('.arrow');
+          if (!el) {
+            el = document.createElement('span');
+            el.className = 'arrow';
+            th.appendChild(el);
+          }
+          el.textContent = dir === 'desc' ? '▾' : '▴'; // malejąco ▾, rosnąco ▴
+        } else {
+          const el = th.querySelector('.arrow');
+          if (el) el.remove();
+        }
+      });
+
+      // Podsumowanie w nagłówku sekcji (jak wcześniej przy kartach)
       const uniqueOwners = new Set(franchises.map(f => f.owner_id));
-      list.closest('section').querySelector('.eyebrow').textContent =
+      table.closest('section').querySelector('.eyebrow').textContent =
         `2012 – 2025 · ${uniqueOwners.size} franczyz`;
     }
+
+    // Klikalne nagłówki: nowa kolumna → malejąco (▾), ta sama → odwróć kierunek (▴)
+    document.querySelector('table.franchises thead').addEventListener('click', (e) => {
+      const th = e.target.closest('th');
+      if (!th || !th.dataset.sort) return;
+      const col = th.dataset.sort;
+      if (franchiseSort.key === col) {
+        franchiseSort.dir = franchiseSort.dir === 'desc' ? 'asc' : 'desc';
+      } else {
+        franchiseSort = { key: col, dir: 'desc' };
+      }
+      renderFranchiseTable();
+    });
 
     // =====================================================================
     // WYPEŁNIJ SELECT OPCJAMI + NASŁUCH ZMIAN
@@ -1335,7 +1393,7 @@
     // JEDNORAZOWE: franczyzy – renderuj po załadowaniu wszystkich danych
     // =====================================================================
     renderSummaryStats();
-    renderFranchises();
+    renderFranchiseTable();
 
   } catch (err) {
     // ----- Błąd wczytywania – czytelny komunikat -----
