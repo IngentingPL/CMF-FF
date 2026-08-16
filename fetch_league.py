@@ -396,6 +396,330 @@ def build_franchises(all_standings):
 
 
 # ---------------------------------------------------------------------------
+# CIEKAWOSTKI (trivia) – 10 statystyk liczonych WYŁĄCZNIE z danych już
+# pobranych i trzymanych w pamięci (all_standings, franchises, all_matchups).
+# Żadnych nowych zapytań do ESPN. Przy remisie wybieramy pierwszego kandydata
+# i logujemy remis w konsoli ([REMIS]) – wybór jest wtedy dowolny.
+# ---------------------------------------------------------------------------
+
+
+def _wlt_win_rate(wins, losses, ties):
+    """Win rate z bilansu W/L/T (remis = 0.5 wygranej; 0, gdy brak meczów)."""
+    games = wins + losses + ties
+    return (wins + 0.5 * ties) / games if games > 0 else 0.0
+
+
+def _log_tie(label, tied_names, value):
+    """Loguje remis (kilka identycznych wyników) – zwycięzcę wybrano dowolnie."""
+    if len(tied_names) > 1:
+        print(f"  [REMIS] {label}: {', '.join(tied_names)} (wartość: {value})")
+
+
+def _franchise_owner_names(franchises):
+    """Mapa owner_id -> owner_name z franczyz (fallback dla pustego owner_name)."""
+    return {f["owner_id"]: f["owner_name"] for f in franchises}
+
+
+def _flatten_matchups(all_matchups):
+    """Spłaszcza matchups (rok -> tydzień -> mecze) do listy meczów z marginesem."""
+    flat = []
+    for year_str, weeks in all_matchups.items():
+        for week_str, matches in weeks.items():
+            for m in matches:
+                flat.append({
+                    "year": int(year_str),
+                    "week": int(week_str),
+                    "home_team": m["home_team"],
+                    "home_score": m["home_score"],
+                    "away_team": m["away_team"],
+                    "away_score": m["away_score"],
+                    "margin": round(abs(m["home_score"] - m["away_score"]), 2),
+                })
+    return flat
+
+
+def _trivia_best_season_no_title(all_standings, franchises):
+    """1. Najlepszy sezon bez tytułu: najwyższy win_rate wśród sezonów z final_standing != 1.
+
+    final_standing == None traktujemy jak brak tytułu (spójnie z build_franchises),
+    bo None != 1 – nie da się go pomylić z mistrzem.
+    """
+    owner_names = _franchise_owner_names(franchises)
+    candidates = []
+    for year_str, teams in all_standings.items():
+        for team in teams:
+            if team.get("final_standing") == 1:
+                continue  # mistrz – pomijamy
+            candidates.append({
+                "year": int(year_str),
+                "team_name": team["team_name"],  # nazwa z TEGO roku
+                "owner_name": team.get("owner_name") or owner_names.get(team.get("owner_id")),
+                "wins": team["wins"],
+                "losses": team["losses"],
+                "ties": team["ties"],
+                "_rate": _wlt_win_rate(team["wins"], team["losses"], team["ties"]),
+            })
+    best = max(c["_rate"] for c in candidates)
+    tied = [c for c in candidates if c["_rate"] == best]
+    _log_tie("best_season_no_title",
+             [f'{c["team_name"]} ({c["year"]})' for c in tied], round(best * 100, 1))
+    c = tied[0]
+    result = {
+        "year": c["year"],
+        "team_name": c["team_name"],
+        "owner_name": c["owner_name"],
+        "win_rate": round(c["_rate"] * 100, 1),  # procenty, 1 miejsce po przecinku
+        "wins": c["wins"],
+        "losses": c["losses"],
+        "ties": c["ties"],
+    }
+    # "note" TYLKO przy remisie – UI pokazuje go jako <div class="tnote">
+    if len(tied) > 1:
+        others = [f'{t["team_name"]} ({t["year"]})' for t in tied[1:]]
+        result["note"] = f"Remis z {', '.join(others)} – wybrano dowolnie"
+    return result
+
+
+def _trivia_worst_franchise_with_title(franchises):
+    """2. Najsłabsza franczyza z tytułem: najniższy all-time win_rate przy championships > 0."""
+    def _rate(f):
+        return _wlt_win_rate(f["total_wins"], f["total_losses"], f["total_ties"])
+
+    candidates = [f for f in franchises if f["championships"] > 0]
+    worst = min(_rate(f) for f in candidates)
+    tied = [f for f in candidates if _rate(f) == worst]
+    _log_tie("worst_franchise_with_title", [f["current_name"] for f in tied], round(worst * 100, 1))
+    f = tied[0]
+    return {
+        "owner_name": f["owner_name"],
+        "current_name": f["current_name"],
+        "win_rate": round(worst * 100, 1),
+        "championships": f["championships"],
+    }
+
+
+def _trivia_best_franchise_no_title(franchises):
+    """3. Najlepsza franczyza bez tytułu: najwyższy win_rate przy championships == 0 i min. 3 sezonach.
+
+    Minimum 3 sezonów odrzuca przypadkowe jednosezonowe wyniki.
+    """
+    def _rate(f):
+        return _wlt_win_rate(f["total_wins"], f["total_losses"], f["total_ties"])
+
+    candidates = [f for f in franchises if f["championships"] == 0 and len(f["seasons"]) >= 3]
+    best = max(_rate(f) for f in candidates)
+    tied = [f for f in candidates if _rate(f) == best]
+    _log_tie("best_franchise_no_title", [f["current_name"] for f in tied], round(best * 100, 1))
+    f = tied[0]
+    return {
+        "owner_name": f["owner_name"],
+        "current_name": f["current_name"],
+        "win_rate": round(best * 100, 1),
+        "championships": f["championships"],
+    }
+
+
+def _trivia_worst_champion_season(all_standings, franchises):
+    """4. Najsłabszy sezon mistrzowski: najniższy win_rate wśród sezonów z final_standing == 1.
+
+    Różni się od worst_franchise_with_title – tu liczy się JEDEN konkretny
+    sezon, w którym drużyna zdobyła tytuł, nie cała historia franczyzy.
+    """
+    owner_names = _franchise_owner_names(franchises)
+    candidates = []
+    for year_str, teams in all_standings.items():
+        for team in teams:
+            if team.get("final_standing") != 1:
+                continue  # nie mistrz tego roku – pomijamy
+            candidates.append({
+                "year": int(year_str),
+                "team_name": team["team_name"],  # nazwa z TEGO roku
+                "owner_name": team.get("owner_name") or owner_names.get(team.get("owner_id")),
+                "wins": team["wins"],
+                "losses": team["losses"],
+                "ties": team["ties"],
+                "_rate": _wlt_win_rate(team["wins"], team["losses"], team["ties"]),
+            })
+    worst = min(c["_rate"] for c in candidates)
+    tied = [c for c in candidates if c["_rate"] == worst]
+    _log_tie("worst_champion_season",
+             [f'{c["team_name"]} ({c["year"]})' for c in tied], round(worst * 100, 1))
+    c = tied[0]
+    return {
+        "year": c["year"],
+        "team_name": c["team_name"],
+        "owner_name": c["owner_name"],
+        "win_rate": round(c["_rate"] * 100, 1),  # procenty, 1 miejsce po przecinku
+        "wins": c["wins"],
+        "losses": c["losses"],
+        "ties": c["ties"],
+    }
+
+
+def _trivia_lowest_score_ever(all_matchups):
+    """5. Najniższy pojedynczy wynik drużyny w dowolnym meczu (home_score i away_score osobno)."""
+    candidates = []
+    for year_str, weeks in all_matchups.items():
+        for week_str, matches in weeks.items():
+            for m in matches:
+                # Sprawdzamy obie strony meczu jako osobne wpisy
+                candidates.append({
+                    "team_name": m["home_team"], "score": m["home_score"],
+                    "year": int(year_str), "week": int(week_str),
+                })
+                candidates.append({
+                    "team_name": m["away_team"], "score": m["away_score"],
+                    "year": int(year_str), "week": int(week_str),
+                })
+    lowest = min(c["score"] for c in candidates)
+    tied = [c for c in candidates if c["score"] == lowest]
+    _log_tie("lowest_score_ever",
+             [f'{c["team_name"]} ({c["year"]} W{c["week"]})' for c in tied], lowest)
+    c = tied[0]
+    return {
+        "team_name": c["team_name"],
+        "score": c["score"],
+        "year": c["year"],
+        "week": c["week"],
+    }
+
+
+def _trivia_closest_margin_ever(all_matchups):
+    """6. Najciaśniejszy mecz BEZ remisu: najmniejsza NIEZEROWA różnica punktów.
+
+    Mecze z różnicą równą 0 (prawdziwe remisy) pomijamy całkowicie – szukamy
+    najmniejszej różnicy > 0. Remis w samej wartości różnicy (np. dwa mecze
+    z różnicą 0.5) logujemy i wybieramy dowolny, jak w pozostałych polach.
+    """
+    flat = _flatten_matchups(all_matchups)
+    no_draws = [m for m in flat if m["margin"] > 0]  # odrzuć prawdziwe remisy (0.0)
+    closest = min(m["margin"] for m in no_draws)
+    tied = [m for m in no_draws if m["margin"] == closest]
+    _log_tie("closest_margin_ever",
+             [f'{m["home_team"]} vs {m["away_team"]} ({m["year"]} W{m["week"]})' for m in tied],
+             closest)
+    m = tied[0]
+    return {
+        "year": m["year"],
+        "week": m["week"],
+        "team_a": m["home_team"],
+        "team_a_score": m["home_score"],
+        "team_b": m["away_team"],
+        "team_b_score": m["away_score"],
+        "margin": m["margin"],
+    }
+
+
+def _trivia_biggest_blowout_ever(all_matchups):
+    """7. Największy pogrom: największa różnica |home_score - away_score| w meczu."""
+    flat = _flatten_matchups(all_matchups)
+    biggest = max(m["margin"] for m in flat)
+    tied = [m for m in flat if m["margin"] == biggest]
+    _log_tie("biggest_blowout_ever",
+             [f'{m["home_team"]} vs {m["away_team"]} ({m["year"]} W{m["week"]})' for m in tied],
+             biggest)
+    m = tied[0]
+    return {
+        "year": m["year"],
+        "week": m["week"],
+        "team_a": m["home_team"],
+        "team_a_score": m["home_score"],
+        "team_b": m["away_team"],
+        "team_b_score": m["away_score"],
+        "margin": m["margin"],
+    }
+
+
+def _trivia_most_name_changes(franchises):
+    """8. Franczyza z największą liczbą poprzednich nazw (previous_names)."""
+    most = max(len(f["previous_names"]) for f in franchises)
+    tied = [f for f in franchises if len(f["previous_names"]) == most]
+    _log_tie("most_name_changes", [f["current_name"] for f in tied], most)
+    f = tied[0]
+    return {
+        "owner_name": f["owner_name"],
+        "current_name": f["current_name"],
+        "previous_names": f["previous_names"],
+        "count": len(f["previous_names"]),
+    }
+
+
+def _trivia_every_season_franchises(franchises, total_years):
+    """9. Franczyzy obecne w KAŻDYM sezonie standings.json (seasons.length == liczba lat).
+
+    Zwraca listę – takich franczyz może być więcej niż jedna.
+    """
+    result = [
+        {
+            "owner_name": f["owner_name"],
+            "current_name": f["current_name"],
+            "seasons_count": len(f["seasons"]),
+        }
+        for f in franchises
+        if len(f["seasons"]) == total_years
+    ]
+    if not result:
+        print("  [INFO] every_season_franchise: żadna franczyza nie grała we wszystkich sezonach")
+    return result
+
+
+def _trivia_biggest_comeback(franchises):
+    """10. Największy comeback: najdłuższa przerwa między dwoma kolejnymi sezonami franczyzy.
+
+    Np. sezony 2013-2018 i powrót 2023 -> przerwa 4 lata (2019-2022).
+    """
+    candidates = []
+    for f in franchises:
+        years = f["seasons"]
+        for i in range(len(years) - 1):
+            gap = years[i + 1] - years[i] - 1  # liczba lat pominiętych między sezonami
+            if gap <= 0:
+                continue  # sezony sąsiadujące – bez przerwy
+            candidates.append({
+                "owner_name": f["owner_name"],
+                "current_name": f["current_name"],
+                "gap_start": years[i] + 1,
+                "gap_end": years[i + 1] - 1,
+                "_gap": gap,
+            })
+    biggest = max(c["_gap"] for c in candidates)
+    tied = [c for c in candidates if c["_gap"] == biggest]
+    _log_tie("biggest_comeback",
+             [f'{c["current_name"]} ({c["gap_start"]}-{c["gap_end"]})' for c in tied],
+             biggest)
+    c = tied[0]
+    return {
+        "owner_name": c["owner_name"],
+        "current_name": c["current_name"],
+        "gap_start": c["gap_start"],
+        "gap_end": c["gap_end"],
+        "gap_years": c["_gap"],
+    }
+
+
+def build_trivia(all_standings, franchises, all_matchups):
+    """Buduje słownik 10 ciekawostek (data/trivia.json) z danych już w pamięci.
+
+    Nie wykonuje ŻADNYCH nowych zapytań do ESPN – liczy wyłącznie z
+    all_standings, franchises i all_matchups. Przy remisie wybiera pierwszego
+    kandydata (kolejność lat) i loguje remis w konsoli.
+    """
+    total_years = len(all_standings)
+    return {
+        "best_season_no_title": _trivia_best_season_no_title(all_standings, franchises),
+        "worst_franchise_with_title": _trivia_worst_franchise_with_title(franchises),
+        "best_franchise_no_title": _trivia_best_franchise_no_title(franchises),
+        "worst_champion_season": _trivia_worst_champion_season(all_standings, franchises),
+        "lowest_score_ever": _trivia_lowest_score_ever(all_matchups),
+        "closest_margin_ever": _trivia_closest_margin_ever(all_matchups),
+        "biggest_blowout_ever": _trivia_biggest_blowout_ever(all_matchups),
+        "most_name_changes": _trivia_most_name_changes(franchises),
+        "every_season_franchise": _trivia_every_season_franchises(franchises, total_years),
+        "biggest_comeback": _trivia_biggest_comeback(franchises),
+    }
+
+
+# ---------------------------------------------------------------------------
 # PLAYOFFY – surowe API ESPN (requests, bez espn-api)
 # ---------------------------------------------------------------------------
 # Host lm-api-reads.fantasy.espn.com – fantasy.espn.com blokuje surowe zapytania
@@ -769,6 +1093,15 @@ if __name__ == "__main__":
     with open(playoffs_path, "w", encoding="utf-8") as f:
         json.dump(all_playoffs, f, indent=2, ensure_ascii=False)
 
+    # Zapis ciekawostek (trivia) – liczone WYŁĄCZNIE z danych już w pamięci
+    # (standings, franchises, matchups), bez nowych zapytań do ESPN.
+    # Remisy kandydatów są logowane w konsoli jako [REMIS].
+    print("\n--- CIEKAWOSTKI (trivia) ---")
+    trivia = build_trivia(all_standings, franchises, all_matchups)
+    trivia_path = output_dir / "trivia.json"
+    with open(trivia_path, "w", encoding="utf-8") as f:
+        json.dump(trivia, f, indent=2, ensure_ascii=False)
+
     # 10. Podsumowanie w konsoli
     print(f"\nZapisano standings:   {standings_path}")
     print(f"Zapisano matchups:    {matchups_path}")
@@ -776,4 +1109,5 @@ if __name__ == "__main__":
     print(f"Zapisano draft:       {draft_path}")
     print(f"Zapisano franchises:  {franchises_path} ({len(franchises)} franczyz)")
     print(f"Zapisano playoffs:    {playoffs_path} ({len(playoff_ok_years)} sezonów z drabinką)")
+    print(f"Zapisano trivia:      {trivia_path}")
     print(f"Tabele: {success_count}/{total_years} sezonów  |  Mecze: {matchup_years_done}/{total_years} sezonów  |  Rostery: {roster_years_done}/{roster_total_years} sezonów  |  Draft: {draft_years_done}/{draft_total_years} sezonów  |  Playoffy: {len(playoff_ok_years)}/{total_years} sezonów")

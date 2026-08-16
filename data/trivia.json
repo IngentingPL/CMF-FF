@@ -1,0 +1,81 @@
+{
+  "best_season_no_title": {
+    "year": 2014,
+    "team_name": "Kaliszfornia Capybaras",
+    "owner_name": "M C",
+    "win_rate": 85.7,
+    "wins": 12,
+    "losses": 2,
+    "ties": 0,
+    "note": "Remis z Chicago Scrubs (2020) – wybrano dowolnie"
+  },
+  "worst_franchise_with_title": {
+    "owner_name": "Grzesiek Chodkiewicz",
+    "current_name": "MMz Old Goats",
+    "win_rate": 42.5,
+    "championships": 3
+  },
+  "best_franchise_no_title": {
+    "owner_name": "M C",
+    "current_name": "Kaliszfornia Capybaras",
+    "win_rate": 65.0,
+    "championships": 0
+  },
+  "worst_champion_season": {
+    "year": 2014,
+    "team_name": "Bytom Amateurs",
+    "owner_name": "Artur Melerowicz",
+    "win_rate": 42.9,
+    "wins": 6,
+    "losses": 8,
+    "ties": 0
+  },
+  "lowest_score_ever": {
+    "team_name": "Tel-Aviv Falcons",
+    "score": 24.0,
+    "year": 2016,
+    "week": 14
+  },
+  "closest_margin_ever": {
+    "year": 2025,
+    "week": 3,
+    "team_a": "Lublin Gnagare",
+    "team_a_score": 80.72,
+    "team_b": "Vienna Schnitzels",
+    "team_b_score": 80.64,
+    "margin": 0.08
+  },
+  "biggest_blowout_ever": {
+    "year": 2015,
+    "week": 3,
+    "team_a": "Bartoszyce Inquisitors",
+    "team_a_score": 173.0,
+    "team_b": "Zambrów Bears",
+    "team_b_score": 31.0,
+    "margin": 142.0
+  },
+  "most_name_changes": {
+    "owner_name": "Roman Sobisiak",
+    "current_name": "Poznan Festung",
+    "previous_names": [
+      "Kolberg Festung",
+      "Posen Festung",
+      "Mosina Republicans"
+    ],
+    "count": 3
+  },
+  "every_season_franchise": [
+    {
+      "owner_name": "Piotr Tkaczyk",
+      "current_name": "Lublin Gnagare",
+      "seasons_count": 14
+    }
+  ],
+  "biggest_comeback": {
+    "owner_name": "Michal Adamski",
+    "current_name": "Vienna Schnitzels",
+    "gap_start": 2019,
+    "gap_end": 2022,
+    "gap_years": 4
+  }
+}

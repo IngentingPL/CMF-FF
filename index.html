@@ -485,6 +485,66 @@
     letter-spacing: 0;
   }
 
+  /* ---------- TRIVIA ---------- */
+  .trivia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+  .trivia-card {
+    border: 1px solid var(--line-on-light);
+    padding: 1.25rem 1.5rem 1rem;
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .trivia-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.25rem;
+  }
+  .trivia-value {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .trivia-detail {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .trivia-card .tnote {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    margin-top: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(201,152,47,0.08);
+    border-left: 3px solid var(--gold);
+  }
+  .trivia-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .trivia-list li {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--ink);
+    padding: 0.2rem 0;
+  }
+
+  @media (max-width: 640px) {
+    .trivia-grid { grid-template-columns: 1fr; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .reveal { opacity: 1; transform: none; transition: none; }
     html { scroll-behavior: auto; }
@@ -511,6 +571,7 @@
   <!-- Podsumowanie pierwsze (lewe), Sezon drugie (prawe) -->
   <button class="tab-btn active" data-tab="podsumowanie">Podsumowanie</button>
   <button class="tab-btn" data-tab="sezon">Sezon</button>
+  <button class="tab-btn" data-tab="ciekawostki">Ciekawostki</button>
 </nav>
 
 <div id="panel-sezon" class="tab-panel" hidden>
@@ -622,6 +683,112 @@
   </div>
 </section>
 </div>  <!-- zamyka panel-sezon -->
+
+<div id="panel-ciekawostki" class="tab-panel" hidden>
+
+  <!-- Sekcja 1: Pech i szczęście mistrzostw -->
+  <section class="light">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Ciekawostki</span>
+          <h2>Pech i szczęście mistrzostw</h2>
+        </div>
+      </div>
+      <div class="trivia-grid">
+        <div class="trivia-card" data-trivia="best_season_no_title">
+          <span class="trivia-label">Najlepszy sezon bez tytułu</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+        <div class="trivia-card" data-trivia="worst_franchise_with_title">
+          <span class="trivia-label">Najsłabsza franczyza z tytułem</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+        <div class="trivia-card" data-trivia="best_franchise_no_title">
+          <span class="trivia-label">Najlepsza franczyza bez tytułu</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+        <div class="trivia-card" data-trivia="worst_champion_season">
+          <span class="trivia-label">Mistrz z najsłabszym sezonem</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja 2: Rekordy pojedynczych meczów -->
+  <section class="light">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Ciekawostki</span>
+          <h2>Rekordy pojedynczych meczów</h2>
+        </div>
+      </div>
+      <div class="trivia-grid">
+        <div class="trivia-card" data-trivia="lowest_score_ever">
+          <span class="trivia-label">Najniższy wynik w meczu</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+        <div class="trivia-card" data-trivia="closest_margin_ever">
+          <span class="trivia-label">Najbliższy mecz</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+        <div class="trivia-card" data-trivia="biggest_blowout_ever">
+          <span class="trivia-label">Największy pogrom</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja 3: Ciekawostki o franczyzach -->
+  <section class="light">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Ciekawostki</span>
+          <h2>Ciekawostki o franczyzach</h2>
+        </div>
+      </div>
+      <div class="trivia-grid">
+        <div class="trivia-card" data-trivia="most_name_changes">
+          <span class="trivia-label">Najwięcej zmian nazwy</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+        <div class="trivia-card" data-trivia="every_season_franchise">
+          <span class="trivia-label">Zawsze w lidze</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+        <div class="trivia-card" data-trivia="biggest_comeback">
+          <span class="trivia-label">Najdłuższa przerwa</span>
+          <div class="trivia-value">—</div>
+          <div class="trivia-detail">Ładowanie…</div>
+          <div class="trivia-detail"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>  <!-- zamyka panel-ciekawostki -->
 
 <div id="panel-podsumowanie" class="tab-panel">
 
@@ -743,13 +910,14 @@
   try {
 
     // ----- Wczytaj wszystkie dane równolegle -----
-    const [standings, matchups, draft, rosters, franchises, playoffs] = await Promise.all([
+    const [standings, matchups, draft, rosters, franchises, playoffs, trivia] = await Promise.all([
       fetch('data/standings.json').then(r => r.json()),
       fetch('data/matchups.json').then(r => r.json()),
       fetch('data/draft.json').then(r => r.json()),
       fetch('data/rosters.json').then(r => r.json()),
       fetch('data/franchises.json').then(r => r.json()),
-      fetch('data/playoffs.json').then(r => r.json())
+      fetch('data/playoffs.json').then(r => r.json()),
+      fetch('data/trivia.json').then(r => r.json())
     ]);
 
     const years = Object.keys(standings).sort((a, b) => parseInt(a) - parseInt(b));
@@ -1103,6 +1271,189 @@
     }
 
     // =====================================================================
+    // CIEKAWOSTKI – renderuje 10 kart z danych trivia.json
+    // =====================================================================
+    function renderTrivia(trivia) {
+      if (!trivia) return;
+
+      // Pomocnicza: bezpiecznie pobierz wartość pola
+      function val(obj, key) { return obj && obj[key] != null ? obj[key] : null; }
+
+      // Pomocnicza: formatuj win_rate jako "85.7%"
+      function fmtWinRate(v) { return v != null ? Number(v).toFixed(1) + '%' : '—'; }
+
+      // Pomocnicza: polska odmiana liczebnikowa (1 → l.poj., 2-4 → mianownik l.mn., reszta → dopełniacz)
+      function pl(n, one, few, many) {
+        if (n === 1) return one;
+        if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) return few;
+        return many;
+      }
+
+      // Najlepszy sezon bez tytułu
+      const bestSeason = val(trivia, 'best_season_no_title');
+      if (bestSeason) {
+        const card = document.querySelector('[data-trivia="best_season_no_title"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent = fmtWinRate(val(bestSeason, 'win_rate'));
+          card.querySelector('.trivia-detail').textContent =
+            `${val(bestSeason, 'team_name') || '—'} · ${val(bestSeason, 'owner_name') || '—'}`;
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            `${val(bestSeason, 'year') || '—'} · ${val(bestSeason, 'wins') || 0}-${val(bestSeason, 'losses') || 0}-${val(bestSeason, 'ties') || 0}`;
+          // Opcjonalna notatka
+          if (bestSeason.note) {
+            const note = document.createElement('div');
+            note.className = 'tnote';
+            note.textContent = bestSeason.note;
+            card.appendChild(note);
+          }
+        }
+      }
+
+      // Najsłabsza franczyza z tytułem
+      const worstTitle = val(trivia, 'worst_franchise_with_title');
+      if (worstTitle) {
+        const card = document.querySelector('[data-trivia="worst_franchise_with_title"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent = fmtWinRate(val(worstTitle, 'win_rate'));
+          card.querySelector('.trivia-detail').textContent =
+            `${val(worstTitle, 'current_name') || '—'}`;
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            `${val(worstTitle, 'owner_name') || '—'} · ${val(worstTitle, 'championships') || 0} ` +
+            pl(val(worstTitle, 'championships') || 0, 'mistrzostwo', 'mistrzostwa', 'mistrzostw');
+        }
+      }
+
+      // Najlepsza franczyza bez tytułu
+      const bestNoTitle = val(trivia, 'best_franchise_no_title');
+      if (bestNoTitle) {
+        const card = document.querySelector('[data-trivia="best_franchise_no_title"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent = fmtWinRate(val(bestNoTitle, 'win_rate'));
+          card.querySelector('.trivia-detail').textContent =
+            `${val(bestNoTitle, 'current_name') || '—'}`;
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            `${val(bestNoTitle, 'owner_name') || '—'} · ${val(bestNoTitle, 'championships') || 0} ` +
+            pl(val(bestNoTitle, 'championships') || 0, 'mistrzostwo', 'mistrzostwa', 'mistrzostw');
+        }
+      }
+
+      // Mistrz z najsłabszym sezonem
+      const worstChamp = val(trivia, 'worst_champion_season');
+      if (worstChamp) {
+        const card = document.querySelector('[data-trivia="worst_champion_season"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent = fmtWinRate(val(worstChamp, 'win_rate'));
+          card.querySelector('.trivia-detail').textContent =
+            `${val(worstChamp, 'team_name') || '—'} · ${val(worstChamp, 'owner_name') || '—'}`;
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            `${val(worstChamp, 'year') || '—'} · ${val(worstChamp, 'wins') || 0}-${val(worstChamp, 'losses') || 0}-${val(worstChamp, 'ties') || 0}`;
+        }
+      }
+
+      // Najniższy wynik w meczu
+      const lowest = val(trivia, 'lowest_score_ever');
+      if (lowest) {
+        const card = document.querySelector('[data-trivia="lowest_score_ever"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent =
+            `${val(lowest, 'score') != null ? Number(lowest.score).toFixed(2) : '—'} pkt`;
+          card.querySelector('.trivia-detail').textContent =
+            `${val(lowest, 'team_name') || '—'}`;
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            `${val(lowest, 'year') || '—'} · tydzień ${val(lowest, 'week') || '—'}`;
+        }
+      }
+
+      // Najbliższy mecz (najmniejsza różnica > 0)
+      const closest = val(trivia, 'closest_margin_ever');
+      if (closest) {
+        const card = document.querySelector('[data-trivia="closest_margin_ever"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent =
+            `${val(closest, 'margin') != null ? Number(closest.margin).toFixed(2) : '—'} pkt`;
+          card.querySelector('.trivia-detail').textContent =
+            `${val(closest, 'team_a') || '—'} ${val(closest, 'team_a_score') != null ? Number(closest.team_a_score).toFixed(2) : ''} – ${val(closest, 'team_b_score') != null ? Number(closest.team_b_score).toFixed(2) : ''} ${val(closest, 'team_b') || '—'}`;
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            `${val(closest, 'year') || '—'} · tydzień ${val(closest, 'week') || '—'}`;
+        }
+      }
+
+      // Największy pogrom
+      const blowout = val(trivia, 'biggest_blowout_ever');
+      if (blowout) {
+        const card = document.querySelector('[data-trivia="biggest_blowout_ever"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent =
+            `${val(blowout, 'margin') != null ? Number(blowout.margin).toFixed(2) : '—'} pkt`;
+          card.querySelector('.trivia-detail').textContent =
+            `${val(blowout, 'team_a') || '—'} ${val(blowout, 'team_a_score') != null ? Number(blowout.team_a_score).toFixed(2) : ''} – ${val(blowout, 'team_b_score') != null ? Number(blowout.team_b_score).toFixed(2) : ''} ${val(blowout, 'team_b') || '—'}`;
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            `${val(blowout, 'year') || '—'} · tydzień ${val(blowout, 'week') || '—'}`;
+        }
+      }
+
+      // Najwięcej zmian nazwy
+      const nameChanges = val(trivia, 'most_name_changes');
+      if (nameChanges) {
+        const card = document.querySelector('[data-trivia="most_name_changes"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent =
+            `${val(nameChanges, 'count') != null ? nameChanges.count : '—'} ` +
+            pl(val(nameChanges, 'count'), 'zmiana', 'zmiany', 'zmian');
+          card.querySelector('.trivia-detail').textContent =
+            `${val(nameChanges, 'current_name') || '—'}`;
+          const prevNames = val(nameChanges, 'previous_names');
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            prevNames && prevNames.length
+              ? `wcześniej: ${prevNames.join(', ')}`
+              : '';
+        }
+      }
+
+      // Zawsze w lidze (array)
+      const everySeason = val(trivia, 'every_season_franchise');
+      if (everySeason && Array.isArray(everySeason)) {
+        const card = document.querySelector('[data-trivia="every_season_franchise"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent =
+            everySeason.length === 1
+              ? `${val(everySeason[0], 'seasons_count') || '—'} ` +
+                pl(val(everySeason[0], 'seasons_count'), 'sezon', 'sezony', 'sezonów')
+              : `${everySeason.length} franczyz`;
+          const list = document.createElement('ul');
+          list.className = 'trivia-list';
+          everySeason.forEach(entry => {
+            const li = document.createElement('li');
+            li.textContent =
+              `${val(entry, 'current_name') || '—'} · ${val(entry, 'owner_name') || '—'} · ` +
+              `${val(entry, 'seasons_count') || '—'} ` +
+              pl(val(entry, 'seasons_count'), 'sezon', 'sezony', 'sezonów');
+            list.appendChild(li);
+          });
+          // Zamień drugi .trivia-detail na listę
+          const details = card.querySelectorAll('.trivia-detail');
+          if (details[0]) details[0].textContent = '';
+          if (details[1]) details[1].replaceWith(list);
+        }
+      }
+
+      // Najdłuższa przerwa
+      const comeback = val(trivia, 'biggest_comeback');
+      if (comeback) {
+        const card = document.querySelector('[data-trivia="biggest_comeback"]');
+        if (card) {
+          card.querySelector('.trivia-value').textContent =
+            `${val(comeback, 'gap_years') || '—'} ` +
+            pl(val(comeback, 'gap_years'), 'rok', 'lata', 'lat');
+          card.querySelector('.trivia-detail').textContent =
+            `${val(comeback, 'current_name') || '—'} · ${val(comeback, 'owner_name') || '—'}`;
+          card.querySelectorAll('.trivia-detail')[1].textContent =
+            `Przerwa: ${val(comeback, 'gap_start') || '—'}–${val(comeback, 'gap_end') || '—'}`;
+        }
+      }
+    }
+
+    // =====================================================================
     // JEDNORAZOWE: statystyki podsumowania – liczone z realnych danych
     // =====================================================================
     function renderSummaryStats() {
@@ -1394,6 +1745,7 @@
     // =====================================================================
     renderSummaryStats();
     renderFranchiseTable();
+    renderTrivia(trivia);
 
   } catch (err) {
     // ----- Błąd wczytywania – czytelny komunikat -----
@@ -1413,10 +1765,13 @@
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const target = btn.dataset.tab;
-      const sezon = document.getElementById('panel-sezon');
-      const podsumowanie = document.getElementById('panel-podsumowanie');
-      sezon.hidden = (target !== 'sezon');
-      podsumowanie.hidden = (target !== 'podsumowanie');
+      const panels = {
+        sezon: document.getElementById('panel-sezon'),
+        podsumowanie: document.getElementById('panel-podsumowanie'),
+        ciekawostki: document.getElementById('panel-ciekawostki')
+      };
+      Object.keys(panels).forEach(key => { panels[key].hidden = (key !== target); });
+      panels[target].querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
     });
   });
 </script>
