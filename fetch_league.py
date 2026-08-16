@@ -241,6 +241,26 @@ def fetch_year_draft(league_id, year, swid=None, espn_s2=None):
     return picks
 
 
+# ---------------------------------------------------------------------------
+# RĘCZNE WYJĄTKI – oparte na wiedzy o lidze, a nie wykryte automatycznie.
+# Używane przez build_franchises() i build_rivalries().
+#
+# (1) MANUAL_OWNER_MERGES: jedna osoba grała na dwóch różnych kontach
+#     ESPN (różne owner_id), więc jej sezony mają iść do JEDNEJ franczyzy.
+#     Edinburgh Yer Maws i Madison Bumgarners to ta sama osoba.
+# (2) TEAM_NAME_ALIASES: literówka/wariant nazwy w źródle ESPN (ten sam
+#     owner_id), nie faktyczna zmiana nazwy. Po zamianie istniejąca logika
+#     "bez duplikatów pod rząd" sama usunie powtórzenie.
+# ---------------------------------------------------------------------------
+MANUAL_OWNER_MERGES = {
+    "{3AA0BC31-A484-4C48-A0BC-31A4843C4868}":  # Edinburgh Yer Maws
+    "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",   # Madison Bumgarners
+}
+TEAM_NAME_ALIASES = {
+    "Zambrow Bears": "Zambrów Bears",
+}
+
+
 def build_franchises(all_standings):
     """Buduje historię franczyz z danych standings (już w pamięci).
 
@@ -254,25 +274,8 @@ def build_franchises(all_standings):
 
     Drużyny bez owner_id są pomijane (nie da się ich przypisać do franczyzy).
     """
-    # ---------------------------------------------------------------------
-    # RĘCZNE WYJĄTKI – oparte na wiedzy o lidze, a nie wykryte automatycznie.
-    #
-    # (1) MANUAL_OWNER_MERGES: jedna osoba grała na dwóch różnych kontach
-    #     ESPN (różne owner_id), więc jej sezony mają iść do JEDNEJ franczyzy.
-    #     Edinburgh Yer Maws i Madison Bumgarners to ta sama osoba.
-    MANUAL_OWNER_MERGES = {
-        "{3AA0BC31-A484-4C48-A0BC-31A4843C4868}":  # Edinburgh Yer Maws
-        "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",   # Madison Bumgarners
-    }
-    # (2) TEAM_NAME_ALIASES: literówka/wariant nazwy w źródle ESPN (ten sam
-    #     owner_id), nie faktyczna zmiana nazwy. Po zamianie istniejąca logika
-    #     "bez duplikatów pod rząd" sama usunie powtórzenie.
-    TEAM_NAME_ALIASES = {
-        "Zambrow Bears": "Zambrów Bears",
-    }
-    # ---------------------------------------------------------------------
-
-    # Grupujemy sezony po owner_id (najpierw scalenie kont wg MANUAL_OWNER_MERGES)
+    # Grupujemy sezony po owner_id (najpierw scalenie kont wg MANUAL_OWNER_MERGES,
+    # zdefiniowanego na poziomie modułu – używa go też build_rivalries())
     # final_standing może być None – None != 1, więc nie przeszkadza w liczeniu.
     by_owner = {}  # owner_id -> lista (year, team_name, w, l, t, pf, pa, final_standing)
     for year_str, teams in sorted(all_standings.items(), key=lambda x: int(x[0])):
@@ -401,6 +404,98 @@ def build_franchises(all_standings):
 # Żadnych nowych zapytań do ESPN. Przy remisie wybieramy pierwszego kandydata
 # i logujemy remis w konsoli ([REMIS]) – wybór jest wtedy dowolny.
 # ---------------------------------------------------------------------------
+
+
+def build_rivalries(all_standings, all_matchups, all_playoffs, franchises):
+    """Buduje bilanse H2H każdej franczyzy przeciwko wszystkim przeciwnikom,
+    rozdzielone na sezon zasadniczy (reg_*) i playoffy (po_*).
+
+    To uogólnienie na wszystkie 19 franczyz zweryfikowanej logiki z
+    diagnose_lublin_split.py (tam policzonej tylko dla Lublin Gnagare):
+      - strony meczu identyfikujemy po owner_id, rozdzielanym przez team_name
+        w standings.json DANEGO roku (z fallbackiem TEAM_NAME_ALIASES);
+      - sezon zasadniczy: matchups.json, ALE jeśli dany rok ma rundy
+        playoffowe, tygodnie >= matchup_period pierwszej rundy są POMIJANE
+        (to duplikaty bracketów, które żyją w playoffs.json); rok bez rund
+        (np. 2022) liczy WSZYSTKIE tygodnie jako zasadnicze;
+      - playoffy: playoffs.json, wszystkie rundy i tier-y (WINNERS_BRACKET
+        i konsolacyjne) – liczy się każdy realnie rozegrany mecz;
+      - wynik doliczany symetrycznie do opponents OBU franczyz.
+
+    Zwraca {owner_id: {"team_name": ..., "opponents": [...]}}.
+    """
+    years = sorted({int(y) for y in set(all_standings) | set(all_matchups) | set(all_playoffs)})
+
+    # 1) mapa team_name -> owner_id per rok (aliasy nazw + scalenie kont)
+    year_map = {}
+    for y in years:
+        m = {}
+        for team in all_standings.get(str(y), []):
+            if team.get("owner_id"):
+                name = TEAM_NAME_ALIASES.get(team["team_name"], team["team_name"])
+                m[name] = MANUAL_OWNER_MERGES.get(team["owner_id"], team["owner_id"])
+        year_map[y] = m
+
+    # 2) start playoffów per rok – tylko jako kalendarz tygodni, nie źródło gier
+    min_po = {}
+    for y in years:
+        rounds = all_playoffs.get(str(y), {}).get("rounds", [])
+        min_po[y] = min((r["matchup_period"] for r in rounds), default=None)
+
+    # 3) liczymy reg[oid][opp] = [w, l, t] i po[oid][opp] = [w, l, t]
+    def add(rec, a, b, res):
+        e = rec.setdefault(a, {}).setdefault(b, [0, 0, 0])
+        e[res] += 1
+
+    reg, po = {}, {}
+    for y in years:
+        sy = str(y)
+        # Sezon zasadniczy (matchups.json) – z pominięciem tygodni bracketowych
+        for w, gs in all_matchups.get(sy, {}).items():
+            if min_po[y] is not None and int(w) >= min_po[y]:
+                continue
+            for g in gs:
+                a = year_map[y].get(TEAM_NAME_ALIASES.get(g["home_team"], g["home_team"]))
+                b = year_map[y].get(TEAM_NAME_ALIASES.get(g["away_team"], g["away_team"]))
+                if not a or not b or a == b:
+                    continue
+                res = 0 if g["home_score"] > g["away_score"] else \
+                      1 if g["home_score"] < g["away_score"] else 2
+                add(reg, a, b, res)          # perspektywa gospodarza
+                add(reg, b, a, 1 - res if res != 2 else 2)  # perspektywa gościa
+        # Playoffy (playoffs.json) – wszystkie rundy i tier-y
+        for rnd in all_playoffs.get(sy, {}).get("rounds", []):
+            for g in rnd["games"]:
+                a = year_map[y].get(TEAM_NAME_ALIASES.get(g["team_a"], g["team_a"]))
+                b = year_map[y].get(TEAM_NAME_ALIASES.get(g["team_b"], g["team_b"]))
+                if not a or not b or a == b:
+                    continue
+                res = 0 if g["team_a_score"] > g["team_b_score"] else \
+                      1 if g["team_a_score"] < g["team_b_score"] else 2
+                add(po, a, b, res)
+                add(po, b, a, 1 - res if res != 2 else 2)
+
+    # 4) finalna struktura: klucz = owner_id każdej franczyzy z franchises.json
+    by_owner = {f["owner_id"]: f for f in franchises}
+    rivalries = {}
+    for fr in franchises:
+        oid = fr["owner_id"]
+        opp_ids = sorted(set(reg.get(oid, {})) | set(po.get(oid, {})),
+                         key=lambda o: (by_owner.get(o, {}).get("current_name", ""), o))
+        opponents = []
+        for opp in opp_ids:
+            info = by_owner.get(opp, {})
+            r = reg.get(oid, {}).get(opp, [0, 0, 0])
+            p = po.get(oid, {}).get(opp, [0, 0, 0])
+            opponents.append({
+                "opponent_owner_id": opp,
+                "opponent_name": info.get("current_name", opp),
+                "opponent_previous_names": info.get("previous_names", []),
+                "reg_wins": r[0], "reg_losses": r[1], "reg_ties": r[2],
+                "po_wins": p[0], "po_losses": p[1], "po_ties": p[2],
+            })
+        rivalries[oid] = {"team_name": fr["current_name"], "opponents": opponents}
+    return rivalries
 
 
 def _wlt_win_rate(wins, losses, ties):
@@ -1088,6 +1183,14 @@ if __name__ == "__main__":
     with open(franchises_path, "w", encoding="utf-8") as f:
         json.dump(franchises, f, indent=2, ensure_ascii=False)
 
+    # Zapis rywalizacji H2H (bilans zasadniczy + playoffy per franczyza,
+    # liczony WYŁĄCZNIE z danych już w pamięci – uogólnienie zweryfikowanej
+    # logiki z diagnose_lublin_split.py na wszystkie franczyzy)
+    rivalries = build_rivalries(all_standings, all_matchups, all_playoffs, franchises)
+    rivalries_path = output_dir / "rivalries.json"
+    with open(rivalries_path, "w", encoding="utf-8") as f:
+        json.dump(rivalries, f, indent=2, ensure_ascii=False)
+
     # Zapis drabinki playoffów (build_playoffs)
     playoffs_path = output_dir / "playoffs.json"
     with open(playoffs_path, "w", encoding="utf-8") as f:
@@ -1108,6 +1211,7 @@ if __name__ == "__main__":
     print(f"Zapisano rosters:     {rosters_path}")
     print(f"Zapisano draft:       {draft_path}")
     print(f"Zapisano franchises:  {franchises_path} ({len(franchises)} franczyz)")
+    print(f"Zapisano rivalries:   {rivalries_path} ({len(rivalries)} franczyz)")
     print(f"Zapisano playoffs:    {playoffs_path} ({len(playoff_ok_years)} sezonów z drabinką)")
     print(f"Zapisano trivia:      {trivia_path}")
     print(f"Tabele: {success_count}/{total_years} sezonów  |  Mecze: {matchup_years_done}/{total_years} sezonów  |  Rostery: {roster_years_done}/{roster_total_years} sezonów  |  Draft: {draft_years_done}/{draft_total_years} sezonów  |  Playoffy: {len(playoff_ok_years)}/{total_years} sezonów")

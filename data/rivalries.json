@@ -1,0 +1,3463 @@
+{
+  "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}": {
+    "team_name": "Lublin Gnagare",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 14,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 9,
+        "reg_losses": 10,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 4,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 7,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 9,
+        "reg_losses": 14,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 1
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 8,
+        "reg_losses": 17,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 6,
+        "reg_losses": 10,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+        "opponent_name": "Szczecin Pirates",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 5,
+        "reg_losses": 8,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 1,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{0FC552E4-839F-4E37-8FE0-C199419E902C}": {
+    "team_name": "Bytom Amateurs",
+    "opponents": [
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 10,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 5,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 6,
+        "reg_losses": 14,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 12,
+        "reg_losses": 8,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 6,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 7,
+        "reg_losses": 11,
+        "reg_ties": 2,
+        "po_wins": 4,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+        "opponent_name": "Szczecin Pirates",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 7,
+        "reg_losses": 7,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}": {
+    "team_name": "MMz Old Goats",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 8,
+        "reg_losses": 12,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 8,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 14,
+        "reg_losses": 9,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 7,
+        "reg_losses": 11,
+        "reg_ties": 1,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+        "opponent_name": "Szczecin Pirates",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 5,
+        "reg_losses": 9,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 1,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 1,
+        "po_wins": 2,
+        "po_losses": 2,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}": {
+    "team_name": "Poznan Festung",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 11,
+        "reg_losses": 7,
+        "reg_ties": 2,
+        "po_wins": 2,
+        "po_losses": 4,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 10,
+        "reg_losses": 9,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 1,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 6,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 17,
+        "reg_losses": 8,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 11,
+        "reg_losses": 7,
+        "reg_ties": 1,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 4,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 7,
+        "reg_losses": 8,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 3,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+        "opponent_name": "Szczecin Pirates",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 10,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{9061726D-8B6A-44E9-A172-6D8B6A74E993}": {
+    "team_name": "Kaliszfornia Capybaras",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 6,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 7,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 5,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 4,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 4,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 3,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 7,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 3,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 7,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 5,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}": {
+    "team_name": "Vienna Schnitzels",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 7,
+        "reg_losses": 7,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 5,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 7,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 8,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 9,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 5,
+        "reg_losses": 10,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+        "opponent_name": "Szczecin Pirates",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 3,
+        "po_losses": 2,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{4D72EF1E-317E-4806-B2EF-1E317EA80657}": {
+    "team_name": "Szymanow Harvesters",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 5,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 7,
+        "reg_ties": 0,
+        "po_wins": 3,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 4,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 6,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 4,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}": {
+    "team_name": "Pamplona Inquisitors",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 5,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 1
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 6,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 6,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{E39DCC5C-6304-4678-BC99-06582340CF99}": {
+    "team_name": "Suwalki Rednecks",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 5,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 6,
+        "reg_losses": 7,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 10,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 6,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 8,
+        "reg_losses": 7,
+        "reg_ties": 0,
+        "po_wins": 3,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+        "opponent_name": "Szczecin Pirates",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}": {
+    "team_name": "East Side Demons",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 6,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 4,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 4,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 1,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 5,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}": {
+    "team_name": "San Marino Titans",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 3,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 6,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}": {
+    "team_name": "Chicago Scrubs",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 10,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 10,
+        "reg_losses": 9,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 5,
+        "reg_losses": 8,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 9,
+        "reg_losses": 10,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 7,
+        "reg_losses": 6,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}",
+        "opponent_name": "Szczecin Pirates",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}": {
+    "team_name": "Madison Bumgarners",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 4,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{9D6536D8-C185-4312-A536-D8C185231275}": {
+    "team_name": "Elblag Scrolls",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}",
+        "opponent_name": "Pless Bricks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}": {
+    "team_name": "Zambrów Bears",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 5,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 1,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 1,
+        "po_wins": 2,
+        "po_losses": 2,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 4,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 3,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}": {
+    "team_name": "Wloclawek Wolf Pack",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 1,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 3,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 3,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 3,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{95238C1A-BF96-4224-9D02-897A7A91D88C}",
+        "opponent_name": "Tel-Aviv Falcons",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{B84BAA90-55C9-46B4-8E1D-C83445D73C6C}": {
+    "team_name": "Pless Bricks",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9D6536D8-C185-4312-A536-D8C185231275}",
+        "opponent_name": "Elblag Scrolls",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{95238C1A-BF96-4224-9D02-897A7A91D88C}": {
+    "team_name": "Tel-Aviv Falcons",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
+        "opponent_name": "East Side Demons",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{9061726D-8B6A-44E9-A172-6D8B6A74E993}",
+        "opponent_name": "Kaliszfornia Capybaras",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4F1095CC-1DCD-427C-9095-CC1DCDE27C08}",
+        "opponent_name": "Madison Bumgarners",
+        "opponent_previous_names": [
+          "Edinburgh Yer Maws"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{A095719F-F2D2-45DA-9571-9FF2D265DA4C}",
+        "opponent_name": "Pamplona Inquisitors",
+        "opponent_previous_names": [
+          "Ostróda Inquisitors",
+          "Bartoszyce Inquisitors"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 2,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2BB7E2D8-B832-4592-8292-4C1A86CAFBB8}",
+        "opponent_name": "San Marino Titans",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4D72EF1E-317E-4806-B2EF-1E317EA80657}",
+        "opponent_name": "Szymanow Harvesters",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{2B617B5E-1CFC-4EFB-B328-F3384BD8E63A}",
+        "opponent_name": "Wloclawek Wolf Pack",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4C9B1A57-95D4-4ACB-9B1A-5795D44ACB24}",
+        "opponent_name": "Zambrów Bears",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  },
+  "{C14A0009-4BB5-459C-A28B-29FCFDC144E9}": {
+    "team_name": "Szczecin Pirates",
+    "opponents": [
+      {
+        "opponent_owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+        "opponent_name": "Bytom Amateurs",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+        "opponent_name": "Chicago Scrubs",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+        "opponent_name": "Lublin Gnagare",
+        "opponent_previous_names": [],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 1,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+        "opponent_name": "MMz Old Goats",
+        "opponent_previous_names": [
+          "Minsk Maz Old Goats"
+        ],
+        "reg_wins": 2,
+        "reg_losses": 0,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+        "opponent_name": "Poznan Festung",
+        "opponent_previous_names": [
+          "Kolberg Festung",
+          "Posen Festung",
+          "Mosina Republicans"
+        ],
+        "reg_wins": 0,
+        "reg_losses": 2,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{E39DCC5C-6304-4678-BC99-06582340CF99}",
+        "opponent_name": "Suwalki Rednecks",
+        "opponent_previous_names": [],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 1,
+        "po_losses": 0,
+        "po_ties": 0
+      },
+      {
+        "opponent_owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+        "opponent_name": "Vienna Schnitzels",
+        "opponent_previous_names": [
+          "Danzig Cowboys",
+          "Barcelona Toros"
+        ],
+        "reg_wins": 1,
+        "reg_losses": 1,
+        "reg_ties": 0,
+        "po_wins": 0,
+        "po_losses": 0,
+        "po_ties": 0
+      }
+    ]
+  }
+}

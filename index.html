@@ -448,6 +448,24 @@
     margin-top: 0.2em;
   }
 
+  /* ---------- RIVALRIES (przeniesione z index2.html, bez zmian) ---------- */
+  .rivalry-table-wrap { overflow-x: auto; }
+  table.rivalries { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 640px; }
+  table.rivalries th {
+    text-align: left; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-soft); padding: 0 0.6rem 0.75rem;
+    border-bottom: 2px solid var(--ink); cursor: pointer; user-select: none; white-space: nowrap;
+  }
+  table.rivalries th:hover { color: var(--ink); }
+  table.rivalries th.sorted { color: var(--gold); }
+  table.rivalries th .arrow { font-size: 0.6rem; margin-left: 0.2rem; }
+  table.rivalries td { padding: 0.8rem 0.6rem; border-bottom: 1px solid var(--line-on-light); font-size: 0.88rem; white-space: nowrap; }
+  table.rivalries td.name-cell { white-space: normal; }
+  table.rivalries .fname { font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; }
+  table.rivalries .fprev { font-size: 0.68rem; color: var(--ink-soft); font-style: italic; display: block; margin-top: 0.1rem; }
+  table.rivalries .num { font-family: var(--font-mono); text-align: right; }
+  table.rivalries tbody tr:hover { background: var(--light-dim); }
+
   /* ---------- SUMMARY GRID ---------- */
   .summary-grid {
     display: grid;
@@ -572,6 +590,8 @@
   <button class="tab-btn active" data-tab="podsumowanie">Podsumowanie</button>
   <button class="tab-btn" data-tab="sezon">Sezon</button>
   <button class="tab-btn" data-tab="ciekawostki">Ciekawostki</button>
+  <!-- Rywalizacje – przeniesione z index2.html -->
+  <button class="tab-btn" data-tab="rywalizacje">Rywalizacje</button>
 </nav>
 
 <div id="panel-sezon" class="tab-panel" hidden>
@@ -890,6 +910,63 @@
 
 </div>  <!-- zamyka panel-podsumowanie -->
 
+<!-- Rywalizacje – panel przeniesiony z index2.html (selektor dopasowany do
+     wzorca .season-bar z index.html; reszta bez zmian) -->
+<div id="panel-rywalizacje" class="tab-panel" hidden>
+
+<div class="season-bar">
+  <div class="wrap">
+    <label for="rivalry-select">Wybierz drużynę</label>
+    <select id="rivalry-select"><option>Lublin Gnagare</option></select>
+  </div>
+</div>
+
+<section class="light">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Lublin Gnagare · Wszystkie 18 rywalizacji</span>
+        <h2>Bilans z przeciwnikami</h2>
+      </div>
+    </div>
+    <div class="rivalry-table-wrap">
+    <table class="rivalries">
+      <thead>
+        <tr>
+          <th data-sort="name">Przeciwnik</th>
+          <th data-sort="reg" class="num">Sezon zasadniczy</th>
+          <th data-sort="po" class="num">Playoffy</th>
+          <th data-sort="total" class="num sorted">Razem <span class="arrow">▾</span></th>
+          <th data-sort="games" class="num">Mecze</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="name-cell"><span class="fname">Poznan Festung</span><span class="fprev">wcześniej: Kolberg Festung, Posen Festung, Mosina Republicans</span></td><td class="num">8-17-0</td><td class="num">1-2-0</td><td class="num">9-19-0</td><td class="num">28</td></tr>
+        <tr><td class="name-cell"><span class="fname">MMz Old Goats</span><span class="fprev">wcześniej: Minsk Maz Old Goats</span></td><td class="num">9-14-0</td><td class="num">2-1-0</td><td class="num">11-15-0</td><td class="num">26</td></tr>
+        <tr><td class="name-cell"><span class="fname">Bytom Amateurs</span></td><td class="num">14-6-0</td><td class="num">1-1-0</td><td class="num">15-7-0</td><td class="num">22</td></tr>
+        <tr><td class="name-cell"><span class="fname">Chicago Scrubs</span></td><td class="num">9-10-0</td><td class="num">—</td><td class="num">9-10-0</td><td class="num">19</td></tr>
+        <tr><td class="name-cell"><span class="fname">Suwalki Rednecks</span></td><td class="num">6-10-0</td><td class="num">—</td><td class="num">6-10-0</td><td class="num">16</td></tr>
+        <tr><td class="name-cell"><span class="fname">Vienna Schnitzels</span><span class="fprev">wcześniej: Danzig Cowboys, Barcelona Toros</span></td><td class="num">5-8-0</td><td class="num">1-1-0</td><td class="num">6-9-0</td><td class="num">15</td></tr>
+        <tr><td class="name-cell"><span class="fname">East Side Demons</span></td><td class="num">1-6-0</td><td class="num">4-1-0</td><td class="num">5-7-0</td><td class="num">12</td></tr>
+        <tr><td class="name-cell"><span class="fname">Szymanow Harvesters</span></td><td class="num">3-4-0</td><td class="num">1-2-0</td><td class="num">4-6-0</td><td class="num">10</td></tr>
+        <tr><td class="name-cell"><span class="fname">Kaliszfornia Capybaras</span></td><td class="num">1-7-0</td><td class="num">1-0-0</td><td class="num">2-7-0</td><td class="num">9</td></tr>
+        <tr><td class="name-cell"><span class="fname">Pamplona Inquisitors</span><span class="fprev">wcześniej: Ostróda Inquisitors, Bartoszyce Inquisitors</span></td><td class="num">2-5-0</td><td class="num">0-0-1</td><td class="num">2-5-1</td><td class="num">8</td></tr>
+        <tr><td class="name-cell"><span class="fname">San Marino Titans</span></td><td class="num">4-4-0</td><td class="num">—</td><td class="num">4-4-0</td><td class="num">8</td></tr>
+        <tr><td class="name-cell"><span class="fname">Elblag Scrolls</span></td><td class="num">2-1-0</td><td class="num">1-1-0</td><td class="num">3-2-0</td><td class="num">5</td></tr>
+        <tr><td class="name-cell"><span class="fname">Madison Bumgarners</span><span class="fprev">wcześniej: Edinburgh Yer Maws</span></td><td class="num">2-2-0</td><td class="num">1-0-0</td><td class="num">3-2-0</td><td class="num">5</td></tr>
+        <tr><td class="name-cell"><span class="fname">Wloclawek Wolf Pack</span></td><td class="num">3-1-0</td><td class="num">0-1-0</td><td class="num">3-2-0</td><td class="num">5</td></tr>
+        <tr><td class="name-cell"><span class="fname">Zambrów Bears</span></td><td class="num">2-2-1</td><td class="num">—</td><td class="num">2-2-1</td><td class="num">5</td></tr>
+        <tr><td class="name-cell"><span class="fname">Szczecin Pirates</span></td><td class="num">2-0-0</td><td class="num">1-0-0</td><td class="num">3-0-0</td><td class="num">3</td></tr>
+        <tr><td class="name-cell"><span class="fname">Pless Bricks</span></td><td class="num">1-0-0</td><td class="num">—</td><td class="num">1-0-0</td><td class="num">1</td></tr>
+        <tr><td class="name-cell"><span class="fname">Tel-Aviv Falcons</span></td><td class="num">1-0-0</td><td class="num">—</td><td class="num">1-0-0</td><td class="num">1</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+</div>  <!-- zamyka panel-rywalizacje -->
+
 <footer>
   <div class="wrap">
     <span>PODGLĄD WYGLĄDU · DANE PRZYKŁADOWE Z data/*.json</span>
@@ -910,14 +987,16 @@
   try {
 
     // ----- Wczytaj wszystkie dane równolegle -----
-    const [standings, matchups, draft, rosters, franchises, playoffs, trivia] = await Promise.all([
+    // (rivalries dodane przy przenoszeniu zakładki Rywalizacje z index2.html)
+    const [standings, matchups, draft, rosters, franchises, playoffs, trivia, rivalries] = await Promise.all([
       fetch('data/standings.json').then(r => r.json()),
       fetch('data/matchups.json').then(r => r.json()),
       fetch('data/draft.json').then(r => r.json()),
       fetch('data/rosters.json').then(r => r.json()),
       fetch('data/franchises.json').then(r => r.json()),
       fetch('data/playoffs.json').then(r => r.json()),
-      fetch('data/trivia.json').then(r => r.json())
+      fetch('data/trivia.json').then(r => r.json()),
+      fetch('data/rivalries.json').then(r => r.json())
     ]);
 
     const years = Object.keys(standings).sort((a, b) => parseInt(a) - parseInt(b));
@@ -1619,6 +1698,120 @@
     });
 
     // =====================================================================
+    // RYWALIZACJE – przeniesione z index2.html (logika bez zmian; dane
+    // `rivalries` pochodzą z Promise.all powyżej, więc bez własnego fetcha)
+    // =====================================================================
+
+    // Stan sortowania — musi przetrwać zmianę drużyny w selektorze
+    let rivalrySort = { key: 'total', dir: 'desc' };
+
+    // Klucze sortowania: zwracają wartość do porównania dla danego przeciwnika
+    const rivalrySortKeys = {
+      name:  o => o.opponent_name,
+      reg:   o => o.reg_wins,
+      po:    o => o.po_wins,
+      total: o => o.reg_wins + o.po_wins,
+      games: o => o.reg_wins + o.reg_losses + o.reg_ties + o.po_wins + o.po_losses + o.po_ties
+    };
+
+    // Renderowanie tabeli rywalizacji dla wybranej drużyny
+    function renderRivalryTable(ownerId) {
+      const data = rivalries[ownerId];
+      const key = rivalrySort.key;
+      const dir = rivalrySort.dir;
+      const get = rivalrySortKeys[key];
+
+      // Sortowanie: stringi → localeCompare 'pl', liczby → odejmowanie; desc odwraca wynik
+      const rows = [...data.opponents].sort((a, b) => {
+        const va = get(a), vb = get(b);
+        let cmp;
+        if (typeof va === 'string') cmp = va.localeCompare(vb, 'pl');
+        else cmp = va - vb;
+        if (dir === 'desc') cmp = -cmp;
+        // tiebreak niezależny od kierunku: nazwa rosnąco (determinizm)
+        if (cmp === 0) cmp = a.opponent_name.localeCompare(b.opponent_name, 'pl');
+        return cmp;
+      });
+
+      const tbody = document.querySelector('table.rivalries tbody');
+      tbody.innerHTML = '';
+
+      rows.forEach(o => {
+        const nameHTML =
+          `<span class="fname">${o.opponent_name}</span>` +
+          (o.opponent_previous_names.length
+            ? `<span class="fprev">wcześniej: ${o.opponent_previous_names.join(', ')}</span>`
+            : '');
+        const poTotal = o.po_wins + o.po_losses + o.po_ties;
+        const po = poTotal === 0 ? '—' : `${o.po_wins}-${o.po_losses}-${o.po_ties}`;
+        const games = o.reg_wins + o.reg_losses + o.reg_ties + o.po_wins + o.po_losses + o.po_ties;
+
+        const tr = document.createElement('tr');
+        tr.innerHTML =
+          `<td class="name-cell">${nameHTML}</td>` +
+          `<td class="num">${o.reg_wins}-${o.reg_losses}-${o.reg_ties}</td>` +
+          `<td class="num">${po}</td>` +
+          `<td class="num">${o.reg_wins + o.po_wins}-${o.reg_losses + o.po_losses}-${o.reg_ties + o.po_ties}</td>` +
+          `<td class="num">${games}</td>`;
+        tbody.appendChild(tr);
+      });
+
+      // Stan nagłówków: klasa "sorted" + strzałka tylko na aktywnej kolumnie
+      document.querySelectorAll('table.rivalries thead th').forEach(th => {
+        const active = th.dataset.sort === key;
+        th.classList.toggle('sorted', active);
+        if (active) {
+          let el = th.querySelector('.arrow');
+          if (!el) {
+            el = document.createElement('span');
+            el.className = 'arrow';
+            th.appendChild(el);
+          }
+          el.textContent = dir === 'desc' ? '▾' : '▴'; // malejąco ▾, rosnąco ▴
+        } else {
+          const el = th.querySelector('.arrow');
+          if (el) el.remove();
+        }
+      });
+
+      // Podsumowanie w nagłówku sekcji z poprawną polską odmianą
+      const n = rows.length;
+      const plural = (n === 1) ? 'rywalizacja'
+        : ((n % 10 >= 2 && n % 10 <= 4) && !(n % 100 >= 12 && n % 100 <= 14)) ? 'rywalizacje' : 'rywalizacji';
+      document.querySelector('#panel-rywalizacje .eyebrow').textContent =
+        `${data.team_name} · Wszystkie ${n} ${plural}`;
+    }
+
+    // Klikalne nagłówki: nowa kolumna → malejąco (▾), ta sama → odwróć kierunek (▴)
+    document.querySelector('table.rivalries thead').addEventListener('click', (e) => {
+      const th = e.target.closest('th');
+      if (!th || !th.dataset.sort) return;
+      const col = th.dataset.sort;
+      if (rivalrySort.key === col) {
+        rivalrySort.dir = rivalrySort.dir === 'desc' ? 'asc' : 'desc';
+      } else {
+        rivalrySort = { key: col, dir: 'desc' };
+      }
+      renderRivalryTable(document.getElementById('rivalry-select').value);
+    });
+
+    // Zmiana drużyny w selektorze → ponowne renderowanie
+    document.getElementById('rivalry-select').addEventListener('change', (e) => {
+      renderRivalryTable(e.target.value);
+    });
+
+    // Wypełnienie selektora w kolejności pliku (bez sortowania) + pierwsze renderowanie
+    const rivalrySelect = document.getElementById('rivalry-select');
+    rivalrySelect.innerHTML = '';
+    franchises.forEach(fr => {
+      const opt = document.createElement('option');
+      opt.value = fr.owner_id;
+      opt.textContent = fr.current_name;
+      rivalrySelect.appendChild(opt);
+    });
+    renderRivalryTable(rivalrySelect.value);
+
+    // =====================================================================
     // WYPEŁNIJ SELECT OPCJAMI + NASŁUCH ZMIAN
     // =====================================================================
 
@@ -1768,7 +1961,8 @@
       const panels = {
         sezon: document.getElementById('panel-sezon'),
         podsumowanie: document.getElementById('panel-podsumowanie'),
-        ciekawostki: document.getElementById('panel-ciekawostki')
+        ciekawostki: document.getElementById('panel-ciekawostki'),
+        rywalizacje: document.getElementById('panel-rywalizacje')
       };
       Object.keys(panels).forEach(key => { panels[key].hidden = (key !== target); });
       panels[target].querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
