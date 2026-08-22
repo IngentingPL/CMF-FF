@@ -567,6 +567,143 @@
     .reveal { opacity: 1; transform: none; transition: none; }
     html { scroll-behavior: auto; }
   }
+
+  /* ---------- RETROSPEKCJA DRAFTU (zakładka Draft) ---------- */
+  .section-head .note { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); }
+  .dark-band .section-head .note { color: var(--light-dim); }
+
+  .poschip { display: inline-block; font-family: var(--font-mono); font-size: 0.6rem; font-weight: 600; letter-spacing: 0.06em; padding: 0.1rem 0.4rem; line-height: 1.4; vertical-align: middle; }
+
+  table.tab { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  table.tab th { text-align: left; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); padding: 0 0.75rem 0.75rem; border-bottom: 2px solid var(--ink); }
+  table.tab td { padding: 0.85rem 0.75rem; border-bottom: 1px solid var(--line-on-light); font-size: 0.95rem; }
+  table.tab tbody tr:hover { background: var(--light-dim); }
+  table.tab th.num, table.tab td.num { text-align: right; font-family: var(--font-mono); }
+  table.tab .rank { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; width: 2.4rem; }
+  table.tab tr.lead td { background: rgba(201,152,47,0.10); }
+  .dark-band table.tab th { color: var(--gold-bright); border-bottom-color: var(--line-on-dark); }
+  .dark-band table.tab td { border-bottom-color: var(--line-on-dark); color: var(--light); }
+  .dark-band table.tab tbody tr:hover { background: rgba(255,255,255,0.05); }
+
+  .board-wrap { overflow-x: auto; border: 1px solid var(--line-on-light); }
+  table.board { border-collapse: collapse; width: 100%; table-layout: fixed; font-variant-numeric: tabular-nums; }
+  table.board th, table.board td { border-right: 1px solid var(--line-on-light); }
+  table.board th:last-child, table.board td:last-child { border-right: none; }
+  table.board thead th { font-family: var(--font-display); font-weight: 700; font-size: 0.82rem; padding: 0.55rem 0.4rem; text-align: center; cursor: pointer; background: var(--light-dim); white-space: normal; line-height: 1.12; vertical-align: bottom; overflow: hidden; user-select: none; }
+  table.board thead th:hover { background: rgba(201,152,47,0.18); }
+  table.board thead th.lit { background: var(--gold); color: var(--dark); }
+  table.board th.round { font-family: var(--font-mono); font-size: 0.64rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); text-align: right; padding: 0.4rem 0.5rem; width: 3rem; background: var(--light); border-right: 2px solid var(--ink); vertical-align: middle; }
+  table.board td { padding: 0.4rem 0.35rem; text-align: center; vertical-align: middle; overflow: hidden; }
+  table.board td.lit { background: rgba(201,152,47,0.14); }
+  table.board td div.cell { display: flex; flex-direction: column; align-items: center; gap: 0.12rem; }
+  table.board .pname { font-size: 0.76rem; font-weight: 600; line-height: 1.15; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  table.board td.num1 { background: rgba(201,152,47,0.16); box-shadow: inset 0 0 0 2px var(--gold); }
+  table.board td.empty { background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(20,32,26,0.03) 6px 12px); }
+  .board-legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-top: 1rem; font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); }
+  .board-legend .lg { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .board-legend .sw { width: 0.6rem; height: 0.6rem; display: inline-block; }
+
+  .board-strips { display: none; flex-direction: column; gap: 0.75rem; }
+  .strip { border: 1px solid var(--line-on-light); }
+  .strip-head { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.8rem; background: var(--light-dim); font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .strip-head .dir { color: var(--rust); font-size: 0.85rem; }
+  .strip-picks { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0.75rem 0.8rem; }
+  .pick-chip { display: flex; flex-direction: column; gap: 0.1rem; border: 1px solid var(--line-on-light); padding: 0.4rem 0.55rem; min-width: 5.6rem; flex: 1 1 5.6rem; }
+  .pick-chip .pc-top { display: flex; align-items: center; gap: 0.4rem; }
+  .pick-chip .pc-name { font-size: 0.8rem; font-weight: 600; line-height: 1.15; }
+  .pick-chip .pc-fran { font-family: var(--font-mono); font-size: 0.62rem; color: var(--ink-soft); }
+  .pick-chip.num1 { box-shadow: inset 0 0 0 2px var(--gold); background: rgba(201,152,47,0.12); }
+
+  .firstpick { display: grid; grid-template-columns: 1.6fr 1fr; gap: 2.5rem; align-items: center; border: 1px solid var(--line-on-dark); padding: clamp(1.5rem, 4vw, 2.5rem); background: var(--dark-deep); }
+  .firstpick .fp-name { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.6rem, 6vw, 4.5rem); line-height: 0.95; color: var(--light); margin: 0.2em 0 0; }
+  .firstpick .fp-meta { font-family: var(--font-mono); font-size: 0.8rem; color: var(--light-dim); margin-top: 0.5rem; }
+  .firstpick .fp-outcome { text-align: right; border-left: 1px solid var(--line-on-dark); padding-left: 2rem; }
+  .firstpick .fp-outcome b { display: block; font-family: var(--font-display); font-weight: 700; font-size: 3.4rem; line-height: 1; color: var(--gold-bright); }
+  .firstpick .fp-outcome span { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light-dim); }
+  .firstpick .fp-outcome .record { font-family: var(--font-mono); font-size: 0.85rem; color: var(--light-dim); margin-top: 0.75rem; }
+  .insight { margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--light-dim); padding: 0.75rem 1rem; background: rgba(201,152,47,0.10); border-left: 3px solid var(--gold); }
+
+  .tend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
+  .tend-card { border: 1px solid var(--line-on-light); padding: 1.25rem 1.5rem 1.1rem; background: var(--light); }
+  .tend-card h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; margin: 0 0 0.4rem; line-height: 1.1; }
+  .tend-card .count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); letter-spacing: 0.08em; text-transform: uppercase; }
+  .tend-card .fav { margin: 0.9rem 0 0.6rem; }
+  .tend-card .fav-label { font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.08em; }
+  .tend-card .fav-pos { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; line-height: 1; margin-top: 0.15rem; }
+  .stack { display: flex; height: 8px; width: 100%; background: var(--light-dim); overflow: hidden; margin-top: 0.25rem; }
+  .stack span { display: block; height: 100%; }
+  .tend-break { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; margin-top: 0.8rem; font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); }
+  .tend-break .tb { display: inline-flex; align-items: center; gap: 0.35rem; }
+  .tend-break .sw { width: 0.55rem; height: 0.55rem; display: inline-block; }
+
+  @media (max-width: 860px) {
+    .board-wrap { display: none; }
+    .board-strips { display: flex; }
+  }
+  @media (max-width: 700px) {
+    .firstpick { grid-template-columns: 1fr; gap: 1.5rem; }
+    .firstpick .fp-outcome { text-align: left; border-left: none; padding-left: 0; border-top: 1px solid var(--line-on-dark); padding-top: 1.25rem; }
+  }
+
+  /* ---------- MATRYCA WYNIKÓW ---------- */
+  .matrix-wrap { overflow-x: auto; border: 2px solid var(--ink); }
+  table.matrix { border-collapse: collapse; width: 100%; table-layout: fixed; min-width: 1150px; font-variant-numeric: tabular-nums; }
+  table.matrix th, table.matrix td { border-right: 1px solid var(--line-on-light); text-align: center; overflow: hidden; }
+  table.matrix th:last-child, table.matrix td:last-child { border-right: none; }
+
+  /* — Team-name header: dark band, gold accent — */
+  table.matrix thead th.team-col {
+    width: 11rem; text-align: left; padding-left: 0.7rem;
+    background: var(--dark); color: var(--gold-bright);
+    font-family: var(--font-display); font-size: 0.85rem;
+    letter-spacing: 0.06em; font-weight: 600; text-transform: uppercase;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  /* — Week headers — */
+  table.matrix thead th {
+    font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.03em;
+    text-transform: uppercase; color: var(--ink-soft); padding: 0.65rem 0.3rem;
+    background: var(--light-dim); white-space: nowrap;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  /* — Zebra striping — */
+  table.matrix tbody tr:nth-child(even) { background: rgba(20,32,26,0.03); }
+  table.matrix tbody tr:hover { background: var(--light-dim); }
+
+  /* — Team-name cell: anchored, dark bg — */
+  table.matrix td.team-cell {
+    text-align: left; font-family: var(--font-display); font-weight: 700;
+    font-size: 1rem; padding: 0.55rem 0.7rem; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+    background: var(--light-dim); border-right: 2px solid var(--gold);
+  }
+
+  /* — Data cells — */
+  table.matrix tbody td { padding: 0.55rem 0.3rem; font-size: 0.8rem; }
+
+  /* — Result-based cell tinting — */
+  table.matrix td.cell-w { background: rgba(92,122,63,0.10); }
+  table.matrix td.cell-l { background: rgba(168,67,47,0.07); }
+  table.matrix td.cell-bye { background: rgba(20,32,26,0.04); }
+
+  /* — Week-group separator: heavier border every 4 cols — */
+  table.matrix th.wk-sep, table.matrix td.wk-sep { border-right: 2px solid var(--ink); }
+
+  /* — Result + score (primary info) — */
+  table.matrix .res { display: block; font-weight: 600; font-size: 0.82rem; line-height: 1.2; }
+  table.matrix .res.w { color: var(--good); }
+  table.matrix .res.l { color: var(--rust); }
+  table.matrix .res.t { color: var(--ink-soft); }
+  table.matrix .res.bye { color: var(--ink-soft); opacity: 0.4; font-weight: 400; font-size: 0.75rem; }
+
+  /* — Opponent (full name, wraps instead of truncating) — */
+  table.matrix .opp {
+    display: block; font-family: var(--font-mono); font-size: 0.6rem;
+    color: var(--ink); white-space: normal; overflow-wrap: break-word;
+    line-height: 1.15; margin-top: 0.15rem;
+  }
 </style>
 </head>
 <body>
@@ -631,27 +768,11 @@
   <div class="wrap reveal">
     <div class="section-head">
       <div>
-        <span class="eyebrow">2025 · Tydzień 1</span>
-        <h2>Wyniki meczów</h2>
+        <span class="eyebrow">2025 · Cały sezon</span>
+        <h2>Matryca wyników</h2>
       </div>
     </div>
-    <div class="matchups">
-      <div class="matchup-card">
-        <div class="matchup-row"><b>Poznan Festung</b><span>90.36</span></div>
-        <div class="matchup-row"><b>Lublin Gnagare</b><span>83.42</span></div>
-        <div class="bar"><span class="a" style="width:52%"></span><span class="b" style="width:48%"></span></div>
-      </div>
-      <div class="matchup-card">
-        <div class="matchup-row"><b>Chicago Scrubs</b><span>103.06</span></div>
-        <div class="matchup-row"><b>Vienna Schnitzels</b><span>79.68</span></div>
-        <div class="bar"><span class="a" style="width:56%"></span><span class="b" style="width:44%"></span></div>
-      </div>
-      <div class="matchup-card">
-        <div class="matchup-row"><b>MMz Old Goats</b><span>91.98</span></div>
-        <div class="matchup-row"><b>Bytom Amateurs</b><span>57.32</span></div>
-        <div class="bar"><span class="a" style="width:62%"></span><span class="b" style="width:38%"></span></div>
-      </div>
-    </div>
+    <div class="matchups"></div>
   </div>
 </section>
 
@@ -670,15 +791,14 @@
   <div class="wrap reveal">
     <div class="section-head">
       <div>
-        <span class="eyebrow">2025 · Draft</span>
-        <h2>Runda pierwsza</h2>
+        <span class="eyebrow">Serpentyna</span>
+        <h2>Tablica draftu</h2>
       </div>
+      <span class="note" id="draft-board-note"></span>
     </div>
-    <div class="draft-list">
-      <div class="draft-pick"><span class="pick-no">1.01</span><span class="player">Saquon Barkley</span><span class="team">Poznan Festung</span></div>
-      <div class="draft-pick"><span class="pick-no">1.02</span><span class="player">Ja'Marr Chase</span><span class="team">Lublin Gnagare</span></div>
-      <div class="draft-pick"><span class="pick-no">1.03</span><span class="player">Alvin Kamara</span><span class="team">MMz Old Goats</span></div>
-    </div>
+    <div class="board-wrap" id="draft-board"></div>
+    <div class="board-strips" id="draft-board-strips"></div>
+    <div class="board-legend" id="draft-legend"></div>
   </div>
 </section>
 
@@ -805,6 +925,50 @@
           <div class="trivia-detail"></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Sekcja 4: Draft – historia pierwszych picków -->
+  <section class="dark-band">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">2012–2025</span>
+          <h2>Historia pierwszych picków</h2>
+        </div>
+      </div>
+      <p class="insight" id="draft-insight"></p>
+      <div style="overflow-x:auto;margin-top:1.5rem">
+        <table class="tab" id="draft-num1-table"></table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja 5: Draft – tendencje franczyz -->
+  <section class="light">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">1. runda</span>
+          <h2>Tendencje franczyz</h2>
+        </div>
+        <span class="note">Ulubiona pozycja w 1. rundzie</span>
+      </div>
+      <div class="tend-grid" id="draft-tendencies"></div>
+    </div>
+  </section>
+
+  <!-- Sekcja 6: Draft – najczęściej draftowani -->
+  <section class="light">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Kultowi gracze</span>
+          <h2>Najczęściej draftowani</h2>
+        </div>
+        <span class="note">Wielokrotni wybierani w całej historii ligi</span>
+      </div>
+      <table class="tab" id="draft-most-drafted"></table>
     </div>
   </section>
 
@@ -982,22 +1146,31 @@
   els.forEach(el => io.observe(el));
 </script>
 
+<script src="data/league-data.js"></script>
+
 <script>
 (async function () {
   try {
 
-    // ----- Wczytaj wszystkie dane równolegle -----
-    // (rivalries dodane przy przenoszeniu zakładki Rywalizacje z index2.html)
-    const [standings, matchups, draft, rosters, franchises, playoffs, trivia, rivalries] = await Promise.all([
-      fetch('data/standings.json').then(r => r.json()),
-      fetch('data/matchups.json').then(r => r.json()),
-      fetch('data/draft.json').then(r => r.json()),
-      fetch('data/rosters.json').then(r => r.json()),
-      fetch('data/franchises.json').then(r => r.json()),
-      fetch('data/playoffs.json').then(r => r.json()),
-      fetch('data/trivia.json').then(r => r.json()),
-      fetch('data/rivalries.json').then(r => r.json())
-    ]);
+    // ----- Wczytaj dane ligi -----
+    // Preferujemy `league-data.js` (window.__LEAGUE_DATA__), bo działa też przy
+    // otwieraniu pliku bezpośrednio (file://). Gdyby pliku nie było, sięgamy po
+    // fetch (wymaga serwera HTTP).
+    let LEAGUE = window.__LEAGUE_DATA__;
+    if (!LEAGUE) {
+      const [standings, matchups, draft, rosters, franchises, playoffs, trivia, rivalries] = await Promise.all([
+        fetch('data/standings.json').then(r => r.json()),
+        fetch('data/matchups.json').then(r => r.json()),
+        fetch('data/draft.json').then(r => r.json()),
+        fetch('data/rosters.json').then(r => r.json()),
+        fetch('data/franchises.json').then(r => r.json()),
+        fetch('data/playoffs.json').then(r => r.json()),
+        fetch('data/trivia.json').then(r => r.json()),
+        fetch('data/rivalries.json').then(r => r.json())
+      ]);
+      LEAGUE = { standings, matchups, draft, rosters, franchises, playoffs, trivia, rivalries };
+    }
+    const { standings, matchups, draft, rosters, franchises, playoffs, trivia, rivalries } = LEAGUE;
 
     const years = Object.keys(standings).sort((a, b) => parseInt(a) - parseInt(b));
 
@@ -1073,98 +1246,82 @@
         `${year} · Sezon zasadniczy`;
     }
 
-    // --- Mecze: najwyższy numer tygodnia z danymi dla danego roku ---
+    // --- Mecze: matryca wyników całego sezonu ---
     function renderMatchups(year) {
       const container = document.querySelector('.matchups');
       const eyebrow = container.closest('section').querySelector('.eyebrow');
       container.innerHTML = '';
 
-      // Sezon jeszcze nie istnieje w danych (np. 2026 przed rozpoczęciem)
-      if (!(year in matchups)) {
+      // Brak danych meczowych dla tego sezonu
+      if (!(year in matchups) || !matchups[year] || !Object.keys(matchups[year]).length) {
         container.innerHTML =
           `<div style="padding:3rem 1.5rem;text-align:center;color:var(--ink-soft);font-family:var(--font-mono);font-size:0.95rem;">` +
-            `Sezon ${year} się jeszcze nie rozpoczął` +
+            `Brak danych meczowych dla sezonu ${year}` +
           `</div>`;
         eyebrow.textContent = `${year}`;
         return;
       }
 
       const seasonWeeks = matchups[year] || {};
-      const weekNums = Object.keys(seasonWeeks).map(Number).filter(n => n > 0);
-      const highestWeek = weekNums.length ? Math.max(...weekNums) : null;
+      const weekNums = Object.keys(seasonWeeks).map(Number).filter(n => n > 0).sort((a, b) => a - b);
 
-      // Brak danych meczowych – czytelny komunikat
-      if (highestWeek === null) {
-        container.innerHTML =
-          `<div style="padding:3rem 1.5rem;text-align:center;color:var(--ink-soft);font-family:var(--font-mono);font-size:0.95rem;">` +
-            `Brak danych meczowych dla tego sezonu` +
-          `</div>`;
-        eyebrow.textContent = `${year}`;
-        return;
+      // Drużyny: kolejność wg tabeli końcowej (final_standing); awaryjnie z meczów
+      let teams = [];
+      if (standings[year]) {
+        teams = [...standings[year]]
+          .sort((a, b) => (a.final_standing ?? 999) - (b.final_standing ?? 999))
+          .map(t => t.team_name);
+      } else {
+        const set = new Set();
+        weekNums.forEach(w => (seasonWeeks[String(w)] || []).forEach(m => { set.add(m.home_team); set.add(m.away_team); }));
+        teams = [...set].sort();
       }
 
-      const matches = seasonWeeks[String(highestWeek)] || [];
-
-      matches.forEach(m => {
-        // Wyższy wynik na górze
-        const topIsHome = m.home_score >= m.away_score;
-        const topName   = topIsHome ? m.home_team  : m.away_team;
-        const topScore  = topIsHome ? m.home_score : m.away_score;
-        const botName   = topIsHome ? m.away_team  : m.home_team;
-        const botScore  = topIsHome ? m.away_score : m.home_score;
-
-        const total = topScore + botScore;
-        const topPct = total > 0 ? (topScore / total) * 100 : 50;
-        const botPct = 100 - topPct;
-
-        const card = document.createElement('div');
-        card.className = 'matchup-card';
-        card.innerHTML =
-          `<div class="matchup-row"><b>${topName}</b><span>${topScore.toFixed(2)}</span></div>` +
-          `<div class="matchup-row"><b>${botName}</b><span>${botScore.toFixed(2)}</span></div>` +
-          `<div class="bar"><span class="a" style="width:${topPct}%"></span><span class="b" style="width:${botPct}%"></span></div>`;
-
-        container.appendChild(card);
+      // drużyna -> { tydzień -> { res, score, opp } }
+      const map = {};
+      teams.forEach(t => { map[t] = {}; });
+      weekNums.forEach(w => {
+        (seasonWeeks[String(w)] || []).forEach(m => {
+          const hs = m.home_score, as = m.away_score;
+          let homeRes, awayRes;
+          if (hs > as) { homeRes = 'W'; awayRes = 'L'; }
+          else if (hs < as) { homeRes = 'L'; awayRes = 'W'; }
+          else { homeRes = 'T'; awayRes = 'T'; }
+          map[m.home_team] = map[m.home_team] || {};
+          map[m.away_team] = map[m.away_team] || {};
+          map[m.home_team][w] = { res: homeRes, score: hs, opp: m.away_team };
+          map[m.away_team][w] = { res: awayRes, score: as, opp: m.home_team };
+        });
       });
 
-      eyebrow.textContent = `${year} · Tydzień ${highestWeek}`;
+      let html = '<div class="matrix-wrap"><table class="matrix"><thead><tr><th class="team-col">Drużyna</th>';
+      weekNums.forEach((w, wi) => {
+        const sep = (wi + 1) % 4 === 0 ? ' wk-sep' : '';
+        html += `<th class="wk-hdr${sep}" title="Tydzień ${w}">T${w}</th>`;
+      });
+      html += '</tr></thead><tbody>';
+      teams.forEach(t => {
+        html += `<tr><td class="team-cell" title="${t}">${t}</td>`;
+        weekNums.forEach((w, wi) => {
+          const sep = (wi + 1) % 4 === 0 ? ' wk-sep' : '';
+          const r = map[t][w];
+          if (!r) {
+            html += `<td title="Pauza" class="cell-bye${sep}"><span class="res bye">—</span></td>`;
+          } else {
+            const cls = r.res === 'W' ? 'w' : (r.res === 'L' ? 'l' : 't');
+            const cellCls = r.res === 'W' ? 'cell-w' : (r.res === 'L' ? 'cell-l' : '');
+            html += `<td title="T${w} · vs ${r.opp} · ${r.score.toFixed(2)}" class="${cellCls}${sep}"><span class="res ${cls}">${r.res} ${r.score.toFixed(1)}</span><span class="opp">${r.opp}</span></td>`;
+          }
+        });
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+      container.innerHTML = html;
+
+      eyebrow.textContent = `${year} · Cały sezon · ${weekNums.length} tygodni`;
     }
 
     // --- Draft: runda 1, posortowana po round_pick ---
-    function renderDraft(year) {
-      const list = document.querySelector('.draft-list');
-      const eyebrow = list.closest('section').querySelector('.eyebrow');
-      list.innerHTML = '';
-
-      // Sezon jeszcze nie istnieje w danych (np. 2026 przed rozpoczęciem)
-      if (!(year in draft)) {
-        list.innerHTML =
-          `<div style="padding:3rem 1.5rem;text-align:center;color:var(--ink-soft);font-family:var(--font-mono);font-size:0.95rem;">` +
-            `Sezon ${year} się jeszcze nie rozpoczął` +
-          `</div>`;
-        eyebrow.textContent = `${year}`;
-        return;
-      }
-
-      if (draft[year]) {
-        const r1Picks = draft[year]
-          .filter(p => p.round_num === 1)
-          .sort((a, b) => a.round_pick - b.round_pick);
-
-        r1Picks.forEach(p => {
-          const pick = document.createElement('div');
-          pick.className = 'draft-pick';
-          pick.innerHTML =
-            `<span class="pick-no">1.${String(p.round_pick).padStart(2, '0')}</span>` +
-            `<span class="player">${p.player_name}</span>` +
-            `<span class="team">${p.team_name}</span>`;
-          list.appendChild(pick);
-        });
-      }
-
-      eyebrow.textContent = `${year} · Draft`;
-    }
-
     // --- Składy drużyn: karty z zawodnikami, sortowane wg pozycji ---
     // Kolejność: QB, RB, WR, TE, K, potem wszystkie pozostałe (IDP)
     const POS_RANK = { QB: 0, RB: 1, WR: 2, TE: 3, K: 4 };
@@ -1834,7 +1991,7 @@
       const year = this.value;
       renderStandings(year);
       renderMatchups(year);
-      renderDraft(year);
+      renderDraftBoard(year);
       renderRosters(year);
       renderBracket(year);
     });
@@ -1845,7 +2002,6 @@
 
     renderStandings(defaultSeason);
     renderMatchups(defaultSeason);
-    renderDraft(defaultSeason);
     renderRosters(defaultSeason);
     renderBracket(defaultSeason);
 
@@ -1939,6 +2095,241 @@
     renderSummaryStats();
     renderFranchiseTable();
     renderTrivia(trivia);
+
+    // =====================================================================
+    // RETROSPEKCJA DRAFTU (zakładka "Draft") — tablica serpentynowa, pick № 1,
+    // tendencje franczyz i najczęściej draftowani. Wszystko liczone klient-side
+    // z draft / rosters / standings / franchises (bez nowych plików).
+    // =====================================================================
+
+    // Pozycje zawodników: rok -> { imię -> pozycja } oraz imię -> [pozycje]
+    const posByYear = {};
+    const posAll = {};
+    Object.keys(rosters).forEach(y => {
+      posByYear[y] = {};
+      (rosters[y] || []).forEach(t => {
+        (t.players || []).forEach(p => {
+          if (p.position) {
+            posByYear[y][p.name] = p.position;
+            (posAll[p.name] = posAll[p.name] || []).push(p.position);
+          }
+        });
+      });
+    });
+    function modePos(name) {
+      const arr = posAll[name];
+      if (!arr || !arr.length) return '';
+      const counts = {};
+      arr.forEach(p => { counts[p] = (counts[p] || 0) + 1; });
+      return Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
+    }
+
+    // Nazwa drużyny (z draftu) -> bieżąca nazwa franczyzy
+    const teamToFranchise = {};
+    franchises.forEach(f => {
+      (f.all_names || []).forEach(n => { teamToFranchise[n] = f.current_name; });
+      teamToFranchise[f.current_name] = f.current_name;
+    });
+
+    // Indeks standings: `${rok}|${nazwa}` -> wiersz
+    const standingsIdx = {};
+    Object.keys(standings).forEach(y => {
+      (standings[y] || []).forEach(r => { standingsIdx[y + '|' + r.team_name] = r; });
+    });
+
+    function classify(pos) {
+      if (!pos) return '?';
+      return ['QB', 'RB', 'WR', 'TE', 'K'].includes(pos) ? pos : 'DEF';
+    }
+    const POS_COLOR = {
+      QB:  { bg: '#C9982F', fg: '#16281F' },
+      RB:  { bg: '#A8432F', fg: '#FFFFFF' },
+      WR:  { bg: '#5C7A3F', fg: '#FFFFFF' },
+      TE:  { bg: '#7A6B3A', fg: '#FFFFFF' },
+      K:   { bg: '#4E5D51', fg: '#FFFFFF' },
+      DEF: { bg: '#1F2A24', fg: '#E0B24E' },
+      '?': { bg: '#E4E4E4', fg: '#14201A' }
+    };
+    function chip(pos) {
+      const c = classify(pos), col = POS_COLOR[c];
+      return `<span class="poschip" style="background:${col.bg};color:${col.fg}">${c}</span>`;
+    }
+    function r1(x) { return (Math.round(x * 10) / 10).toFixed(1); }
+
+    // Legenda pozycji (jednorazowo)
+    (function renderDraftLegend() {
+      const order = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+      const labels = { QB: 'Quarterback', RB: 'Running back', WR: 'Wide receiver', TE: 'Tight end', K: 'Kicker', DEF: 'Defense / IDP' };
+      document.getElementById('draft-legend').innerHTML = order.map(c =>
+        `<span class="lg"><span class="sw" style="background:${POS_COLOR[c].bg}"></span>${labels[c]}</span>`
+      ).join('');
+    })();
+
+    // Tablica draftu (serpentynowa) — desktop siatka + mobile paski rund
+    function renderDraftBoard(year) {
+      const picks = draft[year] || [];
+      const boardEl = document.getElementById('draft-board');
+      const stripsEl = document.getElementById('draft-board-strips');
+      if (!picks.length) { boardEl.innerHTML = ''; stripsEl.innerHTML = ''; return; }
+
+      const r1picks = picks.filter(p => p.round_num === 1).sort((a, b) => a.round_pick - b.round_pick);
+      const cols = r1picks.map(p => teamToFranchise[p.team_name] || p.team_name);
+      const teams = cols.length;
+      const rounds = Math.max(...picks.map(p => p.round_num));
+
+      const grid = Array.from({ length: rounds }, () => new Array(teams).fill(null));
+      picks.forEach(p => {
+        const idx = p.round_pick - 1;
+        const col = (p.round_num % 2 === 1) ? idx : (teams - 1 - idx);
+        grid[p.round_num - 1][col] = p;
+      });
+
+      let html = '<table class="board"><thead><tr><th class="round"></th>';
+      cols.forEach((c, i) => {
+        html += `<th data-col="${i}" title="Kliknij, aby podświetlić">${c}</th>`;
+      });
+      html += '</tr></thead><tbody>';
+      for (let r = 0; r < rounds; r++) {
+        html += `<tr><th class="round">R${r + 1}</th>`;
+        for (let c = 0; c < teams; c++) {
+          const p = grid[r][c];
+          if (!p) { html += '<td class="empty"></td>'; continue; }
+          const pos = posByYear[year]?.[p.player_name] || modePos(p.player_name) || '';
+          const num1 = (p.round_num === 1 && p.round_pick === 1);
+          html += `<td${num1 ? ' class="num1"' : ''} data-col="${c}" title="R${p.round_num} · Pick ${p.round_pick} · ${p.player_name}">`
+            + `<div class="cell">${chip(pos)}<span class="pname">${p.player_name}</span></div></td>`;
+        }
+        html += '</tr>';
+      }
+      html += '</tbody></table>';
+      boardEl.innerHTML = html;
+      document.getElementById('draft-board-note').textContent = `${teams} drużyn · ${rounds} rund · draft serpentynowy`;
+
+      // Mobile: paski rund z kierunkiem serpentyny
+      let strips = '';
+      for (let r = 0; r < rounds; r++) {
+        const rpicks = picks.filter(p => p.round_num === r + 1);
+        strips += `<div class="strip"><div class="strip-head"><span>Runda ${r + 1}</span><span class="dir">${(r + 1) % 2 === 1 ? '→' : '←'}</span></div><div class="strip-picks">`;
+        rpicks.forEach(p => {
+          const pos = posByYear[year]?.[p.player_name] || modePos(p.player_name) || '';
+          const num1 = (p.round_num === 1 && p.round_pick === 1);
+          strips += `<div class="pick-chip${num1 ? ' num1' : ''}"><div class="pc-top">${chip(pos)}<span class="pc-name">${p.player_name}</span></div><div class="pc-fran">${teamToFranchise[p.team_name] || p.team_name}</div></div>`;
+        });
+        strips += '</div></div>';
+      }
+      stripsEl.innerHTML = strips;
+
+      // Podświetlanie kolumny po kliknięciu nagłówka
+      document.querySelectorAll('#draft-board thead th[data-col]').forEach(h => {
+        h.addEventListener('click', () => {
+          const col = h.dataset.col;
+          const on = h.classList.toggle('lit');
+          document.querySelectorAll(`#draft-board td[data-col="${col}"]`).forEach(td => td.classList.toggle('lit', on));
+        });
+      });
+    }
+
+    // Historia pierwszych picków (jednorazowo) + insight
+    function renderNum1History() {
+      const rows = [];
+      Object.keys(draft).forEach(y => {
+        const picks = draft[y] || [];
+        const n1 = picks.find(p => p.round_num === 1 && p.round_pick === 1);
+        if (!n1) return;
+        const srow = standingsIdx[y + '|' + n1.team_name];
+        const pos = posByYear[y]?.[n1.player_name] || modePos(n1.player_name) || '';
+        rows.push({
+          year: parseInt(y), player: n1.player_name, pos,
+          franchise: teamToFranchise[n1.team_name] || n1.team_name,
+          final: srow ? srow.final_standing : null,
+          wins: srow ? srow.wins : null, losses: srow ? srow.losses : null,
+          pf: srow ? srow.points_for : null, champ: srow ? srow.final_standing === 1 : false
+        });
+      });
+      rows.sort((a, b) => b.year - a.year);
+      let html = '<thead><tr><th>Rok</th><th>Pick № 1</th><th class="num">Pozycja</th><th>Franczyza</th><th class="num">Miejsce</th><th class="num">PF</th><th>Rezultat</th></tr></thead><tbody>';
+      rows.forEach(h => {
+        const res = h.champ ? '<span class="champion-badge" style="margin:0">Mistrz</span>' : `${h.wins}–${h.losses}`;
+        html += `<tr><td class="num" style="font-family:var(--font-display);font-weight:700;font-size:1.1rem">${h.year}</td>` +
+          `<td style="font-weight:600">${h.player}</td><td class="num">${chip(h.pos)}</td><td>${h.franchise}</td>` +
+          `<td class="num" style="font-weight:700">#${h.final}</td><td class="num">${r1(h.pf)}</td><td>${res}</td></tr>`;
+      });
+      html += '</tbody>';
+      document.getElementById('draft-num1-table').innerHTML = html;
+
+      const champs = rows.filter(h => h.champ).length;
+      document.getElementById('draft-insight').textContent =
+        `Tylko ${champs} z ${rows.length} pierwszych picków zdobyło tytuł w tym samym sezonie. Numer jeden daje nazwisko, nie gwarancję.`;
+    }
+
+    // Tendencje franczyz w 1. rundzie (jednorazowo)
+    function renderTendencies() {
+      const map = {};
+      Object.keys(draft).forEach(y => {
+        (draft[y] || []).forEach(p => {
+          if (p.round_num !== 1) return;
+          const fr = teamToFranchise[p.team_name] || p.team_name;
+          if (!map[fr]) map[fr] = { picks: 0, pos: {} };
+          const pos = posByYear[y]?.[p.player_name] || modePos(p.player_name) || '?';
+          map[fr].picks++;
+          map[fr].pos[pos] = (map[fr].pos[pos] || 0) + 1;
+        });
+      });
+      const list = Object.keys(map)
+        .map(fr => ({ franchise: fr, round1_picks: map[fr].picks, pos_counts: map[fr].pos }))
+        .filter(t => t.round1_picks >= 2)
+        .sort((a, b) => b.round1_picks - a.round1_picks);
+      const cats = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+      document.getElementById('draft-tendencies').innerHTML = list.map(t => {
+        const fav = Object.keys(t.pos_counts).sort((a, b) => t.pos_counts[b] - t.pos_counts[a])[0];
+        const parts = cats.map(c => {
+          const n = t.pos_counts[c] || 0;
+          return n > 0 ? `<span style="flex:${n};background:${POS_COLOR[c].bg}" title="${c} × ${n}"></span>` : '';
+        }).join('');
+        const breaks = Object.keys(t.pos_counts).map(k => {
+          const col = (POS_COLOR[classify(k)] || POS_COLOR['?']).bg;
+          return `<span class="tb"><span class="sw" style="background:${col}"></span>${k || '?'} × ${t.pos_counts[k]}</span>`;
+        }).join('');
+        return `<div class="tend-card"><h3>${t.franchise}</h3><div class="count">${t.round1_picks} picków w 1. rundzie</div>` +
+          `<div class="fav"><div class="fav-label">Ulubiona pozycja</div><div class="fav-pos" style="color:${(POS_COLOR[classify(fav)] || POS_COLOR['?']).bg}">${fav === '?' ? '—' : fav}</div></div>` +
+          `<div class="stack">${parts}</div><div class="tend-break">${breaks}</div></div>`;
+      }).join('');
+    }
+
+    // Najczęściej draftowani gracze (jednorazowo)
+    function renderMostDrafted() {
+      const counts = {};
+      Object.keys(draft).forEach(y => {
+        (draft[y] || []).forEach(p => {
+          const nm = p.player_name;
+          if (!counts[nm]) counts[nm] = { count: 0, first: 9999, last: 0, fr: new Set() };
+          counts[nm].count++;
+          counts[nm].first = Math.min(counts[nm].first, parseInt(y));
+          counts[nm].last = Math.max(counts[nm].last, parseInt(y));
+          counts[nm].fr.add(teamToFranchise[p.team_name] || p.team_name);
+        });
+      });
+      const list = Object.keys(counts)
+        .map(nm => ({ player: nm, count: counts[nm].count, first: counts[nm].first, last: counts[nm].last, franchises: counts[nm].fr.size, pos: modePos(nm) }))
+        .sort((a, b) => b.count - a.count || a.first - b.first)
+        .slice(0, 24);
+      let html = '<thead><tr><th class="num">#</th><th>Gracz</th><th class="num">Pozycja</th><th class="num">Draftów</th><th class="num">Lata</th><th class="num">Franczyz</th></tr></thead><tbody>';
+      list.forEach((m, i) => {
+        html += `<tr${i < 3 ? ' class="lead"' : ''}><td class="rank">${i + 1}</td><td style="font-weight:600">${m.player}</td>` +
+          `<td class="num">${chip(m.pos)}</td><td class="num" style="font-weight:700">${m.count}</td><td class="num">${m.first}–${m.last}</td><td class="num">${m.franchises}</td></tr>`;
+      });
+      html += '</tbody>';
+      document.getElementById('draft-most-drafted').innerHTML = html;
+    }
+
+    // Inicjalizacja sekcji Retrospekcji draftu (w zakładce Sezon).
+    // Tablica i pick № 1 zależą od #season-select (renderowane przy zmianie
+    // roku powyżej); poniższe trzy sekcje są niezależne od roku.
+    const defaultDraftYear = draft[defaultSeason] ? defaultSeason : Object.keys(draft).sort((a, b) => parseInt(a) - parseInt(b)).pop();
+    renderDraftBoard(defaultDraftYear);
+    renderNum1History();
+    renderTendencies();
+    renderMostDrafted();
 
   } catch (err) {
     // ----- Błąd wczytywania – czytelny komunikat -----
