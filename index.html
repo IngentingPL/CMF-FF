@@ -1012,6 +1012,7 @@
           <th class="num" data-sort="wins">W-L-T</th>
           <th class="num" data-sort="winpct">Win%</th>
           <th class="num" data-sort="champs">Mistrzostwa</th>
+          <th class="num" data-sort="playoffs">Play-offy</th>
           <th class="num" data-sort="best">Najlepszy</th>
           <th class="num" data-sort="worst">Najgorszy</th>
         </tr>
@@ -1022,21 +1023,21 @@
           <td class="name-cell"><span class="fname">Lublin Gnagare</span></td>
           <td>Piotr Tkaczyk</td>
           <td class="num">14</td><td class="num">2012</td><td class="num">89-106-2</td>
-          <td class="num">45.7%</td><td class="num">1</td>
+          <td class="num">45.7%</td><td class="num">1</td><td class="num">8/14</td>
           <td class="num">2023 (78.6%)</td><td class="num">2017 (15.4%)</td>
         </tr>
         <tr>
           <td class="name-cell"><span class="fname">MMz Old Goats</span><span class="fprev">wcześniej: Minsk Maz Old Goats</span></td>
           <td>Grzesiek Chodkiewicz</td>
           <td class="num">13</td><td class="num">2012</td><td class="num">74-101-4</td>
-          <td class="num">42.5%</td><td class="num">3</td>
+          <td class="num">42.5%</td><td class="num">3</td><td class="num">10/13</td>
           <td class="num">2021 (66.7%)</td><td class="num">2013 (3.6%)</td>
         </tr>
         <tr>
           <td class="name-cell"><span class="fname">Szczecin Pirates</span></td>
           <td>Krzysiek Błachuta</td>
           <td class="num">1</td><td class="num">2023</td><td class="num">6-8-0</td>
-          <td class="num">42.9%</td><td class="num">0</td>
+          <td class="num">42.9%</td><td class="num">0</td><td class="num">1/1</td>
           <td class="num">—</td><td class="num">—</td>
         </tr>
       </tbody>
@@ -1742,6 +1743,61 @@
     // TABELA FRANCZYZ + SORTOWANIE PO KLIKNIĘCIU W NAGŁÓWEK
     // =====================================================================
 
+    // Funkcja licząca występy w play-offach dla każdej franczyzy
+    function calculatePlayoffAppearances(playoffs, franchises) {
+      const appearances = {};
+      
+      // Inicjalizacja dla wszystkich franczyz
+      franchises.forEach(fr => {
+        appearances[fr.owner_id] = new Set();
+      });
+      
+      // Mapowanie nazw drużyn na owner_id (uwzględniając wszystkie nazwy używane przez franczyzę)
+      const nameToOwner = {};
+      franchises.forEach(fr => {
+        fr.all_names.forEach(name => {
+          nameToOwner[name] = fr.owner_id;
+        });
+      });
+      
+      // Iteracja przez wszystkie sezony play-offów
+      // Liczymy TYLKO występy w WINNERS_BRACKET (prawdziwe play-offy, nie play-outy)
+      Object.entries(playoffs).forEach(([year, data]) => {
+        if (!data.rounds || data.rounds.length === 0) return;
+        
+        const teamsInPlayoffs = new Set();
+        
+        data.rounds.forEach(round => {
+          round.games.forEach(game => {
+            // Tylko mecze w drabince zwycięzców (WINNERS_BRACKET)
+            if (game.tier === "WINNERS_BRACKET") {
+              teamsInPlayoffs.add(game.team_a);
+              teamsInPlayoffs.add(game.team_b);
+            }
+          });
+        });
+        
+        // Przypisz rok do odpowiedniej franczyzy
+        teamsInPlayoffs.forEach(teamName => {
+          const ownerId = nameToOwner[teamName];
+          if (ownerId && appearances[ownerId]) {
+            appearances[ownerId].add(parseInt(year));
+          }
+        });
+      });
+      
+      // Zamień Sety na liczby
+      const result = {};
+      Object.entries(appearances).forEach(([ownerId, years]) => {
+        result[ownerId] = years.size;
+      });
+      
+      return result;
+    }
+
+    // Oblicz występy w play-offach raz na początku
+    const playoffAppearances = calculatePlayoffAppearances(playoffs, franchises);
+
     // Wartość do porównania dla każdej kolumny (klucz = data-sort w nagłówkach)
     const franchiseSortKey = {
       // name/owner: porównanie tekstowe
@@ -1756,6 +1812,8 @@
       winpct:  fr => (fr.total_wins + 0.5 * fr.total_ties) /
                      (fr.total_wins + fr.total_losses + fr.total_ties),
       champs:  fr => fr.championships,
+      // sortujemy po liczbie występów w play-offach (malejąco)
+      playoffs: fr => playoffAppearances[fr.owner_id] || 0,
       // null = brak best/worst (franczyza z 1 sezonem) → zawsze na końcu
       best:    fr => (fr.seasons.length > 1 && fr.best_season != null)  ? Number(fr.best_season.win_rate)  : null,
       worst:   fr => (fr.seasons.length > 1 && fr.worst_season != null) ? Number(fr.worst_season.win_rate) : null
@@ -1802,6 +1860,10 @@
         const fmtSeason = s => `${s.year} (${Number(s.win_rate).toFixed(1)}%)`;
         const best  = (fr.seasons.length > 1 && fr.best_season != null)  ? fmtSeason(fr.best_season)  : '—';
         const worst = (fr.seasons.length > 1 && fr.worst_season != null) ? fmtSeason(fr.worst_season) : '—';
+        
+        // Występy w play-offach
+        const poCount = playoffAppearances[fr.owner_id] || 0;
+        const poDisplay = `${poCount}/${fr.seasons.length}`;
 
         const tr = document.createElement('tr');
         tr.innerHTML =
@@ -1812,6 +1874,7 @@
           `<td class="num">${fr.total_wins}-${fr.total_losses}-${fr.total_ties}</td>` +
           `<td class="num">${winPct}</td>` +
           `<td class="num">${fr.championships}</td>` +
+          `<td class="num">${poDisplay}</td>` +
           `<td class="num">${best}</td>` +
           `<td class="num">${worst}</td>`;
         tbody.appendChild(tr);
