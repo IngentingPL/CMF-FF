@@ -130,6 +130,13 @@ def fetch_year_matchups(league_id, year, swid=None, espn_s2=None):
     żadnych meczów (sezon się jeszcze nie zaczął lub już się skończył),
     przerywa pętlę i przechodzi do kolejnego roku.
 
+    DODATKOWO: jeśli WSZYSTKIE mecze w tygodniu mają home_score == 0 ORAZ
+    away_score == 0, traktujemy to jako "tydzień jeszcze nierozegrany"
+    (harmonogram bez wyników) i przerywamy pętlę. Różnica:
+      - Brak odpowiedzi (pusta lista) = sezon się nie zaczął lub skończył.
+      - Odpowiedź z zerami = mecze zaplanowane, ale jeszcze nie rozegrane.
+    W obu przypadkach zatrzymujemy pobieranie dla tego roku.
+
     Zwraca słownik: klucz = numer tygodnia (str), wartość = lista meczów.
     Każdy mecz to słownik z kluczami:
         home_team, home_score, away_team, away_score
@@ -154,6 +161,16 @@ def fetch_year_matchups(league_id, year, swid=None, espn_s2=None):
 
             # Jeśli lista jest pusta – sezon się skończył, wychodzimy z pętli tygodni
             if not matchups:
+                break
+
+            # Sprawdzamy czy WSZYSTKIE mecze mają home_score == 0 i away_score == 0.
+            # ESPN zwraca zaplanowane mecze z wynikami 0-0 przed ich rozegraniem.
+            # Traktujemy to jak brak danych – przerywamy pętlę dla tego roku.
+            all_zeros = all(
+                match.home_score == 0 and match.away_score == 0
+                for match in matchups
+            )
+            if all_zeros:
                 break
 
             # Przetwarzamy każdy mecz – zapisujemy nazwy drużyn i ich wyniki

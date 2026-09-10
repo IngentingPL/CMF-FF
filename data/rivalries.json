@@ -8,7 +8,7 @@
         "opponent_previous_names": [],
         "reg_wins": 14,
         "reg_losses": 6,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 1,
         "po_ties": 0
@@ -19,7 +19,7 @@
         "opponent_previous_names": [],
         "reg_wins": 9,
         "reg_losses": 10,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 0,
         "po_ties": 0
@@ -56,7 +56,7 @@
         ],
         "reg_wins": 5,
         "reg_losses": 8,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 1,
         "po_ties": 0
@@ -80,7 +80,7 @@
         ],
         "reg_wins": 9,
         "reg_losses": 14,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 2,
         "po_losses": 1,
         "po_ties": 0
@@ -133,7 +133,7 @@
         ],
         "reg_wins": 8,
         "reg_losses": 17,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 2,
         "po_ties": 0
@@ -226,7 +226,7 @@
         "opponent_previous_names": [],
         "reg_wins": 3,
         "reg_losses": 10,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 2,
         "po_ties": 0
@@ -263,7 +263,7 @@
         ],
         "reg_wins": 7,
         "reg_losses": 7,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 2,
         "po_losses": 1,
         "po_ties": 0
@@ -285,7 +285,7 @@
         "opponent_previous_names": [],
         "reg_wins": 6,
         "reg_losses": 14,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 1,
         "po_ties": 0
@@ -298,7 +298,7 @@
         ],
         "reg_wins": 12,
         "reg_losses": 8,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 2,
         "po_ties": 0
@@ -351,7 +351,7 @@
         ],
         "reg_wins": 7,
         "reg_losses": 11,
-        "reg_ties": 5,
+        "reg_ties": 2,
         "po_wins": 4,
         "po_losses": 2,
         "po_ties": 0
@@ -444,7 +444,7 @@
         "opponent_previous_names": [],
         "reg_wins": 8,
         "reg_losses": 12,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 2,
         "po_losses": 0,
         "po_ties": 0
@@ -455,7 +455,7 @@
         "opponent_previous_names": [],
         "reg_wins": 8,
         "reg_losses": 5,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 1,
         "po_ties": 0
@@ -492,7 +492,7 @@
         ],
         "reg_wins": 5,
         "reg_losses": 9,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 1,
         "po_ties": 0
@@ -514,7 +514,7 @@
         "opponent_previous_names": [],
         "reg_wins": 14,
         "reg_losses": 9,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 2,
         "po_ties": 0
@@ -567,7 +567,7 @@
         ],
         "reg_wins": 7,
         "reg_losses": 11,
-        "reg_ties": 4,
+        "reg_ties": 1,
         "po_wins": 0,
         "po_losses": 1,
         "po_ties": 0
@@ -660,7 +660,7 @@
         "opponent_previous_names": [],
         "reg_wins": 11,
         "reg_losses": 7,
-        "reg_ties": 5,
+        "reg_ties": 2,
         "po_wins": 2,
         "po_losses": 4,
         "po_ties": 0
@@ -671,7 +671,7 @@
         "opponent_previous_names": [],
         "reg_wins": 10,
         "reg_losses": 9,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 0,
         "po_ties": 0
@@ -708,7 +708,7 @@
         ],
         "reg_wins": 10,
         "reg_losses": 5,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 0,
         "po_ties": 0
@@ -730,7 +730,7 @@
         "opponent_previous_names": [],
         "reg_wins": 17,
         "reg_losses": 8,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 2,
         "po_losses": 1,
         "po_ties": 0
@@ -743,7 +743,7 @@
         ],
         "reg_wins": 11,
         "reg_losses": 7,
-        "reg_ties": 4,
+        "reg_ties": 1,
         "po_wins": 1,
         "po_losses": 0,
         "po_ties": 0
@@ -874,7 +874,7 @@
         "opponent_previous_names": [],
         "reg_wins": 7,
         "reg_losses": 7,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 2,
         "po_ties": 0
@@ -885,7 +885,7 @@
         "opponent_previous_names": [],
         "reg_wins": 5,
         "reg_losses": 3,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 0,
         "po_ties": 0
@@ -929,7 +929,7 @@
         "opponent_previous_names": [],
         "reg_wins": 8,
         "reg_losses": 5,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 1,
         "po_ties": 0
@@ -942,7 +942,7 @@
         ],
         "reg_wins": 9,
         "reg_losses": 5,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 1,
         "po_ties": 0
@@ -995,7 +995,7 @@
         ],
         "reg_wins": 5,
         "reg_losses": 10,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 0,
         "po_ties": 0
@@ -1869,7 +1869,7 @@
         "opponent_previous_names": [],
         "reg_wins": 10,
         "reg_losses": 3,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 2,
         "po_losses": 0,
         "po_ties": 0
@@ -1884,7 +1884,7 @@
         ],
         "reg_wins": 3,
         "reg_losses": 5,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 1,
         "po_ties": 0
@@ -1906,7 +1906,7 @@
         "opponent_previous_names": [],
         "reg_wins": 10,
         "reg_losses": 9,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 0,
         "po_ties": 0
@@ -1919,7 +1919,7 @@
         ],
         "reg_wins": 5,
         "reg_losses": 8,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 1,
         "po_ties": 0
@@ -1934,7 +1934,7 @@
         ],
         "reg_wins": 9,
         "reg_losses": 10,
-        "reg_ties": 3,
+        "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 0,
         "po_ties": 0
