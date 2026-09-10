@@ -137,6 +137,13 @@ def fetch_year_matchups(league_id, year, swid=None, espn_s2=None):
       - Odpowiedź z zerami = mecze zaplanowane, ale jeszcze nie rozegrane.
     W obu przypadkach zatrzymujemy pobieranie dla tego roku.
 
+    DODATKOWY CHECK (tylko na granicy trwającego sezonu):
+    Zanim zaakceptujemy tydzień jako ostateczny, sprawdzamy surowe API
+    (view=mMatchup) czy któryś mecz ma winner == 'UNDECIDED' (w trakcie).
+    Jeśli tak – filtrujemy te mecze i zapisujemy tylko rozstrzygnięte.
+    Jeśli po filtracji tydzień jest pusty – traktujemy jak pustkę.
+    Jeśli usunięto jakiekolwiek mecze – to ostatni zapisany tydzień.
+
     Zwraca słownik: klucz = numer tygodnia (str), wartość = lista meczów.
     Każdy mecz to słownik z kluczami:
         home_team, home_score, away_team, away_score
@@ -173,9 +180,29 @@ def fetch_year_matchups(league_id, year, swid=None, espn_s2=None):
             if all_zeros:
                 break
 
+            # --- DODATKOWY CHECK: surowe API dla meczów w trakcie ---
+            # Ten check robimy TYLKO dla tygodnia, który przeszedł powyższe filtry
+            # (czyli w praktyce tylko dla ostatniego, granicznego tygodnia sezonu).
+            # Pobieramy z surowego API listę meczów z winner == 'UNDECIDED'
+            undecided_pairs = _get_undecided_team_pairs(year, week, swid=swid, espn_s2=espn_s2)
+
             # Przetwarzamy każdy mecz – zapisujemy nazwy drużyn i ich wyniki
+            # ale pomijamy te z winner == 'UNDECIDED'
             week_matchups = []
+            removed_count = 0
+
             for match in matchups:
+                # Sprawdzamy czy ten mecz jest UNDECIDED w surowym API
+                # Porównujemy po parze (home_team_id, away_team_id)
+                home_id = match.home_team.team_id
+                away_id = match.away_team.team_id
+                team_pair = (home_id, away_id)
+
+                if team_pair in undecided_pairs:
+                    # Mecz w trakcie – pomijamy
+                    removed_count += 1
+                    continue
+
                 week_matchups.append({
                     "home_team": _clean_text(match.home_team.team_name),
                     "home_score": match.home_score,
@@ -183,8 +210,17 @@ def fetch_year_matchups(league_id, year, swid=None, espn_s2=None):
                     "away_score": match.away_score,
                 })
 
+            # Jeśli PO usunięciu UNDECIDED tydzień jest pusty – traktujemy jak pustkę
+            if not week_matchups:
+                break
+
             # Zapisujemy wyniki tygodnia pod kluczem tekstowym (np. "1", "2", ...)
             weeks_data[str(week)] = week_matchups
+
+            # Jeśli usunięto jakiekolwiek mecze (był choć jeden UNDECIDED),
+            # to jest ostatni zapisany tydzień – nie próbujemy kolejnych
+            if removed_count > 0:
+                break
 
         except Exception:
             # Błąd przy danym tygodniu – przerywamy tylko pętlę tygodni
@@ -874,6 +910,47 @@ def _fetch_raw_schedule(year, swid=None, espn_s2=None):
                f"?view=mMatchup&view=mMatchupScore")
         data = requests.get(url, cookies=cookies, timeout=60).json()
     return data.get("schedule", [])
+
+
+def _get_undecided_team_pairs(year, week, swid=None, espn_s2=None):
+    """Pobiera z surowego API listę par drużyn z meczami winner='UNDECIDED'.
+
+    Wykorzystywane tylko na granicy trwającego sezonu, żeby wykryć mecze
+    w trakcie rozgrywania (nie tylko te z zerami) i wykluczyć je pojedynczo.
+
+    Zwraca set() z tuple (home_team_id, away_team_id) dla meczów z winner='UNDECIDED'.
+    """
+    cookies = {"SWID": swid, "espn_s2": espn_s2} if swid and espn_s2 else None
+
+    # Używamy tylko view=mMatchup (bez mMatchupScore), bo potrzebujemy tylko pola 'winner'
+    if year < 2018:
+        url = (f"{ESPN_API_BASE}/leagueHistory/{LEAGUE_ID}"
+               f"?seasonId={year}&view=mMatchup")
+        data = requests.get(url, cookies=cookies, timeout=60).json()
+        if isinstance(data, list):
+            data = next((e for e in data if e.get("seasonId") == year), data[-1])
+    else:
+        url = (f"{ESPN_API_BASE}/seasons/{year}/segments/0/leagues/{LEAGUE_ID}"
+               f"?view=mMatchup")
+        data = requests.get(url, cookies=cookies, timeout=60).json()
+
+    schedule = data.get("schedule", [])
+    undecided = set()
+
+    for match in schedule:
+        # Sprawdzamy czy mecz dotyczy danego tygodnia (matchupPeriodId)
+        if match.get("matchupPeriodId") != week:
+            continue
+        # Sprawdzamy czy winner to 'UNDECIDED'
+        if match.get("winner") == "UNDECIDED":
+            home = match.get("home", {})
+            away = match.get("away", {})
+            home_id = home.get("teamId")
+            away_id = away.get("teamId")
+            if home_id is not None and away_id is not None:
+                undecided.add((home_id, away_id))
+
+    return undecided
 
 
 def build_playoffs(all_standings, swid=None, espn_s2=None):
