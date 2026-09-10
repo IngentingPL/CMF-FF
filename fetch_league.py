@@ -12,8 +12,10 @@ w kodzie ani nie commituj do repozytorium.
 # os – do odczytu zmiennych środowiskowych (SWID, ESPN_S2)
 # json – do zapisu wyników w formacie JSON
 # pathlib.Path – do tworzenia folderów i ścieżek plików
+# datetime.date – do dynamicznego ustalenia bieżącego roku (zamiast sztywnego limitu)
 import json
 import os
+from datetime import date
 from pathlib import Path
 
 # ftfy naprawia zepsute kodowanie znaków w danych z ESPN API
@@ -43,8 +45,10 @@ def _clean_text(text):
 LEAGUE_ID = 58995                              # niezmienne ID naszej ligi
 # Lata, w których liga była prywatna – dostęp tylko z SWID + ESPN_S2
 PRIVATE_YEARS = list(range(2012, 2019))        # 2012, 2013, ..., 2018
-# Lata, w których liga jest już publiczna – nie potrzeba logowania
-PUBLIC_YEARS = list(range(2019, 2026))         # 2019, 2020, ..., 2025
+# Lata, w których liga jest już publiczna – nie potrzeba logowania.
+# Dynamiczny górny limit: bieżący rok (zamiast sztywnego 2025), więc w przyszłych
+# latach skrypt automatycznie pobierze nowe sezony bez ręcznej łatki.
+PUBLIC_YEARS = list(range(2019, date.today().year + 1))  # 2019, 2020, ..., bieżący rok
 
 
 def _get_owner_name(team):
@@ -856,7 +860,7 @@ def _fetch_raw_schedule(year, swid=None, espn_s2=None):
 
 
 def build_playoffs(all_standings, swid=None, espn_s2=None):
-    """Buduje drabinkę playoffów dla lat 2012–2025 ze surowego API ESPN.
+    """Buduje drabinkę playoffów dla lat 2012–bieżącego roku ze surowego API ESPN.
 
     Dla każdego roku:
       - pobiera surowy 'schedule' (view=mMatchup&view=mMatchupScore),
@@ -1005,8 +1009,8 @@ if __name__ == "__main__":
                 # Wypisujemy pełny błąd – chcemy wiedzieć, co poszło nie tak
                 print(f"  [{year}] BŁĄD: {e}")
 
-    # 3. Pobieramy dane dla lat publicznych (2019–2025) – bez autoryzacji
-    print("\n--- LATA PUBLICZNE (2019–2025) – bez autoryzacji ---")
+    # 3. Pobieramy dane dla lat publicznych (2019–bieżący rok) – bez autoryzacji
+    print(f"\n--- LATA PUBLICZNE (2019–{PUBLIC_YEARS[-1]}) – bez autoryzacji ---")
     for year in PUBLIC_YEARS:
         try:
             teams = fetch_year_standings(LEAGUE_ID, year)
@@ -1037,8 +1041,8 @@ if __name__ == "__main__":
     else:
         print("[!] Pomijam – brak SWID/ESPN_S2.")
 
-    # 5. Mecze tygodniowe dla lat publicznych (2019–2025)
-    print("\n--- MECZE TYGODNIOWE (publiczne 2019–2025) ---")
+    # 5. Mecze tygodniowe dla lat publicznych (2019–bieżący rok)
+    print(f"\n--- MECZE TYGODNIOWE (publiczne 2019–{PUBLIC_YEARS[-1]}) ---")
     for year in PUBLIC_YEARS:
         try:
             weeks = fetch_year_matchups(LEAGUE_ID, year)
@@ -1054,7 +1058,7 @@ if __name__ == "__main__":
     print("\n--- ROSTERY (prywatne 2012–2018) ---")
     all_rosters = {}
     roster_years_done = 0
-    roster_total_years = len(PRIVATE_YEARS) + len(PUBLIC_YEARS) + 1  # +1 dla 2026
+    roster_total_years = len(PRIVATE_YEARS) + len(PUBLIC_YEARS)
 
     # Dla lat prywatnych: każdy rok w osobnym try/except – błąd nie przerywa reszty
     if swid and espn_s2:
@@ -1075,8 +1079,11 @@ if __name__ == "__main__":
     else:
         print("[!] Pomijam – brak SWID/ESPN_S2.")
 
-    # Rostery dla lat publicznych (2019–2025) – bez autoryzacji
-    print("\n--- ROSTERY (publiczne 2019–2025) ---")
+    # Rostery dla lat publicznych (2019–bieżący rok) – bez autoryzacji.
+    # Dla roku bieżącego roster może być pusty (sezon jeszcze się nie zaczął
+    # lub draft się nie odbył) – pobieramy go normalnie, obsługa pustych danych
+    # dzieje się wewnątrz fetch_year_rosters.
+    print(f"\n--- ROSTERY (publiczne 2019–{PUBLIC_YEARS[-1]}) ---")
     for year in PUBLIC_YEARS:
         try:
             teams_rosters = fetch_year_rosters(LEAGUE_ID, year)
@@ -1091,27 +1098,11 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"  [{year}] BRAK: {e}")
 
-    # Rok 2026 osobno – sezon może się jeszcze nie zacząć, roster bywa pusty
-    print("\n--- ROSTERY (2026) ---")
-    try:
-        teams_rosters = fetch_year_rosters(LEAGUE_ID, 2026)
-        team_count = len(teams_rosters)
-        player_count = sum(len(t["players"]) for t in teams_rosters)
-        all_rosters["2026"] = teams_rosters
-        if player_count == 0:
-            print(f"  [2026] BRAK: brak zawodników w rosterach ({team_count} drużyn)")
-        else:
-            print(f"  [2026] OK ({team_count} drużyn, {player_count} zawodników razem)")
-            roster_years_done += 1
-    except Exception as e:
-        print(f"  [2026] BRAK: {e}")
-
     # 7. Pobieramy dane z draftu – prywatne 2012–2018 z auth
-    #    Draft 2026 pomijamy – jeszcze się nie odbył
     print("\n--- DRAFT (prywatne 2012–2018) ---")
     all_drafts = {}
     draft_years_done = 0
-    draft_total_years = len(PRIVATE_YEARS) + len(PUBLIC_YEARS)  # bez 2026
+    draft_total_years = len(PRIVATE_YEARS) + len(PUBLIC_YEARS)
 
     if swid and espn_s2:
         for year in PRIVATE_YEARS:
@@ -1128,8 +1119,8 @@ if __name__ == "__main__":
     else:
         print("[!] Pomijam – brak SWID/ESPN_S2.")
 
-    # Draft dla lat publicznych (2019–2025) – bez autoryzacji
-    print("\n--- DRAFT (publiczne 2019–2025) ---")
+    # Draft dla lat publicznych (2019–bieżący rok) – bez autoryzacji
+    print(f"\n--- DRAFT (publiczne 2019–{PUBLIC_YEARS[-1]}) ---")
     for year in PUBLIC_YEARS:
         try:
             picks = fetch_year_draft(LEAGUE_ID, year)
@@ -1145,7 +1136,7 @@ if __name__ == "__main__":
     # 8. Budujemy drabinkę playoffów – surowe API ESPN (requests), bo
     #    espn-api nie udostępnia playoffTierType. Wykorzystuje JUŻ pobrane
     #    standings do mapowania teamId -> nazwy drużyn.
-    print("\n--- PLAYOFFY (2012–2025) ---")
+    print(f"\n--- PLAYOFFY (2012–{PUBLIC_YEARS[-1]}) ---")
     all_playoffs, playoff_ok_years, playoff_unusual_years = build_playoffs(
         all_standings, swid=swid, espn_s2=espn_s2
     )

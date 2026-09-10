@@ -12740,5 +12740,583 @@
       "player_name": "Evan McPherson",
       "team_name": "Poznan Festung"
     }
+  ],
+  "2026": [
+    {
+      "round_num": 1,
+      "round_pick": 1,
+      "player_name": "Davante Adams",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 1,
+      "round_pick": 2,
+      "player_name": "Jahmyr Gibbs",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 1,
+      "round_pick": 3,
+      "player_name": "Ja'Marr Chase",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 1,
+      "round_pick": 4,
+      "player_name": "CeeDee Lamb",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 1,
+      "round_pick": 5,
+      "player_name": "Justin Jefferson",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 1,
+      "round_pick": 6,
+      "player_name": "Puka Nacua",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 2,
+      "round_pick": 1,
+      "player_name": "Amon-Ra St. Brown",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 2,
+      "round_pick": 2,
+      "player_name": "Josh Allen",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 2,
+      "round_pick": 3,
+      "player_name": "James Cook III",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 2,
+      "round_pick": 4,
+      "player_name": "De'Von Achane",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 2,
+      "round_pick": 5,
+      "player_name": "Derrick Henry",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 2,
+      "round_pick": 6,
+      "player_name": "Christian McCaffrey",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 3,
+      "round_pick": 1,
+      "player_name": "Drake London",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 3,
+      "round_pick": 2,
+      "player_name": "Lamar Jackson",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 3,
+      "round_pick": 3,
+      "player_name": "Trey McBride",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 3,
+      "round_pick": 4,
+      "player_name": "Saquon Barkley",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 3,
+      "round_pick": 5,
+      "player_name": "Nico Collins",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 3,
+      "round_pick": 6,
+      "player_name": "Ashton Jeanty",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 4,
+      "round_pick": 1,
+      "player_name": "Omarion Hampton",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 4,
+      "round_pick": 2,
+      "player_name": "Kenneth Walker III",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 4,
+      "round_pick": 3,
+      "player_name": "Jeremiyah Love",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 4,
+      "round_pick": 4,
+      "player_name": "Breece Hall",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 4,
+      "round_pick": 5,
+      "player_name": "Chase Brown",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 4,
+      "round_pick": 6,
+      "player_name": "Colston Loveland",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 5,
+      "round_pick": 1,
+      "player_name": "Mark Andrews",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 5,
+      "round_pick": 2,
+      "player_name": "Rashee Rice",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 5,
+      "round_pick": 3,
+      "player_name": "A.J. Brown",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 5,
+      "round_pick": 4,
+      "player_name": "Chris Olave",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 5,
+      "round_pick": 5,
+      "player_name": "Harold Fannin Jr.",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 5,
+      "round_pick": 6,
+      "player_name": "Jayden Daniels",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 6,
+      "round_pick": 1,
+      "player_name": "Tyler Warren",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 6,
+      "round_pick": 2,
+      "player_name": "Brandon Aubrey",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 6,
+      "round_pick": 3,
+      "player_name": "George Pickens",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 6,
+      "round_pick": 4,
+      "player_name": "Malik Nabers",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 6,
+      "round_pick": 5,
+      "player_name": "Zay Flowers",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 6,
+      "round_pick": 6,
+      "player_name": "Travis Etienne Jr.",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 7,
+      "round_pick": 1,
+      "player_name": "Drake Maye",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 7,
+      "round_pick": 2,
+      "player_name": "George Kittle",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 7,
+      "round_pick": 3,
+      "player_name": "Javonte Williams",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 7,
+      "round_pick": 4,
+      "player_name": "Jaxon Smith-Njigba",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 7,
+      "round_pick": 5,
+      "player_name": "Jonathan Taylor",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 7,
+      "round_pick": 6,
+      "player_name": "Emeka Egbuka",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 8,
+      "round_pick": 1,
+      "player_name": "Cam Skattebo",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 8,
+      "round_pick": 2,
+      "player_name": "Tetairoa McMillan",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 8,
+      "round_pick": 3,
+      "player_name": "Garrett Wilson",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 8,
+      "round_pick": 4,
+      "player_name": "DeVonta Smith",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 8,
+      "round_pick": 5,
+      "player_name": "Jordyn Brooks",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 8,
+      "round_pick": 6,
+      "player_name": "Terry McLaurin",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 9,
+      "round_pick": 1,
+      "player_name": "Jaylen Waddle",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 9,
+      "round_pick": 2,
+      "player_name": "Blake Cashman",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 9,
+      "round_pick": 3,
+      "player_name": "Jalen Hurts",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 9,
+      "round_pick": 4,
+      "player_name": "Brock Bowers",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 9,
+      "round_pick": 5,
+      "player_name": "Bijan Robinson",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 9,
+      "round_pick": 6,
+      "player_name": "Dak Prescott",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 10,
+      "round_pick": 1,
+      "player_name": "Kyle Pitts Sr.",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 10,
+      "round_pick": 2,
+      "player_name": "Joe Burrow",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 10,
+      "round_pick": 3,
+      "player_name": "Fred Warner",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 10,
+      "round_pick": 4,
+      "player_name": "Rome Odunze",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 10,
+      "round_pick": 5,
+      "player_name": "Ladd McConkey",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 10,
+      "round_pick": 6,
+      "player_name": "Kyren Williams",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 11,
+      "round_pick": 1,
+      "player_name": "Matthew Stafford",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 11,
+      "round_pick": 2,
+      "player_name": "Jameson Williams",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 11,
+      "round_pick": 3,
+      "player_name": "Maxx Crosby",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 11,
+      "round_pick": 4,
+      "player_name": "Jaxson Dart",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 11,
+      "round_pick": 5,
+      "player_name": "Sam LaPorta",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 11,
+      "round_pick": 6,
+      "player_name": "Harrison Mevis",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 12,
+      "round_pick": 1,
+      "player_name": "DJ Moore",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 12,
+      "round_pick": 2,
+      "player_name": "Travis Hunter",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 12,
+      "round_pick": 3,
+      "player_name": "Jack Campbell",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 12,
+      "round_pick": 4,
+      "player_name": "Myles Garrett",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 12,
+      "round_pick": 5,
+      "player_name": "Patrick Mahomes",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 12,
+      "round_pick": 6,
+      "player_name": "Harrison Butker",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 13,
+      "round_pick": 1,
+      "player_name": "Justin Herbert",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 13,
+      "round_pick": 2,
+      "player_name": "Travis Kelce",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 13,
+      "round_pick": 3,
+      "player_name": "Trevor Lawrence",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 13,
+      "round_pick": 4,
+      "player_name": "Bo Nix",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 13,
+      "round_pick": 5,
+      "player_name": "Luther Burden III",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 13,
+      "round_pick": 6,
+      "player_name": "Jeffery Simmons",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 14,
+      "round_pick": 1,
+      "player_name": "Nick Bolton",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 14,
+      "round_pick": 2,
+      "player_name": "Nick Emmanwori",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 14,
+      "round_pick": 3,
+      "player_name": "Brock Purdy",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 14,
+      "round_pick": 4,
+      "player_name": "Caleb Williams",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 14,
+      "round_pick": 5,
+      "player_name": "Cedric Gray",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 14,
+      "round_pick": 6,
+      "player_name": "Stefon Diggs",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 15,
+      "round_pick": 1,
+      "player_name": "Foyesade Oluokun",
+      "team_name": "Bytom Amateurs"
+    },
+    {
+      "round_num": 15,
+      "round_pick": 2,
+      "player_name": "Brian Burns",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 15,
+      "round_pick": 3,
+      "player_name": "Tucker Kraft",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 15,
+      "round_pick": 4,
+      "player_name": "Dallas Goedert",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 15,
+      "round_pick": 5,
+      "player_name": "Will Anderson Jr.",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 15,
+      "round_pick": 6,
+      "player_name": "Marvin Harrison Jr.",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 16,
+      "round_pick": 1,
+      "player_name": "Kyler Murray",
+      "team_name": "Lublin Gnagare"
+    },
+    {
+      "round_num": 16,
+      "round_pick": 2,
+      "player_name": "Cameron Dicker",
+      "team_name": "Poznan Festung"
+    },
+    {
+      "round_num": 16,
+      "round_pick": 3,
+      "player_name": "Jason Myers",
+      "team_name": "Helsinki Reindeer"
+    },
+    {
+      "round_num": 16,
+      "round_pick": 4,
+      "player_name": "Ka'imi Fairbairn",
+      "team_name": "MMz Old Goats"
+    },
+    {
+      "round_num": 16,
+      "round_pick": 5,
+      "player_name": "Eddy Pineiro",
+      "team_name": "Chicago Scrubs"
+    },
+    {
+      "round_num": 16,
+      "round_pick": 6,
+      "player_name": "Kevin Byard",
+      "team_name": "Bytom Amateurs"
+    }
   ]
 }

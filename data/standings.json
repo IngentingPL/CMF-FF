@@ -1610,5 +1610,79 @@
       "points_against": 1503.08,
       "final_standing": 4
     }
+  ],
+  "2026": [
+    {
+      "team_name": "Lublin Gnagare",
+      "team_id": 1,
+      "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
+      "owner_name": "Piotr Tkaczyk",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "final_standing": 0
+    },
+    {
+      "team_name": "Poznan Festung",
+      "team_id": 8,
+      "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
+      "owner_name": "Roman Szafran",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "final_standing": 0
+    },
+    {
+      "team_name": "Chicago Scrubs",
+      "team_id": 15,
+      "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+      "owner_name": "Arkadiusz Dudkowski",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "final_standing": 0
+    },
+    {
+      "team_name": "MMz Old Goats",
+      "team_id": 16,
+      "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
+      "owner_name": "Grzesiek Chodkiewicz",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "final_standing": 0
+    },
+    {
+      "team_name": "Bytom Amateurs",
+      "team_id": 17,
+      "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
+      "owner_name": "Artur Melerowicz",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "final_standing": 0
+    },
+    {
+      "team_name": "Helsinki Reindeer",
+      "team_id": 18,
+      "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+      "owner_name": "Michal Adamski",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "final_standing": 0
+    }
   ]
 }

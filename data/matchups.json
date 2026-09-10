@@ -5242,5 +5242,307 @@
         "away_score": 151.24
       }
     ]
+  },
+  "2026": {
+    "1": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 0.0,
+        "away_team": "Poznan Festung",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 0.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 0.0
+      }
+    ],
+    "2": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 0.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 0.0,
+        "away_team": "Helsinki Reindeer",
+        "away_score": 0.0
+      }
+    ],
+    "3": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 0.0,
+        "away_team": "Poznan Festung",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 0.0,
+        "away_team": "MMz Old Goats",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 0.0,
+        "away_team": "Helsinki Reindeer",
+        "away_score": 0.0
+      }
+    ],
+    "4": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 0.0,
+        "away_team": "MMz Old Goats",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 0.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      }
+    ],
+    "5": [
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 0.0,
+        "away_team": "Poznan Festung",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 0.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      }
+    ],
+    "6": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 0.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 0.0,
+        "away_team": "Helsinki Reindeer",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 0.0,
+        "away_team": "MMz Old Goats",
+        "away_score": 0.0
+      }
+    ],
+    "7": [
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 0.0,
+        "away_team": "Poznan Festung",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 0.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 0.0,
+        "away_team": "MMz Old Goats",
+        "away_score": 0.0
+      }
+    ],
+    "8": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 0.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 0.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 0.0
+      }
+    ],
+    "9": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 0.0,
+        "away_team": "Poznan Festung",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 0.0,
+        "away_team": "Helsinki Reindeer",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 0.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 0.0
+      }
+    ],
+    "10": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 0.0,
+        "away_team": "Helsinki Reindeer",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 0.0,
+        "away_team": "MMz Old Goats",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 0.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 0.0
+      }
+    ],
+    "11": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 0.0,
+        "away_team": "Poznan Festung",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 0.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 0.0
+      }
+    ],
+    "12": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 0.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 0.0,
+        "away_team": "Helsinki Reindeer",
+        "away_score": 0.0
+      }
+    ],
+    "13": [
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 0.0,
+        "away_team": "Poznan Festung",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 0.0,
+        "away_team": "MMz Old Goats",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 0.0,
+        "away_team": "Helsinki Reindeer",
+        "away_score": 0.0
+      }
+    ],
+    "14": [
+      {
+        "home_team": "Poznan Festung",
+        "home_score": 0.0,
+        "away_team": "MMz Old Goats",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 0.0,
+        "away_team": "Bytom Amateurs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      }
+    ],
+    "15": [
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 0.0,
+        "away_team": "Poznan Festung",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 0.0,
+        "away_team": "Chicago Scrubs",
+        "away_score": 0.0
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 0.0,
+        "away_team": "Lublin Gnagare",
+        "away_score": 0.0
+      }
+    ]
   }
 }

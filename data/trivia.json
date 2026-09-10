@@ -31,10 +31,10 @@
     "ties": 0
   },
   "lowest_score_ever": {
-    "team_name": "Tel-Aviv Falcons",
-    "score": 24.0,
-    "year": 2016,
-    "week": 14
+    "team_name": "Chicago Scrubs",
+    "score": 0.0,
+    "year": 2026,
+    "week": 1
   },
   "closest_margin_ever": {
     "year": 2025,
@@ -68,12 +68,12 @@
     {
       "owner_name": "Piotr Tkaczyk",
       "current_name": "Lublin Gnagare",
-      "seasons_count": 14
+      "seasons_count": 15
     }
   ],
   "biggest_comeback": {
     "owner_name": "Michal Adamski",
-    "current_name": "Vienna Schnitzels",
+    "current_name": "Helsinki Reindeer",
     "gap_start": 2019,
     "gap_end": 2022,
     "gap_years": 4

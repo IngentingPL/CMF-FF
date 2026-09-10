@@ -21,7 +21,8 @@
       2022,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ],
     "total_wins": 89,
     "total_losses": 106,
@@ -40,14 +41,14 @@
       "points_against": 1282.38
     },
     "worst_season": {
-      "year": 2017,
+      "year": 2026,
       "team_name": "Lublin Gnagare",
-      "wins": 2,
-      "losses": 11,
+      "wins": 0,
+      "losses": 0,
       "ties": 0,
-      "win_rate": 15.4,
-      "points_for": 849.0,
-      "points_against": 1056.0
+      "win_rate": 0,
+      "points_for": 0.0,
+      "points_against": 0.0
     }
   },
   {
@@ -71,7 +72,8 @@
       2021,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ],
     "total_wins": 78,
     "total_losses": 99,
@@ -90,14 +92,14 @@
       "points_against": 734.0
     },
     "worst_season": {
-      "year": 2018,
+      "year": 2026,
       "team_name": "Bytom Amateurs",
-      "wins": 2,
-      "losses": 10,
+      "wins": 0,
+      "losses": 0,
       "ties": 0,
-      "win_rate": 16.7,
-      "points_for": 899.5,
-      "points_against": 1063.0
+      "win_rate": 0,
+      "points_for": 0.0,
+      "points_against": 0.0
     }
   },
   {
@@ -124,7 +126,8 @@
       2021,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ],
     "total_wins": 74,
     "total_losses": 101,
@@ -143,14 +146,14 @@
       "points_against": 1306.0
     },
     "worst_season": {
-      "year": 2013,
-      "team_name": "Minsk Maz Old Goats",
+      "year": 2026,
+      "team_name": "MMz Old Goats",
       "wins": 0,
-      "losses": 13,
-      "ties": 1,
-      "win_rate": 3.6,
-      "points_for": 734.5,
-      "points_against": 1005.0
+      "losses": 0,
+      "ties": 0,
+      "win_rate": 0,
+      "points_for": 0.0,
+      "points_against": 0.0
     }
   },
   {
@@ -181,7 +184,8 @@
       2022,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ],
     "total_wins": 102,
     "total_losses": 79,
@@ -200,14 +204,68 @@
       "points_against": 956.5
     },
     "worst_season": {
-      "year": 2024,
+      "year": 2026,
       "team_name": "Poznan Festung",
-      "wins": 3,
-      "losses": 12,
+      "wins": 0,
+      "losses": 0,
       "ties": 0,
-      "win_rate": 20.0,
-      "points_for": 1243.24,
-      "points_against": 1503.74
+      "win_rate": 0,
+      "points_for": 0.0,
+      "points_against": 0.0
+    }
+  },
+  {
+    "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
+    "owner_name": "Michal Adamski",
+    "current_name": "Helsinki Reindeer",
+    "previous_names": [
+      "Danzig Cowboys",
+      "Barcelona Toros",
+      "Vienna Schnitzels"
+    ],
+    "all_names": [
+      "Danzig Cowboys",
+      "Barcelona Toros",
+      "Vienna Schnitzels",
+      "Helsinki Reindeer"
+    ],
+    "seasons": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "total_wins": 59,
+    "total_losses": 66,
+    "total_ties": 0,
+    "total_pf": 10695.56,
+    "total_pa": 10510.28,
+    "championships": 0,
+    "best_season": {
+      "year": 2024,
+      "team_name": "Vienna Schnitzels",
+      "wins": 12,
+      "losses": 3,
+      "ties": 0,
+      "win_rate": 80.0,
+      "points_for": 1647.0,
+      "points_against": 1255.82
+    },
+    "worst_season": {
+      "year": 2026,
+      "team_name": "Helsinki Reindeer",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "win_rate": 0,
+      "points_for": 0.0,
+      "points_against": 0.0
     }
   },
   {
@@ -254,57 +312,6 @@
       "win_rate": 41.7,
       "points_for": 771.0,
       "points_against": 798.0
-    }
-  },
-  {
-    "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
-    "owner_name": "Michal Adamski",
-    "current_name": "Vienna Schnitzels",
-    "previous_names": [
-      "Danzig Cowboys",
-      "Barcelona Toros"
-    ],
-    "all_names": [
-      "Danzig Cowboys",
-      "Barcelona Toros",
-      "Vienna Schnitzels"
-    ],
-    "seasons": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2023,
-      2024,
-      2025
-    ],
-    "total_wins": 59,
-    "total_losses": 66,
-    "total_ties": 0,
-    "total_pf": 10695.56,
-    "total_pa": 10510.28,
-    "championships": 0,
-    "best_season": {
-      "year": 2024,
-      "team_name": "Vienna Schnitzels",
-      "wins": 12,
-      "losses": 3,
-      "ties": 0,
-      "win_rate": 80.0,
-      "points_for": 1647.0,
-      "points_against": 1255.82
-    },
-    "worst_season": {
-      "year": 2018,
-      "team_name": "Barcelona Toros",
-      "wins": 3,
-      "losses": 9,
-      "ties": 0,
-      "win_rate": 25.0,
-      "points_for": 1014.0,
-      "points_against": 1046.5
     }
   },
   {
@@ -446,6 +453,50 @@
     }
   },
   {
+    "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
+    "owner_name": "Arkadiusz Dudkowski",
+    "current_name": "Chicago Scrubs",
+    "previous_names": [],
+    "all_names": [
+      "Chicago Scrubs"
+    ],
+    "seasons": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "total_wins": 49,
+    "total_losses": 42,
+    "total_ties": 0,
+    "total_pf": 8562.56,
+    "total_pa": 8252.86,
+    "championships": 0,
+    "best_season": {
+      "year": 2020,
+      "team_name": "Chicago Scrubs",
+      "wins": 12,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 85.7,
+      "points_for": 1365.5,
+      "points_against": 1123.5
+    },
+    "worst_season": {
+      "year": 2026,
+      "team_name": "Chicago Scrubs",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "win_rate": 0,
+      "points_for": 0.0,
+      "points_against": 0.0
+    }
+  },
+  {
     "owner_id": "{CE9ECC27-6067-4AF5-9ECC-2760670AF56C}",
     "owner_name": "Kamil Wojnach",
     "current_name": "East Side Demons",
@@ -529,49 +580,6 @@
       "win_rate": 28.6,
       "points_for": 1124.5,
       "points_against": 1347.5
-    }
-  },
-  {
-    "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
-    "owner_name": "Arkadiusz Dudkowski",
-    "current_name": "Chicago Scrubs",
-    "previous_names": [],
-    "all_names": [
-      "Chicago Scrubs"
-    ],
-    "seasons": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "total_wins": 49,
-    "total_losses": 42,
-    "total_ties": 0,
-    "total_pf": 8562.56,
-    "total_pa": 8252.86,
-    "championships": 0,
-    "best_season": {
-      "year": 2020,
-      "team_name": "Chicago Scrubs",
-      "wins": 12,
-      "losses": 2,
-      "ties": 0,
-      "win_rate": 85.7,
-      "points_for": 1365.5,
-      "points_against": 1123.5
-    },
-    "worst_season": {
-      "year": 2023,
-      "team_name": "Chicago Scrubs",
-      "wins": 4,
-      "losses": 10,
-      "ties": 0,
-      "win_rate": 28.6,
-      "points_for": 1125.18,
-      "points_against": 1284.08
     }
   },
   {
