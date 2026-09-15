@@ -5243,5 +5243,26 @@
       }
     ]
   },
-  "2026": {}
+  "2026": {
+    "1": [
+      {
+        "home_team": "Chicago Scrubs",
+        "home_score": 151.76,
+        "away_team": "Poznan Festung",
+        "away_score": 126.66
+      },
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 110.4,
+        "away_team": "Lublin Gnagare",
+        "away_score": 92.56
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 86.82,
+        "away_team": "Bytom Amateurs",
+        "away_score": 52.76
+      }
+    ]
+  }
 }

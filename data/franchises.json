@@ -25,10 +25,10 @@
       2026
     ],
     "total_wins": 89,
-    "total_losses": 106,
+    "total_losses": 107,
     "total_ties": 2,
-    "total_pf": 16091.4,
-    "total_pa": 17014.58,
+    "total_pf": 16183.96,
+    "total_pa": 17124.98,
     "championships": 1,
     "best_season": {
       "year": 2023,
@@ -44,11 +44,11 @@
       "year": 2026,
       "team_name": "Lublin Gnagare",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "win_rate": 0,
-      "points_for": 0.0,
-      "points_against": 0.0
+      "win_rate": 0.0,
+      "points_for": 92.56,
+      "points_against": 110.4
     }
   },
   {
@@ -76,10 +76,10 @@
       2026
     ],
     "total_wins": 78,
-    "total_losses": 99,
+    "total_losses": 100,
     "total_ties": 2,
-    "total_pf": 14842.14,
-    "total_pa": 15365.7,
+    "total_pf": 14894.9,
+    "total_pa": 15452.52,
     "championships": 3,
     "best_season": {
       "year": 2012,
@@ -95,11 +95,11 @@
       "year": 2026,
       "team_name": "Bytom Amateurs",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "win_rate": 0,
-      "points_for": 0.0,
-      "points_against": 0.0
+      "win_rate": 0.0,
+      "points_for": 52.76,
+      "points_against": 86.82
     }
   },
   {
@@ -129,31 +129,31 @@
       2025,
       2026
     ],
-    "total_wins": 74,
+    "total_wins": 75,
     "total_losses": 101,
     "total_ties": 4,
-    "total_pf": 13934.78,
-    "total_pa": 14769.22,
+    "total_pf": 14021.6,
+    "total_pa": 14821.98,
     "championships": 3,
     "best_season": {
-      "year": 2021,
-      "team_name": "Minsk Maz Old Goats",
-      "wins": 10,
-      "losses": 5,
-      "ties": 0,
-      "win_rate": 66.7,
-      "points_for": 1471.5,
-      "points_against": 1306.0
-    },
-    "worst_season": {
       "year": 2026,
       "team_name": "MMz Old Goats",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "win_rate": 0,
-      "points_for": 0.0,
-      "points_against": 0.0
+      "win_rate": 100.0,
+      "points_for": 86.82,
+      "points_against": 52.76
+    },
+    "worst_season": {
+      "year": 2013,
+      "team_name": "Minsk Maz Old Goats",
+      "wins": 0,
+      "losses": 13,
+      "ties": 1,
+      "win_rate": 3.6,
+      "points_for": 734.5,
+      "points_against": 1005.0
     }
   },
   {
@@ -188,10 +188,10 @@
       2026
     ],
     "total_wins": 102,
-    "total_losses": 79,
+    "total_losses": 80,
     "total_ties": 4,
-    "total_pf": 16798.6,
-    "total_pa": 16033.78,
+    "total_pf": 16925.26,
+    "total_pa": 16185.54,
     "championships": 3,
     "best_season": {
       "year": 2017,
@@ -207,11 +207,11 @@
       "year": 2026,
       "team_name": "Poznan Festung",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "win_rate": 0,
-      "points_for": 0.0,
-      "points_against": 0.0
+      "win_rate": 0.0,
+      "points_for": 126.66,
+      "points_against": 151.76
     }
   },
   {
@@ -241,31 +241,31 @@
       2025,
       2026
     ],
-    "total_wins": 59,
+    "total_wins": 60,
     "total_losses": 66,
     "total_ties": 0,
-    "total_pf": 10695.56,
-    "total_pa": 10510.28,
+    "total_pf": 10805.96,
+    "total_pa": 10602.84,
     "championships": 0,
     "best_season": {
-      "year": 2024,
-      "team_name": "Vienna Schnitzels",
-      "wins": 12,
-      "losses": 3,
-      "ties": 0,
-      "win_rate": 80.0,
-      "points_for": 1647.0,
-      "points_against": 1255.82
-    },
-    "worst_season": {
       "year": 2026,
       "team_name": "Helsinki Reindeer",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "win_rate": 0,
-      "points_for": 0.0,
-      "points_against": 0.0
+      "win_rate": 100.0,
+      "points_for": 110.4,
+      "points_against": 92.56
+    },
+    "worst_season": {
+      "year": 2018,
+      "team_name": "Barcelona Toros",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0,
+      "win_rate": 25.0,
+      "points_for": 1014.0,
+      "points_against": 1046.5
     }
   },
   {
@@ -469,31 +469,31 @@
       2025,
       2026
     ],
-    "total_wins": 49,
+    "total_wins": 50,
     "total_losses": 42,
     "total_ties": 0,
-    "total_pf": 8562.56,
-    "total_pa": 8252.86,
+    "total_pf": 8714.32,
+    "total_pa": 8379.52,
     "championships": 0,
     "best_season": {
-      "year": 2020,
-      "team_name": "Chicago Scrubs",
-      "wins": 12,
-      "losses": 2,
-      "ties": 0,
-      "win_rate": 85.7,
-      "points_for": 1365.5,
-      "points_against": 1123.5
-    },
-    "worst_season": {
       "year": 2026,
       "team_name": "Chicago Scrubs",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "win_rate": 0,
-      "points_for": 0.0,
-      "points_against": 0.0
+      "win_rate": 100.0,
+      "points_for": 151.76,
+      "points_against": 126.66
+    },
+    "worst_season": {
+      "year": 2023,
+      "team_name": "Chicago Scrubs",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "win_rate": 28.6,
+      "points_for": 1125.18,
+      "points_against": 1284.08
     }
   },
   {
