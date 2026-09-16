@@ -11532,11 +11532,6 @@
           "proTeam": "LV"
         },
         {
-          "name": "Omarion Hampton",
-          "position": "RB",
-          "proTeam": "LAC"
-        },
-        {
           "name": "Jayden Daniels",
           "position": "QB",
           "proTeam": "WSH"
@@ -11560,11 +11555,6 @@
           "name": "Dak Prescott",
           "position": "QB",
           "proTeam": "DAL"
-        },
-        {
-          "name": "Kyle Pitts Sr.",
-          "position": "TE",
-          "proTeam": "ATL"
         },
         {
           "name": "Harrison Mevis",
@@ -11592,9 +11582,19 @@
           "proTeam": "ARI"
         },
         {
-          "name": "Kyler Murray",
+          "name": "Isaiah Likely",
+          "position": "TE",
+          "proTeam": "NYG"
+        },
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "proTeam": "CHI"
+        },
+        {
+          "name": "Bryce Young",
           "position": "QB",
-          "proTeam": "MIN"
+          "proTeam": "CAR"
         }
       ]
     },
@@ -11667,19 +11667,19 @@
           "proTeam": "CHI"
         },
         {
-          "name": "Nick Emmanwori",
-          "position": "CB",
-          "proTeam": "SEA"
-        },
-        {
-          "name": "Will Anderson Jr.",
-          "position": "DE",
-          "proTeam": "HOU"
-        },
-        {
           "name": "Cameron Dicker",
           "position": "K",
           "proTeam": "LAC"
+        },
+        {
+          "name": "Ernest Jones IV",
+          "position": "LB",
+          "proTeam": "SEA"
+        },
+        {
+          "name": "Josiah Trotter",
+          "position": "LB",
+          "proTeam": "TB"
         }
       ]
     },
