@@ -11832,11 +11832,6 @@
           "proTeam": "LAR"
         },
         {
-          "name": "Trevor Lawrence",
-          "position": "QB",
-          "proTeam": "JAX"
-        },
-        {
           "name": "Caleb Williams",
           "position": "QB",
           "proTeam": "CHI"
@@ -11850,6 +11845,11 @@
           "name": "Ka'imi Fairbairn",
           "position": "K",
           "proTeam": "HOU"
+        },
+        {
+          "name": "Carson Schwesinger",
+          "position": "LB",
+          "proTeam": "CLE"
         }
       ]
     },
@@ -11957,11 +11957,6 @@
           "proTeam": "PHI"
         },
         {
-          "name": "Jeremiyah Love",
-          "position": "RB",
-          "proTeam": "ARI"
-        },
-        {
           "name": "Chris Olave",
           "position": "WR",
           "proTeam": "NO"
@@ -12020,6 +12015,11 @@
           "name": "Jason Myers",
           "position": "K",
           "proTeam": "SEA"
+        },
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "proTeam": "HOU"
         }
       ]
     }
