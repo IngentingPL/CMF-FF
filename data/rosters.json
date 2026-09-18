@@ -11637,11 +11637,6 @@
           "proTeam": "IND"
         },
         {
-          "name": "Tetairoa McMillan",
-          "position": "WR",
-          "proTeam": "CAR"
-        },
-        {
           "name": "Bijan Robinson",
           "position": "RB",
           "proTeam": "ATL"
@@ -11680,6 +11675,11 @@
           "name": "Josiah Trotter",
           "position": "LB",
           "proTeam": "TB"
+        },
+        {
+          "name": "Deebo Samuel Sr.",
+          "position": "WR",
+          "proTeam": "SF"
         }
       ]
     },
