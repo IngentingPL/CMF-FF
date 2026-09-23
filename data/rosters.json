@@ -11532,11 +11532,6 @@
           "proTeam": "LV"
         },
         {
-          "name": "Jayden Daniels",
-          "position": "QB",
-          "proTeam": "WSH"
-        },
-        {
           "name": "Tyler Warren",
           "position": "TE",
           "proTeam": "IND"
@@ -11595,6 +11590,16 @@
           "name": "Bryce Young",
           "position": "QB",
           "proTeam": "CAR"
+        },
+        {
+          "name": "Christian Watson",
+          "position": "WR",
+          "proTeam": "GB"
+        },
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "proTeam": "DET"
         }
       ]
     },
@@ -11677,13 +11682,13 @@
           "proTeam": "TB"
         },
         {
-          "name": "Deebo Samuel Sr.",
-          "position": "WR",
-          "proTeam": "SF"
-        },
-        {
           "name": "Tetairoa McMillan",
           "position": "WR",
+          "proTeam": "CAR"
+        },
+        {
+          "name": "Darren Waller",
+          "position": "TE",
           "proTeam": "CAR"
         }
       ]
@@ -12017,11 +12022,6 @@
           "proTeam": "SF"
         },
         {
-          "name": "Dallas Goedert",
-          "position": "TE",
-          "proTeam": "PHI"
-        },
-        {
           "name": "Jason Myers",
           "position": "K",
           "proTeam": "SEA"
@@ -12030,6 +12030,11 @@
           "name": "David Montgomery",
           "position": "RB",
           "proTeam": "HOU"
+        },
+        {
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "proTeam": "BUF"
         }
       ]
     }
