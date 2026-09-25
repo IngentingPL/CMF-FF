@@ -11552,11 +11552,6 @@
           "proTeam": "DAL"
         },
         {
-          "name": "Harrison Mevis",
-          "position": "K",
-          "proTeam": "LAR"
-        },
-        {
           "name": "DJ Moore",
           "position": "WR",
           "proTeam": "BUF"
@@ -11570,11 +11565,6 @@
           "name": "Nick Bolton",
           "position": "LB",
           "proTeam": "KC"
-        },
-        {
-          "name": "Marvin Harrison Jr.",
-          "position": "WR",
-          "proTeam": "ARI"
         },
         {
           "name": "Isaiah Likely",
@@ -11600,6 +11590,16 @@
           "name": "Jared Goff",
           "position": "QB",
           "proTeam": "DET"
+        },
+        {
+          "name": "Evan McPherson",
+          "position": "K",
+          "proTeam": "CIN"
+        },
+        {
+          "name": "Chase McLaughlin",
+          "position": "K",
+          "proTeam": "TB"
         }
       ]
     },
