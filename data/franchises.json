@@ -27,7 +27,7 @@
     "total_wins": 89,
     "total_losses": 108,
     "total_ties": 2,
-    "total_pf": 16268.24,
+    "total_pf": 16272.24,
     "total_pa": 17234.5,
     "championships": 1,
     "best_season": {
@@ -47,7 +47,7 @@
       "losses": 2,
       "ties": 0,
       "win_rate": 0.0,
-      "points_for": 176.84,
+      "points_for": 180.84,
       "points_against": 219.92
     }
   },
@@ -79,7 +79,7 @@
     "total_losses": 100,
     "total_ties": 2,
     "total_pf": 14996.28,
-    "total_pa": 15538.62,
+    "total_pa": 15539.62,
     "championships": 3,
     "best_season": {
       "year": 2012,
@@ -191,7 +191,7 @@
     "total_losses": 80,
     "total_ties": 4,
     "total_pf": 17034.78,
-    "total_pa": 16269.82,
+    "total_pa": 16273.82,
     "championships": 3,
     "best_season": {
       "year": 2017,
@@ -472,7 +472,7 @@
     "total_wins": 50,
     "total_losses": 43,
     "total_ties": 0,
-    "total_pf": 8800.42,
+    "total_pf": 8801.42,
     "total_pa": 8480.9,
     "championships": 0,
     "best_season": {
