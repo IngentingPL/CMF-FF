@@ -11667,11 +11667,6 @@
           "proTeam": "CHI"
         },
         {
-          "name": "Cameron Dicker",
-          "position": "K",
-          "proTeam": "LAC"
-        },
-        {
           "name": "Ernest Jones IV",
           "position": "LB",
           "proTeam": "SEA"
@@ -11690,6 +11685,11 @@
           "name": "Darren Waller",
           "position": "TE",
           "proTeam": "CAR"
+        },
+        {
+          "name": "Nakobe Dean",
+          "position": "LB",
+          "proTeam": "LV"
         }
       ]
     },
@@ -12002,11 +12002,6 @@
           "proTeam": "SF"
         },
         {
-          "name": "Jaxson Dart",
-          "position": "QB",
-          "proTeam": "NYG"
-        },
-        {
           "name": "Jack Campbell",
           "position": "LB",
           "proTeam": "DET"
@@ -12035,6 +12030,11 @@
           "name": "Dalton Kincaid",
           "position": "TE",
           "proTeam": "BUF"
+        },
+        {
+          "name": "Tyler Shough",
+          "position": "QB",
+          "proTeam": "NO"
         }
       ]
     }
