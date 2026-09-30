@@ -11532,19 +11532,9 @@
           "proTeam": "LV"
         },
         {
-          "name": "Tyler Warren",
-          "position": "TE",
-          "proTeam": "IND"
-        },
-        {
           "name": "Emeka Egbuka",
           "position": "WR",
           "proTeam": "TB"
-        },
-        {
-          "name": "Cam Skattebo",
-          "position": "RB",
-          "proTeam": "NYG"
         },
         {
           "name": "Dak Prescott",
@@ -11600,6 +11590,16 @@
           "name": "Chase McLaughlin",
           "position": "K",
           "proTeam": "TB"
+        },
+        {
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "proTeam": "NO"
+        },
+        {
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "proTeam": "CAR"
         }
       ]
     },
