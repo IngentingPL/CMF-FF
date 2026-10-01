@@ -11662,19 +11662,9 @@
           "proTeam": "JAX"
         },
         {
-          "name": "Luther Burden III",
-          "position": "WR",
-          "proTeam": "CHI"
-        },
-        {
           "name": "Ernest Jones IV",
           "position": "LB",
           "proTeam": "SEA"
-        },
-        {
-          "name": "Josiah Trotter",
-          "position": "LB",
-          "proTeam": "TB"
         },
         {
           "name": "Tetairoa McMillan",
@@ -11690,6 +11680,11 @@
           "name": "Nakobe Dean",
           "position": "LB",
           "proTeam": "LV"
+        },
+        {
+          "name": "Parker Washington",
+          "position": "WR",
+          "proTeam": "JAX"
         }
       ]
     },
@@ -11792,11 +11787,6 @@
           "proTeam": "CIN"
         },
         {
-          "name": "De'Von Achane",
-          "position": "RB",
-          "proTeam": "MIA"
-        },
-        {
           "name": "Trey McBride",
           "position": "TE",
           "proTeam": "ARI"
@@ -11865,6 +11855,11 @@
           "name": "Carson Schwesinger",
           "position": "LB",
           "proTeam": "CLE"
+        },
+        {
+          "name": "Jeremiyah Love",
+          "position": "RB",
+          "proTeam": "ARI"
         }
       ]
     },
