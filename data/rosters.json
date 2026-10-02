@@ -12017,11 +12017,6 @@
           "proTeam": "SEA"
         },
         {
-          "name": "David Montgomery",
-          "position": "RB",
-          "proTeam": "HOU"
-        },
-        {
           "name": "Dalton Kincaid",
           "position": "TE",
           "proTeam": "BUF"
@@ -12030,6 +12025,11 @@
           "name": "Tyler Shough",
           "position": "QB",
           "proTeam": "NO"
+        },
+        {
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "proTeam": "MIN"
         }
       ]
     }
