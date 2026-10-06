@@ -1618,10 +1618,10 @@
       "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
       "owner_name": "Piotr Tkaczyk",
       "wins": 1,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "points_for": 264.68,
-      "points_against": 296.74,
+      "points_for": 337.34000000000003,
+      "points_against": 376.12,
       "final_standing": 0
     },
     {
@@ -1629,11 +1629,11 @@
       "team_id": 8,
       "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
       "owner_name": "Roman Szafran",
-      "wins": 2,
+      "wins": 3,
       "losses": 1,
       "ties": 0,
-      "points_for": 341.14,
-      "points_against": 333.78,
+      "points_for": 477.65999999999997,
+      "points_against": 422.0,
       "final_standing": 0
     },
     {
@@ -1641,11 +1641,11 @@
       "team_id": 15,
       "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
       "owner_name": "Arkadiusz Dudkowski",
-      "wins": 2,
+      "wins": 3,
       "losses": 1,
       "ties": 0,
-      "points_for": 371.9,
-      "points_against": 354.28,
+      "points_for": 451.28,
+      "points_against": 426.94,
       "final_standing": 0
     },
     {
@@ -1654,10 +1654,10 @@
       "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
       "owner_name": "Grzesiek Chodkiewicz",
       "wins": 1,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "points_for": 255.09999999999997,
-      "points_against": 264.98,
+      "points_for": 343.31999999999994,
+      "points_against": 401.5,
       "final_standing": 0
     },
     {
@@ -1666,10 +1666,10 @@
       "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
       "owner_name": "Artur Melerowicz",
       "wins": 1,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "points_for": 247.88,
-      "points_against": 278.88,
+      "points_for": 335.56,
+      "points_against": 374.72,
       "final_standing": 0
     },
     {
@@ -1677,11 +1677,11 @@
       "team_id": 18,
       "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
       "owner_name": "Michal Adamski",
-      "wins": 2,
+      "wins": 3,
       "losses": 1,
       "ties": 0,
-      "points_for": 365.02,
-      "points_against": 317.06,
+      "points_for": 460.86,
+      "points_against": 404.74,
       "final_standing": 0
     }
   ]
