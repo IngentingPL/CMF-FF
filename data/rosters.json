@@ -11547,11 +11547,6 @@
           "proTeam": "TEN"
         },
         {
-          "name": "Nick Bolton",
-          "position": "LB",
-          "proTeam": "KC"
-        },
-        {
           "name": "Isaiah Likely",
           "position": "TE",
           "proTeam": "NYG"
@@ -11595,6 +11590,11 @@
           "name": "Chuba Hubbard",
           "position": "RB",
           "proTeam": "CAR"
+        },
+        {
+          "name": "T.J. Watt",
+          "position": "DE",
+          "proTeam": "PIT"
         }
       ]
     },
