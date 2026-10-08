@@ -11677,9 +11677,9 @@
           "proTeam": "LV"
         },
         {
-          "name": "Parker Washington",
+          "name": "Michael Wilson",
           "position": "WR",
-          "proTeam": "JAX"
+          "proTeam": "ARI"
         }
       ]
     },
@@ -11752,16 +11752,6 @@
           "proTeam": "KC"
         },
         {
-          "name": "Cedric Gray",
-          "position": "LB",
-          "proTeam": "TEN"
-        },
-        {
-          "name": "Brian Burns",
-          "position": "DE",
-          "proTeam": "NYG"
-        },
-        {
           "name": "Eddy Pineiro",
           "position": "K",
           "proTeam": "SF"
@@ -11770,6 +11760,11 @@
           "name": "Rashod Bateman",
           "position": "WR",
           "proTeam": "BAL"
+        },
+        {
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "proTeam": "JAX"
         }
       ]
     },
