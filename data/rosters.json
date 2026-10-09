@@ -11882,11 +11882,6 @@
           "proTeam": "BAL"
         },
         {
-          "name": "Travis Etienne Jr.",
-          "position": "RB",
-          "proTeam": "NO"
-        },
-        {
           "name": "Drake Maye",
           "position": "QB",
           "proTeam": "NE"
@@ -11932,9 +11927,14 @@
           "proTeam": "JAX"
         },
         {
-          "name": "Kevin Byard",
-          "position": "S",
-          "proTeam": "NE"
+          "name": "Cam Little",
+          "position": "K",
+          "proTeam": "JAX"
+        },
+        {
+          "name": "Roquan Smith",
+          "position": "LB",
+          "proTeam": "BAL"
         }
       ]
     },
@@ -11992,11 +11992,6 @@
           "proTeam": "DET"
         },
         {
-          "name": "Bo Nix",
-          "position": "QB",
-          "proTeam": "DEN"
-        },
-        {
           "name": "Brock Purdy",
           "position": "QB",
           "proTeam": "SF"
@@ -12020,6 +12015,11 @@
           "name": "Aaron Jones Sr.",
           "position": "RB",
           "proTeam": "MIN"
+        },
+        {
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "proTeam": "WSH"
         }
       ]
     }
