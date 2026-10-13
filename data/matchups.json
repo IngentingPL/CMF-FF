@@ -5323,6 +5323,26 @@
         "away_team": "Lublin Gnagare",
         "away_score": 72.66
       }
+    ],
+    "5": [
+      {
+        "home_team": "Helsinki Reindeer",
+        "home_score": 142.96,
+        "away_team": "Poznan Festung",
+        "away_score": 102.3
+      },
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 87.6,
+        "away_team": "Chicago Scrubs",
+        "away_score": 116.04
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 105.62,
+        "away_team": "Lublin Gnagare",
+        "away_score": 111.04
+      }
     ]
   }
 }
