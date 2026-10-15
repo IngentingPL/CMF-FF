@@ -11682,9 +11682,9 @@
           "proTeam": "LV"
         },
         {
-          "name": "Michael Wilson",
+          "name": "Matthew Golden",
           "position": "WR",
-          "proTeam": "ARI"
+          "proTeam": "GB"
         }
       ]
     },
@@ -11967,11 +11967,6 @@
           "proTeam": "NO"
         },
         {
-          "name": "George Pickens",
-          "position": "WR",
-          "proTeam": "DAL"
-        },
-        {
           "name": "Jaxon Smith-Njigba",
           "position": "WR",
           "proTeam": "SEA"
@@ -12007,11 +12002,6 @@
           "proTeam": "SEA"
         },
         {
-          "name": "Dalton Kincaid",
-          "position": "TE",
-          "proTeam": "BUF"
-        },
-        {
           "name": "Tyler Shough",
           "position": "QB",
           "proTeam": "NO"
@@ -12025,6 +12015,16 @@
           "name": "Jayden Daniels",
           "position": "QB",
           "proTeam": "WSH"
+        },
+        {
+          "name": "Will Anderson Jr.",
+          "position": "DE",
+          "proTeam": "HOU"
+        },
+        {
+          "name": "Spencer Shrader",
+          "position": "K",
+          "proTeam": "IND"
         }
       ]
     }
