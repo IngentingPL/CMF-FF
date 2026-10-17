@@ -11727,11 +11727,6 @@
           "proTeam": "SF"
         },
         {
-          "name": "Jordyn Brooks",
-          "position": "LB",
-          "proTeam": "MIA"
-        },
-        {
           "name": "Blake Cashman",
           "position": "LB",
           "proTeam": "MIN"
@@ -11762,14 +11757,24 @@
           "proTeam": "SF"
         },
         {
-          "name": "Rashod Bateman",
-          "position": "WR",
-          "proTeam": "BAL"
-        },
-        {
           "name": "Trevor Lawrence",
           "position": "QB",
           "proTeam": "JAX"
+        },
+        {
+          "name": "Zack Baun",
+          "position": "LB",
+          "proTeam": "PHI"
+        },
+        {
+          "name": "Arvell Reese",
+          "position": "LB",
+          "proTeam": "NYG"
+        },
+        {
+          "name": "Denzel Boston",
+          "position": "WR",
+          "proTeam": "CLE"
         }
       ]
     },
