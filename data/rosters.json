@@ -11962,11 +11962,6 @@
           "proTeam": "BUF"
         },
         {
-          "name": "Saquon Barkley",
-          "position": "RB",
-          "proTeam": "PHI"
-        },
-        {
           "name": "Chris Olave",
           "position": "WR",
           "proTeam": "NO"
@@ -12030,6 +12025,11 @@
           "name": "Spencer Shrader",
           "position": "K",
           "proTeam": "IND"
+        },
+        {
+          "name": "Dameon Pierce",
+          "position": "RB",
+          "proTeam": "PHI"
         }
       ]
     }
