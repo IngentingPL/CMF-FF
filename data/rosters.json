@@ -11887,11 +11887,6 @@
           "proTeam": "CHI"
         },
         {
-          "name": "Mark Andrews",
-          "position": "TE",
-          "proTeam": "BAL"
-        },
-        {
           "name": "Drake Maye",
           "position": "QB",
           "proTeam": "NE"
@@ -11945,6 +11940,11 @@
           "name": "Roquan Smith",
           "position": "LB",
           "proTeam": "BAL"
+        },
+        {
+          "name": "Tyler Warren",
+          "position": "TE",
+          "proTeam": "IND"
         }
       ]
     },
