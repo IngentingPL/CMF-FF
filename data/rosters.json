@@ -11672,11 +11672,6 @@
           "proTeam": "CAR"
         },
         {
-          "name": "Darren Waller",
-          "position": "TE",
-          "proTeam": "CAR"
-        },
-        {
           "name": "Nakobe Dean",
           "position": "LB",
           "proTeam": "LV"
@@ -11684,6 +11679,11 @@
         {
           "name": "Matthew Golden",
           "position": "WR",
+          "proTeam": "GB"
+        },
+        {
+          "name": "Jordan Love",
+          "position": "QB",
           "proTeam": "GB"
         }
       ]
@@ -12017,11 +12017,6 @@
           "proTeam": "WSH"
         },
         {
-          "name": "Will Anderson Jr.",
-          "position": "DE",
-          "proTeam": "HOU"
-        },
-        {
           "name": "Spencer Shrader",
           "position": "K",
           "proTeam": "IND"
@@ -12030,6 +12025,11 @@
           "name": "Dameon Pierce",
           "position": "RB",
           "proTeam": "PHI"
+        },
+        {
+          "name": "DK Metcalf",
+          "position": "WR",
+          "proTeam": "PIT"
         }
       ]
     }
