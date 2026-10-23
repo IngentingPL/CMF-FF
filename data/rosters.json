@@ -11817,11 +11817,6 @@
           "proTeam": "PHI"
         },
         {
-          "name": "Jalen Hurts",
-          "position": "QB",
-          "proTeam": "PHI"
-        },
-        {
           "name": "Rome Odunze",
           "position": "WR",
           "proTeam": "CHI"
@@ -11857,20 +11852,20 @@
           "proTeam": "CLE"
         },
         {
-          "name": "Jeremiyah Love",
+          "name": "Bo Nix",
+          "position": "QB",
+          "proTeam": "DEN"
+        },
+        {
+          "name": "Saquon Barkley",
           "position": "RB",
-          "proTeam": "ARI"
+          "proTeam": "PHI"
         }
       ]
     },
     {
       "team_name": "Bytom Amateurs",
       "players": [
-        {
-          "name": "Davante Adams",
-          "position": "WR",
-          "proTeam": "LAR"
-        },
         {
           "name": "Christian McCaffrey",
           "position": "RB",
@@ -11932,11 +11927,6 @@
           "proTeam": "JAX"
         },
         {
-          "name": "Cam Little",
-          "position": "K",
-          "proTeam": "JAX"
-        },
-        {
           "name": "Roquan Smith",
           "position": "LB",
           "proTeam": "BAL"
@@ -11945,6 +11935,16 @@
           "name": "Tyler Warren",
           "position": "TE",
           "proTeam": "IND"
+        },
+        {
+          "name": "George Pickens",
+          "position": "WR",
+          "proTeam": "DAL"
+        },
+        {
+          "name": "Alex Singleton",
+          "position": "LB",
+          "proTeam": "DEN"
         }
       ]
     },
