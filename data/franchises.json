@@ -24,11 +24,11 @@
       2025,
       2026
     ],
-    "total_wins": 92,
+    "total_wins": 93,
     "total_losses": 109,
     "total_ties": 2,
-    "total_pf": 16655.92,
-    "total_pa": 17587.38,
+    "total_pf": 16740.5,
+    "total_pa": 17661.44,
     "championships": 1,
     "best_season": {
       "year": 2023,
@@ -75,11 +75,11 @@
       2025,
       2026
     ],
-    "total_wins": 80,
+    "total_wins": 81,
     "total_losses": 103,
     "total_ties": 2,
-    "total_pf": 15382.02,
-    "total_pa": 15944.06,
+    "total_pf": 15498.76,
+    "total_pa": 16001.56,
     "championships": 3,
     "best_season": {
       "year": 2012,
@@ -129,11 +129,11 @@
       2025,
       2026
     ],
-    "total_wins": 75,
+    "total_wins": 76,
     "total_losses": 106,
     "total_ties": 4,
-    "total_pf": 14458.8,
-    "total_pa": 15385.46,
+    "total_pf": 14575.42,
+    "total_pa": 15473.48,
     "championships": 3,
     "best_season": {
       "year": 2021,
@@ -188,10 +188,10 @@
       2026
     ],
     "total_wins": 106,
-    "total_losses": 81,
+    "total_losses": 82,
     "total_ties": 4,
-    "total_pf": 17469.26,
-    "total_pa": 16658.42,
+    "total_pf": 17543.32,
+    "total_pa": 16743.0,
     "championships": 3,
     "best_season": {
       "year": 2017,
@@ -242,10 +242,10 @@
       2026
     ],
     "total_wins": 63,
-    "total_losses": 68,
+    "total_losses": 69,
     "total_ties": 0,
-    "total_pf": 11389.94,
-    "total_pa": 11133.46,
+    "total_pf": 11477.96,
+    "total_pa": 11250.08,
     "championships": 0,
     "best_season": {
       "year": 2024,
@@ -470,10 +470,10 @@
       2026
     ],
     "total_wins": 53,
-    "total_losses": 44,
+    "total_losses": 45,
     "total_ties": 0,
-    "total_pf": 9189.56,
-    "total_pa": 8858.1,
+    "total_pf": 9247.06,
+    "total_pa": 8974.84,
     "championships": 0,
     "best_season": {
       "year": 2020,
