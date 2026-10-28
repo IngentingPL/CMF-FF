@@ -11732,19 +11732,9 @@
           "proTeam": "MIN"
         },
         {
-          "name": "Ladd McConkey",
-          "position": "WR",
-          "proTeam": "LAC"
-        },
-        {
           "name": "Jameson Williams",
           "position": "WR",
           "proTeam": "DET"
-        },
-        {
-          "name": "Patrick Mahomes",
-          "position": "QB",
-          "proTeam": "KC"
         },
         {
           "name": "Travis Kelce",
@@ -11775,6 +11765,11 @@
           "name": "Denzel Boston",
           "position": "WR",
           "proTeam": "CLE"
+        },
+        {
+          "name": "Will Reichard",
+          "position": "K",
+          "proTeam": "MIN"
         }
       ]
     },
@@ -11827,11 +11822,6 @@
           "proTeam": "LV"
         },
         {
-          "name": "Myles Garrett",
-          "position": "DE",
-          "proTeam": "LAR"
-        },
-        {
           "name": "Caleb Williams",
           "position": "QB",
           "proTeam": "CHI"
@@ -11860,6 +11850,11 @@
           "name": "Saquon Barkley",
           "position": "RB",
           "proTeam": "PHI"
+        },
+        {
+          "name": "Chris Boswell",
+          "position": "K",
+          "proTeam": "PIT"
         }
       ]
     },
