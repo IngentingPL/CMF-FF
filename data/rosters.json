@@ -11544,7 +11544,7 @@
         {
           "name": "Jeffery Simmons",
           "position": "DT",
-          "proTeam": "TEN"
+          "proTeam": "CHI"
         },
         {
           "name": "Isaiah Likely",
@@ -11582,11 +11582,6 @@
           "proTeam": "TB"
         },
         {
-          "name": "Juwan Johnson",
-          "position": "TE",
-          "proTeam": "NO"
-        },
-        {
           "name": "Chuba Hubbard",
           "position": "RB",
           "proTeam": "CAR"
@@ -11600,6 +11595,11 @@
           "name": "Parker Washington",
           "position": "WR",
           "proTeam": "JAX"
+        },
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "proTeam": "PHI"
         }
       ]
     },
@@ -11997,11 +11997,6 @@
           "proTeam": "SEA"
         },
         {
-          "name": "Tyler Shough",
-          "position": "QB",
-          "proTeam": "NO"
-        },
-        {
           "name": "Aaron Jones Sr.",
           "position": "RB",
           "proTeam": "MIN"
@@ -12017,14 +12012,19 @@
           "proTeam": "IND"
         },
         {
-          "name": "Dameon Pierce",
-          "position": "RB",
-          "proTeam": "PHI"
-        },
-        {
           "name": "DK Metcalf",
           "position": "WR",
           "proTeam": "PIT"
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "proTeam": "TB"
+        },
+        {
+          "name": "Jamien Sherwood",
+          "position": "LB",
+          "proTeam": "NYJ"
         }
       ]
     }
