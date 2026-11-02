@@ -11592,11 +11592,6 @@
           "proTeam": "PIT"
         },
         {
-          "name": "Parker Washington",
-          "position": "WR",
-          "proTeam": "JAX"
-        },
-        {
           "name": "Dallas Goedert",
           "position": "TE",
           "proTeam": "PHI"
@@ -11882,11 +11877,6 @@
           "proTeam": "NE"
         },
         {
-          "name": "Terry McLaurin",
-          "position": "WR",
-          "proTeam": "WSH"
-        },
-        {
           "name": "Jaylen Waddle",
           "position": "WR",
           "proTeam": "DEN"
@@ -11940,6 +11930,11 @@
           "name": "Alex Singleton",
           "position": "LB",
           "proTeam": "DEN"
+        },
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "proTeam": "CIN"
         }
       ]
     },
