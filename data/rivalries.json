@@ -78,7 +78,7 @@
         "opponent_previous_names": [
           "Minsk Maz Old Goats"
         ],
-        "reg_wins": 10,
+        "reg_wins": 11,
         "reg_losses": 14,
         "reg_ties": 0,
         "po_wins": 2,
@@ -349,7 +349,7 @@
           "Posen Festung",
           "Mosina Republicans"
         ],
-        "reg_wins": 7,
+        "reg_wins": 8,
         "reg_losses": 12,
         "reg_ties": 2,
         "po_wins": 4,
@@ -513,7 +513,7 @@
         "opponent_name": "Lublin Gnagare",
         "opponent_previous_names": [],
         "reg_wins": 14,
-        "reg_losses": 10,
+        "reg_losses": 11,
         "reg_ties": 0,
         "po_wins": 1,
         "po_losses": 2,
@@ -659,7 +659,7 @@
         "opponent_name": "Bytom Amateurs",
         "opponent_previous_names": [],
         "reg_wins": 12,
-        "reg_losses": 7,
+        "reg_losses": 8,
         "reg_ties": 2,
         "po_wins": 2,
         "po_losses": 4,
@@ -883,7 +883,7 @@
         "opponent_owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
         "opponent_name": "Chicago Scrubs",
         "opponent_previous_names": [],
-        "reg_wins": 5,
+        "reg_wins": 6,
         "reg_losses": 4,
         "reg_ties": 0,
         "po_wins": 1,
@@ -1883,7 +1883,7 @@
           "Vienna Schnitzels"
         ],
         "reg_wins": 4,
-        "reg_losses": 5,
+        "reg_losses": 6,
         "reg_ties": 0,
         "po_wins": 0,
         "po_losses": 1,
