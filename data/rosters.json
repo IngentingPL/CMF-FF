@@ -11587,14 +11587,14 @@
           "proTeam": "CAR"
         },
         {
-          "name": "T.J. Watt",
-          "position": "DE",
-          "proTeam": "PIT"
-        },
-        {
           "name": "Dallas Goedert",
           "position": "TE",
           "proTeam": "PHI"
+        },
+        {
+          "name": "Josiah Trotter",
+          "position": "LB",
+          "proTeam": "TB"
         }
       ]
     },
@@ -11977,11 +11977,6 @@
           "proTeam": "SF"
         },
         {
-          "name": "Jack Campbell",
-          "position": "LB",
-          "proTeam": "DET"
-        },
-        {
           "name": "Brock Purdy",
           "position": "QB",
           "proTeam": "SF"
@@ -12007,11 +12002,6 @@
           "proTeam": "IND"
         },
         {
-          "name": "DK Metcalf",
-          "position": "WR",
-          "proTeam": "PIT"
-        },
-        {
           "name": "Bucky Irving",
           "position": "RB",
           "proTeam": "TB"
@@ -12020,6 +12010,16 @@
           "name": "Jamien Sherwood",
           "position": "LB",
           "proTeam": "NYJ"
+        },
+        {
+          "name": "Kirk Cousins",
+          "position": "QB",
+          "proTeam": "LV"
+        },
+        {
+          "name": "Sonny Styles",
+          "position": "LB",
+          "proTeam": "WSH"
         }
       ]
     }
