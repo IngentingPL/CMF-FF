@@ -11662,11 +11662,6 @@
           "proTeam": "SEA"
         },
         {
-          "name": "Tetairoa McMillan",
-          "position": "WR",
-          "proTeam": "CAR"
-        },
-        {
           "name": "Nakobe Dean",
           "position": "LB",
           "proTeam": "LV"
@@ -11680,6 +11675,11 @@
           "name": "Jordan Love",
           "position": "QB",
           "proTeam": "GB"
+        },
+        {
+          "name": "Luther Burden III",
+          "position": "WR",
+          "proTeam": "CHI"
         }
       ]
     },
@@ -11705,11 +11705,6 @@
           "name": "Chase Brown",
           "position": "RB",
           "proTeam": "CIN"
-        },
-        {
-          "name": "Rashee Rice",
-          "position": "WR",
-          "proTeam": "KC"
         },
         {
           "name": "Zay Flowers",
@@ -11765,6 +11760,16 @@
           "name": "Will Reichard",
           "position": "K",
           "proTeam": "MIN"
+        },
+        {
+          "name": "Patrick Mahomes",
+          "position": "QB",
+          "proTeam": "KC"
+        },
+        {
+          "name": "Parker Washington",
+          "position": "WR",
+          "proTeam": "JAX"
         }
       ]
     },
@@ -11962,11 +11967,6 @@
           "proTeam": "SEA"
         },
         {
-          "name": "Garrett Wilson",
-          "position": "WR",
-          "proTeam": "NYJ"
-        },
-        {
           "name": "Brock Bowers",
           "position": "TE",
           "proTeam": "LV"
@@ -11985,11 +11985,6 @@
           "name": "Jason Myers",
           "position": "K",
           "proTeam": "SEA"
-        },
-        {
-          "name": "Aaron Jones Sr.",
-          "position": "RB",
-          "proTeam": "MIN"
         },
         {
           "name": "Jayden Daniels",
@@ -12020,6 +12015,21 @@
           "name": "Sonny Styles",
           "position": "LB",
           "proTeam": "WSH"
+        },
+        {
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "proTeam": "PIT"
+        },
+        {
+          "name": "Davante Adams",
+          "position": "WR",
+          "proTeam": "LAR"
+        },
+        {
+          "name": "Mike Evans",
+          "position": "WR",
+          "proTeam": "SF"
         }
       ]
     }
