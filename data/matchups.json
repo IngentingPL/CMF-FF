@@ -5403,6 +5403,26 @@
         "away_team": "Chicago Scrubs",
         "away_score": 60.2
       }
+    ],
+    "9": [
+      {
+        "home_team": "MMz Old Goats",
+        "home_score": 109.36,
+        "away_team": "Poznan Festung",
+        "away_score": 116.64
+      },
+      {
+        "home_team": "Bytom Amateurs",
+        "home_score": 70.36,
+        "away_team": "Helsinki Reindeer",
+        "away_score": 145.48
+      },
+      {
+        "home_team": "Lublin Gnagare",
+        "home_score": 89.5,
+        "away_team": "Chicago Scrubs",
+        "away_score": 82.56
+      }
     ]
   }
 }
