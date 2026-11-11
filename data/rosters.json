@@ -11527,11 +11527,6 @@
           "proTeam": "DET"
         },
         {
-          "name": "Ashton Jeanty",
-          "position": "RB",
-          "proTeam": "LV"
-        },
-        {
           "name": "Dak Prescott",
           "position": "QB",
           "proTeam": "DAL"
@@ -11540,11 +11535,6 @@
           "name": "DJ Moore",
           "position": "WR",
           "proTeam": "BUF"
-        },
-        {
-          "name": "Jeffery Simmons",
-          "position": "DT",
-          "proTeam": "CHI"
         },
         {
           "name": "Isaiah Likely",
@@ -11592,9 +11582,19 @@
           "proTeam": "PHI"
         },
         {
-          "name": "Josiah Trotter",
-          "position": "LB",
-          "proTeam": "TB"
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "proTeam": "JAX"
+        },
+        {
+          "name": "David Bailey",
+          "position": "DE",
+          "proTeam": "NYJ"
+        },
+        {
+          "name": "Evan Williams",
+          "position": "S",
+          "proTeam": "GB"
         }
       ]
     },
@@ -12009,7 +12009,7 @@
         {
           "name": "Kirk Cousins",
           "position": "QB",
-          "proTeam": "LV"
+          "proTeam": "MIN"
         },
         {
           "name": "Sonny Styles",
