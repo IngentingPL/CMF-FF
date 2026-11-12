@@ -11842,11 +11842,6 @@
           "proTeam": "CLE"
         },
         {
-          "name": "Bo Nix",
-          "position": "QB",
-          "proTeam": "DEN"
-        },
-        {
           "name": "Saquon Barkley",
           "position": "RB",
           "proTeam": "PHI"
@@ -11855,6 +11850,11 @@
           "name": "Chris Boswell",
           "position": "K",
           "proTeam": "PIT"
+        },
+        {
+          "name": "Tyler Shough",
+          "position": "QB",
+          "proTeam": "NO"
         }
       ]
     },
