@@ -11647,11 +11647,6 @@
           "proTeam": "CIN"
         },
         {
-          "name": "Sam LaPorta",
-          "position": "TE",
-          "proTeam": "DET"
-        },
-        {
           "name": "Travis Hunter",
           "position": "WR",
           "proTeam": "JAX"
@@ -11680,6 +11675,11 @@
           "name": "Luther Burden III",
           "position": "WR",
           "proTeam": "CHI"
+        },
+        {
+          "name": "Darren Waller",
+          "position": "TE",
+          "proTeam": "CAR"
         }
       ]
     },
