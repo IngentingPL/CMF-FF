@@ -1617,11 +1617,11 @@
       "team_id": 1,
       "owner_id": "{4BF248FE-5037-4F2B-B248-FE50376F2B6B}",
       "owner_name": "Piotr Tkaczyk",
-      "wins": 6,
+      "wins": 7,
       "losses": 3,
       "ties": 0,
-      "points_for": 826.7000000000002,
-      "points_against": 811.5,
+      "points_for": 939.4000000000002,
+      "points_against": 904.52,
       "final_standing": 0
     },
     {
@@ -1630,10 +1630,10 @@
       "owner_id": "{6ABD5EE7-E1A9-421B-BD5E-E7E1A9421BC9}",
       "owner_name": "Roman Szafran",
       "wins": 5,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
-      "points_for": 957.32,
-      "points_against": 920.54,
+      "points_for": 1046.96,
+      "points_against": 1037.7,
       "final_standing": 0
     },
     {
@@ -1641,11 +1641,11 @@
       "team_id": 15,
       "owner_id": "{F03851F0-CC62-4BE4-AA4E-527B3C400F74}",
       "owner_name": "Arkadiusz Dudkowski",
-      "wins": 4,
+      "wins": 5,
       "losses": 5,
       "ties": 0,
-      "points_for": 827.26,
-      "points_against": 917.86,
+      "points_for": 957.84,
+      "points_against": 999.54,
       "final_standing": 0
     },
     {
@@ -1654,10 +1654,10 @@
       "owner_id": "{5CC0CB32-58EC-4816-80CB-3258EC3816C5}",
       "owner_name": "Grzesiek Chodkiewicz",
       "wins": 2,
-      "losses": 7,
+      "losses": 8,
       "ties": 0,
-      "points_for": 832.08,
-      "points_against": 912.5,
+      "points_for": 913.76,
+      "points_against": 1043.08,
       "final_standing": 0
     },
     {
@@ -1666,10 +1666,10 @@
       "owner_id": "{0FC552E4-839F-4E37-8FE0-C199419E902C}",
       "owner_name": "Artur Melerowicz",
       "wins": 4,
-      "losses": 5,
+      "losses": 6,
       "ties": 0,
-      "points_for": 828.94,
-      "points_against": 876.8,
+      "points_for": 921.96,
+      "points_against": 989.5,
       "final_standing": 0
     },
     {
@@ -1677,11 +1677,11 @@
       "team_id": 18,
       "owner_id": "{ED307866-C1DB-45B4-B078-66C1DB35B4D5}",
       "owner_name": "Michal Adamski",
-      "wins": 6,
+      "wins": 7,
       "losses": 3,
       "ties": 0,
-      "points_for": 1037.26,
-      "points_against": 870.36,
+      "points_for": 1154.42,
+      "points_against": 960.0,
       "final_standing": 0
     }
   ]
