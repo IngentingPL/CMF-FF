@@ -11592,9 +11592,14 @@
           "proTeam": "NYJ"
         },
         {
-          "name": "Evan Williams",
-          "position": "S",
-          "proTeam": "GB"
+          "name": "Deebo Samuel Sr.",
+          "position": "WR",
+          "proTeam": "SF"
+        },
+        {
+          "name": "Devin Lloyd",
+          "position": "LB",
+          "proTeam": "CAR"
         }
       ]
     },
@@ -11630,11 +11635,6 @@
           "name": "Brandon Aubrey",
           "position": "K",
           "proTeam": "DAL"
-        },
-        {
-          "name": "Jonathan Taylor",
-          "position": "RB",
-          "proTeam": "IND"
         },
         {
           "name": "Bijan Robinson",
@@ -11677,9 +11677,14 @@
           "proTeam": "CHI"
         },
         {
-          "name": "Darren Waller",
+          "name": "Jonah Coleman",
+          "position": "RB",
+          "proTeam": "DEN"
+        },
+        {
+          "name": "Mike Gesicki",
           "position": "TE",
-          "proTeam": "CAR"
+          "proTeam": "CIN"
         }
       ]
     },
@@ -11982,11 +11987,6 @@
           "proTeam": "SF"
         },
         {
-          "name": "Jason Myers",
-          "position": "K",
-          "proTeam": "SEA"
-        },
-        {
           "name": "Jayden Daniels",
           "position": "QB",
           "proTeam": "WSH"
@@ -12007,11 +12007,6 @@
           "proTeam": "NYJ"
         },
         {
-          "name": "Kirk Cousins",
-          "position": "QB",
-          "proTeam": "MIN"
-        },
-        {
           "name": "Sonny Styles",
           "position": "LB",
           "proTeam": "WSH"
@@ -12030,6 +12025,16 @@
           "name": "Mike Evans",
           "position": "WR",
           "proTeam": "SF"
+        },
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "proTeam": "HOU"
+        },
+        {
+          "name": "Tyler Bass",
+          "position": "K",
+          "proTeam": "BUF"
         }
       ]
     }
