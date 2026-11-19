@@ -11637,11 +11637,6 @@
           "proTeam": "DAL"
         },
         {
-          "name": "Bijan Robinson",
-          "position": "RB",
-          "proTeam": "ATL"
-        },
-        {
           "name": "Joe Burrow",
           "position": "QB",
           "proTeam": "CIN"
@@ -11685,6 +11680,11 @@
           "name": "Mike Gesicki",
           "position": "TE",
           "proTeam": "CIN"
+        },
+        {
+          "name": "Tony Pollard",
+          "position": "RB",
+          "proTeam": "TEN"
         }
       ]
     },
