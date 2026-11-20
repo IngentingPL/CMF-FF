@@ -11682,9 +11682,9 @@
           "proTeam": "CIN"
         },
         {
-          "name": "Tony Pollard",
+          "name": "Emmett Johnson",
           "position": "RB",
-          "proTeam": "TEN"
+          "proTeam": "KC"
         }
       ]
     },
@@ -11757,11 +11757,6 @@
           "proTeam": "NYG"
         },
         {
-          "name": "Denzel Boston",
-          "position": "WR",
-          "proTeam": "CLE"
-        },
-        {
           "name": "Will Reichard",
           "position": "K",
           "proTeam": "MIN"
@@ -11775,6 +11770,11 @@
           "name": "Parker Washington",
           "position": "WR",
           "proTeam": "JAX"
+        },
+        {
+          "name": "Chimere Dike",
+          "position": "WR",
+          "proTeam": "TEN"
         }
       ]
     },
@@ -11810,11 +11810,6 @@
           "name": "Javonte Williams",
           "position": "RB",
           "proTeam": "DAL"
-        },
-        {
-          "name": "DeVonta Smith",
-          "position": "WR",
-          "proTeam": "PHI"
         },
         {
           "name": "Rome Odunze",
@@ -11860,6 +11855,11 @@
           "name": "Tyler Shough",
           "position": "QB",
           "proTeam": "NO"
+        },
+        {
+          "name": "Budda Baker",
+          "position": "S",
+          "proTeam": "ARI"
         }
       ]
     },
@@ -11907,11 +11907,6 @@
           "proTeam": "KC"
         },
         {
-          "name": "Justin Herbert",
-          "position": "QB",
-          "proTeam": "LAC"
-        },
-        {
           "name": "Stefon Diggs",
           "position": "WR",
           "proTeam": "WSH"
@@ -11945,6 +11940,11 @@
           "name": "Tee Higgins",
           "position": "WR",
           "proTeam": "CIN"
+        },
+        {
+          "name": "Bo Nix",
+          "position": "QB",
+          "proTeam": "DEN"
         }
       ]
     },
