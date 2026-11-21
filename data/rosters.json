@@ -11707,11 +11707,6 @@
           "proTeam": "BAL"
         },
         {
-          "name": "Chase Brown",
-          "position": "RB",
-          "proTeam": "CIN"
-        },
-        {
           "name": "Zay Flowers",
           "position": "WR",
           "proTeam": "BAL"
@@ -11774,6 +11769,11 @@
         {
           "name": "Chimere Dike",
           "position": "WR",
+          "proTeam": "TEN"
+        },
+        {
+          "name": "Tony Pollard",
+          "position": "RB",
           "proTeam": "TEN"
         }
       ]
