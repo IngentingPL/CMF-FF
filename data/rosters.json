@@ -12002,11 +12002,6 @@
           "proTeam": "TB"
         },
         {
-          "name": "Jamien Sherwood",
-          "position": "LB",
-          "proTeam": "NYJ"
-        },
-        {
           "name": "Sonny Styles",
           "position": "LB",
           "proTeam": "WSH"
@@ -12035,6 +12030,11 @@
           "name": "Tyler Bass",
           "position": "K",
           "proTeam": "BUF"
+        },
+        {
+          "name": "Michael Mayer",
+          "position": "TE",
+          "proTeam": "LV"
         }
       ]
     }
