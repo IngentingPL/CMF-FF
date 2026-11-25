@@ -12007,11 +12007,6 @@
           "proTeam": "WSH"
         },
         {
-          "name": "Jaylen Warren",
-          "position": "RB",
-          "proTeam": "PIT"
-        },
-        {
           "name": "Davante Adams",
           "position": "WR",
           "proTeam": "LAR"
@@ -12032,9 +12027,14 @@
           "proTeam": "BUF"
         },
         {
-          "name": "Michael Mayer",
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "proTeam": "ATL"
+        },
+        {
+          "name": "Chig Okonkwo",
           "position": "TE",
-          "proTeam": "LV"
+          "proTeam": "WSH"
         }
       ]
     }
