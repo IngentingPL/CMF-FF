@@ -11685,6 +11685,11 @@
           "name": "Emmett Johnson",
           "position": "RB",
           "proTeam": "KC"
+        },
+        {
+          "name": "Cam Little",
+          "position": "K",
+          "proTeam": "JAX"
         }
       ]
     },
@@ -11742,11 +11747,6 @@
           "proTeam": "JAX"
         },
         {
-          "name": "Zack Baun",
-          "position": "LB",
-          "proTeam": "PHI"
-        },
-        {
           "name": "Arvell Reese",
           "position": "LB",
           "proTeam": "NYG"
@@ -11775,6 +11775,11 @@
           "name": "Tony Pollard",
           "position": "RB",
           "proTeam": "TEN"
+        },
+        {
+          "name": "Nick Bolton",
+          "position": "LB",
+          "proTeam": "KC"
         }
       ]
     },
